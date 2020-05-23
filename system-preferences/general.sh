@@ -1,7 +1,7 @@
 # Set appearance to auto
 # Required login and logout computer.
 # https://apple.stackexchange.com/a/391814/306411
-defaults write ~/Library/Preferences/.GlobalPreferences AppleInterfaceStyleSwitchesAutomatically -bool true
+defaults write -g AppleInterfaceStyleSwitchesAutomatically -bool true
 
 # Set accent color to Pink
 # Accent Color
