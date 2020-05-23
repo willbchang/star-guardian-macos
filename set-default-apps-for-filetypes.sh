@@ -1,0 +1,176 @@
+md='
+<dict>
+    <key>LSHandlerContentType</key>
+    <string>net.daringfireball.markdown</string>
+    <key>LSHandlerPreferredVersions</key>
+    <dict>
+        <key>LSHandlerRoleAll</key>
+        <string>-</string>
+    </dict>
+    <key>LSHandlerRoleAll</key>
+    <string>com.microsoft.vscode</string>
+</dict>
+'
+
+rb='
+<dict>
+    <key>LSHandlerContentType</key>
+    <string>public.ruby-script</string>
+    <key>LSHandlerPreferredVersions</key>
+    <dict>
+        <key>LSHandlerRoleAll</key>
+        <string>-</string>
+    </dict>
+    <key>LSHandlerRoleAll</key>
+    <string>com.microsoft.vscode</string>
+</dict>
+'
+
+py='
+<dict>
+    <key>LSHandlerContentType</key>
+    <string>public.python-script</string>
+    <key>LSHandlerPreferredVersions</key>
+    <dict>
+        <key>LSHandlerRoleAll</key>
+        <string>-</string>
+    </dict>
+    <key>LSHandlerRoleAll</key>
+    <string>com.microsoft.vscode</string>
+</dict>
+'
+
+sh='
+<dict>
+    <key>LSHandlerContentType</key>
+    <string>public.shell-script</string>
+    <key>LSHandlerPreferredVersions</key>
+    <dict>
+        <key>LSHandlerRoleAll</key>
+        <string>-</string>
+    </dict>
+    <key>LSHandlerRoleAll</key>
+    <string>com.microsoft.vscode</string>
+</dict>
+'
+
+json='
+<dict>
+    <key>LSHandlerContentType</key>
+    <string>public.json</string>
+    <key>LSHandlerPreferredVersions</key>
+    <dict>
+        <key>LSHandlerRoleAll</key>
+        <string>-</string>
+    </dict>
+    <key>LSHandlerRoleAll</key>
+    <string>com.microsoft.vscode</string>
+</dict>
+'
+
+js='
+<dict>
+    <key>LSHandlerContentType</key>
+    <string>com.netscape.javascript-source</string>
+    <key>LSHandlerPreferredVersions</key>
+    <dict>
+        <key>LSHandlerRoleAll</key>
+        <string>-</string>
+    </dict>
+    <key>LSHandlerRoleAll</key>
+    <string>com.microsoft.vscode</string>
+</dict>
+'
+
+css='
+<dict>
+    <key>LSHandlerContentType</key>
+    <string>public.css</string>
+    <key>LSHandlerPreferredVersions</key>
+    <dict>
+        <key>LSHandlerRoleAll</key>
+        <string>-</string>
+    </dict>
+    <key>LSHandlerRoleAll</key>
+    <string>com.microsoft.vscode</string>
+</dict>
+'
+
+html='
+<dict>
+    <key>LSHandlerContentType</key>
+    <string>public.html</string>
+    <key>LSHandlerPreferredVersions</key>
+    <dict>
+        <key>LSHandlerRoleAll</key>
+        <string>-</string>
+    </dict>
+    <key>LSHandlerRoleAll</key>
+    <string>com.google.chrome</string>
+</dict>
+'
+
+xhtml='
+<dict>
+    <key>LSHandlerContentType</key>
+    <string>public.xhtml</string>
+    <key>LSHandlerPreferredVersions</key>
+    <dict>
+        <key>LSHandlerRoleAll</key>
+        <string>-</string>
+        <key>LSHandlerRoleViewer</key>
+        <string>-</string>
+    </dict>
+    <key>LSHandlerRoleAll</key>
+    <string>com.google.chrome</string>
+    <key>LSHandlerRoleViewer</key>
+    <string>com.google.chrome</string>
+</dict>
+'
+
+http='
+<dict>
+    <key>LSHandlerPreferredVersions</key>
+    <dict>
+        <key>LSHandlerRoleAll</key>
+        <string>-</string>
+    </dict>
+    <key>LSHandlerRoleAll</key>
+    <string>com.google.chrome</string>
+    <key>LSHandlerURLScheme</key>
+    <string>http</string>
+</dict>
+'
+
+https='
+<dict>
+    <key>LSHandlerPreferredVersions</key>
+    <dict>
+        <key>LSHandlerRoleAll</key>
+        <string>-</string>
+    </dict>
+    <key>LSHandlerRoleAll</key>
+    <string>com.google.chrome</string>
+    <key>LSHandlerURLScheme</key>
+    <string>https</string>
+</dict>
+'
+
+pdf='
+<dict>
+    <key>LSHandlerContentType</key>
+    <string>com.adobe.pdf</string>
+    <key>LSHandlerPreferredVersions</key>
+    <dict>
+        <key>LSHandlerRoleAll</key>
+        <string>-</string>
+    </dict>
+    <key>LSHandlerRoleAll</key>
+    <string>com.google.chrome</string>
+</dict>
+'
+
+defaults write ~/Library/Preferences/com.apple.LaunchServices/com.apple.launchservices.secure.plist LSHandlers -array-add "$md" "$rb" "$py" "$sh" "$json" "$js" "$css" "$html" "$xhtml" "$http" "$https" "$pdf"
+
+# Restart the launch services
+/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/LaunchServices.framework/Versions/A/Support/lsregister -kill -domain local -domain system -domain user
