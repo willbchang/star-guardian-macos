@@ -41,3 +41,9 @@ defaults write -g NSTableViewDefaultSizeMode -int 2
 
 # Auto hide menu bar
 defaults write -g _HIHideMenuBar -bool true
+
+# Show scroll bars
+# Automatically based on mouse or trackpad : "Automatic"
+# When scrolling                           : "WhenScrolling"
+# Always                                   : "Always"
+defaults write -g AppleShowScrollBars -string "Automatic"
