@@ -15,7 +15,7 @@ defaults write -g AppleInterfaceStyleSwitchesAutomatically -bool true
 # Paris Daisy   : 8
 # Coral         : 9
 # Silver        : 10
-defaults write -g AppleAccentColor 6
+defaults write -g AppleAccentColor -int 6
 
 # Set highlight color to Pink
 # Highlight color
