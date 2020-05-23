@@ -51,3 +51,66 @@ defaults write -g AppleShowScrollBars -string "Automatic"
 # Jump to the spot that's clicked : true
 # Jump to the next page           : false
 defaults write -g AppleScrollerPagingBehavior -bool true
+
+# Set default browser to Chrome
+# You can set default app for different filetypes
+# Check ./set-default-apps-for-filetypes.sh
+html='
+<dict>
+    <key>LSHandlerContentType</key>
+    <string>public.html</string>
+    <key>LSHandlerPreferredVersions</key>
+    <dict>
+        <key>LSHandlerRoleAll</key>
+        <string>-</string>
+    </dict>
+    <key>LSHandlerRoleAll</key>
+    <string>com.google.chrome</string>
+</dict>
+'
+
+xhtml='
+<dict>
+    <key>LSHandlerContentType</key>
+    <string>public.xhtml</string>
+    <key>LSHandlerPreferredVersions</key>
+    <dict>
+        <key>LSHandlerRoleAll</key>
+        <string>-</string>
+        <key>LSHandlerRoleViewer</key>
+        <string>-</string>
+    </dict>
+    <key>LSHandlerRoleAll</key>
+    <string>com.google.chrome</string>
+</dict>
+'
+
+http='
+<dict>
+    <key>LSHandlerPreferredVersions</key>
+    <dict>
+        <key>LSHandlerRoleAll</key>
+        <string>-</string>
+    </dict>
+    <key>LSHandlerRoleAll</key>
+    <string>com.google.chrome</string>
+    <key>LSHandlerURLScheme</key>
+    <string>http</string>
+</dict>
+'
+
+https='
+<dict>
+    <key>LSHandlerPreferredVersions</key>
+    <dict>
+        <key>LSHandlerRoleAll</key>
+        <string>-</string>
+    </dict>
+    <key>LSHandlerRoleAll</key>
+    <string>com.google.chrome</string>
+    <key>LSHandlerURLScheme</key>
+    <string>https</string>
+</dict>
+'
+
+defaults write ~/Library/Preferences/com.apple.LaunchServices/com.apple.launchservices.secure.plist LSHandlers -array-add "$html" "$xhtml" "$http" "$https"
