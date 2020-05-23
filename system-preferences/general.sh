@@ -47,3 +47,7 @@ defaults write -g _HIHideMenuBar -bool true
 # When scrolling                           : "WhenScrolling"
 # Always                                   : "Always"
 defaults write -g AppleShowScrollBars -string "Automatic"
+
+# Jump to the spot that's clicked : true
+# Jump to the next page           : false
+defaults write -g AppleScrollerPagingBehavior -bool true
