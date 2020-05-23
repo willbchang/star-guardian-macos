@@ -33,3 +33,6 @@ defaults write -g AppleAccentColor 6
 # Above data is from :https://github.com/buo/dotfiles/blob/master/osx/_01general.sh
 # Calculate on your own: https://apple.stackexchange.com/a/164905/306411
 defaults write -g AppleHighlightColor -string "1.000000 0.749020 0.823529"
+
+# Set sidebar icon size to medium
+defaults write -g NSTableViewDefaultSizeMode -int 2
