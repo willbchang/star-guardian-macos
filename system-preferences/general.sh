@@ -114,3 +114,6 @@ https='
 '
 
 defaults write ~/Library/Preferences/com.apple.LaunchServices/com.apple.launchservices.secure.plist LSHandlers -array-add "$html" "$xhtml" "$http" "$https"
+
+# Disable ask to keep changes when closing documents
+defaults write -g NSCloseAlwaysConfirmsChanges -bool false
