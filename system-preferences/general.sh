@@ -31,7 +31,7 @@ defaults write -g AppleAccentColor 6
 # Silver   : "0.776500 0.776500 0.776500" (custom)
 # Above data is from :https://github.com/buo/dotfiles/blob/master/osx/_01general.sh
 # Calculate on your own: https://apple.stackexchange.com/a/164905/306411
-defaults write -g AppleHighlightColor -string "1.000000 0.749020 0.823529"
+defaults write -g AppleHighlightColor -string "1.000000 0.749020 0.823529 Pink"
 
 # Set sidebar icon size to medium
 # Small  : 1
