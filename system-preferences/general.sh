@@ -117,3 +117,7 @@ defaults write ~/Library/Preferences/com.apple.LaunchServices/com.apple.launchse
 
 # Disable ask to keep changes when closing documents
 defaults write -g NSCloseAlwaysConfirmsChanges -bool false
+
+# Close windows when quitting an app
+# When it's true, open documents and windows will not be restored when you re-open an app.
+defaults write -g NSQuitAlwaysKeepsWindows -bool true
