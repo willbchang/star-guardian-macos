@@ -1,5 +1,4 @@
 # Set appearance to auto
-# Required login and logout computer.
 # https://apple.stackexchange.com/a/391814/306411
 defaults write -g AppleInterfaceStyleSwitchesAutomatically -bool true
 
@@ -35,4 +34,7 @@ defaults write -g AppleAccentColor 6
 defaults write -g AppleHighlightColor -string "1.000000 0.749020 0.823529"
 
 # Set sidebar icon size to medium
+# Small  : 1
+# Medium : 2 (default)
+# Large  : 3
 defaults write -g NSTableViewDefaultSizeMode -int 2
