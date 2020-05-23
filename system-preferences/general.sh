@@ -38,3 +38,6 @@ defaults write -g AppleHighlightColor -string "1.000000 0.749020 0.823529"
 # Medium : 2 (default)
 # Large  : 3
 defaults write -g NSTableViewDefaultSizeMode -int 2
+
+# Auto hide menu bar
+defaults write -g _HIHideMenuBar -bool true
