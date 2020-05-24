@@ -121,3 +121,11 @@ defaults write -g NSCloseAlwaysConfirmsChanges -bool false
 # Close windows when quitting an app
 # When it's true, open documents and windows will not be restored when you re-open an app.
 defaults write -g NSQuitAlwaysKeepsWindows -bool true
+
+# Set recent items to 0
+# The relative file is in ~/Library/Application\ Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.RecentDocuments.sfl2
+# sfltool nolonger work for sfl2 after 10.13, but you may change the .sfl2 to .plist and manipulate with `defaults write` then change the extension back. It may work but I never try it because there is a simpler way to use apple script.
+# https://github.com/buo/dotfiles/blob/d2145bb247700a0cf1018cf351c32a796151befa/osx/_01general.sh#L48-L50
+for category in 'applications' 'documents' 'servers'; do
+  /usr/bin/osascript -e "tell application \"System Events\" to tell appearance preferences to set recent $category limit to 0"
+done
