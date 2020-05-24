@@ -134,3 +134,6 @@ done
 # Inspired by https://www.jamf.com/jamf-nation/discussions/12545/a-script-to-disable-handoff
 defaults -currentHost write com.apple.coreservices.useractivityd.plist ActivityAdvertisingAllowed -bool yes
 defaults -currentHost write com.apple.coreservices.useractivityd.plist ActivityReceivingAllowed -bool yes
+
+# Use font smoonthing when available
+defaults -currentHost delete -g AppleFontSmoothing
