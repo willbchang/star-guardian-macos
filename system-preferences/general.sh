@@ -54,7 +54,7 @@ defaults write -g AppleScrollerPagingBehavior -bool true
 
 # Set default browser to Chrome
 # You can set default app for different filetypes
-# Check ./set-default-apps-for-filetypes.sh
+# Check ./default_apps.rb
 html='
 <dict>
     <key>LSHandlerContentType</key>
