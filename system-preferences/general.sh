@@ -136,4 +136,4 @@ defaults -currentHost write com.apple.coreservices.useractivityd ActivityAdverti
 defaults -currentHost write com.apple.coreservices.useractivityd ActivityReceivingAllowed -bool yes
 
 # Use font smoonthing when available
-defaults -currentHost delete -g AppleFontSmoothing
+# defaults -currentHost delete -g AppleFontSmoothing
