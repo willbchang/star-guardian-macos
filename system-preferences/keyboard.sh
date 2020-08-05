@@ -25,17 +25,18 @@ defaults write -g KeyRepeat -int 2
 defaults write -g InitialKeyRepeat -int 15
 
 echo 'Set touchbar(control strip)'
-defaults delete com.apple.controlstrip FullCustomized
-defaults write com.apple.controlstrip FullCustomized -array-add -string "com.apple.system.brightness",
-defaults write com.apple.controlstrip FullCustomized -array-add -string "com.apple.system.night-shift",
-defaults write com.apple.controlstrip FullCustomized -array-add -string NSTouchBarItemIdentifierFlexibleSpace,
-defaults write com.apple.controlstrip FullCustomized -array-add -string "com.apple.system.volume",
-defaults write com.apple.controlstrip FullCustomized -array-add -string "com.apple.system.mute",
-defaults write com.apple.controlstrip FullCustomized -array-add -string NSTouchBarItemIdentifierFlexibleSpace,
-defaults write com.apple.controlstrip FullCustomized -array-add -string "com.apple.system.group.media",
-defaults write com.apple.controlstrip FullCustomized -array-add -string NSTouchBarItemIdentifierFlexibleSpace,
-defaults write com.apple.controlstrip FullCustomized -array-add -string "com.apple.system.screen-lock",
-defaults write com.apple.controlstrip FullCustomized -array-add -string "com.apple.system.notification-center"
+defaults write com.apple.controlstrip FullCustomized '(
+    "com.apple.system.brightness",
+    "com.apple.system.night-shift",
+    NSTouchBarItemIdentifierFlexibleSpace,
+    "com.apple.system.volume",
+    "com.apple.system.mute",
+    NSTouchBarItemIdentifierFlexibleSpace,
+    "com.apple.system.group.media",
+    NSTouchBarItemIdentifierFlexibleSpace,
+    "com.apple.system.screen-lock",
+    "com.apple.system.notification-center"
+)'
 
-echo 'Expaned control strip'
+echo 'Expaned control strip by default'
 defaults write com.apple.touchbar.agent PresentationModeGlobal -string "fullControlStrip"
