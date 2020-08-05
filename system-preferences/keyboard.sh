@@ -23,3 +23,17 @@ defaults write -g ApplePressAndHoldEnabled -bool false
 echo 'Set a blazingly fast keyboard repeat rate'
 defaults write -g KeyRepeat -int 2
 defaults write -g InitialKeyRepeat -int 15
+
+echo 'Set touchbar(control strip)'
+
+defaults delete com.apple.controlstrip FullCustomized
+defaults write com.apple.controlstrip FullCustomized -array-add -string "com.apple.system.brightness",
+defaults write com.apple.controlstrip FullCustomized -array-add -string "com.apple.system.night-shift",
+defaults write com.apple.controlstrip FullCustomized -array-add -string NSTouchBarItemIdentifierFlexibleSpace,
+defaults write com.apple.controlstrip FullCustomized -array-add -string "com.apple.system.volume",
+defaults write com.apple.controlstrip FullCustomized -array-add -string "com.apple.system.mute",
+defaults write com.apple.controlstrip FullCustomized -array-add -string NSTouchBarItemIdentifierFlexibleSpace,
+defaults write com.apple.controlstrip FullCustomized -array-add -string "com.apple.system.group.media",
+defaults write com.apple.controlstrip FullCustomized -array-add -string NSTouchBarItemIdentifierFlexibleSpace,
+defaults write com.apple.controlstrip FullCustomized -array-add -string "com.apple.system.screen-lock",
+defaults write com.apple.controlstrip FullCustomized -array-add -string "com.apple.system.notification-center"
