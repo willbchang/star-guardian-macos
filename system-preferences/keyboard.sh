@@ -60,3 +60,5 @@ echo 'Disable shortcuts to "Show Finder search window"'
 /usr/libexec/PlistBuddy -c "set :AppleSymbolicHotKeys:64:enabled false" ~/Library/Preferences/com.apple.symbolichotkeys.plist
 
 # Input Sources
+echo 'Disable "Show Input menu in menu bar"'
+defaults write com.apple.TextInputMenu visible -bool false
