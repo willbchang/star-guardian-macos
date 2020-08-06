@@ -46,3 +46,6 @@ echo 'Disable "Select the previous input source"'
 
 echo 'Disable "Select next source in input menu"'
 /usr/libexec/PlistBuddy -c "set :AppleSymbolicHotKeys:61:enabled false" ~/Library/Preferences/com.apple.symbolichotkeys.plist
+
+echo 'Disable "Show Spotlight Search"'
+/usr/libexec/PlistBuddy -c "set :AppleSymbolicHotKeys:64:enabled false" ~/Library/Preferences/com.apple.symbolichotkeys.plist
