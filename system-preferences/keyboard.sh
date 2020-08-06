@@ -41,11 +41,11 @@ defaults write com.apple.controlstrip FullCustomized '(
 echo 'Expaned control strip by default'
 defaults write com.apple.touchbar.agent PresentationModeGlobal -string "fullControlStrip"
 
-echo 'Disable "Select the previous input source"'
+echo 'Disable shortcuts to "Select the previous input source"'
 /usr/libexec/PlistBuddy -c "set :AppleSymbolicHotKeys:60:enabled false" ~/Library/Preferences/com.apple.symbolichotkeys.plist
 
-echo 'Disable "Select next source in input menu"'
+echo 'Disable shortcuts to "Select next source in input menu"'
 /usr/libexec/PlistBuddy -c "set :AppleSymbolicHotKeys:61:enabled false" ~/Library/Preferences/com.apple.symbolichotkeys.plist
 
-echo 'Disable "Show Spotlight Search"'
+echo 'Disable shortcuts to "Show Spotlight Search"'
 /usr/libexec/PlistBuddy -c "set :AppleSymbolicHotKeys:64:enabled false" ~/Library/Preferences/com.apple.symbolichotkeys.plist
