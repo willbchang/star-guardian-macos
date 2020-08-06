@@ -49,3 +49,6 @@ echo 'Disable shortcuts to "Select next source in input menu"'
 
 echo 'Disable shortcuts to "Show Spotlight Search"'
 /usr/libexec/PlistBuddy -c "set :AppleSymbolicHotKeys:64:enabled false" ~/Library/Preferences/com.apple.symbolichotkeys.plist
+
+echo 'Disable shortcuts to "Show Finder search window"'
+/usr/libexec/PlistBuddy -c "set :AppleSymbolicHotKeys:64:enabled false" ~/Library/Preferences/com.apple.symbolichotkeys.plist
