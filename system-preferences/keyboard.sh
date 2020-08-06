@@ -43,3 +43,6 @@ defaults write com.apple.touchbar.agent PresentationModeGlobal -string "fullCont
 
 echo 'Disable "Select the previous input source"'
 /usr/libexec/PlistBuddy -c "set :AppleSymbolicHotKeys:60:enabled false" ~/Library/Preferences/com.apple.symbolichotkeys.plist
+
+echo 'Disable "Select next source in input menu"'
+/usr/libexec/PlistBuddy -c "set :AppleSymbolicHotKeys:61:enabled false" ~/Library/Preferences/com.apple.symbolichotkeys.plist
