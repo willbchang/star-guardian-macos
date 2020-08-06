@@ -40,3 +40,6 @@ defaults write com.apple.controlstrip FullCustomized '(
 
 echo 'Expaned control strip by default'
 defaults write com.apple.touchbar.agent PresentationModeGlobal -string "fullControlStrip"
+
+echo 'Disable "Select the previous input source"'
+/usr/libexec/PlistBuddy -c "set :AppleSymbolicHotKeys:60:enabled false" ~/Library/Preferences/com.apple.symbolichotkeys.plist
