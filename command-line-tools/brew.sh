@@ -17,6 +17,6 @@ brew cask install alfred
 brew cask install google-chrome
 brew cask install intellij-idea
 
-echo 'Install font: Inconsolata"
+echo 'Install font: Inconsolata'
 brew tap homebrew/cask-fonts
 brew cask install font-inconsolata
