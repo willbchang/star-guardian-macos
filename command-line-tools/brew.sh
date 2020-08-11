@@ -7,6 +7,8 @@ brew install node
 
 echo 'Install OCR tool: tesseract' 
 brew install tesseract
+echo 'Install a safe deletion tool: trash'
+brew install trash
 
 # This moves to ../applications/emacs.sh
 # echo 'Install emacs-plus27 and dependencies for doom emacs'
