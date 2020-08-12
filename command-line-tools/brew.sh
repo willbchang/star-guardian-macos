@@ -15,8 +15,7 @@ brew install trash
 # brew install emacs-plus@27
 # brew install ripgrep
 
-echo '  Install softwares: Alfred, Google Chrome, IntelliJ IDEA'
-brew cask install alfred
+echo '  Install softwares: Google Chrome, IntelliJ IDEA'
 brew cask install google-chrome
 brew cask install intellij-idea
 
