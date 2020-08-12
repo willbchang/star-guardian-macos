@@ -1,3 +1,4 @@
+echo 'Install terminal theme: Blurred Monokai'
 curl -o ./Blurred\ Monokai\ Theme.terminal -k https://raw.githubusercontent.com/willbchang/terminal-blurred-monokai-theme/master/Blurred%20Monokai%20Theme.terminal
 
 open Blurred\ Monokai\ Theme.terminal

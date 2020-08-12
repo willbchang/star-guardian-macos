@@ -1,12 +1,15 @@
-# Keyboard
-echo 'Disable press-and-hold for keys in favor of key repeat'
+echo "Setup System Preferences -> Keyboard"
+
+
+echo "  Setup Keyboard -> Keyboard"
+echo "    Disable press-and-hold for keys in favor of key repeat"
 defaults write -g ApplePressAndHoldEnabled -bool false
 
-echo 'Set a blazingly fast keyboard repeat rate'
+echo "    Set fast keyboard repeat rate"
 defaults write -g KeyRepeat -int 2
 defaults write -g InitialKeyRepeat -int 15
 
-echo 'Set touchbar(control strip)'
+echo "    Set touchbar(control strip) icons"
 defaults write com.apple.controlstrip FullCustomized '(
     "com.apple.system.brightness",
     "com.apple.system.night-shift",
@@ -20,45 +23,48 @@ defaults write com.apple.controlstrip FullCustomized '(
     "com.apple.system.notification-center"
 )'
 
-echo 'Expaned control strip by default'
+echo "    Expaned control strip by default"
 defaults write com.apple.touchbar.agent PresentationModeGlobal -string "fullControlStrip"
 
-# Text
-echo 'Disable automatic capitalization'
+
+echo "  Setup Keyboard -> Text"
+echo "    Disable automatic capitalization"
 defaults write -g NSAutomaticCapitalizationEnabled -bool false
 
-echo 'Disable smart dashes'
+echo "    Disable smart dashes"
 defaults write -g NSAutomaticDashSubstitutionEnabled -bool false
 
-echo 'Disable automatic period substitution'
+echo "    Disable automatic period substitution"
 defaults write -g NSAutomaticPeriodSubstitutionEnabled -bool false
 
-echo 'Disable smart quotes'
+echo "    Disable smart quotes"
 defaults write -g NSAutomaticQuoteSubstitutionEnabled -bool false
 
-echo 'Disable auto-correct'
+echo "    Disable auto-correct"
 defaults write -g NSAutomaticSpellingCorrectionEnabled -bool false
 
-# Shortcuts
-echo 'Enable full keyboard access for all controls'
+
+echo "  Setup Keyboard -> Shortcuts"
+echo "    Enable full keyboard access for all controls"
 # (e.g. enable Tab in modal dialogs)
 defaults write -g AppleKeyboardUIMode -int 3
 
-echo 'Disable shortcuts to "Turn Dock Hiding On/Off"'
+echo "    Disable shortcuts to Turn Dock Hiding On/Off"
 /usr/libexec/PlistBuddy -c "set :AppleSymbolicHotKeys:52:enabled false" ~/Library/Preferences/com.apple.symbolichotkeys.plist
 
-echo 'Disable shortcuts to "Select the previous input source"'
+echo "    Disable shortcuts to Select the previous input source"
 /usr/libexec/PlistBuddy -c "set :AppleSymbolicHotKeys:60:enabled false" ~/Library/Preferences/com.apple.symbolichotkeys.plist
 
-echo 'Disable shortcuts to "Select next source in input menu"'
+echo "    Disable shortcuts to Select next source in input menu"
 /usr/libexec/PlistBuddy -c "set :AppleSymbolicHotKeys:61:enabled false" ~/Library/Preferences/com.apple.symbolichotkeys.plist
 
-echo 'Disable shortcuts to "Show Spotlight Search"'
+echo "    Disable shortcuts to Show Spotlight Search"
 /usr/libexec/PlistBuddy -c "set :AppleSymbolicHotKeys:64:enabled false" ~/Library/Preferences/com.apple.symbolichotkeys.plist
 
-echo 'Disable shortcuts to "Show Finder search window"'
+echo "    Disable shortcuts to Show Finder search window"
 /usr/libexec/PlistBuddy -c "set :AppleSymbolicHotKeys:65:enabled false" ~/Library/Preferences/com.apple.symbolichotkeys.plist
 
-# Input Sources
-echo 'Disable "Show Input menu in menu bar"'
+
+echo "  Setup Keyboard -> Input Sources"
+echo "    Disable Show Input menu in menu bar"
 defaults write com.apple.TextInputMenu visible -bool false

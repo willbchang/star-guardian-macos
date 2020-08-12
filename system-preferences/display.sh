@@ -1,4 +1,6 @@
-# Enable Night Shift
+echo "Setup System Preferences -> Display"
+
+echo "  Enable Night Shift"
 osascript -e 'tell application "System Preferences"
 	activate
 	set current pane to pane "com.apple.preference.displays"
