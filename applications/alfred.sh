@@ -21,3 +21,8 @@ echo "  Install Alfred Workflow: Search Selection"
 curl -LOSs $(get_latest_release "willbchang/alfred-search-selection")
 open Search-Selection.alfredworkflow
 trash Search-Selection.alfredworkflow
+
+echo "  Install Alfred Workflow: GitHub Workflow"
+curl -LOSs $(get_latest_release "gharlan/alfred-github-workflow")
+open github.alfredworkflow
+trash github.alfredworkflow
