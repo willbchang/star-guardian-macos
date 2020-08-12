@@ -10,3 +10,9 @@ get_latest_release() {
 echo "  Install Alfred Workflow: Open in Editor"
 curl -LOSs $(get_latest_release "willbchang/alfred-open-in-editor")
 open Open-in-Editor.alfredworkflow
+trash Open-in-Editor.alfredworkflow
+
+echo "  Install Alfred Workflow: Run in Terminal"
+curl -LOSs $(get_latest_release "willbchang/alfred-run-in-terminal")
+open Run-in-Terminal.alfredworkflow
+trash Run-in-Terminal.alfredworkflow
