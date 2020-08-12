@@ -8,4 +8,5 @@ get_latest_release() {
 }
 
 echo "  Install Alfred Workflow: Open in Editor"
-curl -O -s $(get_latest_release "willbchang/alfred-open-in-editor")
+curl -LOSs $(get_latest_release "willbchang/alfred-open-in-editor")
+open Open-in-Editor.alfredworkflow
