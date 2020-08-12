@@ -16,3 +16,8 @@ echo "  Install Alfred Workflow: Run in Terminal"
 curl -LOSs $(get_latest_release "willbchang/alfred-run-in-terminal")
 open Run-in-Terminal.alfredworkflow
 trash Run-in-Terminal.alfredworkflow
+
+echo "  Install Alfred Workflow: Search Selection"
+curl -LOSs $(get_latest_release "willbchang/alfred-search-selection")
+open Search-Selection.alfredworkflow
+trash Search-Selection.alfredworkflow
