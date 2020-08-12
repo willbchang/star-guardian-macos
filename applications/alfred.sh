@@ -1,5 +1,5 @@
 echo "Install Alfred from brew"
-brew cask install aflred
+brew cask install alfred
 
 get_latest_release() {
   curl --silent "https://api.github.com/repos/$1/releases/latest" | # Get latest release from GitHub api
