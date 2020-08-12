@@ -1,2 +1,3 @@
-echo 'Enable tap to click'
+echo "Setup System Preferences -> Trackpad"
+echo "  Enable tap to click"
 defaults write com.apple.AppleMultitouchTrackpad Clicking -bool true
