@@ -11,13 +11,13 @@ defaults write -g InitialKeyRepeat -int 15
 
 echo "    Set touchbar(control strip) icons"
 defaults write com.apple.controlstrip FullCustomized '(
-    "com.apple.system.brightness",
-    "com.apple.system.night-shift",
+    "com.apple.system.group.media",
     NSTouchBarItemIdentifierFlexibleSpace,
     "com.apple.system.volume",
     "com.apple.system.mute",
     NSTouchBarItemIdentifierFlexibleSpace,
-    "com.apple.system.group.media",
+    "com.apple.system.brightness",
+    "com.apple.system.night-shift",
     NSTouchBarItemIdentifierFlexibleSpace,
     "com.apple.system.screen-lock",
     "com.apple.system.notification-center"
