@@ -22,7 +22,14 @@ curl -LOSs $(get_latest_release "willbchang/alfred-search-selection")
 open Search-Selection.alfredworkflow
 trash Search-Selection.alfredworkflow
 
-echo "  Install Alfred Workflow: GitHub Workflow"
+echo "  Install Alfred Workflow: GitHub"
 curl -LOSs $(get_latest_release "gharlan/alfred-github-workflow")
 open github.alfredworkflow
 trash github.alfredworkflow
+
+echo "  Install Alfred Workflow: OCR Screencapture"
+curl -LOSs https://raw.githubusercontent.com/BlackwinMin/alfred-gallery/master/OCR%20Screencapture/OCR%20Screencapture.alfredworkflow
+echo "  Install Dependency: tesseract"
+brew install tesseract
+open OCR%20Screencapture.alfredworkflow
+trash OCR%20Screencapture.alfredworkflow
