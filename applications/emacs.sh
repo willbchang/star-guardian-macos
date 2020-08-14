@@ -1,6 +1,8 @@
-echo 'Install latest emacs-plus and dependencies for doom emacs'
+echo 'Install latest emacs-plus '
 brew tap d12frosted/emacs-plus
 brew install emacs-plus
+
+echo '  Install doom emacs dependency: ripgrep'
 brew install ripgrep
 
 echo '  Install doom emacs'
