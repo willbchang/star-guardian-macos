@@ -11,6 +11,5 @@ git clone --depth 1 https://github.com/hlissner/doom-emacs ~/.emacs.d
 ~/.emacs.d/bin/doom install
 
 echo " Setup doom emacs for macos"
-curl -LOSs https://raw.githubusercontent.com/willbchang/macos-emacs-doom.d/master/README.org
-mv README.org ~/.doom.d/README.org
+curl -Sso ~/.doom.d/README.org https://raw.githubusercontent.com/willbchang/macos-emacs-doom.d/master/README.org
 echo "(org-babel-load-file \"~/.doom.d/README.org\")" >> ~/.doom.d/config.el
