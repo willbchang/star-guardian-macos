@@ -1,4 +1,5 @@
-echo 'Install Oh-My-Zsh'
+echo 'Command Line Tool -> Zsh Configuration Mangament Tool: Oh-My-Zsh'
+echo '  Install Oh-My-Zsh'
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 echo '  Install Oh-My-Zsh plugin: Zsh Autosuggestions'

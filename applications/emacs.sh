@@ -1,4 +1,4 @@
-echo "Applications -> Emacs"
+echo "Application -> Text Editor: Emacs"
 echo "  Install emacs-plus "
 brew tap d12frosted/emacs-plus
 brew install emacs-plus

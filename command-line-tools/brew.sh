@@ -1,4 +1,5 @@
-echo 'Install package manager: Homebrew'
+echo "Command Line Tool -> Package Manager: Homebrew"
+echo '  Install package manager: Homebrew'
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 
 echo '  Install runtime environments: Ruby'
