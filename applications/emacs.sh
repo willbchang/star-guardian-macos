@@ -1,5 +1,5 @@
-echo 'Install emacs-plus27 and dependencies for doom emacs'
-brew install emacs-plus@27
+echo 'Install latest emacs-plus and dependencies for doom emacs'
+brew install emacs-plus
 brew install ripgrep
 
 echo '  Install doom emacs'
