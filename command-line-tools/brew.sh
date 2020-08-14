@@ -1,9 +1,8 @@
 echo 'Install package manager: Homebrew'
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 
-echo '  Install runtime environments: Ruby, NodeJS'
+echo '  Install runtime environments: Ruby'
 brew install ruby
-brew install node
 
 echo '  Install OCR tool: tesseract'
 brew install tesseract
