@@ -2,15 +2,15 @@ echo "Install Alfred from brew"
 brew cask install alfred
 
 get_latest_release_download_url() {
-  curl --silent "https://api.github.com/repos/$1/releases/latest" |# Get latest release from GitHub api
-    grep '"browser_download_url":' |                                            # Get tag line
-    sed -E 's/.*"([^"]+)".*/\1/'                                    # Pluck JSON value
+  curl --silent "https://api.github.com/repos/$1/releases/latest" |
+    grep '"browser_download_url":' |
+    sed -E 's/.*"([^"]+)".*/\1/'
 }
 
 get_latest_release_file_name() {
-  curl --silent "https://api.github.com/repos/$1/releases/latest" | # Get latest release from GitHub api
-    grep '"name":' |                                            # Get tag line
-    sed -E 's/.*"([^"]+)".*/\1/'                                    # Pluck JSON value
+  curl --silent "https://api.github.com/repos/$1/releases/latest" |
+    grep '"name":' |
+    sed -E 's/.*"([^"]+)".*/\1/'
 }
 
 import_alfred_workflow() {
