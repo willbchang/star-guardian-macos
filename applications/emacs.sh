@@ -1,4 +1,5 @@
-echo 'Install latest emacs-plus '
+echo 'Applications -> Emacs'
+echo '  Install emacs-plus '
 brew tap d12frosted/emacs-plus
 brew install emacs-plus
 
