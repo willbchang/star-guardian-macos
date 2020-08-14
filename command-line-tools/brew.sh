@@ -14,8 +14,7 @@ brew install trash
 # brew install emacs-plus@27
 # brew install ripgrep
 
-echo '  Install softwares: Google Chrome, IntelliJ IDEA'
-brew cask install google-chrome
+echo '  Install softwares: IntelliJ IDEA'
 brew cask install intellij-idea
 
 echo '  Install font: Inconsolata'
