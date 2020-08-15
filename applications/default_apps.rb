@@ -84,7 +84,7 @@ content_types_for_browser = {
   xhtml: 'public.xhtml'
 }
 
-editor = 'com.jetbrains.rubymine'
+editor = 'org.gnu.Emacs '
 browser = 'org.mozilla.firefoxdeveloperedition'
 xmls = create_content_type_xmls(content_types_for_browser, browser) +
        create_content_type_xmls(content_types_for_editor, editor) +
