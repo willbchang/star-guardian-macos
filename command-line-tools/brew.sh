@@ -2,6 +2,9 @@ echo "Command Line Tool -> Package Manager: Homebrew"
 echo '  Install package manager: Homebrew'
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 
+echo '  Install brew tool: rmtree'
+brew tap beeftornado/rmtree
+
 echo '  Install runtime environments: Ruby'
 brew install ruby
 
