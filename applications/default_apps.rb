@@ -85,7 +85,7 @@ content_types_for_browser = {
 }
 
 editor = 'org.gnu.Emacs '
-browser = 'org.mozilla.firefoxdeveloperedition'
+browser = 'com.google.chrome'
 xmls = create_content_type_xmls(content_types_for_browser, browser) +
        create_content_type_xmls(content_types_for_editor, editor) +
        create_content_tag_xmls(content_tags_for_editor, editor) +
