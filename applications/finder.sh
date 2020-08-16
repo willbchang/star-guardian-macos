@@ -8,3 +8,6 @@ defaults write com.apple.finder ShowExternalHardDrivesOnDesktop -bool true
 
 echo "    Hide icons for CDs, DVDs on the desktop"
 defaults write com.apple.finder ShowRemovableMediaOnDesktop -bool false
+
+echo "    Hide icons for Connected servers on the desktop"
+defaults write com.apple.finder ShowMountedServersOnDesktop -bool false
