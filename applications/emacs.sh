@@ -14,5 +14,8 @@ echo "  Setup doom emacs for macos"
 curl -Sso ~/.doom.d/README.org https://raw.githubusercontent.com/willbchang/macos-emacs-doom.d/master/README.org
 echo "(org-babel-load-file \"~/.doom.d/README.org\")" >> ~/.doom.d/config.el
 
-echo "  Install emacs vterm dependency: cmake"
+echo "  Install vterm dependency: cmake"
 brew install cmake
+
+echo "  Rebuild doom emacs packages"
+~/.emacs.d/bin/doom sync && ~/.emacs.d/bin/doom build
