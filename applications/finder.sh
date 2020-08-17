@@ -14,4 +14,8 @@ defaults write com.apple.finder ShowMountedServersOnDesktop -bool false
 
 
 echo "  Finder -> Sidebar"
-brew cask install myside
+echo "    Install tool to manage Finder sidebar: mysides"
+brew cask install mysides
+
+echo "    Remove Desktop from sidebar"
+mysides remove Desktop
