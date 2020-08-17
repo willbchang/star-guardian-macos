@@ -22,3 +22,6 @@ mysides remove Desktop
 
 echo "    Remove Recents from sidebar"
 mysides remove Recents
+
+echo "    Add Home directory to sidebar"
+mysides add $(whoami) file:///Users/$(whoami)
