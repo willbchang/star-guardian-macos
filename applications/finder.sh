@@ -11,3 +11,7 @@ defaults write com.apple.finder ShowRemovableMediaOnDesktop -bool false
 
 echo "    Hide icons for Connected servers on the desktop"
 defaults write com.apple.finder ShowMountedServersOnDesktop -bool false
+
+
+echo "  Finder -> Sidebar"
+brew cask install myside
