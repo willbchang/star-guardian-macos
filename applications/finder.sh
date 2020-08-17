@@ -19,3 +19,6 @@ brew cask install mysides
 
 echo "    Remove Desktop from sidebar"
 mysides remove Desktop
+
+echo "    Remove Recents from sidebar"
+mysides remove Recents
