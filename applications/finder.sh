@@ -52,3 +52,5 @@ defaults write com.apple.finder _FXSortFoldersFirst -bool true
 echo "    Keep folders on top on Desktop when sorting by name"
 defaults write com.apple.finder _FXSortFoldersFirstOnDesktop -bool true
 
+echo "    When performing a search, Search the Current Folder"
+defaults write com.apple.finder FXDefaultSearchScope -string "SCcf"
