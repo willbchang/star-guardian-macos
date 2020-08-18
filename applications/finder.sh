@@ -36,3 +36,6 @@ defaults write -g AppleShowAllExtensions -bool true
 
 echo "    Disable warning before changing an extension"
 defaults write com.apple.finder FXEnableExtensionChangeWarning -bool false
+
+echo "    Disable warning before removing from iCloud Drive" 
+defaults write com.apple.finder FXEnableRemoveFromICloudDriveWarning -bool false
