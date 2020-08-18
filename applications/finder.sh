@@ -12,6 +12,27 @@ defaults write com.apple.finder ShowRemovableMediaOnDesktop -bool false
 echo "    Hide icons for Connected servers on the desktop"
 defaults write com.apple.finder ShowMountedServersOnDesktop -bool false
 
+echo "    New Finder windows show Home directory"
+# User's Mac
+#   NewWindowTarget: PfCm
+# Macintosh HD - Data
+#   NewWindowTarget: PfVo
+#   NewWindowTargetPath: file:///
+# Desktop:
+#   NewWindowTarget: PfDe
+#   NewWindowTargetPath: file:///Users/$(whoami)/Desktop/
+# Documents:
+#   NewWindowTarget: PfDo
+#   NewWindowTargetPath: file:///Users/$(whoami)/Documents/
+# iCloud Drive:
+#   NewWindowTarget: PfID
+#   NewWindowTargetPath: file:///Users/$(whoami)/Library/Mobile%20Documents/com~apple~CloudDocs/
+# Recents:
+#   NewWindowTarget: PfAF
+#   NewWindowTargetPath: file:///System/Library/CoreServices/Finder.app/Contents/Resources/MyLibraries/myDocuments.cannedSearch
+# For other paths, use "PfLo" and "file:///full/path/here/"
+defaults write com.apple.finder NewWindowTarget -string "PfHm"
+defaults write com.apple.finder NewWindowTargetPath -string "file://${HOME}/"
 
 echo "  Finder -> Sidebar"
 echo "    Install tool to manage Finder sidebar: mysides"
@@ -54,3 +75,5 @@ defaults write com.apple.finder _FXSortFoldersFirstOnDesktop -bool true
 
 echo "    When performing a search, Search the Current Folder"
 defaults write com.apple.finder FXDefaultSearchScope -string "SCcf"
+
+
