@@ -34,6 +34,9 @@ echo "    New Finder windows show Home directory"
 defaults write com.apple.finder NewWindowTarget -string "PfHm"
 defaults write com.apple.finder NewWindowTargetPath -string "file://${HOME}/"
 
+echo "    Open folders in tabs instead of new windows"
+defaults write com.apple.finder FinderSpawnTab -bool true
+
 echo "  Finder -> Sidebar"
 echo "    Install tool to manage Finder sidebar: mysides"
 brew cask install mysides
