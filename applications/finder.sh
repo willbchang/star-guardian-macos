@@ -33,3 +33,6 @@ osascript finder-sidebar.scpt
 echo "  Finder -> Advanced"
 echo "    Show all file name extensions"
 defaults write -g AppleShowAllExtensions -bool true
+
+echo "    Disable warning before changing an extension"
+defaults write com.apple.finder FXEnableExtensionChangeWarning -bool false
