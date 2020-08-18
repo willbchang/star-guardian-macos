@@ -45,3 +45,6 @@ defaults write com.apple.finder WarnOnEmptyTrash -bool false
 
 echo "    Enable remove items from the Trash after 30 days"
 defaults write com.apple.finder FXRemoveOldTrashItems -bool true
+
+echo "    Keep folders on top in windows when sorting by name"
+defaults write com.apple.finder _FXSortFoldersFirst -bool true
