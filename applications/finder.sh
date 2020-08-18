@@ -1,4 +1,12 @@
 echo "Application -> File Manager: Finder"
+echo "  Finder -> UI"
+echo "    Use column view in all Finder windows by default"
+# icnv: Icon View        (Command + 1)
+# Nlsv: List View        (Command + 2)
+# clmv: Column View      (Command + 3)
+# Flwv: Cover Flow View  (Command + 4)
+defaults write com.apple.finder FXPreferredViewStyle -string "clmv"
+
 echo "  Finder -> General"
 echo "    Hide icons for Hard disks on the desktop"
 defaults write com.apple.finder ShowHardDrivesOnDesktop -bool false
