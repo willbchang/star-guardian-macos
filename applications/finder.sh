@@ -39,3 +39,6 @@ defaults write com.apple.finder FXEnableExtensionChangeWarning -bool false
 
 echo "    Disable warning before removing from iCloud Drive" 
 defaults write com.apple.finder FXEnableRemoveFromICloudDriveWarning -bool false
+
+echo "    Disable warning before emptying the Trash"
+defaults write com.apple.finder WarnOnEmptyTrash -bool false
