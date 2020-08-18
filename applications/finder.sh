@@ -28,3 +28,8 @@ mysides add $(whoami) file:///Users/$(whoami)
 
 echo "    Remove Recent Tags from sidebar"
 osascript finder-sidebar.scpt
+
+
+echo "  Finder -> Advanced"
+echo "    Show all file name extensions"
+defaults write -g AppleShowAllExtensions -bool true
