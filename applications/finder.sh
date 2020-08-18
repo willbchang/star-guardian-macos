@@ -42,3 +42,6 @@ defaults write com.apple.finder FXEnableRemoveFromICloudDriveWarning -bool false
 
 echo "    Disable warning before emptying the Trash"
 defaults write com.apple.finder WarnOnEmptyTrash -bool false
+
+echo "    Enable remove items from the Trash after 30 days"
+defaults write com.apple.finder FXRemoveOldTrashItems -bool true
