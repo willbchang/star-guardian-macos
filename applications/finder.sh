@@ -7,6 +7,11 @@ echo "    Use column view in all Finder windows by default"
 # Flwv: Cover Flow View  (Command + 4)
 defaults write com.apple.finder FXPreferredViewStyle -string "clmv"
 
+echo "    Remove toolbar icon"
+/usr/libexec/PlistBuddy -c "Delete :NSToolbar\ Configuration\ Browser:TB\ Item\ Identifiers" ~/Library/Preferences/com.apple.finder.plist 
+/usr/libexec/PlistBuddy -c "Add :NSToolbar\ Configuration\ Browser:TB\ Item\ Identifiers array" ~/Library/Preferences/com.apple.finder.plist
+
+
 echo "  Finder -> General"
 echo "    Hide icons for Hard disks on the desktop"
 defaults write com.apple.finder ShowHardDrivesOnDesktop -bool false
@@ -60,7 +65,6 @@ mysides add $(whoami) file:///Users/$(whoami)
 
 echo "    Remove Recent Tags from sidebar"
 osascript finder-sidebar.scpt
-
 
 echo "  Finder -> Advanced"
 echo "    Show all file name extensions"
