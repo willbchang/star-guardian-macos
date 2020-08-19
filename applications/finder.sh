@@ -108,3 +108,8 @@ defaults write -g com.apple.springing.enabled -bool true
 
 echo "    Remove the spring loading delay for directories"
 defaults write -g com.apple.springing.delay -float 0
+
+echo "    Disable disk image verification"
+defaults write com.apple.frameworks.diskimages skip-verify -bool true
+defaults write com.apple.frameworks.diskimages skip-verify-locked -bool true
+defaults write com.apple.frameworks.diskimages skip-verify-remote -bool true
