@@ -101,3 +101,8 @@ echo "    When performing a search, Search the Current Folder"
 defaults write com.apple.finder FXDefaultSearchScope -string "SCcf"
 
 
+echo "  Finder -> Hidden Features"
+echo "    Enable spring loading for directories"
+# What is spring loading: https://www.youtube.com/watch?v=F9kdAxGe9SE
+defaults write -g com.apple.springing.enabled -bool true
+
