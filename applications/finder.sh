@@ -106,3 +106,5 @@ echo "    Enable spring loading for directories"
 # What is spring loading: https://www.youtube.com/watch?v=F9kdAxGe9SE
 defaults write -g com.apple.springing.enabled -bool true
 
+echo "    Remove the spring loading delay for directories"
+defaults write -g com.apple.springing.delay -float 0
