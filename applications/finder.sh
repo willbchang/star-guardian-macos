@@ -63,6 +63,9 @@ mysides remove Recents
 echo "    Add Home directory to sidebar"
 mysides add $(whoami) file:///Users/$(whoami)
 
+echo "    Add ~/Document/Code to sidebar"
+mysides add Code file:///Users/$(whoami)/Documents/Code
+
 echo "    Remove Recent Tags from sidebar"
 osascript finder-sidebar.scpt
 
