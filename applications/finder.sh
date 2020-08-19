@@ -69,6 +69,9 @@ mysides add Code file:///Users/$(whoami)/Documents/Code
 echo "    Add ~/Document/Book to sidebar"
 mysides add Code file:///Users/$(whoami)/Documents/Book
 
+echo "    Add ~/Document/Score to sidebar"
+mysides add Code file:///Users/$(whoami)/Documents/Score
+
 echo "    Remove Recent Tags from sidebar"
 osascript finder-sidebar.scpt
 
