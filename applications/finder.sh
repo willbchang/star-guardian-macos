@@ -127,3 +127,8 @@ defaults write com.apple.finder FXInfoPanesExpanded -dict \
 	General -bool true \
 	OpenWith -bool true \
 	Privileges -bool true
+
+echo "  Finder -> Home Directory"
+echo "    Hide unused home directory: Applications Movies, Music, Public, Pictures"
+chflags hidden ~/Applications ~/Movies ~/Music ~/Public ~/Pictures                        
+
