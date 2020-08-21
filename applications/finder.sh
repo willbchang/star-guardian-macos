@@ -73,7 +73,7 @@ echo "    Add ~/Document/Score to sidebar"
 mysides add Code file:///Users/$(whoami)/Documents/Score
 
 echo "    Remove Recent Tags from sidebar"
-osascript finder-sidebar.scpt
+defaults write com.apple.finder ShowRecentTags -bool false
 
 echo "  Finder -> Advanced"
 echo "    Show all file name extensions"
