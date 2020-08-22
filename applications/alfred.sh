@@ -15,6 +15,11 @@ defaults write $default_results showPreferences -bool true
 echo "      Hide Contacts in Default Results"
 defaults write $default_results showContacts -bool false
 
+echo "      Hide Folders in Default Results"
+defaults write $default_results showFolders -bool false
+
+
+
 echo "  Alfred -> Install Workflows"
 get_latest_release_download_url() {
   curl --silent "https://api.github.com/repos/$1/releases/latest" |
