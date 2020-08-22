@@ -18,6 +18,9 @@ defaults write $default_results showContacts -bool false
 echo "      Hide Folders in Default Results"
 defaults write $default_results showFolders -bool false
 
+echo "      Hide Documents in Default Results"
+defaults write $default_results showDocuments -bool false
+
 
 
 echo "  Alfred -> Install Workflows"
