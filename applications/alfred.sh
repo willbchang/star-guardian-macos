@@ -21,6 +21,9 @@ defaults write $default_results showFolders -bool false
 echo "      Hide Documents in Default Results"
 defaults write $default_results showDocuments -bool false
 
+echo "      Hide Text Files in Default Results"
+defaults write $default_results showTextFiles -bool false
+
 
 
 echo "  Alfred -> Install Workflows"
