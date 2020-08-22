@@ -33,7 +33,8 @@ defaults write $default_results showArchives -bool false
 echo "      Hide Apple Scripts in Default Results"
 defaults write $default_results showAppleScripts -bool false
 
-
+echo "      Disable Search all file types"
+defaults write $default_results showAll -bool false
 
 echo "  Alfred -> Install Workflows"
 get_latest_release_download_url() {
