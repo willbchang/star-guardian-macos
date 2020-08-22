@@ -27,6 +27,8 @@ defaults write $default_results showTextFiles -bool false
 echo "      Hide Images in Default Results"
 defaults write $default_results showImages -bool false
 
+echo "      Hide Archives in Default Results"
+defaults write $default_results showArchives -bool false
 
 
 
