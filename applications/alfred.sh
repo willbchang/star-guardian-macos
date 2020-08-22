@@ -8,9 +8,12 @@ echo "  Your alfred preferences path is ${alfred_preferences_path}"
 
 echo "    Features -> Default Results"
 default_results="${alfred_preferences_path}/preferences/features/defaultresults/prefs.plist"
+
 echo "      Show System Preferences in Default Results"
 defaults write $default_results showPreferences -bool true
 
+echo "      Hide Contacts in Default Results"
+defaults write $default_results showContacts -bool false
 
 echo "  Alfred -> Install Workflows"
 get_latest_release_download_url() {
