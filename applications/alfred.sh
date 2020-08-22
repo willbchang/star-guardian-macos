@@ -30,6 +30,9 @@ defaults write $default_results showImages -bool false
 echo "      Hide Archives in Default Results"
 defaults write $default_results showArchives -bool false
 
+echo "      Hide Apple Scripts in Default Results"
+defaults write $default_results showAppleScripts -bool false
+
 
 
 echo "  Alfred -> Install Workflows"
