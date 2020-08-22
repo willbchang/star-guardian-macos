@@ -102,6 +102,9 @@ defaults write com.apple.finder FXDefaultSearchScope -string "SCcf"
 
 
 echo "  Finder -> Hidden Features"
+echo "    Disable Finder Sound"
+defaults write com.apple.finder FinderSounds 0
+
 echo "    Enable spring loading for directories"
 # What is spring loading: https://www.youtube.com/watch?v=F9kdAxGe9SE
 defaults write -g com.apple.springing.enabled -bool true
