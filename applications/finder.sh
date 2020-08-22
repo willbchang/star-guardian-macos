@@ -129,6 +129,12 @@ defaults write com.apple.finder FXInfoPanesExpanded -dict \
 	Privileges -bool true
 
 echo "  Finder -> Home Directory"
-echo "    Hide unused home directory: Applications Movies, Music, Public, Pictures"
+echo "    Hide unused home directory: Applications, Movies, Music, Public, Pictures"
 chflags hidden ~/Applications ~/Movies ~/Music ~/Public ~/Pictures                        
 
+# This doesn't work for now.
+# echo "    Show frequent visited home files and directories: .config, .doom.d, Library, .zshrc"
+# chflags nohidden ~/.config ~/.doom.d ~/Library ~/.zshrc
+echo "    Unhide ~/Library"
+xattr -d com.apple.FinderInfo  ~/Library 2> /dev/null
+chflags nohidden ~/Library
