@@ -2,6 +2,16 @@ echo "Install Alfred from brew"
 brew cask install alfred
 
 
+echo "  Alfred -> Setup Configurations"
+alfred_preferences_path=$(ruby get_alfred_preferences_path.rb)
+echo "  Your alfred preferences path is ${alfred_preferences_path}"
+
+echo "    Features -> Default Results"
+default_results="${alfred_preferences_path}/preferences/features/defaultresults/prefs.plist"
+echo "      Show System Preferences in Default Results"
+defaults write $default_results showPreferences -bool true
+
+
 echo "  Alfred -> Install Workflows"
 get_latest_release_download_url() {
   curl --silent "https://api.github.com/repos/$1/releases/latest" |
