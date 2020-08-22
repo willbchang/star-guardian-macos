@@ -1,6 +1,8 @@
 echo "Install Alfred from brew"
 brew cask install alfred
 
+
+echo "  Alfred -> Install Workflows"
 get_latest_release_download_url() {
   curl --silent "https://api.github.com/repos/$1/releases/latest" |
     grep '"browser_download_url":' |
@@ -29,21 +31,21 @@ install_alfred_workflow() {
   trash $name.alfredworkflow
 }
 
-echo "  Install Alfred Workflow: Open in Editor"
+echo "    Install Alfred Workflow: Open in Editor"
 install_alfred_workflow "willbchang/alfred-open-in-editor"
 
-echo "  Install Alfred Workflow: Run in Terminal"
+echo "    Install Alfred Workflow: Run in Terminal"
 install_alfred_workflow "willbchang/alfred-run-in-terminal"
 
-echo "  Install Alfred Workflow: Search Selection"
+echo "    Install Alfred Workflow: Search Selection"
 install_alfred_workflow "willbchang/alfred-search-selection"
 
-echo "  Install Alfred Workflow: GitHub"
+echo "    Install Alfred Workflow: GitHub"
 install_alfred_workflow "gharlan/alfred-github-workflow"
 
-echo "  Install Alfred Workflow: OCR Screencapture"
+echo "    Install Alfred Workflow: OCR Screencapture"
 curl -LOSs https://raw.githubusercontent.com/BlackwinMin/alfred-gallery/master/OCR%20Screencapture/OCR%20Screencapture.alfredworkflow
-echo "    Install Dependency: tesseract"
+echo "    Install OCR Screencapture Dependency: tesseract"
 brew install tesseract
 open OCR%20Screencapture.alfredworkflow
 import_alfred_workflow
