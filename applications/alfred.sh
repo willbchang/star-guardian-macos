@@ -37,6 +37,13 @@ defaults write $default_results showAll -bool false
 
 
 
+echo "  Alfred -> Features: File Search"
+file_search_path="${alfred_preferences_path}/preferences/features/filesearch"
+
+echo "    Ignore Email in File Search"
+defaults write "${file_search_path}/prefs.plist" ignoreEmail -bool true
+
+
 
 echo "  Alfred -> Workflows"
 get_latest_release_download_url() {
