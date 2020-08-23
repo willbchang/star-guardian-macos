@@ -47,6 +47,9 @@ defaults write "${file_search_path}/prefs.plist" ignoreEmail -bool true
 echo "    Ignore Bookmarks in File Search"
 defaults write "${file_search_path}/prefs.plist" ignoreBookmarks -bool true
 
+echo "    Show Music Files in File Search"
+defaults write "${file_search_path}/prefs.plist" ignoreMusic -bool false
+
 
 
 
