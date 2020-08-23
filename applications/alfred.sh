@@ -1,42 +1,43 @@
 echo "Install Alfred from brew"
 brew cask install alfred
 
-
-echo "  Alfred -> Setup Configurations"
 alfred_preferences_path=$(ruby get_alfred_preferences_path.rb)
 echo "  Your alfred preferences path is ${alfred_preferences_path}"
 
-echo "    Features -> Default Results"
+echo "  Alfred -> Features: Default Results"
 default_results="${alfred_preferences_path}/preferences/features/defaultresults/prefs.plist"
 
-echo "      Show System Preferences in Default Results"
+echo "    Show System Preferences in Default Results"
 defaults write $default_results showPreferences -bool true
 
-echo "      Hide Contacts in Default Results"
+echo "    Hide Contacts in Default Results"
 defaults write $default_results showContacts -bool false
 
-echo "      Hide Folders in Default Results"
+echo "    Hide Folders in Default Results"
 defaults write $default_results showFolders -bool false
 
-echo "      Hide Documents in Default Results"
+echo "    Hide Documents in Default Results"
 defaults write $default_results showDocuments -bool false
 
-echo "      Hide Text Files in Default Results"
+echo "    Hide Text Files in Default Results"
 defaults write $default_results showTextFiles -bool false
 
-echo "      Hide Images in Default Results"
+echo "    Hide Images in Default Results"
 defaults write $default_results showImages -bool false
 
-echo "      Hide Archives in Default Results"
+echo "    Hide Archives in Default Results"
 defaults write $default_results showArchives -bool false
 
-echo "      Hide Apple Scripts in Default Results"
+echo "    Hide Apple Scripts in Default Results"
 defaults write $default_results showAppleScripts -bool false
 
-echo "      Disable Search all file types"
+echo "    Disable Search all file types"
 defaults write $default_results showAll -bool false
 
-echo "  Alfred -> Install Workflows"
+
+
+
+echo "  Alfred -> Workflows"
 get_latest_release_download_url() {
   curl --silent "https://api.github.com/repos/$1/releases/latest" |
     grep '"browser_download_url":' |
