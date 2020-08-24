@@ -53,6 +53,8 @@ defaults write "${file_search_path}/prefs.plist" ignoreMusic -bool false
 echo "    Show Source files in File Search"
 defaults write "${file_search_path}/prefs.plist" ignoreSource -bool false
 
+echo "    Hide Contacts in File Search"
+defaults write "${file_search_path}/prefs.plist" ignoreContacts -bool true
 
 
 
