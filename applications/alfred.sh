@@ -59,6 +59,9 @@ defaults write "${file_search_path}/prefs.plist" ignoreContacts -bool true
 echo "    Hide History in File Search"
 defaults write "${file_search_path}/prefs.plist" ignoreHistory -bool true
 
+echo "    Show Images in File Search"
+defaults write "${file_search_path}/prefs.plist" ignoreImages -bool false
+
 echo "    Hide Calendar in File Search"
 defaults write "${file_search_path}/prefs.plist" ignoreCalendar -bool true
 
