@@ -65,6 +65,9 @@ defaults write "${file_search_path}/prefs.plist" ignoreImages -bool false
 echo "    Hide Calendar in File Search"
 defaults write "${file_search_path}/prefs.plist" ignoreCalendar -bool true
 
+echo "    Hide Messages in File Search"
+defaults write "${file_search_path}/prefs.plist" ignoreMessages -bool true
+
 
 
 echo "  Alfred -> Workflows"
