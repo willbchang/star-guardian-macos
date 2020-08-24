@@ -56,6 +56,9 @@ defaults write "${file_search_path}/prefs.plist" ignoreSource -bool false
 echo "    Hide Contacts in File Search"
 defaults write "${file_search_path}/prefs.plist" ignoreContacts -bool true
 
+echo "    Hide History in File Search"
+defaults write "${file_search_path}/prefs.plist" ignoreHistory -bool true
+
 
 
 echo "  Alfred -> Workflows"
