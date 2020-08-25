@@ -106,6 +106,9 @@ defaults write "${file_search_path}/navigation/prefs.plist" fuzzy -bool true
 echo "    Use ← and → for folder navigation"
 defaults write "${file_search_path}/navigation/prefs.plist" arrowsForFolderNavigation -bool true
 
+echo "    Use ↵ to open folders in Finder"
+defaults write "${file_search_path}/navigation/prefs.plist" returnToOpenFolders -bool true
+
 
 
 
