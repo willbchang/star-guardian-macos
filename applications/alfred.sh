@@ -47,6 +47,9 @@ defaults write "${file_search_path}/prefs.plist" quickSearch -bool true
 echo "    Disable 'open' keyword for Opening Files"
 defaults write "${file_search_path}/open/prefs.plist" enabled -bool false
 
+echo "    Enable 'find' keyword for Revealing Files(open in Finder)"
+defaults write "${file_search_path}/find/prefs.plist" enabled -bool true
+
 echo "    Ignore Email in File Search"
 defaults write "${file_search_path}/prefs.plist" ignoreEmail -bool true
 
