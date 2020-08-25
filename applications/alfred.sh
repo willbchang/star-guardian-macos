@@ -4,7 +4,7 @@ brew cask install alfred
 open -a Alfred\ 4
 echo "\n"
 echo "  Please make sure Alfred has permissions"
-# TODO: Check License in 
+# TODO: Check License in /Users/Will/Library/Application Support/Alfred
 echo "  Please make sure Alfred has Powerpack License"
 read -p "  Press enter to continue "
 
@@ -45,7 +45,7 @@ defaults write $default_results showAll -bool false
 
 
 
-echo "  Alfred -> Features: File Search"
+echo "  Alfred -> Features: File Search -- Search"
 file_search_path="${alfred_preferences_path}/preferences/features/filesearch"
 
 echo "    Enable Quick Search"
