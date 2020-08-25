@@ -50,6 +50,9 @@ defaults write "${file_search_path}/open/prefs.plist" enabled -bool false
 echo "    Enable 'find' keyword for Revealing Files(open in Finder)"
 defaults write "${file_search_path}/find/prefs.plist" enabled -bool true
 
+echo "    Enable 'in' keyword for seaching content in files"
+defaults write "${file_search_path}/in/prefs.plist" enabled -bool true
+
 echo "    Ignore Email in File Search"
 defaults write "${file_search_path}/prefs.plist" ignoreEmail -bool true
 
