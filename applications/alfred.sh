@@ -53,6 +53,9 @@ defaults write "${file_search_path}/find/prefs.plist" enabled -bool true
 echo "    Enable 'in' keyword for seaching content in files"
 defaults write "${file_search_path}/in/prefs.plist" enabled -bool true
 
+echo "    Disable 'tags' keyword for seaching File Tags"
+defaults write "${file_search_path}/tag/prefs.plist" enabled -bool false
+
 echo "    Ignore Email in File Search"
 defaults write "${file_search_path}/prefs.plist" ignoreEmail -bool true
 
