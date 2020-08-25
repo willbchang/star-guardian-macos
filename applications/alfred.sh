@@ -86,7 +86,8 @@ defaults write "${file_search_path}/prefs.plist" ignoreMessages -bool true
 echo "    Show Plist files in File Search"
 defaults write "${file_search_path}/prefs.plist" ignorePlist -bool false
 
-
+echo "    Set Result Limit to 20"
+defaults write "${file_search_path}/prefs.plist" limit -int 0
 
 echo "  Alfred -> Workflows"
 get_latest_release_download_url() {
