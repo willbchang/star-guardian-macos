@@ -103,6 +103,8 @@ echo "  Alfred -> Features: File Search -- Navigation"
 echo "    Enable Fuzzy Search for Filitering"
 defaults write "${file_search_path}/navigation/prefs.plist" fuzzy -bool true
 
+echo "    Use ← and → for folder navigation"
+defaults write "${file_search_path}/navigation/prefs.plist" arrowsForFolderNavigation -bool true
 
 
 
