@@ -96,6 +96,17 @@ defaults write "${file_search_path}/prefs.plist" ignorePlist -bool false
 echo "    Set Result Limit to 20 in File Search"
 defaults write "${file_search_path}/prefs.plist" limit -int 0
 
+
+
+
+echo "  Alfred -> Features: File Search -- Navigation"
+echo "    Enable Fuzzy Search for Filitering"
+defaults write "${file_search_path}/navigation/prefs.plist" fuzzy -bool true
+
+
+
+
+
 echo "  Alfred -> Workflows"
 get_latest_release_download_url() {
   curl --silent "https://api.github.com/repos/$1/releases/latest" |
