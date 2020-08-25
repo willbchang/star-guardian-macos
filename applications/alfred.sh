@@ -44,6 +44,9 @@ file_search_path="${alfred_preferences_path}/preferences/features/filesearch"
 echo "    Enable Quick Search"
 defaults write "${file_search_path}/prefs.plist" quickSearch -bool true
 
+echo "    Disable 'open' keyword for Opening Files"
+defaults write "${file_search_path}/open/prefs.plist" enabled -bool false
+
 echo "    Ignore Email in File Search"
 defaults write "${file_search_path}/prefs.plist" ignoreEmail -bool true
 
