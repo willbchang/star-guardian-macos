@@ -1,6 +1,13 @@
 echo "Install Alfred from brew"
 brew cask install alfred
 
+open -a Alfred\ 4
+echo "\n"
+echo "  Please make sure Alfred has permissions"
+# TODO: Check License in 
+echo "  Please make sure Alfred has Powerpack License"
+read -p "  Press enter to continue "
+
 alfred_preferences_path=$(ruby get_alfred_preferences_path.rb)
 alfred_preferences_path="${alfred_preferences_path:1:-1}" # Strip ""
 echo "  Your alfred preferences path is ${alfred_preferences_path}"
@@ -86,7 +93,7 @@ defaults write "${file_search_path}/prefs.plist" ignoreMessages -bool true
 echo "    Show Plist files in File Search"
 defaults write "${file_search_path}/prefs.plist" ignorePlist -bool false
 
-echo "    Set Result Limit to 20"
+echo "    Set Result Limit to 20 in File Search"
 defaults write "${file_search_path}/prefs.plist" limit -int 0
 
 echo "  Alfred -> Workflows"
