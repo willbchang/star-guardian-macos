@@ -41,6 +41,9 @@ defaults write $default_results showAll -bool false
 echo "  Alfred -> Features: File Search"
 file_search_path="${alfred_preferences_path}/preferences/features/filesearch"
 
+echo "    Enable Quick Search"
+defaults write "${file_search_path}/prefs.plist" quickSearch -bool true
+
 echo "    Ignore Email in File Search"
 defaults write "${file_search_path}/prefs.plist" ignoreEmail -bool true
 
