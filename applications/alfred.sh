@@ -133,14 +133,14 @@ defaults write "${file_search_path}/buffer/prefs.plist" enabled -bool false
 
 
 
-echo "  Alfred -> Features: File Search -- Search"
+echo "  Alfred -> Features: File Search -- Advanced"
 echo "    Enable Escape path on 'Copy path to Clipboard' action"
 defaults write "${file_search_path}/actions/prefs.plist" escapeCopiedPath -bool true
 
 echo "    Disable Run AppleScripts instead of opening"
 defaults write "${file_search_path}/prefs.plist" runAppleScripts -bool false
 
-echo "    Use file type icons for files on external drives"
+echo "    Enable Use file type icons for files on external drives"
 defaults write "${file_search_path}/prefs.plist" fileTypeIconsForExternalFiles -bool true
 
 
