@@ -140,6 +140,8 @@ defaults write "${file_search_path}/actions/prefs.plist" escapeCopiedPath -bool 
 echo "    Disable Run AppleScripts instead of opening"
 defaults write "${file_search_path}/prefs.plist" runAppleScripts -bool false
 
+echo "    Use file type icons for files on external drives"
+defaults write "${file_search_path}/prefs.plist" fileTypeIconsForExternalFiles -bool true
 
 
 
