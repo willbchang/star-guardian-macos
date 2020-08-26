@@ -3,6 +3,10 @@ echo "  Install emacs-plus "
 brew tap d12frosted/emacs-plus
 brew install emacs-plus
 
+echo "  Make an Emacs.app alias to /Applications"
+ln -s /usr/local/opt/emacs-plus/Emacs.app /Applications
+
+
 echo "  Install doom emacs dependency: ripgrep"
 brew install ripgrep
 
