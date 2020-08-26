@@ -123,6 +123,17 @@ defaults write "${file_search_path}/navigation/prefs.plist" previousPathHotkey \
 echo "    Set Previous Path Keywords to 'previous'"
 defaults write "${file_search_path}/navigation/prefs.plist" previousPathKeyword -string "previous"
 
+
+
+
+echo "  Alfred -> Features: File Search -- Buffer"
+echo "    Disable temporary file buffer"
+defaults write "${file_search_path}/buffer/prefs.plist" enabled -bool false
+
+
+
+
+
 echo "  Alfred -> Workflows"
 get_latest_release_download_url() {
   curl --silent "https://api.github.com/repos/$1/releases/latest" |
