@@ -133,6 +133,15 @@ defaults write "${file_search_path}/buffer/prefs.plist" enabled -bool false
 
 
 
+echo "  Alfred -> Features: File Search -- Search"
+echo "    Enable Escape path on 'Copy path to Clipboard' action"
+defaults write "${file_search_path}/actions/prefs.plist" escapeCopiedPath -bool true
+
+
+
+
+
+
 
 echo "  Alfred -> Workflows"
 get_latest_release_download_url() {
