@@ -109,7 +109,16 @@ defaults write "${file_search_path}/navigation/prefs.plist" arrowsForFolderNavig
 echo "    Use ↵ to open folders in Finder"
 defaults write "${file_search_path}/navigation/prefs.plist" returnToOpenFolders -bool true
 
-
+echo "    Disable Previous Path shortcuts"
+defaults write "${file_search_path}/navigation/prefs.plist" previousPathHotkey \
+'	<dict>
+		<key>key</key>
+		<integer>-1</integer>
+		<key>mod</key>
+		<integer>-1</integer>
+		<key>string</key>
+		<string></string>
+	</dict>'
 
 
 echo "  Alfred -> Workflows"
