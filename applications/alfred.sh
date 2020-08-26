@@ -149,6 +149,11 @@ defaults write "${file_search_path}/prefs.plist" touchFolders -bool true
 echo "    Enable Touch aliases after opening them"
 defaults write "${file_search_path}/prefs.plist" touchAliases -bool true
 
+echo "    Set Homde Folder to ~"
+defaults write "${file_search_path}/navigation/prefs.plist" homeFolder -int 0
+
+
+
 
 
 echo "  Alfred -> Workflows"
