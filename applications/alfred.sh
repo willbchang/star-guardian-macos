@@ -143,6 +143,9 @@ defaults write "${file_search_path}/prefs.plist" runAppleScripts -bool false
 echo "    Enable Use file type icons for files on external drives"
 defaults write "${file_search_path}/prefs.plist" fileTypeIconsForExternalFiles -bool true
 
+echo "    Enable Touch Folders after opening them"
+defaults write "${file_search_path}/prefs.plist" touchFolders -bool true
+
 
 
 
