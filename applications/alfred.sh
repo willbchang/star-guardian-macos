@@ -120,6 +120,8 @@ defaults write "${file_search_path}/navigation/prefs.plist" previousPathHotkey \
 		<string></string>
 	</dict>'
 
+echo "    Set Previous Path Keywords to 'previous'"
+defaults write "${file_search_path}/navigation/prefs.plist" previousPathKeyword -string "previous"
 
 echo "  Alfred -> Workflows"
 get_latest_release_download_url() {
