@@ -137,7 +137,8 @@ echo "  Alfred -> Features: File Search -- Search"
 echo "    Enable Escape path on 'Copy path to Clipboard' action"
 defaults write "${file_search_path}/actions/prefs.plist" escapeCopiedPath -bool true
 
-
+echo "    Disable Run AppleScripts instead of opening"
+defaults write "${file_search_path}/prefs.plist" runAppleScripts -bool false
 
 
 
