@@ -1,0 +1,33 @@
+#+TITLE: The Productive MacOS
+NOTICE: This project is on building, use it as your own risk.
+
+A minimal and productive macOS configration with a good documentation that you can live with for a long time.
+
+* Install
+Please read this documentation through before running the command below.
+#+begin_src bash
+git clone https://github.com/willbchang/macos-dotfiles.git
+sh macos-dotfiles/install.sh
+#+end_src
+* System Preferences
+** General
+** Dock
+** Accessbility
+** Security & Privacy
+** Keyboard
+** Trackpad
+** Displays
+** Battery
+* Command Line Tools
+** Brew
+** Oh My Zsh
+** Git
+** Node
+* Applications
+** Alfred
+** Emacs
+** Chrome
+** Terminal
+** Finder
+** IDEA
+** Xcode
