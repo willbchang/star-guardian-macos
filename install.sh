@@ -1,3 +1,6 @@
+awk '/\#\+begin_src\ sh/{flag=1; next} /\#\+end_src/{flag=0} flag' README.org >config.sh
+sh config.sh
+
 echo "Setup System Preferences"
 sh system-preferences/general.sh
 sh system-preferences/dock.sh
@@ -7,7 +10,6 @@ sh system-preferences/keyboard.sh
 sh system-preferences/trackpad.sh
 sh system-preferences/display.sh
 sh system-preferences/battery.sh
-
 
 echo "Install and setup Command Line Tools"
 sh command-line-tools/brew.sh
