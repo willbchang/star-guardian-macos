@@ -179,7 +179,7 @@ defaults -currentHost write com.apple.coreservices.useractivityd ActivityReceivi
 # https://github.com/buo/dotfiles/blob/d2145bb247700a0cf1018cf351c32a796151befa/osx/_01general.sh#L48-L50
 #+begin_src sh
 for category in 'applications' 'documents' 'servers'; do
-  /usr/bin/osascript -e "tell application \"System Events\" to tell appearance preferences to set recent $category limit to 0
+  /usr/bin/osascript -e "tell application \"System Events\" to tell appearance preferences to set recent $category limit to 0"
 done
 #+end_src
 
