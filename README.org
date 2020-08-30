@@ -89,7 +89,7 @@ defaults write -g AppleShowScrollBars -string "Automatic"
 defaults write -g AppleScrollerPagingBehavior -bool true
 #+end_src
 
-Set default browser to Chrome
+*Set default browser to Chrome*
 # You can set default app for different filetypes
 # Check ./default_apps.rb
 #+begin_src sh
@@ -307,7 +307,48 @@ defaults write com.apple.AppleMultitouchTrackpad DragLock -bool false
 #+end_src
 
 ** Security & Privacy
+*Allow apps downloaded from anywhere*
+#+begin_src sh
+sudo spctl --master-disable
+#+end_src
 ** Keyboard
+*** Keyboard
+*Disable press-and-hold for keys in favor of key repeat*
+#+begin_src sh
+defaults write -g ApplePressAndHoldEnabled -bool false
+#+end_src
+
+*Set fast keyboard repeat rate*\\
+TODO: Set InitialKeyRepeat integer range
+#+begin_src sh
+defaults write -g KeyRepeat -int 2
+defaults write -g InitialKeyRepeat -int 15
+#+end_src
+
+*Set touchbar(control strip) icons*
+#+begin_src sh
+defaults write com.apple.controlstrip FullCustomized '(
+    "com.apple.system.group.media",
+    NSTouchBarItemIdentifierFlexibleSpace,
+    "com.apple.system.volume",
+    "com.apple.system.mute",
+    NSTouchBarItemIdentifierFlexibleSpace,
+    "com.apple.system.brightness",
+    "com.apple.system.night-shift",
+    NSTouchBarItemIdentifierFlexibleSpace,
+    "com.apple.system.screen-lock",
+    "com.apple.system.notification-center"
+)'
+#+end_src
+
+*Expaned control strip by default*
+#+begin_src sh
+defaults write com.apple.touchbar.agent PresentationModeGlobal -string "fullControlStrip"
+#+end_src
+
+*** Text
+*** Shortcuts
+*** Input Sources
 ** Trackpad
 ** Displays
 ** Battery
