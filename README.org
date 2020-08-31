@@ -404,6 +404,10 @@ defaults write -g AppleKeyboardUIMode -int 3
 /usr/libexec/PlistBuddy -c "set :AppleSymbolicHotKeys:65:enabled false" ~/Library/Preferences/com.apple.symbolichotkeys.plist
 #+end_src
 *** Input Sources
+*Disable Show Input menu in menu bar*
+#+begin_src sh
+defaults write com.apple.TextInputMenu visible -bool false
+#+end_src
 ** Trackpad
 ** Displays
 ** Battery
