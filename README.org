@@ -409,6 +409,11 @@ defaults write -g AppleKeyboardUIMode -int 3
 defaults write com.apple.TextInputMenu visible -bool false
 #+end_src
 ** Trackpad
+*Enable tap to click*
+#+begin_src sh
+defaults write com.apple.AppleMultitouchTrackpad Clicking -bool true
+#+end_src
+
 ** Displays
 ** Battery
 * Command Line Tools
