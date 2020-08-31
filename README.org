@@ -347,6 +347,31 @@ defaults write com.apple.touchbar.agent PresentationModeGlobal -string "fullCont
 #+end_src
 
 *** Text
+*Disable automatic capitalization*
+#+begin_src sh
+defaults write -g NSAutomaticCapitalizationEnabled -bool false
+#+end_src
+
+*Disable smart dashes*
+#+begin_src sh
+defaults write -g NSAutomaticDashSubstitutionEnabled -bool false
+#+end_src
+
+*Disable automatic period substitution*
+#+begin_src sh
+defaults write -g NSAutomaticPeriodSubstitutionEnabled -bool false
+#+end_src
+
+*Disable smart quotes*
+#+begin_src sh
+defaults write -g NSAutomaticQuoteSubstitutionEnabled -bool false
+#+end_src
+
+*Disable auto-correct*
+#+begin_src sh
+defaults write -g NSAutomaticSpellingCorrectionEnabled -bool false
+#+end_src
+
 *** Shortcuts
 *** Input Sources
 ** Trackpad
