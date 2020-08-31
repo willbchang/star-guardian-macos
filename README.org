@@ -373,6 +373,36 @@ defaults write -g NSAutomaticSpellingCorrectionEnabled -bool false
 #+end_src
 
 *** Shortcuts
+*Enable full keyboard access for all controls*\\
+(e.g. enable Tab in modal dialogs)
+#+begin_src sh
+defaults write -g AppleKeyboardUIMode -int 3
+#+end_src
+
+*Disable shortcuts to Turn Dock Hiding On/Off*
+#+begin_src sh
+/usr/libexec/PlistBuddy -c "set :AppleSymbolicHotKeys:52:enabled false" ~/Library/Preferences/com.apple.symbolichotkeys.plist
+#+end_src
+
+*Disable shortcuts to Select the previous input source*
+#+begin_src sh
+/usr/libexec/PlistBuddy -c "set :AppleSymbolicHotKeys:60:enabled false" ~/Library/Preferences/com.apple.symbolichotkeys.plist
+#+end_src
+
+*Disable shortcuts to Select next source in input menu*
+#+begin_src sh
+/usr/libexec/PlistBuddy -c "set :AppleSymbolicHotKeys:61:enabled false" ~/Library/Preferences/com.apple.symbolichotkeys.plist
+#+end_src
+
+*Disable shortcuts to Show Spotlight Search*
+#+begin_src sh
+/usr/libexec/PlistBuddy -c "set :AppleSymbolicHotKeys:64:enabled false" ~/Library/Preferences/com.apple.symbolichotkeys.plist
+#+end_src
+
+*Disable shortcuts to Show Finder search window*
+#+begin_src sh
+/usr/libexec/PlistBuddy -c "set :AppleSymbolicHotKeys:65:enabled false" ~/Library/Preferences/com.apple.symbolichotkeys.plist
+#+end_src
 *** Input Sources
 ** Trackpad
 ** Displays
