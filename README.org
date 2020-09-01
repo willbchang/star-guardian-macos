@@ -419,6 +419,11 @@ defaults write com.apple.AppleMultitouchTrackpad Clicking -bool true
 defaults write com.apple.AppleMultitouchTrackpad TrackpadThreeFingerTapGesture -int 2
 #+end_src
 ** Displays
+*Enable Night Shift*\\
+[[./system-preferences/displays-night-shift.scpt][displays-night-shift.scpt]]
+#+begin_src sh
+osascript system-preferences/displays-night-shift.scpt
+#+end_src
 ** Battery
 * Command Line Tools
 ** Brew
