@@ -425,6 +425,10 @@ defaults write com.apple.AppleMultitouchTrackpad TrackpadThreeFingerTapGesture -
 osascript system-preferences/displays-night-shift.scpt
 #+end_src
 ** Battery
+*Show battery percentage in menu bar*
+#+begin_src sh
+defaults write com.apple.menuextra.battery ShowPercent YES
+#+end_src
 * Command Line Tools
 ** Brew
 ** Oh My Zsh
