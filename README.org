@@ -414,6 +414,10 @@ defaults write com.apple.TextInputMenu visible -bool false
 defaults write com.apple.AppleMultitouchTrackpad Clicking -bool true
 #+end_src
 
+*Enable tap with three fingers to Look up & data detectors*
+#+begin_src sh
+defaults write com.apple.AppleMultitouchTrackpad TrackpadThreeFingerTapGesture -int 2
+#+end_src
 ** Displays
 ** Battery
 * Command Line Tools
