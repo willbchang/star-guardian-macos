@@ -464,6 +464,36 @@ brew tap homebrew/cask-fonts
 brew cask install font-inconsolata
 #+end_src
 ** Oh My Zsh
+*Install Oh-My-Zsh*
+#+begin_src sh
+sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+#+end_src
+
+*Install Oh-My-Zsh plugin: Zsh Autosuggestions*
+#+begin_src sh
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+#+end_src
+
+*Install Oh-My-Zsh plugin: Zsh Completions*
+#+begin_src sh
+git clone https://github.com/zsh-users/zsh-completions ${ZSH_CUSTOM:=~/.oh-my-zsh/custom}/plugins/zsh-completions
+autoload -U compinit && compinit
+#+end_src
+
+*Install Oh-My-Zsh plugin: Zsh Syntax Highlighting*
+#+begin_src sh
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+#+end_src
+
+*Move Oh-My-Zsh configurations to home folder*
+#+begin_src sh
+cp -R command-line-tools/.zshrc ~/.zshrc
+#+end_src
+
+*Reload Oh-My-Zsh configurations*
+#+begin_src sh
+source ~/.zshrc
+#+end_src
 ** Git
 ** Node
 * Applications
