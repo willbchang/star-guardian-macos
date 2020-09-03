@@ -505,6 +505,15 @@ brew install git
 cp -R command-line-tools/.gitignore_global ~/.gitignore_global
 #+end_src
 ** Node
+*Install NodeJS*
+#+begin_src sh
+brew install node
+#+end_src
+
+*Install a better package manager: pnpm*
+#+begin_src sh
+npm i -g pnpm
+#+end_src
 * Applications
 ** Alfred
 ** Emacs
