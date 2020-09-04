@@ -540,6 +540,52 @@ source ./applications/alfred-helper.sh
 
 *** General
 *** Features
+**** Default Results
+*Show System Preferences*
+#+begin_src sh
+defaults write $default_results showPreferences -bool true
+#+end_src
+
+*Hide Contacts*
+#+begin_src sh
+defaults write $default_results showContacts -bool false
+#+end_src
+
+*Hide Folders*
+#+begin_src sh
+defaults write $default_results showFolders -bool false
+#+end_src
+
+*Hide Documents*
+#+begin_src sh
+defaults write $default_results showDocuments -bool false
+#+end_src
+
+*Hide Text Files*
+#+begin_src sh
+defaults write $default_results showTextFiles -bool false
+#+end_src
+
+*Hide Images*
+#+begin_src sh
+defaults write $default_results showImages -bool false
+#+end_src
+
+*Hide Archives*
+#+begin_src sh
+defaults write $default_results showArchives -bool false
+#+end_src
+
+*Hide Apple Scripts*
+#+begin_src sh
+defaults write $default_results showAppleScripts -bool false
+#+end_src
+
+*Disable Search all file types*
+#+begin_src sh
+defaults write $default_results showAll -bool false
+#+end_src
+
 *** Workflows
 *** Appearance
 *** Advanced
