@@ -735,6 +735,39 @@ defaults write "${file_search_path}/prefs.plist" touchAliases -bool true
 defaults write "${file_search_path}/navigation/prefs.plist" homeFolder -int 0
 #+end_src
 *** Workflows
+*Install Open in Editor*
+#+begin_src sh
+install_alfred_workflow "willbchang/alfred-open-in-editor"
+#+end_src
+
+*Install Run in Terminal*
+#+begin_src sh
+install_alfred_workflow "willbchang/alfred-run-in-terminal"
+#+end_src
+
+*Install Search Selection*
+#+begin_src sh
+install_alfred_workflow "willbchang/alfred-search-selection"
+#+end_src
+
+*Install GitHub*
+#+begin_src sh
+install_alfred_workflow "gharlan/alfred-github-workflow"
+#+end_src
+
+*Install OCR Screencapture*
+*Install OCR Screencapture Dependency: tesseract*
+#+begin_src sh
+brew install tesseract
+#+end_src
+
+#+begin_src sh
+curl -LOSs https://raw.githubusercontent.com/BlackwinMin/alfred-gallery/master/OCR%20Screencapture/OCR%20Screencapture.alfredworkflow
+open OCR%20Screencapture.alfredworkflow
+import_alfred_workflow
+trash OCR%20Screencapture.alfredworkflow
+#+end_src
+
 *** Appearance
 *** Advanced
 ** Emacs
