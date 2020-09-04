@@ -704,7 +704,36 @@ defaults write "${file_search_path}/navigation/prefs.plist" previousPathKeyword 
 #+begin_src sh
 defaults write "${file_search_path}/buffer/prefs.plist" enabled -bool false
 #+end_src
+***** Advanced
+*Enable Escape path on 'Copy path to Clipboard' action*
+#+begin_src sh
+defaults write "${file_search_path}/actions/prefs.plist" escapeCopiedPath -bool true
+#+end_src
 
+*Disable Run AppleScripts instead of opening*
+#+begin_src sh
+defaults write "${file_search_path}/prefs.plist" runAppleScripts -bool false
+#+end_src
+
+*Enable Use file type icons for files on external drives*
+#+begin_src sh
+defaults write "${file_search_path}/prefs.plist" fileTypeIconsForExternalFiles -bool true
+#+end_src
+
+*Enable Touch folders after opening them*
+#+begin_src sh
+defaults write "${file_search_path}/prefs.plist" touchFolders -bool true
+#+end_src
+
+*Enable Touch aliases after opening them*
+#+begin_src sh
+defaults write "${file_search_path}/prefs.plist" touchAliases -bool true
+#+end_src
+
+*Set Homde Folder to ~*
+#+begin_src sh
+defaults write "${file_search_path}/navigation/prefs.plist" homeFolder -int 0
+#+end_src
 *** Workflows
 *** Appearance
 *** Advanced
