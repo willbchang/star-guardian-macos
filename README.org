@@ -2,6 +2,8 @@
 NOTICE: This project is on building, use it as your own risk.
 
 A minimal and productive macOS configration with a good documentation that you can live with for a long time.
+This is a source code with documentation repo especially for programmers, if you need explaination with pictures, please visit
+https://book.willbc.cn/the-productive-macos/
 
 * Install
 Please read this documentation through before running the command below.
@@ -835,3 +837,5 @@ defaults write com.apple.Terminal "Startup Window Settings" -string "Blurred Mon
 ** Finder
 ** IDEA
 ** Xcode
+
+* All Rights Reserved
