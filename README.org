@@ -699,7 +699,11 @@ defaults write "${file_search_path}/navigation/prefs.plist" previousPathHotkey \
 #+begin_src sh
 defaults write "${file_search_path}/navigation/prefs.plist" previousPathKeyword -string "previous"
 #+end_src
-
+***** Buffer
+*Disable temporary file buffer*
+#+begin_src sh
+defaults write "${file_search_path}/buffer/prefs.plist" enabled -bool false
+#+end_src
 
 *** Workflows
 *** Appearance
