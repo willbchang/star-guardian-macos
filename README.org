@@ -585,6 +585,87 @@ defaults write $default_results showAppleScripts -bool false
 #+begin_src sh
 defaults write $default_results showAll -bool false
 #+end_src
+**** File Search
+***** Search
+*Enable Quick Search*
+#+begin_src sh
+defaults write "${file_search_path}/prefs.plist" quickSearch -bool true
+#+end_src
+
+*Disable 'open' keyword for Opening Files*
+#+begin_src sh
+defaults write "${file_search_path}/open/prefs.plist" enabled -bool false
+#+end_src
+
+*Enable 'find' keyword for Revealing Files(open in Finder)*
+#+begin_src sh
+defaults write "${file_search_path}/find/prefs.plist" enabled -bool true
+#+end_src
+
+*Enable 'in' keyword for seaching content in files*
+#+begin_src sh
+defaults write "${file_search_path}/in/prefs.plist" enabled -bool true
+#+end_src
+
+*Disable 'tags' keyword for seaching File Tags*
+#+begin_src sh
+defaults write "${file_search_path}/tag/prefs.plist" enabled -bool false
+#+end_src
+
+*Ignore Email*
+#+begin_src sh
+defaults write "${file_search_path}/prefs.plist" ignoreEmail -bool true
+#+end_src
+
+*Ignore Bookmarks*
+#+begin_src sh
+defaults write "${file_search_path}/prefs.plist" ignoreBookmarks -bool true
+#+end_src
+
+*Show Music files*
+#+begin_src sh
+defaults write "${file_search_path}/prefs.plist" ignoreMusic -bool false
+#+end_src
+
+*Show Source files*
+#+begin_src sh
+defaults write "${file_search_path}/prefs.plist" ignoreSource -bool false
+#+end_src
+
+*Hide Contacts*
+#+begin_src sh
+defaults write "${file_search_path}/prefs.plist" ignoreContacts -bool true
+#+end_src
+
+*Hide History*
+#+begin_src sh
+defaults write "${file_search_path}/prefs.plist" ignoreHistory -bool true
+#+end_src
+
+*Show Images*
+#+begin_src sh
+defaults write "${file_search_path}/prefs.plist" ignoreImages -bool false
+#+end_src
+
+*Hide Calendar*
+#+begin_src sh
+defaults write "${file_search_path}/prefs.plist" ignoreCalendar -bool true
+#+end_src
+
+*Hide Messages*
+#+begin_src sh
+defaults write "${file_search_path}/prefs.plist" ignoreMessages -bool true
+#+end_src
+
+*Show Plist files*
+#+begin_src sh
+defaults write "${file_search_path}/prefs.plist" ignorePlist -bool false
+#+end_src
+
+*Set Result Limit to 20*
+#+begin_src sh
+defaults write "${file_search_path}/prefs.plist" limit -int 0
+#+end_src
 
 *** Workflows
 *** Appearance
