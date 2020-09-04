@@ -666,6 +666,40 @@ defaults write "${file_search_path}/prefs.plist" ignorePlist -bool false
 #+begin_src sh
 defaults write "${file_search_path}/prefs.plist" limit -int 0
 #+end_src
+***** Navigation
+*Enable Fuzzy Search for Filitering*
+#+begin_src sh
+defaults write "${file_search_path}/navigation/prefs.plist" fuzzy -bool true
+#+end_src
+
+*Use ← and → for folder navigation*
+#+begin_src sh
+defaults write "${file_search_path}/navigation/prefs.plist" arrowsForFolderNavigation -bool true
+#+end_src
+
+*Use ↵ to open folders in Finder*
+#+begin_src sh
+defaults write "${file_search_path}/navigation/prefs.plist" returnToOpenFolders -bool true
+#+end_src
+
+*Disable Previous Path shortcuts*
+#+begin_src sh
+defaults write "${file_search_path}/navigation/prefs.plist" previousPathHotkey \
+'	<dict>
+		<key>key</key>
+		<integer>-1</integer>
+		<key>mod</key>
+		<integer>-1</integer>
+		<key>string</key>
+		<string></string>
+	</dict>'
+#+end_src
+
+*Set Previous Path Keywords to 'previous'*
+#+begin_src sh
+defaults write "${file_search_path}/navigation/prefs.plist" previousPathKeyword -string "previous"
+#+end_src
+
 
 *** Workflows
 *** Appearance
