@@ -516,6 +516,33 @@ npm i -g pnpm
 #+end_src
 * Applications
 ** Alfred
+*Install Alfred from Brew*
+#+begin_src sh
+# TODO: Check if Alfred is in Applications/
+brew cask install alfred
+#+end_src
+
+*Make sure you have the premission and License*
+#+begin_src sh
+open -a Alfred\ 4
+# TODO: Check Permissions with https://github.com/jacobsalmela/tccutil
+echo "Please make sure Alfred has permissions"
+# TODO: Check License in ~/Library/Application Support/Alfred
+echo "Please make sure Alfred has Powerpack License"
+read -p "  Press enter to continue "
+#+end_src
+
+*Load Alfred Preferences Paths and Functions*\\
+You can check it here: [[./applications/alfred-helper.sh][alfred-helper.sh]]
+#+begin_src sh
+source ./applications/alfred-helper.sh
+#+end_src
+
+*** General
+*** Features
+*** Workflows
+*** Appearance
+*** Advanced
 ** Emacs
 ** Chrome
 ** Terminal
