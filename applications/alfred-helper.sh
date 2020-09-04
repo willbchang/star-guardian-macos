@@ -1,4 +1,4 @@
-alfred_preferences_path=$(ruby "./applications/get_alfred_preferences_path.rb")
+alfred_preferences_path=$(ruby "./applications/alfred_preferences_path.rb")
 alfred_preferences_path="$(eval echo $alfred_preferences_path)" # Strip ""
 
 default_results="${alfred_preferences_path}/preferences/features/defaultresults/prefs.plist"
