@@ -771,6 +771,48 @@ trash OCR%20Screencapture.alfredworkflow
 *** Appearance
 *** Advanced
 ** Emacs
+*Install emacs-plus*
+#+begin_src sh
+brew tap d12frosted/emacs-plus
+brew install emacs-plus
+#+end_src
+
+*Make an Emacs.app alias to /Applications*
+#+begin_src sh
+ln -s /usr/local/opt/emacs-plus/Emacs.app /Applications
+#+end_src
+
+*Install doom emacs dependency: ripgrep*
+#+begin_src sh
+brew install ripgrep
+#+end_src
+
+*Install doom emacs*
+#+begin_src sh
+git clone --depth 1 https://github.com/hlissner/doom-emacs ~/.emacs.d
+~/.emacs.d/bin/doom install
+#+end_src
+
+*Setup doom emacs for macos*
+#+begin_src sh
+curl -Sso ~/.doom.d/README.org https://raw.githubusercontent.com/willbchang/macos-emacs-doom.d/master/README.org
+echo "(org-babel-load-file \"~/.doom.d/README.org\")" >>~/.doom.d/config.el
+#+end_src
+
+*Install vterm dependency: cmake*
+#+begin_src sh
+brew install cmake
+#+end_src
+
+*Install shell mode dependency: shfmt*
+#+begin_src sh
+brew install shfmt
+#+end_src
+
+*Rebuild doom emacs packages*
+#+begin_src sh
+~/.emacs.d/bin/doom sync && ~/.emacs.d/bin/doom build
+#+end_src
 ** Chrome
 ** Terminal
 ** Finder
