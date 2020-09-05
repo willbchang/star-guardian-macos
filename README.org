@@ -976,6 +976,49 @@ defaults write com.apple.finder _FXSortFoldersFirstOnDesktop -bool true
 defaults write com.apple.finder FXDefaultSearchScope -string "SCcf"
 #+end_src
 *** Hidden Features
+*Disable Finder Sound*
+#+begin_src sh
+defaults write com.apple.finder FinderSounds -int 0
+#+end_src
+
+*Enable spring loading for directories*\\
+What is spring loading: https://www.youtube.com/watch?v=F9kdAxGe9SE
+#+begin_src sh
+defaults write -g com.apple.springing.enabled -bool true
+#+end_src
+
+*Remove the spring loading delay for directories*
+#+begin_src sh
+defaults write -g com.apple.springing.delay -float 0
+#+end_src
+
+*Disable disk image verification*
+#+begin_src sh
+defaults write com.apple.frameworks.diskimages skip-verify -bool true
+defaults write com.apple.frameworks.diskimages skip-verify-locked -bool true
+defaults write com.apple.frameworks.diskimages skip-verify-remote -bool true
+#+end_src
+
+*Enable sort by kind for icons on the desktop and in other icon views*
+#+begin_src sh
+/usr/libexec/PlistBuddy -c "Set :DesktopViewSettings:IconViewSettings:arrangeBy kind" ~/Library/Preferences/com.apple.finder.plist
+/usr/libexec/PlistBuddy -c "Set :FK_StandardViewSettings:IconViewSettings:arrangeBy kind" ~/Library/Preferences/com.apple.finder.plist
+/usr/libexec/PlistBuddy -c "Set :StandardViewSettings:IconViewSettings:arrangeBy kind" ~/Library/Preferences/com.apple.finder.plist
+#+end_src
+
+*Set Finder font size to 14*
+#+begin_src sh
+/usr/libexec/PlistBuddy -c "Set :StandardViewOptions:ColumnViewOptions:FontSize 14" ~/Library/Preferences/com.apple.finder.plist
+#+end_src
+
+*Expand File Info panes: General, Open with, and Sharing & Permissions*
+#+begin_src sh
+defaults write com.apple.finder FXInfoPanesExpanded -dict \
+	General -bool true \
+	OpenWith -bool true \
+	Privileges -bool true
+#+end_src
+
 ** IDEA
 ** Xcode
 
