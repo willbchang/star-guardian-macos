@@ -854,6 +854,22 @@ defaults write com.apple.finder FXPreferredViewStyle -string "clmv"
 #+end_src
 
 *** Home Directory
+*Hide unused home directory: Applications, Movies, Music, Public, Pictures*
+#+begin_src sh
+chflags hidden ~/Applications ~/Movies ~/Music ~/Public ~/Pictures
+#+end_src
+
+*Unhide ~/Library*
+#+begin_src sh
+xattr -d com.apple.FinderInfo  ~/Library 2> /dev/null
+chflags nohidden ~/Library
+#+end_src
+
+*Show frequent visited home files and directories: .config, .doom.d, Library, .zshrc*\\
+This doesn't work for now.
+#+begin_src sh
+# chflags nohidden ~/.config ~/.doom.d ~/Library ~/.zshrc
+#+end_src
 *** General
 *Hide icons for Hard disks on the desktop*
 #+begin_src sh
