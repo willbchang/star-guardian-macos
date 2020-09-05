@@ -936,6 +936,45 @@ mysides add Code file:///Users/$(whoami)/Documents/Score
 defaults write com.apple.finder ShowRecentTags -bool false
 #+end_src
 *** Advanced
+*Show all file name extensions*
+#+begin_src sh
+defaults write -g AppleShowAllExtensions -bool true
+#+end_src
+
+*Disable warning before changing an extension*
+#+begin_src sh
+defaults write com.apple.finder FXEnableExtensionChangeWarning -bool false
+#+end_src
+
+*Disable warning before removing from iCloud Drive"
+#+begin_src sh
+defaults write com.apple.finder FXEnableRemoveFromICloudDriveWarning -bool false
+#+end_src
+
+*Disable warning before emptying the Trash*
+#+begin_src sh
+defaults write com.apple.finder WarnOnEmptyTrash -bool false
+#+end_src
+
+*Enable remove items from the Trash after 30 days*
+#+begin_src sh
+defaults write com.apple.finder FXRemoveOldTrashItems -bool true
+#+end_src
+
+*Keep folders on top in windows when sorting by name*
+#+begin_src sh
+defaults write com.apple.finder _FXSortFoldersFirst -bool true
+#+end_src
+
+*Keep folders on top on Desktop when sorting by name*
+#+begin_src sh
+defaults write com.apple.finder _FXSortFoldersFirstOnDesktop -bool true
+#+end_src
+
+*When performing a search, Search the Current Folder*
+#+begin_src sh
+defaults write com.apple.finder FXDefaultSearchScope -string "SCcf"
+#+end_src
 *** Hidden Features
 ** IDEA
 ** Xcode
