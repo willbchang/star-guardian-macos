@@ -836,6 +836,23 @@ defaults write com.apple.Terminal "Startup Window Settings" -string "Blurred Mon
 #+end_src
 ** Finder
 *** UI
+*Use column view in all Finder windows by default*
+| Features        | Values | Shortcuts   |
+|-----------------+--------+-------------|
+| Icon View       | icnv   | Command + 1 |
+| List View       | Nlsv   | Command + 2 |
+| Column View     | clmv   | Command + 3 |
+| Cover Flow View | Flwv   | Command + 4 |
+#+begin_src sh
+defaults write com.apple.finder FXPreferredViewStyle -string "clmv"
+#+end_src
+
+*Remove toolbar icon*
+#+begin_src sh
+/usr/libexec/PlistBuddy -c "Delete :NSToolbar\ Configuration\ Browser:TB\ Item\ Identifiers" ~/Library/Preferences/com.apple.finder.plist
+/usr/libexec/PlistBuddy -c "Add :NSToolbar\ Configuration\ Browser:TB\ Item\ Identifiers array" ~/Library/Preferences/com.apple.finder.plist
+#+end_src
+
 *** Home Directory
 *** General
 *** Sidebar
