@@ -855,6 +855,46 @@ defaults write com.apple.finder FXPreferredViewStyle -string "clmv"
 
 *** Home Directory
 *** General
+*Hide icons for Hard disks on the desktop*
+#+begin_src sh
+defaults write com.apple.finder ShowHardDrivesOnDesktop -bool false
+#+end_src
+
+*Show icons for External disks on the desktop*
+#+begin_src sh
+defaults write com.apple.finder ShowExternalHardDrivesOnDesktop -bool true
+#+end_src
+
+*Hide icons for CDs, DVDs on the desktop*
+#+begin_src sh
+defaults write com.apple.finder ShowRemovableMediaOnDesktop -bool false
+#+end_src
+
+*Hide icons for Connected servers on the desktop*
+#+begin_src sh
+defaults write com.apple.finder ShowMountedServersOnDesktop -bool false
+#+end_src
+
+*New Finder windows show Home directory*
+| Position            | NewWindowTarget | NewWindowTargetPath                                                                                    |
+|---------------------+-----------------+--------------------------------------------------------------------------------------------------------|
+| User's Macintosh    | PfCm            | -                                                                                                      |
+| Macintosh HD - Data | PfVo            | file:///                                                                                               |
+| Home                | PfHm            | file://${HOME}/                                                                                        |
+| Desktop             | PfDe            | file:///Users/$(whoami)/Desktop/                                                                       |
+| Documents           | PfDo            | file:///Users/$(whoami)/Documents/                                                                     |
+| iCloud Drive        | PfID            | file:///Users/$(whoami)/Library/Mobile%20Documents/com~apple~CloudDocs/                                |
+| Recents             | PfAF            | file:///System/Library/CoreServices/Finder.app/Contents/Resources/MyLibraries/myDocuments.cannedSearch |
+| Others              | PfLo            | file:///full/path/here/                                                                                |
+#+begin_src sh
+defaults write com.apple.finder NewWindowTarget -string "PfHm"
+defaults write com.apple.finder NewWindowTargetPath -string "file://${HOME}/"
+#+end_src
+
+*Open folders in tabs instead of new windows*
+#+begin_src sh
+defaults write com.apple.finder FinderSpawnTab -bool true
+#+end_src
 *** Sidebar
 *** Advanced
 *** Hidden Features
