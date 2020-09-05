@@ -835,6 +835,12 @@ defaults write com.apple.Terminal "Default Window Settings" -string "Blurred Mon
 defaults write com.apple.Terminal "Startup Window Settings" -string "Blurred Monokai Theme"
 #+end_src
 ** Finder
+*** UI
+*** Home Directory
+*** General
+*** Sidebar
+*** Advanced
+*** Hidden Features
 ** IDEA
 ** Xcode
 
