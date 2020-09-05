@@ -896,6 +896,45 @@ defaults write com.apple.finder NewWindowTargetPath -string "file://${HOME}/"
 defaults write com.apple.finder FinderSpawnTab -bool true
 #+end_src
 *** Sidebar
+*Install tool to manage Finder sidebar: mysides*
+#+begin_src sh
+brew cask install mysides
+#+end_src
+
+*Remove Desktop from sidebar*
+#+begin_src sh
+mysides remove Desktop
+#+end_src
+
+*Remove Recents from sidebar*
+#+begin_src sh
+mysides remove Recents
+#+end_src
+
+*Add Home directory to sidebar*
+#+begin_src sh
+mysides add $(whoami) file:///Users/$(whoami)
+#+end_src
+
+*Add ~/Document/Code to sidebar*
+#+begin_src sh
+mysides add Code file:///Users/$(whoami)/Documents/Code
+#+end_src
+
+*Add ~/Document/Book to sidebar*
+#+begin_src sh
+mysides add Code file:///Users/$(whoami)/Documents/Book
+#+end_src
+
+*Add ~/Document/Score to sidebar*
+#+begin_src sh
+mysides add Code file:///Users/$(whoami)/Documents/Score
+#+end_src
+
+*Remove Recent Tags from sidebar*
+#+begin_src sh
+defaults write com.apple.finder ShowRecentTags -bool false
+#+end_src
 *** Advanced
 *** Hidden Features
 ** IDEA
