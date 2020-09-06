@@ -854,6 +854,13 @@ defaults write com.apple.finder FXPreferredViewStyle -string "clmv"
 #+end_src
 
 *** Home Directory
+*Create symlinks from Documents*
+#+begin_src sh
+ln -s ~/Documents/Code ~/Code
+ln -s ~/Documents/Book ~/Book
+ln -s ~/Documents/Score ~/Score
+#+end_src
+
 *Hide unused home directory: Applications, Movies, Music, Public, Pictures*
 #+begin_src sh
 chflags hidden ~/Applications ~/Movies ~/Music ~/Public ~/Pictures
@@ -962,7 +969,7 @@ defaults write -g AppleShowAllExtensions -bool true
 defaults write com.apple.finder FXEnableExtensionChangeWarning -bool false
 #+end_src
 
-*Disable warning before removing from iCloud Drive"
+*Disable warning before removing from iCloud Drive*
 #+begin_src sh
 defaults write com.apple.finder FXEnableRemoveFromICloudDriveWarning -bool false
 #+end_src
