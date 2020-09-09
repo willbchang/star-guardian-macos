@@ -11,431 +11,6 @@ Please read this documentation through before running the command below.
 git clone https://github.com/willbchang/macos-dotfiles.git
 sh macos-dotfiles/install.sh
 #+end_src
-* System Preferences
-** General
-*Set appearance to auto*\\
-How I found it: https://apple.stackexchange.com/a/391814/306411
-#+begin_src sh
-defaults write -g AppleInterfaceStyleSwitchesAutomatically -bool true
-#+end_src
-
-*Set accent color to Pink*
-| Accent Color | Values | Status  |
-|--------------+-------+---------|
-| Red          |     0 |         |
-| Orange       |     1 |         |
-| Yellow       |     2 |         |
-| Green        |     3 |         |
-| Blue         |     4 | default |
-| Purple       |     5 |         |
-| Pink         |     6 |         |
-| Logan        |     7 |         |
-| Paris Daisy  |     8 |         |
-| Coral        |     9 |         |
-| Silver       |    10 | custome |
-#+begin_src sh
-defaults write -g AppleAccentColor -int 6
-#+end_src
-
-*Set highlight color to Pink*
-| Highlight Color | Values                        | Status  |
-|-----------------+------------------------------+---------|
-| Red             | "1.000000 0.733333 0.721569" |         |
-| Orange          | "1.000000 0.874510 0.701961" |         |
-| Yellow          | "1.000000 0.937255 0.690196" |         |
-| Green           | "0.752941 0.964706 0.678431" |         |
-| Blue            | "0.847059 0.847059 0.862745" | default |
-| Purple          | "0.968627 0.831373 1.000000" |         |
-| Pink            | "1.000000 0.749020 0.823529" |         |
-| Brown           | "0.929412 0.870588 0.792157" |         |
-| Graphite        | "0.847059 0.847059 0.862745" |         |
-| Silver          | "0.776500 0.776500 0.776500" | custom  |
-# Above data is from :https://github.com/buo/dotfiles/blob/master/osx/_01general.sh
-Calculate on your own: https://apple.stackexchange.com/a/164905/306411
-#+begin_src sh
-defaults write -g AppleHighlightColor -string "1.000000 0.749020 0.823529" Pink
-#+end_src
-
-*Set sidebar icon size to medium*
-| Icon Size | Values | Status  |
-|-----------+-------+---------|
-| Small     |     1 |         |
-| Medium    |     2 | default |
-| Large     |     3 |         |
-#+begin_src sh
-defaults write -g NSTableViewDefaultSizeMode -int 2
-#+end_src
-
-*Hide the menu bar Automatically*
-#+begin_src sh
-defaults write -g _HIHideMenuBar -bool true
-#+end_src
-
-
-*Show scroll bars automatically*
-| Scroll Bar Behaviors                     | Values          |
-|------------------------------------------+-----------------|
-| Automatically based on mouse or trackpad | "Automatic"     |
-| When scrolling                           | "WhenScrolling" |
-| Always                                   | "Always"        |
-#+begin_src sh
-defaults write -g AppleShowScrollBars -string "Automatic"
-#+end_src
-
-*Click in the scroll bar to jump to the sport that's clicked*
-| Click Scroll Bar Behaviors      | Values |
-|---------------------------------+--------|
-| Jump to the spot that's clicked | true   |
-| Jump to the next page           | false  |
-#+begin_src sh
-defaults write -g AppleScrollerPagingBehavior -bool true
-#+end_src
-
-*Set default browser to Chrome*
-# You can set default app for different filetypes
-# Check ./default_apps.rb
-#+begin_src sh
-html='
-<dict>
-    <key>LSHandlerContentType</key>
-    <string>public.html</string>
-    <key>LSHandlerPreferredVersions</key>
-    <dict>
-        <key>LSHandlerRoleAll</key>
-        <string>-</string>
-    </dict>
-    <key>LSHandlerRoleAll</key>
-    <string>com.google.chrome</string>
-</dict>
-'
-
-xhtml='
-<dict>
-    <key>LSHandlerContentType</key>
-    <string>public.xhtml</string>
-    <key>LSHandlerPreferredVersions</key>
-    <dict>
-        <key>LSHandlerRoleAll</key>
-        <string>-</string>
-        <key>LSHandlerRoleViewer</key>
-        <string>-</string>
-    </dict>
-    <key>LSHandlerRoleAll</key>
-    <string>com.google.chrome</string>
-</dict>
-'
-
-http='
-<dict>
-    <key>LSHandlerPreferredVersions</key>
-    <dict>
-        <key>LSHandlerRoleAll</key>
-        <string>-</string>
-    </dict>
-    <key>LSHandlerRoleAll</key>
-    <string>com.google.chrome</string>
-    <key>LSHandlerURLScheme</key>
-    <string>http</string>
-</dict>
-'
-
-https='
-<dict>
-    <key>LSHandlerPreferredVersions</key>
-    <dict>
-        <key>LSHandlerRoleAll</key>
-        <string>-</string>
-    </dict>
-    <key>LSHandlerRoleAll</key>
-    <string>com.google.chrome</string>
-    <key>LSHandlerURLScheme</key>
-    <string>https</string>
-</dict>
-'
-
-defaults write ~/Library/Preferences/com.apple.LaunchServices/com.apple.launchservices.secure.plist LSHandlers -array-add "$html" "$xhtml" "$http" "$https"
-#+end_src
-
-
-*Disable ask to keep changes when closing documents*
-#+begin_src sh
-defaults write -g NSCloseAlwaysConfirmsChanges -bool false
-#+end_src
-
-*Close windows when quitting an app*\\
-When it's true, open documents and windows will not be restored when you re-open an app.
-#+begin_src sh
-defaults write -g NSQuitAlwaysKeepsWindows -bool true
-#+end_src
-
-*Set Allow Handoff between this Mac and your iCloud devices*
-# Inspired by https://www.jamf.com/jamf-nation/discussions/12545/a-script-to-disable-handoff
-#+begin_src sh
-defaults -currentHost write com.apple.coreservices.useractivityd ActivityAdvertisingAllowed -bool yes
-defaults -currentHost write com.apple.coreservices.useractivityd ActivityReceivingAllowed -bool yes
-#+end_src
-
-*Set recent items to 0*
-# The relative file is in ~/Library/Application\ Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.RecentDocuments.sfl2
-# sfltool nolonger work for sfl2 after 10.13, but you may change the .sfl2 to .plist and manipulate with `defaults write` then change the extension back. It may work but I never try it because there is a simpler way to use apple script.
-# https://github.com/buo/dotfiles/blob/d2145bb247700a0cf1018cf351c32a796151befa/osx/_01general.sh#L48-L50
-#+begin_src sh
-for category in 'applications' 'documents' 'servers'; do
-  /usr/bin/osascript -e "tell application \"System Events\" to tell appearance preferences to set recent $category limit to 0"
-done
-#+end_src
-
-
-*Use font smoonthing when available*
-#+begin_src sh
-# defaults -currentHost delete -g AppleFontSmoothing
-#+end_src
-
-** Desktop & Screen Saver
-*Never start screen saver*
-#+begin_src sh
-defaults -currentHost write com.apple.screensaver idleTime -int 0
-#+end_src
-** Dock
-*Set the icon size of Dock items to 72 pixels*
-#+begin_src sh
-defaults write com.apple.dock tilesize -int 72
-#+end_src
-
-*Enable magnification*
-#+begin_src sh
-defaults write com.apple.dock magnification -bool true
-#+end_src
-
-*Set magnification size to 100*
-#+begin_src sh
-defaults write com.apple.dock largesize -int 100
-#+end_src
-
-*Change dock position to left*
-#+begin_src sh
-defaults write com.apple.dock orientation -string "left"
-#+end_src
-
-*Change minimize/maximize window effect*
-#+begin_src sh
-defaults write com.apple.dock mineffect -string "scale"
-#+end_src
-
-*Minimize windows into their application’s icon*
-#+begin_src sh
-defaults write com.apple.dock minimize-to-application -bool true
-#+end_src
-
-*Don’t animate opening applications from the Dock*
-#+begin_src sh
-defaults write com.apple.dock launchanim -bool false
-#+end_src
-
-*Automatically hide and show the Dock*
-#+begin_src sh
-defaults write com.apple.dock autohide -bool true
-#+end_src
-
-*Remove the auto-hiding Dock delay*
-#+begin_src sh
-defaults write com.apple.dock autohide-delay -float 0
-#+end_src
-
-*Remove the animation when hiding/showing the Dock*
-#+begin_src sh
-defaults write com.apple.dock autohide-time-modifier -float 0
-#+end_src
-
-*Show indicator lights for open applications in the Dock*
-#+begin_src sh
-defaults write com.apple.dock show-process-indicators -bool true
-#+end_src
-
-*Don’t show recent applications in Dock*
-#+begin_src sh
-defaults write com.apple.dock show-recents -bool false
-#+end_src
-
-*Show only open applications in the Dock*
-#+begin_src sh
-defaults write com.apple.dock static-only -bool true
-#+end_src
-
-*Make Dock icons of hidden applications translucent*
-#+begin_src sh
-defaults write com.apple.dock showhidden -bool true
-#+end_src
-
-*Remove all (default) app icons from the Dock*\\
-This is only really useful when setting up a new Mac, or if you don’t use the Dock to launch apps.
-#+begin_src sh
-defaults write com.apple.dock persistent-apps -array
-#+end_src
-
-*Enable spring loading for all Dock items*
-#+begin_src sh
-defaults write com.apple.dock enable-spring-load-actions-on-all-items -bool true
-#+end_src
-
-*Enable highlight hover effect for the grid view of a stack (Dock)*
-#+begin_src sh
-defaults write com.apple.dock mouse-over-hilite-stack -bool true
-#+end_src
-
-*Add a spacer to the left side of the Dock (where the applications are)*
-#+begin_src sh
-defaults write com.apple.dock persistent-apps -array-add '{tile-data={}; tile-type="spacer-tile";}'
-#+end_src
-
-*Add a spacer to the right side of the Dock (where the Trash is)*
-#+begin_src sh
-defaults write com.apple.dock persistent-others -array-add '{tile-data={}; tile-type="spacer-tile";}'
-#+end_src
-** Accessbility
-*Enable Option + Esc to speak selected text*
-#+begin_src sh
-defaults write com.apple.speech.synthesis.general.prefs SpokenUIUseSpeakingHotKeyFlag -bool true
-#+end_src
-
-*Set Samantha to the default speaker*
-#+begin_src sh
-defaults write com.apple.speech.voice.prefs SelectedVoiceCreator -int 1886745202
-defaults write com.apple.speech.voice.prefs SelectedVoiceID -int 184844483
-defaults write com.apple.speech.voice.prefs SelectedVoiceName -string "Samantha"
-#+end_src
-
-*Enable three finger drag*
-#+begin_src sh
-defaults write com.apple.AppleMultitouchTrackpad TrackpadThreeFingerDrag -bool true
-defaults write com.apple.AppleMultitouchTrackpad TrackpadFourFingerHorizSwipeGesture -int 2
-defaults write com.apple.AppleMultitouchTrackpad TrackpadThreeFingerVertSwipeGesture -int 0
-defaults write com.apple.AppleMultitouchTrackpad DragLock -bool false
-#+end_src
-
-** Security & Privacy
-*Allow apps downloaded from anywhere*
-#+begin_src sh
-sudo spctl --master-disable
-#+end_src
-** Keyboard
-*** Keyboard
-*Disable press-and-hold for keys in favor of key repeat*
-#+begin_src sh
-defaults write -g ApplePressAndHoldEnabled -bool false
-#+end_src
-
-*Set fast keyboard repeat rate*\\
-TODO: Set InitialKeyRepeat integer range
-#+begin_src sh
-defaults write -g KeyRepeat -int 2
-defaults write -g InitialKeyRepeat -int 15
-#+end_src
-
-*Set touchbar(control strip) icons*
-#+begin_src sh
-defaults write com.apple.controlstrip FullCustomized '(
-    "com.apple.system.group.media",
-    NSTouchBarItemIdentifierFlexibleSpace,
-    "com.apple.system.volume",
-    "com.apple.system.mute",
-    NSTouchBarItemIdentifierFlexibleSpace,
-    "com.apple.system.brightness",
-    "com.apple.system.night-shift",
-    NSTouchBarItemIdentifierFlexibleSpace,
-    "com.apple.system.screen-lock",
-    "com.apple.system.notification-center"
-)'
-#+end_src
-
-*Expaned control strip by default*
-#+begin_src sh
-defaults write com.apple.touchbar.agent PresentationModeGlobal -string "fullControlStrip"
-#+end_src
-
-*** Text
-*Disable automatic capitalization*
-#+begin_src sh
-defaults write -g NSAutomaticCapitalizationEnabled -bool false
-#+end_src
-
-*Disable smart dashes*
-#+begin_src sh
-defaults write -g NSAutomaticDashSubstitutionEnabled -bool false
-#+end_src
-
-*Disable automatic period substitution*
-#+begin_src sh
-defaults write -g NSAutomaticPeriodSubstitutionEnabled -bool false
-#+end_src
-
-*Disable smart quotes*
-#+begin_src sh
-defaults write -g NSAutomaticQuoteSubstitutionEnabled -bool false
-#+end_src
-
-*Disable auto-correct*
-#+begin_src sh
-defaults write -g NSAutomaticSpellingCorrectionEnabled -bool false
-#+end_src
-
-*** Shortcuts
-*Enable full keyboard access for all controls*\\
-(e.g. enable Tab in modal dialogs)
-#+begin_src sh
-defaults write -g AppleKeyboardUIMode -int 3
-#+end_src
-
-*Disable shortcuts to Turn Dock Hiding On/Off*
-#+begin_src sh
-/usr/libexec/PlistBuddy -c "set :AppleSymbolicHotKeys:52:enabled false" ~/Library/Preferences/com.apple.symbolichotkeys.plist
-#+end_src
-
-*Disable shortcuts to Select the previous input source*
-#+begin_src sh
-/usr/libexec/PlistBuddy -c "set :AppleSymbolicHotKeys:60:enabled false" ~/Library/Preferences/com.apple.symbolichotkeys.plist
-#+end_src
-
-*Disable shortcuts to Select next source in input menu*
-#+begin_src sh
-/usr/libexec/PlistBuddy -c "set :AppleSymbolicHotKeys:61:enabled false" ~/Library/Preferences/com.apple.symbolichotkeys.plist
-#+end_src
-
-*Disable shortcuts to Show Spotlight Search*
-#+begin_src sh
-/usr/libexec/PlistBuddy -c "set :AppleSymbolicHotKeys:64:enabled false" ~/Library/Preferences/com.apple.symbolichotkeys.plist
-#+end_src
-
-*Disable shortcuts to Show Finder search window*
-#+begin_src sh
-/usr/libexec/PlistBuddy -c "set :AppleSymbolicHotKeys:65:enabled false" ~/Library/Preferences/com.apple.symbolichotkeys.plist
-#+end_src
-*** Input Sources
-*Disable Show Input menu in menu bar*
-#+begin_src sh
-defaults write com.apple.TextInputMenu visible -bool false
-#+end_src
-** Trackpad
-*Enable tap to click*
-#+begin_src sh
-defaults write com.apple.AppleMultitouchTrackpad Clicking -bool true
-#+end_src
-
-*Enable tap with three fingers to Look up & data detectors*
-#+begin_src sh
-defaults write com.apple.AppleMultitouchTrackpad TrackpadThreeFingerTapGesture -int 2
-#+end_src
-** Displays
-*Enable Night Shift*\\
-[[./system-preferences/displays-night-shift.scpt][displays-night-shift.scpt]]
-#+begin_src sh
-osascript system-preferences/displays-night-shift.scpt
-#+end_src
-** Battery
-*Show battery percentage in menu bar*
-#+begin_src sh
-defaults write com.apple.menuextra.battery ShowPercent YES
-#+end_src
 * Command Line Tools
 ** Brew
 *Install package manager: Homebrew*\\
@@ -1050,4 +625,429 @@ defaults write com.apple.finder FXInfoPanesExpanded -dict \
 ** IDEA
 ** Xcode
 
+* System Preferences
+** General
+*Set appearance to auto*\\
+How I found it: https://apple.stackexchange.com/a/391814/306411
+#+begin_src sh
+defaults write -g AppleInterfaceStyleSwitchesAutomatically -bool true
+#+end_src
+
+*Set accent color to Pink*
+| Accent Color | Values | Status  |
+|--------------+-------+---------|
+| Red          |     0 |         |
+| Orange       |     1 |         |
+| Yellow       |     2 |         |
+| Green        |     3 |         |
+| Blue         |     4 | default |
+| Purple       |     5 |         |
+| Pink         |     6 |         |
+| Logan        |     7 |         |
+| Paris Daisy  |     8 |         |
+| Coral        |     9 |         |
+| Silver       |    10 | custome |
+#+begin_src sh
+defaults write -g AppleAccentColor -int 6
+#+end_src
+
+*Set highlight color to Pink*
+| Highlight Color | Values                        | Status  |
+|-----------------+------------------------------+---------|
+| Red             | "1.000000 0.733333 0.721569" |         |
+| Orange          | "1.000000 0.874510 0.701961" |         |
+| Yellow          | "1.000000 0.937255 0.690196" |         |
+| Green           | "0.752941 0.964706 0.678431" |         |
+| Blue            | "0.847059 0.847059 0.862745" | default |
+| Purple          | "0.968627 0.831373 1.000000" |         |
+| Pink            | "1.000000 0.749020 0.823529" |         |
+| Brown           | "0.929412 0.870588 0.792157" |         |
+| Graphite        | "0.847059 0.847059 0.862745" |         |
+| Silver          | "0.776500 0.776500 0.776500" | custom  |
+# Above data is from :https://github.com/buo/dotfiles/blob/master/osx/_01general.sh
+Calculate on your own: https://apple.stackexchange.com/a/164905/306411
+#+begin_src sh
+defaults write -g AppleHighlightColor -string "1.000000 0.749020 0.823529" Pink
+#+end_src
+
+*Set sidebar icon size to medium*
+| Icon Size | Values | Status  |
+|-----------+-------+---------|
+| Small     |     1 |         |
+| Medium    |     2 | default |
+| Large     |     3 |         |
+#+begin_src sh
+defaults write -g NSTableViewDefaultSizeMode -int 2
+#+end_src
+
+*Hide the menu bar Automatically*
+#+begin_src sh
+defaults write -g _HIHideMenuBar -bool true
+#+end_src
+
+
+*Show scroll bars automatically*
+| Scroll Bar Behaviors                     | Values          |
+|------------------------------------------+-----------------|
+| Automatically based on mouse or trackpad | "Automatic"     |
+| When scrolling                           | "WhenScrolling" |
+| Always                                   | "Always"        |
+#+begin_src sh
+defaults write -g AppleShowScrollBars -string "Automatic"
+#+end_src
+
+*Click in the scroll bar to jump to the sport that's clicked*
+| Click Scroll Bar Behaviors      | Values |
+|---------------------------------+--------|
+| Jump to the spot that's clicked | true   |
+| Jump to the next page           | false  |
+#+begin_src sh
+defaults write -g AppleScrollerPagingBehavior -bool true
+#+end_src
+
+*Set default browser to Chrome*
+# You can set default app for different filetypes
+# Check ./default_apps.rb
+#+begin_src sh
+html='
+<dict>
+    <key>LSHandlerContentType</key>
+    <string>public.html</string>
+    <key>LSHandlerPreferredVersions</key>
+    <dict>
+        <key>LSHandlerRoleAll</key>
+        <string>-</string>
+    </dict>
+    <key>LSHandlerRoleAll</key>
+    <string>com.google.chrome</string>
+</dict>
+'
+
+xhtml='
+<dict>
+    <key>LSHandlerContentType</key>
+    <string>public.xhtml</string>
+    <key>LSHandlerPreferredVersions</key>
+    <dict>
+        <key>LSHandlerRoleAll</key>
+        <string>-</string>
+        <key>LSHandlerRoleViewer</key>
+        <string>-</string>
+    </dict>
+    <key>LSHandlerRoleAll</key>
+    <string>com.google.chrome</string>
+</dict>
+'
+
+http='
+<dict>
+    <key>LSHandlerPreferredVersions</key>
+    <dict>
+        <key>LSHandlerRoleAll</key>
+        <string>-</string>
+    </dict>
+    <key>LSHandlerRoleAll</key>
+    <string>com.google.chrome</string>
+    <key>LSHandlerURLScheme</key>
+    <string>http</string>
+</dict>
+'
+
+https='
+<dict>
+    <key>LSHandlerPreferredVersions</key>
+    <dict>
+        <key>LSHandlerRoleAll</key>
+        <string>-</string>
+    </dict>
+    <key>LSHandlerRoleAll</key>
+    <string>com.google.chrome</string>
+    <key>LSHandlerURLScheme</key>
+    <string>https</string>
+</dict>
+'
+
+defaults write ~/Library/Preferences/com.apple.LaunchServices/com.apple.launchservices.secure.plist LSHandlers -array-add "$html" "$xhtml" "$http" "$https"
+#+end_src
+
+
+*Disable ask to keep changes when closing documents*
+#+begin_src sh
+defaults write -g NSCloseAlwaysConfirmsChanges -bool false
+#+end_src
+
+*Close windows when quitting an app*\\
+When it's true, open documents and windows will not be restored when you re-open an app.
+#+begin_src sh
+defaults write -g NSQuitAlwaysKeepsWindows -bool true
+#+end_src
+
+*Set Allow Handoff between this Mac and your iCloud devices*
+# Inspired by https://www.jamf.com/jamf-nation/discussions/12545/a-script-to-disable-handoff
+#+begin_src sh
+defaults -currentHost write com.apple.coreservices.useractivityd ActivityAdvertisingAllowed -bool yes
+defaults -currentHost write com.apple.coreservices.useractivityd ActivityReceivingAllowed -bool yes
+#+end_src
+
+*Set recent items to 0*
+# The relative file is in ~/Library/Application\ Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.RecentDocuments.sfl2
+# sfltool nolonger work for sfl2 after 10.13, but you may change the .sfl2 to .plist and manipulate with `defaults write` then change the extension back. It may work but I never try it because there is a simpler way to use apple script.
+# https://github.com/buo/dotfiles/blob/d2145bb247700a0cf1018cf351c32a796151befa/osx/_01general.sh#L48-L50
+#+begin_src sh
+for category in 'applications' 'documents' 'servers'; do
+  /usr/bin/osascript -e "tell application \"System Events\" to tell appearance preferences to set recent $category limit to 0"
+done
+#+end_src
+
+
+*Use font smoonthing when available*
+#+begin_src sh
+# defaults -currentHost delete -g AppleFontSmoothing
+#+end_src
+
+** Desktop & Screen Saver
+*Never start screen saver*
+#+begin_src sh
+defaults -currentHost write com.apple.screensaver idleTime -int 0
+#+end_src
+** Dock
+*Set the icon size of Dock items to 72 pixels*
+#+begin_src sh
+defaults write com.apple.dock tilesize -int 72
+#+end_src
+
+*Enable magnification*
+#+begin_src sh
+defaults write com.apple.dock magnification -bool true
+#+end_src
+
+*Set magnification size to 100*
+#+begin_src sh
+defaults write com.apple.dock largesize -int 100
+#+end_src
+
+*Change dock position to left*
+#+begin_src sh
+defaults write com.apple.dock orientation -string "left"
+#+end_src
+
+*Change minimize/maximize window effect*
+#+begin_src sh
+defaults write com.apple.dock mineffect -string "scale"
+#+end_src
+
+*Minimize windows into their application’s icon*
+#+begin_src sh
+defaults write com.apple.dock minimize-to-application -bool true
+#+end_src
+
+*Don’t animate opening applications from the Dock*
+#+begin_src sh
+defaults write com.apple.dock launchanim -bool false
+#+end_src
+
+*Automatically hide and show the Dock*
+#+begin_src sh
+defaults write com.apple.dock autohide -bool true
+#+end_src
+
+*Remove the auto-hiding Dock delay*
+#+begin_src sh
+defaults write com.apple.dock autohide-delay -float 0
+#+end_src
+
+*Remove the animation when hiding/showing the Dock*
+#+begin_src sh
+defaults write com.apple.dock autohide-time-modifier -float 0
+#+end_src
+
+*Show indicator lights for open applications in the Dock*
+#+begin_src sh
+defaults write com.apple.dock show-process-indicators -bool true
+#+end_src
+
+*Don’t show recent applications in Dock*
+#+begin_src sh
+defaults write com.apple.dock show-recents -bool false
+#+end_src
+
+*Show only open applications in the Dock*
+#+begin_src sh
+defaults write com.apple.dock static-only -bool true
+#+end_src
+
+*Make Dock icons of hidden applications translucent*
+#+begin_src sh
+defaults write com.apple.dock showhidden -bool true
+#+end_src
+
+*Remove all (default) app icons from the Dock*\\
+This is only really useful when setting up a new Mac, or if you don’t use the Dock to launch apps.
+#+begin_src sh
+defaults write com.apple.dock persistent-apps -array
+#+end_src
+
+*Enable spring loading for all Dock items*
+#+begin_src sh
+defaults write com.apple.dock enable-spring-load-actions-on-all-items -bool true
+#+end_src
+
+*Enable highlight hover effect for the grid view of a stack (Dock)*
+#+begin_src sh
+defaults write com.apple.dock mouse-over-hilite-stack -bool true
+#+end_src
+
+*Add a spacer to the left side of the Dock (where the applications are)*
+#+begin_src sh
+defaults write com.apple.dock persistent-apps -array-add '{tile-data={}; tile-type="spacer-tile";}'
+#+end_src
+
+*Add a spacer to the right side of the Dock (where the Trash is)*
+#+begin_src sh
+defaults write com.apple.dock persistent-others -array-add '{tile-data={}; tile-type="spacer-tile";}'
+#+end_src
+** Accessbility
+*Enable Option + Esc to speak selected text*
+#+begin_src sh
+defaults write com.apple.speech.synthesis.general.prefs SpokenUIUseSpeakingHotKeyFlag -bool true
+#+end_src
+
+*Set Samantha to the default speaker*
+#+begin_src sh
+defaults write com.apple.speech.voice.prefs SelectedVoiceCreator -int 1886745202
+defaults write com.apple.speech.voice.prefs SelectedVoiceID -int 184844483
+defaults write com.apple.speech.voice.prefs SelectedVoiceName -string "Samantha"
+#+end_src
+
+*Enable three finger drag*
+#+begin_src sh
+defaults write com.apple.AppleMultitouchTrackpad TrackpadThreeFingerDrag -bool true
+defaults write com.apple.AppleMultitouchTrackpad TrackpadFourFingerHorizSwipeGesture -int 2
+defaults write com.apple.AppleMultitouchTrackpad TrackpadThreeFingerVertSwipeGesture -int 0
+defaults write com.apple.AppleMultitouchTrackpad DragLock -bool false
+#+end_src
+
+** Security & Privacy
+*Allow apps downloaded from anywhere*
+#+begin_src sh
+sudo spctl --master-disable
+#+end_src
+** Keyboard
+*** Keyboard
+*Disable press-and-hold for keys in favor of key repeat*
+#+begin_src sh
+defaults write -g ApplePressAndHoldEnabled -bool false
+#+end_src
+
+*Set fast keyboard repeat rate*\\
+TODO: Set InitialKeyRepeat integer range
+#+begin_src sh
+defaults write -g KeyRepeat -int 2
+defaults write -g InitialKeyRepeat -int 15
+#+end_src
+
+*Set touchbar(control strip) icons*
+#+begin_src sh
+defaults write com.apple.controlstrip FullCustomized '(
+    "com.apple.system.group.media",
+    NSTouchBarItemIdentifierFlexibleSpace,
+    "com.apple.system.volume",
+    "com.apple.system.mute",
+    NSTouchBarItemIdentifierFlexibleSpace,
+    "com.apple.system.brightness",
+    "com.apple.system.night-shift",
+    NSTouchBarItemIdentifierFlexibleSpace,
+    "com.apple.system.screen-lock",
+    "com.apple.system.notification-center"
+)'
+#+end_src
+
+*Expaned control strip by default*
+#+begin_src sh
+defaults write com.apple.touchbar.agent PresentationModeGlobal -string "fullControlStrip"
+#+end_src
+
+*** Text
+*Disable automatic capitalization*
+#+begin_src sh
+defaults write -g NSAutomaticCapitalizationEnabled -bool false
+#+end_src
+
+*Disable smart dashes*
+#+begin_src sh
+defaults write -g NSAutomaticDashSubstitutionEnabled -bool false
+#+end_src
+
+*Disable automatic period substitution*
+#+begin_src sh
+defaults write -g NSAutomaticPeriodSubstitutionEnabled -bool false
+#+end_src
+
+*Disable smart quotes*
+#+begin_src sh
+defaults write -g NSAutomaticQuoteSubstitutionEnabled -bool false
+#+end_src
+
+*Disable auto-correct*
+#+begin_src sh
+defaults write -g NSAutomaticSpellingCorrectionEnabled -bool false
+#+end_src
+
+*** Shortcuts
+*Enable full keyboard access for all controls*\\
+(e.g. enable Tab in modal dialogs)
+#+begin_src sh
+defaults write -g AppleKeyboardUIMode -int 3
+#+end_src
+
+*Disable shortcuts to Turn Dock Hiding On/Off*
+#+begin_src sh
+/usr/libexec/PlistBuddy -c "set :AppleSymbolicHotKeys:52:enabled false" ~/Library/Preferences/com.apple.symbolichotkeys.plist
+#+end_src
+
+*Disable shortcuts to Select the previous input source*
+#+begin_src sh
+/usr/libexec/PlistBuddy -c "set :AppleSymbolicHotKeys:60:enabled false" ~/Library/Preferences/com.apple.symbolichotkeys.plist
+#+end_src
+
+*Disable shortcuts to Select next source in input menu*
+#+begin_src sh
+/usr/libexec/PlistBuddy -c "set :AppleSymbolicHotKeys:61:enabled false" ~/Library/Preferences/com.apple.symbolichotkeys.plist
+#+end_src
+
+*Disable shortcuts to Show Spotlight Search*
+#+begin_src sh
+/usr/libexec/PlistBuddy -c "set :AppleSymbolicHotKeys:64:enabled false" ~/Library/Preferences/com.apple.symbolichotkeys.plist
+#+end_src
+
+*Disable shortcuts to Show Finder search window*
+#+begin_src sh
+/usr/libexec/PlistBuddy -c "set :AppleSymbolicHotKeys:65:enabled false" ~/Library/Preferences/com.apple.symbolichotkeys.plist
+#+end_src
+*** Input Sources
+*Disable Show Input menu in menu bar*
+#+begin_src sh
+defaults write com.apple.TextInputMenu visible -bool false
+#+end_src
+** Trackpad
+*Enable tap to click*
+#+begin_src sh
+defaults write com.apple.AppleMultitouchTrackpad Clicking -bool true
+#+end_src
+
+*Enable tap with three fingers to Look up & data detectors*
+#+begin_src sh
+defaults write com.apple.AppleMultitouchTrackpad TrackpadThreeFingerTapGesture -int 2
+#+end_src
+** Displays
+*Enable Night Shift*\\
+[[./system-preferences/displays-night-shift.scpt][displays-night-shift.scpt]]
+#+begin_src sh
+osascript system-preferences/displays-night-shift.scpt
+#+end_src
+** Battery
+*Show battery percentage in menu bar*
+#+begin_src sh
+defaults write com.apple.menuextra.battery ShowPercent YES
+#+end_src
 * All Rights Reserved
