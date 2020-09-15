@@ -107,6 +107,15 @@ echo 'eval "$(rbenv init -)"' >> ~/.zshrc
 source ~/.zshrc
 #+end_src
 
+*Install latest stable Ruby*
+# https://stackoverflow.com/a/30191850
+#+begin_src sh
+latest_ruby_version=$(rbenv install -l | grep -v - | tail -1)
+rbenv install $latest_ruby_version
+rbenv rehash
+rbenv global $latest_ruby_version
+#+end_src
+
 * Applications
 ** Alfred
 *Install Alfred from Brew*
