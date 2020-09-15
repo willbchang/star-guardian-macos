@@ -18,18 +18,11 @@ The Missing Package Manager for macOS.
 #+begin_src sh
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 #+end_src
-
 *** Brew Tools
 *Install brew tool: [[https://github.com/beeftornado/homebrew-rmtree][rmtree]]*\\
 It can remove a formula and its unused dependencies. Once you've tapped it, you can use the command as ~brew rmtree~.
 #+begin_src sh
 brew tap beeftornado/rmtree
-#+end_src
-
-*** Runtime Enviornments
-*Install runtime environments: Ruby*
-#+begin_src sh
-brew install ruby
 #+end_src
 
 *** Command Line Tools
@@ -100,6 +93,11 @@ brew install node
 *Install a better package manager: pnpm*
 #+begin_src sh
 npm i -g pnpm
+#+end_src
+** Ruby
+*Install Ruby environment*
+#+begin_src sh
+brew install rbenv
 #+end_src
 * Applications
 ** Alfred
