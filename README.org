@@ -99,6 +99,14 @@ npm i -g pnpm
 #+begin_src sh
 brew install rbenv
 #+end_src
+
+*Initialize rbenv*
+#+begin_src sh
+rbenv init
+echo 'eval "$(rbenv init -)"' >> ~/.zshrc
+source ~/.zshrc
+#+end_src
+
 * Applications
 ** Alfred
 *Install Alfred from Brew*
