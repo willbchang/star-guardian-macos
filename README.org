@@ -35,12 +35,9 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:
 #+end_src
 
 *** Configuration
-- [ ] TODO: build a ~.zshrc~ from sratch with explaination.
-*Move Oh-My-Zsh configurations to home folder*
-#+begin_src sh
-cp -R command-line-tools/.zshrc ~/.zshrc
-#+end_src
-
+**** Alias
+**** Exports
+**** Settings
 *Reload Oh-My-Zsh configurations*
 #+begin_src sh
 source ~/.zshrc
