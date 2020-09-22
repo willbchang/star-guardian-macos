@@ -34,14 +34,24 @@ autoload -U compinit && compinit
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 #+end_src
 
-*** Configuration
-**** Alias
-**** Exports
-**** Settings
+*** Alias
+*Show folder structure with tree view*
+#+begin_src sh
+alias tree="find . -print | sed -e 's;[^/]*/;|____;g;s;____|; |;g'"
+#+end_src
+
+*Set alias for pnpm*
+#+begin_src sh
+alias p='pnpm'
+alias pi='pnpm i'
+#+end_src
+*** Exports
+*** Configurations
 *Reload Oh-My-Zsh configurations*
 #+begin_src sh
 source ~/.zshrc
 #+end_src
+*** Functions
 ** Brew
 *Install package manager: Homebrew*\\
 The Missing Package Manager for macOS.
