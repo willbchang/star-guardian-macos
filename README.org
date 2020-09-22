@@ -46,17 +46,35 @@ alias p='pnpm'
 alias pi='pnpm i'
 #+end_src
 *** Exports
-*Set proxy for command line*
+*Set http(s) proxy for command line*
 #+begin_src sh
 export http_proxy=http://127.0.0.1:1087
 export https_proxy=http://127.0.0.1:1087
 #+end_src
+*** Functions
 *** Configurations
-*Reload Oh-My-Zsh configurations*
+For more configurations, please visit [[https://github.com/ohmyzsh/ohmyzsh/blob/master/templates/zshrc.zsh-template][zshrc-template]]
+
+*For more themes, please visit: [[https://github.com/ohmyzsh/ohmyzsh/wiki/Themes][ohmyzsh-themes]]*
 #+begin_src sh
+ZSH_THEME='robbyrussell'
+#+end_src
+
+*Disable auto-setting terminal title*
+#+begin_src sh
+DISABLE_AUTO_TITLE='true'
+#+end_src
+
+*Enable zsh plugins*
+#+begin_src sh
+plugins=(git zsh-autosuggestions zsh-syntax-highlighting)
+#+end_src
+
+*Add and reload Oh-My-Zsh configurations*
+#+begin_src sh
+cp -R command-line-tools/.zshrc ~/.zshrc
 source ~/.zshrc
 #+end_src
-*** Functions
 ** Brew
 *Install package manager: Homebrew*\\
 The Missing Package Manager for macOS.
