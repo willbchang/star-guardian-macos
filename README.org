@@ -46,6 +46,11 @@ alias p='pnpm'
 alias pi='pnpm i'
 #+end_src
 *** Exports
+*Set proxy for command line*
+#+begin_src sh
+export http_proxy=http://127.0.0.1:1087
+export https_proxy=http://127.0.0.1:1087
+#+end_src
 *** Configurations
 *Reload Oh-My-Zsh configurations*
 #+begin_src sh
