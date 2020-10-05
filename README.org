@@ -65,6 +65,8 @@ ZSH_THEME='robbyrussell'
 DISABLE_AUTO_TITLE='true'
 #+end_src
 
+*D
+
 *Enable zsh plugins*
 #+begin_src sh
 plugins=(git zsh-autosuggestions zsh-syntax-highlighting)
