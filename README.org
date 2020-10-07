@@ -65,7 +65,10 @@ ZSH_THEME='robbyrussell'
 DISABLE_AUTO_TITLE='true'
 #+end_src
 
-*D
+*Dsiable auto update oh-my-zsh*
+#+begin_src sh
+DISABLE_UPDATE_PROMPT="true"
+#+end_src
 
 *Enable zsh plugins*
 #+begin_src sh
@@ -74,7 +77,7 @@ plugins=(git zsh-autosuggestions zsh-syntax-highlighting)
 
 *Add and reload Oh-My-Zsh configurations*
 #+begin_src sh
-cp -R command-line-tools/.zshrc ~/.zshrc
+cat command-line-tools/.zshrc >> ~/.zshrc
 source ~/.zshrc
 #+end_src
 ** Brew
