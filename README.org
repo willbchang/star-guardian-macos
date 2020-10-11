@@ -438,9 +438,10 @@ curl -Sso ~/.doom.d/README.org https://raw.githubusercontent.com/willbchang/maco
 echo "(org-babel-load-file \"~/.doom.d/README.org\")" >>~/.doom.d/config.el
 #+end_src
 
-*Install vterm dependency: cmake*
+*Install vterm dependencies: cmake, libvterm*
 #+begin_src sh
 brew install cmake
+brew install libvterm
 #+end_src
 
 *Install shell mode dependency: shfmt*
