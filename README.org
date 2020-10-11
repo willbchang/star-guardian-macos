@@ -421,9 +421,11 @@ brew install emacs-plus
 ln -s /usr/local/opt/emacs-plus/Emacs.app /Applications
 #+end_src
 
-*Install doom emacs dependency: ripgrep*
+*Install doom emacs dependencies: ripgrep, coreutils, fd*
 #+begin_src sh
 brew install ripgrep
+brew install coreutils
+brew install fd
 #+end_src
 
 *Install doom emacs*
@@ -438,15 +440,21 @@ curl -Sso ~/.doom.d/README.org https://raw.githubusercontent.com/willbchang/maco
 echo "(org-babel-load-file \"~/.doom.d/README.org\")" >>~/.doom.d/config.el
 #+end_src
 
+*Install markdown depenencies: pandoc*
+#+begin_src sh
+brew install pandoc
+#+end_src
+
 *Install vterm dependencies: cmake, libvterm*
 #+begin_src sh
 brew install cmake
 brew install libvterm
 #+end_src
 
-*Install shell mode dependency: shfmt*
+*Install shell mode dependencies: shfmt, shellcheck*
 #+begin_src sh
 brew install shfmt
+brew install shellcheck
 #+end_src
 
 *Rebuild doom emacs packages*
