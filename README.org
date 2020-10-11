@@ -39,12 +39,6 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:
 #+begin_src sh
 alias tree="find . -print | sed -e 's;[^/]*/;|____;g;s;____|; |;g'"
 #+end_src
-
-*Set alias for pnpm*
-#+begin_src sh
-alias p='pnpm'
-alias pi='pnpm i'
-#+end_src
 *** Exports
 *Set http(s) proxy for command line*
 #+begin_src sh
