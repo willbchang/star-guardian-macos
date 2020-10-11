@@ -404,6 +404,7 @@ trash OCR%20Screencapture.alfredworkflow
 *** Appearance
 *** Advanced
 ** Emacs
+*** Emacs Plus
 *Install emacs-plus*
 #+begin_src sh
 brew tap d12frosted/emacs-plus
@@ -414,7 +415,15 @@ brew install emacs-plus
 #+begin_src sh
 ln -s /usr/local/opt/emacs-plus/Emacs.app /Applications
 #+end_src
+*** Doom Emacs
+**** Installation
+*Install doom emacs*
+#+begin_src sh
+git clone --depth 1 https://github.com/hlissner/doom-emacs ~/.emacs.d
+~/.emacs.d/bin/doom install
+#+end_src
 
+**** Dependencies
 *Install doom emacs dependencies: ripgrep, coreutils, fd*
 #+begin_src sh
 brew install ripgrep
@@ -422,19 +431,7 @@ brew install coreutils
 brew install fd
 #+end_src
 
-*Install doom emacs*
-#+begin_src sh
-git clone --depth 1 https://github.com/hlissner/doom-emacs ~/.emacs.d
-~/.emacs.d/bin/doom install
-#+end_src
-
-*Setup doom emacs for macos*
-#+begin_src sh
-curl -Sso ~/.doom.d/README.org https://raw.githubusercontent.com/willbchang/macos-emacs-doom.d/master/README.org
-echo "(org-babel-load-file \"~/.doom.d/README.org\")" >>~/.doom.d/config.el
-#+end_src
-
-*Install markdown depenencies: pandoc*
+*Install markdown preview depenencies: pandoc*
 #+begin_src sh
 brew install pandoc
 #+end_src
@@ -449,6 +446,13 @@ brew install libvterm
 #+begin_src sh
 brew install shfmt
 brew install shellcheck
+#+end_src
+
+**** Setup
+*Setup doom emacs for macos*
+#+begin_src sh
+curl -Sso ~/.doom.d/README.org https://raw.githubusercontent.com/willbchang/macos-emacs-doom.d/master/README.org
+echo "(org-babel-load-file \"~/.doom.d/README.org\")" >>~/.doom.d/config.el
 #+end_src
 
 *Rebuild doom emacs packages*
