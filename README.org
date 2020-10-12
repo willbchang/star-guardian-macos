@@ -404,16 +404,11 @@ trash OCR%20Screencapture.alfredworkflow
 *** Appearance
 *** Advanced
 ** Emacs
-*** Emacs Plus
-*Install emacs-plus*
+*** Emacs Mac Port
+*Install [[https://github.com/railwaycat/homebrew-emacsmacport][emacs-mac]]*
+This provides a native GUI support for Mac OS X 10.6 - macOS 10.15.
 #+begin_src sh
-brew tap d12frosted/emacs-plus
-brew install emacs-plus
-#+end_src
-
-*Make an Emacs.app alias to /Applications*
-#+begin_src sh
-ln -s /usr/local/opt/emacs-plus/Emacs.app /Applications
+brew cask install emacs-mac
 #+end_src
 *** Doom Emacs
 **** Installation
