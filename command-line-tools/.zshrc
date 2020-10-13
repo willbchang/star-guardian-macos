@@ -14,10 +14,9 @@ plugins=(
 
 source $ZSH/oh-my-zsh.sh
 
-for i (~/.config/function-*) . $i
-
 # Git add commit
 function gac () {
   gaa
   gcmsg "$1"
 }
+
