@@ -60,11 +60,6 @@ function gac () {
   gcmsg "$1"
 }
 #+end_src
-
-*Load all customize functions*
-#+begin_src sh
-for i (~/.config/function-*) . $i
-#+end_src
 *** Configurations
 For more configurations, please visit [[https://github.com/ohmyzsh/ohmyzsh/blob/master/templates/zshrc.zsh-template][zshrc-template]]
 
