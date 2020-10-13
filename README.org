@@ -34,6 +34,10 @@ autoload -U compinit && compinit
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 #+end_src
 
+*Enable zsh plugins*
+#+begin_src sh
+plugins=(git zsh-autosuggestions zsh-syntax-highlighting)
+#+end_src
 *** Alias
 *Show folder structure with tree view*
 #+begin_src sh
@@ -74,11 +78,6 @@ DISABLE_AUTO_TITLE='true'
 *Dsiable auto update oh-my-zsh*
 #+begin_src sh
 DISABLE_UPDATE_PROMPT="true"
-#+end_src
-
-*Enable zsh plugins*
-#+begin_src sh
-plugins=(git zsh-autosuggestions zsh-syntax-highlighting)
 #+end_src
 
 *Add and reload Oh-My-Zsh configurations*
