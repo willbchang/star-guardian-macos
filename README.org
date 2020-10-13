@@ -46,6 +46,14 @@ export http_proxy=http://127.0.0.1:1087
 export https_proxy=http://127.0.0.1:1087
 #+end_src
 *** Functions
+*Git add commit*
+#+begin_src sh
+function gac () {
+  gaa
+  gcmsg "$1"
+}
+#+end_src
+
 *Load all customize functions*
 #+begin_src sh
 for i (~/.config/function-*) . $i
