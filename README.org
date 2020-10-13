@@ -46,6 +46,10 @@ export http_proxy=http://127.0.0.1:1087
 export https_proxy=http://127.0.0.1:1087
 #+end_src
 *** Functions
+*Load all customize functions*
+#+begin_src sh
+for i (~/.config/function-*) . $i
+#+end_src
 *** Configurations
 For more configurations, please visit [[https://github.com/ohmyzsh/ohmyzsh/blob/master/templates/zshrc.zsh-template][zshrc-template]]
 
