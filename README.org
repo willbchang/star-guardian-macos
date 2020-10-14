@@ -153,7 +153,7 @@ brew install git
 Configuring ignored files for all repositories on your computer.
 [[https://github.com/github/gitignore][github/gitignore]]
 #+begin_src sh
-cp -R command-line-tools/.gitignore_global ~/.gitignore_global
+cat command-line-tools/.gitignore_global >> ~/.gitignore_global
 #+end_src
 ** Node
 *Install NodeJS*
