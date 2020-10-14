@@ -162,9 +162,9 @@ git config --global core.excludesfile ~/.gitignore_global
 brew install node
 #+end_src
 
-*Install a better package manager: pnpm*
+*Install a better package manager: yarn*
 #+begin_src sh
-npm i -g pnpm
+brew install yarn
 #+end_src
 ** Ruby
 *Install Ruby environment*
