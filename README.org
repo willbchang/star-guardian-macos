@@ -154,6 +154,7 @@ Configuring ignored files for all repositories on your computer.
 [[https://github.com/github/gitignore][github/gitignore]]
 #+begin_src sh
 cat command-line-tools/.gitignore_global >> ~/.gitignore_global
+git config --global core.excludesfile ~/.gitignore_global
 #+end_src
 ** Node
 *Install NodeJS*
