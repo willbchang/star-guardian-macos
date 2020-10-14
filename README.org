@@ -13,23 +13,31 @@ sh macos-dotfiles/install.sh
 #+end_src
 * Command Line Tools
 ** Oh My Zsh
-*Install Oh-My-Zsh*
+*Install [[https://github.com/ohmyzsh/ohmyzsh][Oh-My-Zsh]]*\\
+A delightful community-driven framework for managing your zsh configuration.
 #+begin_src sh
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 #+end_src
+
 *** Plugins
-*Zsh Autosuggestions*
+Oh My Zsh plugins allow you to add functionality of many sorts to your shell just by enabling them. [[https://github.com/ohmyzsh/ohmyzsh/wiki/Plugins][Plugins]]
+
+*[[https://github.com/zsh-users/zsh-autosuggestions][Zsh Autosuggestions]]*\\
+It suggests commands as you type based on history and completions.
 #+begin_src sh
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 #+end_src
 
-*Zsh Completions*
+*[[https://github.com/zsh-users/zsh-completions][Zsh Completions]]*\\
+Additional completion definitions for Zsh.
 #+begin_src sh
 git clone https://github.com/zsh-users/zsh-completions ${ZSH_CUSTOM:=~/.oh-my-zsh/custom}/plugins/zsh-completions
 autoload -U compinit && compinit
 #+end_src
 
-*Zsh Syntax Highlighting*
+*[[https://github.com/zsh-users/zsh-syntax-highlighting][Zsh Syntax Highlighting]]*\\
+This package provides syntax highlighting for the shell zsh. It enables highlighting of commands whilst they are typed at a zsh prompt into an interactive terminal. This helps in reviewing commands before running them, particularly in catching syntax errors.
+
 #+begin_src sh
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 #+end_src
@@ -41,29 +49,46 @@ plugins=(
   zsh-autosuggestions zsh-syntax-highlighting
 )
 #+end_src
+
 *** Alias
 *Show folder structure with tree view*
+The tree view looks like:
+#+begin_src sh
+➜  Desktop tree
+.
+|____.DS_Store
+|____test
+| |____ror20h.rb
+|____.localized
+|____20min.rb
+#+end_src
+
 #+begin_src sh
 alias tree="find . -print | sed -e 's;[^/]*/;|____;g;s;____|; |;g'"
 #+end_src
+
 *** Exports
-*Set http(s) proxy for command line*
+*Set http(s) proxy for command line*\\
+You may want to disable it if you're not using a VPN, or change the port.
 #+begin_src sh
 export http_proxy=http://127.0.0.1:1087
 export https_proxy=http://127.0.0.1:1087
 #+end_src
+
 *** Functions
-*Git add commit*
+*Git add commit*\\
+The lines inside function use aliases from oh-my-zsh git plugin.
 #+begin_src sh
 function gac () {
   gaa
   gcmsg "$1"
 }
 #+end_src
+
 *** Configurations
 For more configurations, please visit [[https://github.com/ohmyzsh/ohmyzsh/blob/master/templates/zshrc.zsh-template][zshrc-template]]
 
-*For more themes, please visit: [[https://github.com/ohmyzsh/ohmyzsh/wiki/Themes][ohmyzsh-themes]]*
+*For more themes, please visit: [[https://github.com/ohmyzsh/ohmyzsh/wiki/Themes][oh-my-zsh-themes]]*
 #+begin_src sh
 ZSH_THEME='robbyrussell'
 #+end_src
@@ -73,7 +98,8 @@ ZSH_THEME='robbyrussell'
 DISABLE_AUTO_TITLE='true'
 #+end_src
 
-*Dsiable auto update oh-my-zsh*
+*Automatically update without prompting*\\
+Sometimes the update prompt is annoying because it breaks the command you run when launching the Terminal.
 #+begin_src sh
 DISABLE_UPDATE_PROMPT="true"
 #+end_src
