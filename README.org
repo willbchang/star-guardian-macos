@@ -51,7 +51,7 @@ plugins=(
 #+end_src
 
 *** Alias
-*Show folder structure with tree view*
+*Show folder structure with tree view*\\
 The tree view looks like:
 #+begin_src sh
 ➜  Desktop tree
@@ -110,7 +110,7 @@ cat command-line-tools/.zshrc >> ~/.zshrc
 source ~/.zshrc
 #+end_src
 ** Brew
-*Install package manager: Homebrew*\\
+*Install package manager: [[https://brew.sh][Homebrew]]*\\
 The Missing Package Manager for macOS.
 #+begin_src sh
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
@@ -123,19 +123,20 @@ brew tap beeftornado/rmtree
 #+end_src
 
 *** Command Line Tools
-*Install a safe deletion tool: trash*
+*Install a safe deletion tool: [[https://github.com/ali-rantakari/trash][trash]]*\\
+In contrast to [[https://en.wikipedia.org/wiki/Rm_(Unix)][rm]] which is dangerous and permanently delete files, this only moves them to the trash, which is much safer and reversible.
 #+begin_src sh
 brew install trash
 #+end_src
 
 *** Applications
-*Install softwares: IntelliJ IDEA*
+*Install softwares: [[https://www.jetbrains.com/idea/][IntelliJ IDEA]]*
 #+begin_src sh
 brew cask install intellij-idea
 #+end_src
 
 *** Fonts
-*Install font: Inconsolata*
+*Install font: [[https://levien.com/type/myfonts/inconsolata.html][Inconsolata]]*
 #+begin_src sh
 brew tap homebrew/cask-fonts
 brew cask install font-inconsolata
