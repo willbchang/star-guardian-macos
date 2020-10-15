@@ -135,13 +135,13 @@ cat command-line-tools/.gitignore_global >> ~/.gitignore_global
 git config --global core.excludesfile ~/.gitignore_global
 #+end_src
 ** Node
-*Install [[https://github.com/github/gitignore][NodeJS]]*
+*Install [[https://github.com/github/gitignore][NodeJS]]*\\
 Node.js is a JavaScript runtime built on Chrome's V8 JavaScript engine.
 #+begin_src sh
 brew install node
 #+end_src
 
-*Install a better package manager: [[https://classic.yarnpkg.com/lang/en/][yarn]]*
+*Install a better package manager: [[https://classic.yarnpkg.com/lang/en/][yarn]]*\\
 Fast, reliable, and secure dependency management.
 #+begin_src sh
 brew install yarn
