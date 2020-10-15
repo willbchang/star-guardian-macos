@@ -437,10 +437,10 @@ trash OCR%20Screencapture.alfredworkflow
 *** Advanced
 ** Emacs
 *** Emacs Mac Port
-*Install [[https://github.com/railwaycat/homebrew-emacsmacport][emacs-mac]]*
+*Install [[https://github.com/railwaycat/homebrew-emacsmacport][emacs-mac]]*\\
 This provides a native GUI support for Mac OS X 10.6 - macOS 10.15.
 #+begin_src sh
-brew untap railwaycat/emacsmacport
+brew tap railwaycat/emacsmacport
 brew cask install emacs-mac
 #+end_src
 *** Doom Emacs
