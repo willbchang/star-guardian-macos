@@ -43,7 +43,7 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:
 #+end_src
 
 *Enable zsh plugins*
-#+begin_src sh
+#+begin_src bash
 plugins=(
   git ruby rails yarn
   zsh-autosuggestions zsh-syntax-highlighting
@@ -53,7 +53,7 @@ plugins=(
 *** Alias
 *Show folder structure with tree view*\\
 The tree view looks like:
-#+begin_src sh
+#+begin_src bash
 ➜  Desktop tree
 .
 |____.DS_Store
@@ -63,14 +63,14 @@ The tree view looks like:
 |____20min.rb
 #+end_src
 
-#+begin_src sh
+#+begin_src bash
 alias tree="find . -print | sed -e 's;[^/]*/;|____;g;s;____|; |;g'"
 #+end_src
 
 *** Exports
 *Set http(s) proxy for command line*\\
 You may want to disable it if you're not using a VPN, or change the port.
-#+begin_src sh
+#+begin_src bash
 export http_proxy=http://127.0.0.1:1087
 export https_proxy=http://127.0.0.1:1087
 #+end_src
@@ -89,18 +89,18 @@ function gac () {
 For more configurations, please visit [[https://github.com/ohmyzsh/ohmyzsh/blob/master/templates/zshrc.zsh-template][zshrc-template]]
 
 *For more themes, please visit: [[https://github.com/ohmyzsh/ohmyzsh/wiki/Themes][oh-my-zsh-themes]]*
-#+begin_src sh
+#+begin_src bash
 ZSH_THEME='robbyrussell'
 #+end_src
 
 *Disable auto-setting terminal title*
-#+begin_src sh
+#+begin_src bash
 DISABLE_AUTO_TITLE='true'
 #+end_src
 
 *Automatically update without prompting*\\
 Sometimes the update prompt is annoying because it breaks the command you run when launching the Terminal.
-#+begin_src sh
+#+begin_src bash
 DISABLE_UPDATE_PROMPT="true"
 #+end_src
 
