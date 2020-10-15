@@ -129,12 +129,6 @@ In contrast to [[https://en.wikipedia.org/wiki/Rm_(Unix)][rm]] which is dangerou
 brew install trash
 #+end_src
 
-*** Fonts
-*Install font: [[https://levien.com/type/myfonts/inconsolata.html][Inconsolata]]*
-#+begin_src sh
-brew tap homebrew/cask-fonts
-brew cask install font-inconsolata
-#+end_src
 ** Git
 [[https://git-scm.com/][Git]] is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency.
 #+begin_src sh
@@ -728,6 +722,12 @@ brew cask install rubymine
 
 ** Xcode
 
+** Font Book
+*Install font: [[https://levien.com/type/myfonts/inconsolata.html][Inconsolata]]*
+#+begin_src sh
+brew tap homebrew/cask-fonts
+brew cask install font-inconsolata
+#+end_src
 * System Preferences
 ** General
 *Set appearance to auto*\\
