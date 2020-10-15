@@ -121,14 +121,6 @@ It can remove a formula and its unused dependencies. Once you've tapped it, you 
 #+begin_src sh
 brew tap beeftornado/rmtree
 #+end_src
-
-*** Command Line Tools
-*Install a safe deletion tool: [[https://github.com/ali-rantakari/trash][trash]]*\\
-In contrast to [[https://en.wikipedia.org/wiki/Rm_(Unix)][rm]] which is dangerous and permanently delete files, this only moves them to the trash, which is much safer and reversible.
-#+begin_src sh
-brew install trash
-#+end_src
-
 ** Git
 [[https://git-scm.com/][Git]] is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency.
 #+begin_src sh
@@ -175,6 +167,13 @@ latest_ruby_version=$(rbenv install -l | grep -v - | tail -1)
 rbenv install $latest_ruby_version
 rbenv rehash
 rbenv global $latest_ruby_version
+#+end_src
+
+** Trash
+*Install a safe deletion tool: [[https://github.com/ali-rantakari/trash][trash]]*\\
+In contrast to [[https://en.wikipedia.org/wiki/Rm_(Unix)][rm]] which is dangerous and permanently delete files, this only moves them to the trash, which is much safer and reversible.
+#+begin_src sh
+brew install trash
 #+end_src
 
 * Applications
