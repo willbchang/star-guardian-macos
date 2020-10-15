@@ -148,7 +148,10 @@ brew install yarn
 #+end_src
 
 ** Ruby
-*Install Ruby environment*
+*Install [[https://github.com/rbenv/rbenv][Ruby environment]]*\\
+Use rbenv to pick a Ruby version for your application and guarantee that your development environment matches production. Put rbenv to work with Bundler for painless Ruby upgrades and bulletproof deployments.
+
+Well, you just cannot install ~rails~ correctly with ~brew install ruby~, that's why I use ~rbenv~.
 #+begin_src sh
 brew install rbenv
 #+end_src
