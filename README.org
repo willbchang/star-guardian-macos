@@ -397,6 +397,16 @@ defaults write "${file_search_path}/prefs.plist" touchAliases -bool true
 #+begin_src sh
 defaults write "${file_search_path}/navigation/prefs.plist" homeFolder -int 0
 #+end_src
+**** Actions
+***** General
+*Show Actions with ~fn~ key to action selected item*
+#+begin_src sh
+defaults write $actions showWithCtrl -bool false
+defaults write $actions showWithRightArrow -bool false
+defaults write $actions showWithTab -bool false
+#+end_src
+
+
 *** Workflows
 *Install [[https://github.com/willbchang/alfred-open-in-editor][Open in Editor]]*\\
 One hotkey: Launch Editor, Bring Editor to front window, Open file/folder in Editor. Easily change TextEditor/IDE. Support Vim and Emacs!
