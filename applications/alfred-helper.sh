@@ -3,6 +3,7 @@ alfred_preferences_path="$(eval echo $alfred_preferences_path)" # Strip ""
 
 default_results="${alfred_preferences_path}/preferences/features/defaultresults/prefs.plist"
 file_search_path="${alfred_preferences_path}/preferences/features/filesearch"
+actions="${alfred_preferences_path}/preferences/features/actions/prefs.plist"
 
 get_latest_release_download_url() {
 	curl --silent "https://api.github.com/repos/$1/releases/latest" |
