@@ -420,6 +420,11 @@ defaults write $actions finderSelectionHotkey \
 </dict>'
 #+end_src
 
+*Action Ordering: Sort actions by last used per type*
+By default, Alfred will predictably fix the order of actions. If you prefer, tick this option and Alfred will order actions based on your usage per type actioned. Note: At any point, you can search for actions in the action view by typing the name of the action.
+#+begin_src sh
+defaults write $actions sortByUsage -bool true
+#+end_src
 
 
 
