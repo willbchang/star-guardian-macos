@@ -406,6 +406,22 @@ defaults write $actions showWithRightArrow -bool false
 defaults write $actions showWithTab -bool false
 #+end_src
 
+*Set selection hotkey to empty*
+#+begin_src sh
+defaults write $actions finderSelectionHotkey \
+'
+<dict>
+    <key>key</key>
+    <integer>-1</integer>
+    <key>mod</key>
+    <integer>-1</integer>
+    <key>string</key>
+    <string></string>
+</dict>'
+#+end_src
+
+
+
 
 *** Workflows
 *Install [[https://github.com/willbchang/alfred-open-in-editor][Open in Editor]]*\\
@@ -721,6 +737,7 @@ defaults write com.apple.frameworks.diskimages skip-verify-remote -bool true
 *Expand File Info panes: General, Open with, and Sharing & Permissions*
 #+begin_src sh
 defaults write com.apple.finder FXInfoPanesExpanded -dict \
+Show Actions with ~fn~ key to action selected item
 	General -bool true \
 	OpenWith -bool true \
 	Privileges -bool true
