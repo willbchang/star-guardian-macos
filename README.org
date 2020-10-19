@@ -432,6 +432,31 @@ defaults write $actions sortByUsage -bool true
 defaults delete $actions disabledDefaultActions
 #+end_src
 
+**** Web Search
+
+**** Web Bookmarks
+
+**** Clipboard History
+
+**** Snippets
+
+**** Calculator
+
+**** Dictonary
+
+**** Contacts
+
+**** Music
+
+**** 1Password
+
+**** System
+
+**** Terminal
+
+**** Large Type
+
+**** Previews
 
 *** Workflows
 *Install [[https://github.com/willbchang/alfred-open-in-editor][Open in Editor]]*\\
