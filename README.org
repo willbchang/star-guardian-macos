@@ -426,6 +426,11 @@ By default, Alfred will predictably fix the order of actions. If you prefer, tic
 defaults write $actions sortByUsage -bool true
 #+end_src
 
+***** File Actions
+*Enable all default file Actions*
+#+begin_src sh
+defaults delete $actions disabledDefaultActions
+#+end_src
 
 
 *** Workflows
