@@ -5,35 +5,20 @@ A minimal and productive macOS configration with a good documentation that you c
 This is a source code with documentation repo especially for programmers, if you need explaination with pictures, please visit
 https://book.willbc.cn/the-productive-macos/
 
-* Table of Contents :TOC_gh:
-- [[#install][Install]]
-- [[#command-line-tools][Command Line Tools]]
-  - [[#oh-my-zsh][Oh My Zsh]]
-  - [[#brew][Brew]]
-  - [[#git][Git]]
-  - [[#node][Node]]
-  - [[#ruby][Ruby]]
-  - [[#trash][Trash]]
-- [[#applications][Applications]]
-  - [[#alfred][Alfred]]
-  - [[#emacs][Emacs]]
-  - [[#chrome][Chrome]]
-  - [[#terminal][Terminal]]
-  - [[#finder][Finder]]
-  - [[#rubymine][Rubymine]]
-  - [[#xcode][Xcode]]
-  - [[#font-book][Font Book]]
-- [[#system-preferences][System Preferences]]
-  - [[#general][General]]
-  - [[#desktop--screen-saver][Desktop & Screen Saver]]
-  - [[#dock][Dock]]
-  - [[#accessbility][Accessbility]]
-  - [[#security--privacy][Security & Privacy]]
-  - [[#keyboard][Keyboard]]
-  - [[#trackpad][Trackpad]]
-  - [[#displays][Displays]]
-  - [[#battery][Battery]]
-- [[#all-rights-reserved][All Rights Reserved]]
+* Table of Contents
+| [[#command-line-tools][Command Line Tools]] | [[#applications][Applications]] | [[#system-preferences][System Preferences]]     |
+|--------------------+--------------+------------------------|
+| [[#oh-my-zsh][Oh My Zsh]]          | [[#alfred][Alfred]]       | [[#general][General]]                |
+| [[#brew][Brew]]               | [[#emacs][Emacs]]        | [[#desktop--screen-saver][Desktop & Screen Saver]] |
+| [[#git][Git]]                | [[#chrome][Chrome]]       | [[#dock][Dock]]                   |
+| [[#node][Node]]               | [[#terminal][Terminal]]     | [[#accessbility][Accessbility]]           |
+| [[#ruby][Ruby]]               | [[#finder][Finder]]       | [[#security--privacy][Security & Privacy]]     |
+| [[#trash][Trash]]              | [[#rubymine][Rubymine]]     | [[#keyboard][Keyboard]]               |
+|                    | [[#xcode][Xcode]]        | [[#trackpad][Trackpad]]               |
+|                    | [[#font-book][Font Book]]    | [[#displays][Displays]]               |
+|                    |              | [[#battery][Battery]]                |
+
+All Rights Reserved
 
 * Install
 Please read this documentation through before running the command below.
@@ -1249,4 +1234,3 @@ osascript system-preferences/displays-night-shift.scpt
 #+begin_src sh
 defaults write com.apple.menuextra.battery ShowPercent YES
 #+end_src
-* All Rights Reserved
