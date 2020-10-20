@@ -5,6 +5,36 @@ A minimal and productive macOS configration with a good documentation that you c
 This is a source code with documentation repo especially for programmers, if you need explaination with pictures, please visit
 https://book.willbc.cn/the-productive-macos/
 
+* Table of Contents :TOC_gh:
+- [[#install][Install]]
+- [[#command-line-tools][Command Line Tools]]
+  - [[#oh-my-zsh][Oh My Zsh]]
+  - [[#brew][Brew]]
+  - [[#git][Git]]
+  - [[#node][Node]]
+  - [[#ruby][Ruby]]
+  - [[#trash][Trash]]
+- [[#applications][Applications]]
+  - [[#alfred][Alfred]]
+  - [[#emacs][Emacs]]
+  - [[#chrome][Chrome]]
+  - [[#terminal][Terminal]]
+  - [[#finder][Finder]]
+  - [[#rubymine][Rubymine]]
+  - [[#xcode][Xcode]]
+  - [[#font-book][Font Book]]
+- [[#system-preferences][System Preferences]]
+  - [[#general][General]]
+  - [[#desktop--screen-saver][Desktop & Screen Saver]]
+  - [[#dock][Dock]]
+  - [[#accessbility][Accessbility]]
+  - [[#security--privacy][Security & Privacy]]
+  - [[#keyboard][Keyboard]]
+  - [[#trackpad][Trackpad]]
+  - [[#displays][Displays]]
+  - [[#battery][Battery]]
+- [[#all-rights-reserved][All Rights Reserved]]
+
 * Install
 Please read this documentation through before running the command below.
 #+begin_src bash
