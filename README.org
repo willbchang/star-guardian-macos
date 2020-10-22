@@ -561,10 +561,21 @@ curl -Sso ~/.doom.d/README.org https://raw.githubusercontent.com/willbchang/maco
 echo "(org-babel-load-file \"~/.doom.d/README.org\")" >>~/.doom.d/config.el
 #+end_src
 
+
 *Rebuild doom emacs packages*
 #+begin_src sh
 ~/.emacs.d/bin/doom sync && ~/.emacs.d/bin/doom build
 #+end_src
+*** Configuration
+**** UI
+**** Window Management
+**** File
+**** Text Editing
+**** Remap Shortcuts
+**** Sounds
+**** Server & Proxy
+**** Extensions
+**** Window Size
 ** Chrome
 *Install Google Chrome*
 #+begin_src sh
