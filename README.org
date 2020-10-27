@@ -28,12 +28,6 @@ sh macos-dotfiles/install.sh
 #+end_src
 * Command Line Tools
 * System Preferences
-** Displays
-*Enable Night Shift*\\
-[[./system-preferences/displays-night-shift.scpt][displays-night-shift.scpt]]
-#+begin_src sh
-osascript system-preferences/displays-night-shift.scpt
-#+end_src
 ** Battery
 *Show battery percentage in menu bar*
 #+begin_src sh

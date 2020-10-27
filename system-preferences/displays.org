@@ -1,4 +1,6 @@
-echo "Setup System Preferences -> Display"
-
-echo "  Enable Night Shift"
-osascript displays-night-shift.scpt
+#+TITLE: Displays
+*Enable Night Shift*\\
+[[./displays-night-shift.scpt][displays-night-shift.scpt]]
+#+begin_src sh
+osascript system-preferences/displays-night-shift.scpt
+#+end_src
