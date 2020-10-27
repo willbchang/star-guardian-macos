@@ -1,14 +1,20 @@
-echo "Setup System Preferences -> Accessbility"
-echo "  Enable Option + Esc to speak selected text"
+#+TITLE: Accessbility
+*Enable Option + Esc to speak selected text*
+#+begin_src sh
 defaults write com.apple.speech.synthesis.general.prefs SpokenUIUseSpeakingHotKeyFlag -bool true
+#+end_src
 
-echo "  Set Samantha to the default speaker"
+*Set Samantha to the default speaker*
+#+begin_src sh
 defaults write com.apple.speech.voice.prefs SelectedVoiceCreator -int 1886745202
 defaults write com.apple.speech.voice.prefs SelectedVoiceID -int 184844483
 defaults write com.apple.speech.voice.prefs SelectedVoiceName -string "Samantha"
+#+end_src
 
-echo "  Enable three finger drag"
+*Enable three finger drag*
+#+begin_src sh
 defaults write com.apple.AppleMultitouchTrackpad TrackpadThreeFingerDrag -bool true
 defaults write com.apple.AppleMultitouchTrackpad TrackpadFourFingerHorizSwipeGesture -int 2
 defaults write com.apple.AppleMultitouchTrackpad TrackpadThreeFingerVertSwipeGesture -int 0
 defaults write com.apple.AppleMultitouchTrackpad DragLock -bool false
+#+end_src
