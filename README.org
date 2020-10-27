@@ -9,7 +9,7 @@ https://book.willbc.cn/the-productive-macos/
 | [[#command-line-tools][Command Line Tools]] | [[#applications][Applications]] | [[#system-preferences][System Preferences]]     |
 |--------------------+--------------+------------------------|
 | [[#oh-my-zsh][Oh My Zsh]]          | [[#alfred][Alfred]]       | [[#general][General]]                |
-| [[#brew][Brew]]               | [[#emacs][Emacs]]        | [[#desktop--screen-saver][Desktop & Screen Saver]] |
+| [[./command-line-tools/brew.org][Brew]]               | [[#emacs][Emacs]]        | [[#desktop--screen-saver][Desktop & Screen Saver]] |
 | [[#git][Git]]                | [[#chrome][Chrome]]       | [[#dock][Dock]]                   |
 | [[#node][Node]]               | [[#terminal][Terminal]]     | [[#accessbility][Accessbility]]           |
 | [[#ruby][Ruby]]               | [[#finder][Finder]]       | [[#security--privacy][Security & Privacy]]     |
@@ -31,18 +31,6 @@ sh macos-dotfiles/install.sh
 *** Alias
 *** Exports
 *** Functions
-** Brew
-*Install package manager: [[https://brew.sh][Homebrew]]*\\
-The Missing Package Manager for macOS.
-#+begin_src sh
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
-#+end_src
-
-*Install brew tool: [[https://github.com/beeftornado/homebrew-rmtree][rmtree]]*\\
-It can remove a formula and its unused dependencies. Once you've tapped it, you can use the command as ~brew rmtree~.
-#+begin_src sh
-brew tap beeftornado/rmtree
-#+end_src
 ** Git
 [[https://git-scm.com/][Git]] is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency.
 #+begin_src sh
