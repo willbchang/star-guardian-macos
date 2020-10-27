@@ -1,0 +1,13 @@
+#+TITLE: Git
+[[https://git-scm.com/][Git]] is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency.
+#+begin_src sh
+brew install git
+#+end_src
+
+*Setup global [[https://docs.github.com/en/free-pro-team@latest/github/using-git/ignoring-files][git ignore]]*\\
+Configuring ignored files for all repositories on your computer.
+[[https://github.com/github/gitignore][github/gitignore]]
+#+begin_src sh
+cat command-line-tools/.gitignore_global >> ~/.gitignore_global
+git config --global core.excludesfile ~/.gitignore_global
+#+end_src

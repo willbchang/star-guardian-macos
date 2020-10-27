@@ -1,5 +1,0 @@
-echo "Command Line Tool -> Version Control System: Git"
-brew install git
-
-echo "  Setup global git ignore"
-cp -R .gitignore_global ~/.gitignore_global
