@@ -1,28 +1,27 @@
 #+TITLE: The Productive MacOS
-NOTICE: This project is on building, use it as your own risk.
+/NOTICE: This project is on building, use it as your own risk./
 
 A minimal and productive macOS configration with a good documentation that you can live with for a long time.
 This is a source code with documentation repo especially for programmers, if you need explaination with pictures, please visit
 https://book.willbc.cn/the-productive-macos/
 
-* Table of Contents
-| [[#command-line-tools][Command Line Tools]] | [[#applications][Applications]] | [[#system-preferences][System Preferences]]     |
-|--------------------+--------------+------------------------|
-| [[#oh-my-zsh][Oh My Zsh]]          | [[./applications/alfred.org][Alfred]]       | [[./system-preferences/general.org][General]]                |
-| [[./command-line-tools/brew.org][Brew]]               | [[./applications/emacs.org][Emacs]]        | [[#desktop--screen-saver][Desktop & Screen Saver]] |
-| [[#git][Git]]                | [[./applications/chrome.org][Chrome]]       | [[#dock][Dock]]                   |
-| [[#node][Node]]               | [[./applications/terminal.org][Terminal]]     | [[#accessbility][Accessbility]]           |
-| [[#ruby][Ruby]]               | [[./applications/finder.org][Finder]]       | [[#security--privacy][Security & Privacy]]     |
-| [[#trash][Trash]]              | [[./applications/rubymine.org][Rubymine]]     | [[#keyboard][Keyboard]]               |
-|                    | [[#xcode][Xcode]]        | [[#trackpad][Trackpad]]               |
-|                    | [[./applications/font-book.org][Font Book]]    | [[#displays][Displays]]               |
-|                    |              | [[#battery][Battery]]                |
-
-All Rights Reserved
-
-* Install
 Please read this documentation through before running the command below.
 #+begin_src bash
 git clone https://github.com/willbchang/macos-dotfiles.git
 sh macos-dotfiles/install.sh
 #+end_src
+
+*Table of Contents*
+| Command Line Tools | Applications | System Preferences     |
+|--------------------+--------------+------------------------|
+| [[./command-line-tools/oh-my-zsh.org][Oh My Zsh]]          | [[./applications/alfred.org][Alfred]]       | [[./system-preferences/general.org][General]]                |
+| [[./command-line-tools/brew.org][Brew]]               | [[./applications/emacs.org][Emacs]]        | [[./system-preferences/desktop+screen-saver.org][Desktop & Screen Saver]] |
+| [[./command-line-tools/git.org][Git]]                | [[./applications/chrome.org][Chrome]]       | [[./system-preferences/dock.org][Dock]]                   |
+| [[./command-line-tools/node.org][Node]]               | [[./applications/terminal.org][Terminal]]     | [[./system-preferences/accessibility.org][Accessibility]]          |
+| [[./command-line-tools/ruby.org][Ruby]]               | [[./applications/finder.org][Finder]]       | [[./system-preferences/security+privacy.org][Security & Privacy]]     |
+| [[./command-line-tools/trash.org][Trash]]              | [[./applications/rubymine.org][Rubymine]]     | [[./system-preferences/keyboard.org][Keyboard]]               |
+|                    | [[./applications/xcode.org][Xcode]]        | [[./system-preferences/trackpad.org][Trackpad]]               |
+|                    | [[./applications/font-book.org][Font Book]]    | [[./system-preferences/displays.org][Displays]]               |
+|                    |              | [[./system-preferences/battery.org][Battery]]                |
+
+All Rights Reserved.
