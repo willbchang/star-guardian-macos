@@ -1,0 +1,67 @@
+ #+TITLE: Emacs
+* Emacs Mac Port
+*Install [[https://github.com/railwaycat/homebrew-emacsmacport][emacs-mac]]*\\
+This provides a native GUI support for Mac OS X 10.6 - macOS 10.15.
+#+begin_src sh
+brew tap railwaycat/emacsmacport
+brew cask install emacs-mac
+#+end_src
+* Doom Emacs
+** Installation
+*Install doom emacs*
+#+begin_src sh
+git clone --depth 1 https://github.com/hlissner/doom-emacs ~/.emacs.d
+~/.emacs.d/bin/doom install
+#+end_src
+
+** Dependencies
+*Install doom emacs dependencies: ripgrep, coreutils, fd*
+#+begin_src sh
+brew install ripgrep
+brew install coreutils
+brew install fd
+#+end_src
+
+*Install markdown preview depenencies: pandoc*
+#+begin_src sh
+brew install pandoc
+#+end_src
+
+*Install vterm dependencies: cmake, libvterm*
+#+begin_src sh
+brew install cmake
+brew install libvterm
+#+end_src
+
+*Install shell mode dependencies: shfmt, shellcheck*
+#+begin_src sh
+brew install shfmt
+brew install shellcheck
+#+end_src
+
+** Setup
+*Setup doom emacs for macos*
+#+begin_src sh
+curl -Sso ~/.doom.d/README.org https://raw.githubusercontent.com/willbchang/macos-emacs-doom.d/master/README.org
+echo "(org-babel-load-file \"~/.doom.d/README.org\")" >>~/.doom.d/config.el
+#+end_src
+
+
+*Rebuild doom emacs packages*
+#+begin_src sh
+~/.emacs.d/bin/doom sync && ~/.emacs.d/bin/doom build
+#+end_src
+* Configuration
+** UI
+Set font family and font size.
+#+begin_src sh
+(setq doom-font (font-spec :family "Inconsolata" :size 20))
+#+end_src
+** Window Management
+** File
+** Text Editing
+** Remap Shortcuts
+** Sounds
+** Server & Proxy
+** Extensions
+** Window Size
