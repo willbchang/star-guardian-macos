@@ -1,3 +1,10 @@
-echo "Setup System Preferences -> Trackpad"
-echo "  Enable tap to click"
+#+TITLE: Trackpad
+*Enable tap to click*
+#+begin_src sh
 defaults write com.apple.AppleMultitouchTrackpad Clicking -bool true
+#+end_src
+
+*Enable tap with three fingers to Look up & data detectors*
+#+begin_src sh
+defaults write com.apple.AppleMultitouchTrackpad TrackpadThreeFingerTapGesture -int 2
+#+end_src
