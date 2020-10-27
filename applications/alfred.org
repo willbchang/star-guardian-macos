@@ -1,0 +1,318 @@
+#+TITLE: Alfred
+*Install [[https://www.alfredapp.com/][Alfred]] from Brew*
+Alfred is an award-winning app for macOS which boosts your efficiency with hotkeys, keywords, text expansion and more. Search your Mac and the web, and be more productive with custom actions to control your Mac.
+#+begin_src sh
+brew cask install alfred
+#+end_src
+
+*Make sure you have the premission and License*
+#+begin_src sh
+open -a Alfred\ 4
+echo "Please make sure Alfred has permissions"
+echo "Please make sure Alfred has Powerpack License"
+read -p "  Press enter to continue "
+#+end_src
+
+*Load Alfred Preferences Paths and Functions*\\
+You can check it here: [[./alfred-helper.sh][alfred-helper.sh]]
+#+begin_src sh
+source ./applications/alfred-helper.sh
+#+end_src
+
+* General
+* Features
+** Default Results
+*Show System Preferences*
+#+begin_src sh
+defaults write $default_results showPreferences -bool true
+#+end_src
+
+*Hide Contacts*
+#+begin_src sh
+defaults write $default_results showContacts -bool false
+#+end_src
+
+*Hide Folders*
+#+begin_src sh
+defaults write $default_results showFolders -bool false
+#+end_src
+
+*Hide Documents*
+#+begin_src sh
+defaults write $default_results showDocuments -bool false
+#+end_src
+
+*Hide Text Files*
+#+begin_src sh
+defaults write $default_results showTextFiles -bool false
+#+end_src
+
+*Hide Images*
+#+begin_src sh
+defaults write $default_results showImages -bool false
+#+end_src
+
+*Hide Archives*
+#+begin_src sh
+defaults write $default_results showArchives -bool false
+#+end_src
+
+*Hide Apple Scripts*
+#+begin_src sh
+defaults write $default_results showAppleScripts -bool false
+#+end_src
+
+*Disable Search all file types*
+#+begin_src sh
+defaults write $default_results showAll -bool false
+#+end_src
+** File Search
+*** Search
+*Enable Quick Search*
+#+begin_src sh
+defaults write "${file_search_path}/prefs.plist" quickSearch -bool true
+#+end_src
+
+*Disable 'open' keyword for Opening Files*
+#+begin_src sh
+defaults write "${file_search_path}/open/prefs.plist" enabled -bool false
+#+end_src
+
+*Enable 'find' keyword for Revealing Files(open in Finder)*
+#+begin_src sh
+defaults write "${file_search_path}/find/prefs.plist" enabled -bool true
+#+end_src
+
+*Enable 'in' keyword for seaching content in files*
+#+begin_src sh
+defaults write "${file_search_path}/in/prefs.plist" enabled -bool true
+#+end_src
+
+*Disable 'tags' keyword for seaching File Tags*
+#+begin_src sh
+defaults write "${file_search_path}/tag/prefs.plist" enabled -bool false
+#+end_src
+
+*Ignore Email*
+#+begin_src sh
+defaults write "${file_search_path}/prefs.plist" ignoreEmail -bool true
+#+end_src
+
+*Ignore Bookmarks*
+#+begin_src sh
+defaults write "${file_search_path}/prefs.plist" ignoreBookmarks -bool true
+#+end_src
+
+*Show Music files*
+#+begin_src sh
+defaults write "${file_search_path}/prefs.plist" ignoreMusic -bool false
+#+end_src
+
+*Show Source files*
+#+begin_src sh
+defaults write "${file_search_path}/prefs.plist" ignoreSource -bool false
+#+end_src
+
+*Hide Contacts*
+#+begin_src sh
+defaults write "${file_search_path}/prefs.plist" ignoreContacts -bool true
+#+end_src
+
+*Hide History*
+#+begin_src sh
+defaults write "${file_search_path}/prefs.plist" ignoreHistory -bool true
+#+end_src
+
+*Show Images*
+#+begin_src sh
+defaults write "${file_search_path}/prefs.plist" ignoreImages -bool false
+#+end_src
+
+*Hide Calendar*
+#+begin_src sh
+defaults write "${file_search_path}/prefs.plist" ignoreCalendar -bool true
+#+end_src
+
+*Hide Messages*
+#+begin_src sh
+defaults write "${file_search_path}/prefs.plist" ignoreMessages -bool true
+#+end_src
+
+*Show Plist files*
+#+begin_src sh
+defaults write "${file_search_path}/prefs.plist" ignorePlist -bool false
+#+end_src
+
+*Set Result Limit to 20*
+#+begin_src sh
+defaults write "${file_search_path}/prefs.plist" limit -int 0
+#+end_src
+*** Navigation
+*Enable Fuzzy Search for Filitering*
+#+begin_src sh
+defaults write "${file_search_path}/navigation/prefs.plist" fuzzy -bool true
+#+end_src
+
+*Use ← and → for folder navigation*
+#+begin_src sh
+defaults write "${file_search_path}/navigation/prefs.plist" arrowsForFolderNavigation -bool true
+#+end_src
+
+*Use ↵ to open folders in Finder*
+#+begin_src sh
+defaults write "${file_search_path}/navigation/prefs.plist" returnToOpenFolders -bool true
+#+end_src
+
+*Disable Previous Path shortcuts*
+#+begin_src sh
+defaults write "${file_search_path}/navigation/prefs.plist" previousPathHotkey \
+'	<dict>
+		<key>key</key>
+		<integer>-1</integer>
+		<key>mod</key>
+		<integer>-1</integer>
+		<key>string</key>
+		<string></string>
+	</dict>'
+#+end_src
+
+*Set Previous Path Keywords to 'previous'*
+#+begin_src sh
+defaults write "${file_search_path}/navigation/prefs.plist" previousPathKeyword -string "previous"
+#+end_src
+*** Buffer
+*Disable temporary file buffer*
+#+begin_src sh
+defaults write "${file_search_path}/buffer/prefs.plist" enabled -bool false
+#+end_src
+*** Advanced
+*Enable Escape path on 'Copy path to Clipboard' action*
+#+begin_src sh
+defaults write "${file_search_path}/actions/prefs.plist" escapeCopiedPath -bool true
+#+end_src
+
+*Disable Run AppleScripts instead of opening*
+#+begin_src sh
+defaults write "${file_search_path}/prefs.plist" runAppleScripts -bool false
+#+end_src
+
+*Enable Use file type icons for files on external drives*
+#+begin_src sh
+defaults write "${file_search_path}/prefs.plist" fileTypeIconsForExternalFiles -bool true
+#+end_src
+
+*Enable Touch folders after opening them*
+#+begin_src sh
+defaults write "${file_search_path}/prefs.plist" touchFolders -bool true
+#+end_src
+
+*Enable Touch aliases after opening them*
+#+begin_src sh
+defaults write "${file_search_path}/prefs.plist" touchAliases -bool true
+#+end_src
+
+*Set Homde Folder to ~*
+#+begin_src sh
+defaults write "${file_search_path}/navigation/prefs.plist" homeFolder -int 0
+#+end_src
+** Actions
+*** General
+*Show Actions with ~fn~ key to action selected item*
+#+begin_src sh
+defaults write $actions showWithCtrl -bool false
+defaults write $actions showWithRightArrow -bool false
+defaults write $actions showWithTab -bool false
+#+end_src
+
+*Set selection hotkey to empty*
+#+begin_src sh
+defaults write $actions finderSelectionHotkey \
+'
+<dict>
+    <key>key</key>
+    <integer>-1</integer>
+    <key>mod</key>
+    <integer>-1</integer>
+    <key>string</key>
+    <string></string>
+</dict>'
+#+end_src
+
+*Action Ordering: Sort actions by last used per type*
+By default, Alfred will predictably fix the order of actions. If you prefer, tick this option and Alfred will order actions based on your usage per type actioned. Note: At any point, you can search for actions in the action view by typing the name of the action.
+#+begin_src sh
+defaults write $actions sortByUsage -bool true
+#+end_src
+
+*** File Actions
+*Enable all default file Actions*
+#+begin_src sh
+defaults delete $actions disabledDefaultActions
+#+end_src
+
+** Web Search
+
+** Web Bookmarks
+
+** Clipboard History
+
+** Snippets
+
+** Calculator
+
+** Dictonary
+
+** Contacts
+
+** Music
+
+** 1Password
+
+** System
+
+** Terminal
+
+** Large Type
+
+** Previews
+
+* Workflows
+*Install [[https://github.com/willbchang/alfred-open-in-editor][Open in Editor]]*\\
+One hotkey: Launch Editor, Bring Editor to front window, Open file/folder in Editor. Easily change TextEditor/IDE. Support Vim and Emacs!
+#+begin_src sh
+install_alfred_workflow "willbchang/alfred-open-in-editor"
+#+end_src
+
+*Install [[https://github.com/willbchang/alfred-run-in-terminal][Run in Terminal]]*\\
+One hotkey: Execute selected file, cd to selected folder, and run selected text as command in Terminal.
+#+begin_src sh
+install_alfred_workflow "willbchang/alfred-run-in-terminal"
+#+end_src
+
+*Install [[https://github.com/willbchang/alfred-search-selection][Search Selection]]*\\
+One hotkey: Search selected text/image, open url(s) from selected text.
+#+begin_src sh
+install_alfred_workflow "willbchang/alfred-search-selection"
+#+end_src
+
+*Install [[https://github.com/gharlan/alfred-github-workflow][Alfred GitHub]]*\\
+Search through GitHub in Alfred.
+#+begin_src sh
+install_alfred_workflow "gharlan/alfred-github-workflow"
+#+end_src
+
+*Install OCR Screencapture*\\
+*Install OCR Screencapture Dependency: tesseract*
+#+begin_src sh
+brew install tesseract
+#+end_src
+
+#+begin_src sh
+curl -LOSs https://raw.githubusercontent.com/BlackwinMin/alfred-gallery/master/OCR%20Screencapture/OCR%20Screencapture.alfredworkflow
+open OCR%20Screencapture.alfredworkflow
+import_alfred_workflow
+trash OCR%20Screencapture.alfredworkflow
+#+end_src
+
+* Appearance
+* Advanced
