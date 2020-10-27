@@ -13,7 +13,7 @@ https://book.willbc.cn/the-productive-macos/
 | [[#git][Git]]                | [[./applications/chrome.org][Chrome]]       | [[#dock][Dock]]                   |
 | [[#node][Node]]               | [[./applications/terminal.org][Terminal]]     | [[#accessbility][Accessbility]]           |
 | [[#ruby][Ruby]]               | [[./applications/finder.org][Finder]]       | [[#security--privacy][Security & Privacy]]     |
-| [[#trash][Trash]]              | [[#rubymine][Rubymine]]     | [[#keyboard][Keyboard]]               |
+| [[#trash][Trash]]              | [[./applications/rubymine.org][Rubymine]]     | [[#keyboard][Keyboard]]               |
 |                    | [[#xcode][Xcode]]        | [[#trackpad][Trackpad]]               |
 |                    | [[#font-book][Font Book]]    | [[#displays][Displays]]               |
 |                    |              | [[#battery][Battery]]                |
@@ -32,14 +32,6 @@ sh macos-dotfiles/install.sh
 *** Exports
 *** Functions
 * Applications
-** Rubymine
-*Install softwares: [[https://www.jetbrains.com/ruby/][RubyMine]]*\\
-The best IDE for Ruby & Rails. [[v][Find your IDE]]
-You can also use the [[https://www.jetbrains.com/ruby/nextversion/#section=mac][EAP version]] for free.
-#+begin_src sh
-brew cask install rubymine
-#+end_src
-
 ** Xcode
 
 ** Font Book

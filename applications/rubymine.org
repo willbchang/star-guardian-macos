@@ -1,0 +1,7 @@
+#+TITLE: Rubymine
+*Install softwares: [[https://www.jetbrains.com/ruby/][RubyMine]]*\\
+The best IDE for Ruby & Rails. [[v][Find your IDE]]
+You can also use the [[https://www.jetbrains.com/ruby/nextversion/#section=mac][EAP version]] for free.
+#+begin_src sh
+brew cask install rubymine
+#+end_src
