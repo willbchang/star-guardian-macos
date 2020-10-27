@@ -1,0 +1,5 @@
+#+TITLE: Desktop & Screen Saver
+*Never start screen saver*
+#+begin_src sh
+defaults -currentHost write com.apple.screensaver idleTime -int 0
+#+end_src

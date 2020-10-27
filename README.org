@@ -28,11 +28,6 @@ sh macos-dotfiles/install.sh
 #+end_src
 * Command Line Tools
 * System Preferences
-** Desktop & Screen Saver
-*Never start screen saver*
-#+begin_src sh
-defaults -currentHost write com.apple.screensaver idleTime -int 0
-#+end_src
 ** Dock
 *Set the icon size of Dock items to 72 pixels*
 #+begin_src sh
