@@ -1,59 +1,96 @@
-echo "Setup System Preferences -> Dock"
-
-echo "  Set the icon size of Dock items to 72 pixels"
+#+TITLE: Dock
+*Set the icon size of Dock items to 72 pixels*
+#+begin_src sh
 defaults write com.apple.dock tilesize -int 72
+#+end_src
 
-echo "  Enable magnification"
+*Enable magnification*
+#+begin_src sh
 defaults write com.apple.dock magnification -bool true
+#+end_src
 
-echo "  Set magnification size to 100"
+*Set magnification size to 100*
+#+begin_src sh
 defaults write com.apple.dock largesize -int 100
+#+end_src
 
-echo "  Change dock position to left"
+*Change dock position to left*
+#+begin_src sh
 defaults write com.apple.dock orientation -string "left"
+#+end_src
 
-echo "  Change minimize/maximize window effect"
+*Change minimize/maximize window effect*
+#+begin_src sh
 defaults write com.apple.dock mineffect -string "scale"
+#+end_src
 
-echo "  Minimize windows into their application’s icon"
+*Minimize windows into their application’s icon*
+#+begin_src sh
 defaults write com.apple.dock minimize-to-application -bool true
+#+end_src
 
-echo "  Don’t animate opening applications from the Dock"
+*Don’t animate opening applications from the Dock*
+#+begin_src sh
 defaults write com.apple.dock launchanim -bool false
+#+end_src
 
-echo "  Automatically hide and show the Dock"
+*Automatically hide and show the Dock*
+#+begin_src sh
 defaults write com.apple.dock autohide -bool true
+#+end_src
 
-#echo "  Remove the auto-hiding Dock delay"
-#defaults write com.apple.dock autohide-delay -float 0
+*Remove the auto-hiding Dock delay*
+#+begin_src sh
+defaults write com.apple.dock autohide-delay -float 0
+#+end_src
 
-#echo "  Remove the animation when hiding/showing the Dock"
-#defaults write com.apple.dock autohide-time-modifier -float 0
+*Remove the animation when hiding/showing the Dock*
+#+begin_src sh
+defaults write com.apple.dock autohide-time-modifier -float 0
+#+end_src
 
-echo "  Show indicator lights for open applications in the Dock"
+*Show indicator lights for open applications in the Dock*
+#+begin_src sh
 defaults write com.apple.dock show-process-indicators -bool true
+#+end_src
 
-echo "  Don’t show recent applications in Dock"
+*Don’t show recent applications in Dock*
+#+begin_src sh
 defaults write com.apple.dock show-recents -bool false
+#+end_src
 
-echo "  Show only open applications in the Dock"
+*Show only open applications in the Dock*
+#+begin_src sh
 defaults write com.apple.dock static-only -bool true
+#+end_src
 
-# Make Dock icons of hidden applications translucent
+*Make Dock icons of hidden applications translucent*
+#+begin_src sh
 defaults write com.apple.dock showhidden -bool true
+#+end_src
 
-echo "  Remove all (default) app icons from the Dock"
-# This is only really useful when setting up a new Mac, or if you don’t use
-# the Dock to launch apps.
+*Remove all (default) app icons from the Dock*\\
+This is only really useful when setting up a new Mac, or if you don’t use the Dock to launch apps.
+#+begin_src sh
 defaults write com.apple.dock persistent-apps -array
+#+end_src
 
-echo "  Enable spring loading for all Dock items"
+*Enable spring loading for all Dock items*
+#+begin_src sh
 defaults write com.apple.dock enable-spring-load-actions-on-all-items -bool true
+#+end_src
 
-echo "  Enable highlight hover effect for the grid view of a stack (Dock)"
+*Enable highlight hover effect for the grid view of a stack (Dock)*
+#+begin_src sh
 defaults write com.apple.dock mouse-over-hilite-stack -bool true
+#+end_src
 
-# Add a spacer to the left side of the Dock (where the applications are)
-#defaults write com.apple.dock persistent-apps -array-add '{tile-data={}; tile-type="spacer-tile";}"
-# Add a spacer to the right side of the Dock (where the Trash is)
-#defaults write com.apple.dock persistent-others -array-add '{tile-data={}; tile-type="spacer-tile";
+*Add a spacer to the left side of the Dock (where the applications are)*
+#+begin_src sh
+defaults write com.apple.dock persistent-apps -array-add '{tile-data={}; tile-type="spacer-tile";}'
+#+end_src
+
+*Add a spacer to the right side of the Dock (where the Trash is)*
+#+begin_src sh
+defaults write com.apple.dock persistent-others -array-add '{tile-data={}; tile-type="spacer-tile";}'
+#+end_src
