@@ -11,7 +11,7 @@ https://book.willbc.cn/the-productive-macos/
 | [[#oh-my-zsh][Oh My Zsh]]          | [[./applications/alfred.org][Alfred]]       | [[#general][General]]                |
 | [[./command-line-tools/brew.org][Brew]]               | [[./applications/emacs.org][Emacs]]        | [[#desktop--screen-saver][Desktop & Screen Saver]] |
 | [[#git][Git]]                | [[./applications/chrome.org][Chrome]]       | [[#dock][Dock]]                   |
-| [[#node][Node]]               | [[#terminal][Terminal]]     | [[#accessbility][Accessbility]]           |
+| [[#node][Node]]               | [[./applications/terminal.org][Terminal]]     | [[#accessbility][Accessbility]]           |
 | [[#ruby][Ruby]]               | [[#finder][Finder]]       | [[#security--privacy][Security & Privacy]]     |
 | [[#trash][Trash]]              | [[#rubymine][Rubymine]]     | [[#keyboard][Keyboard]]               |
 |                    | [[#xcode][Xcode]]        | [[#trackpad][Trackpad]]               |
@@ -32,17 +32,6 @@ sh macos-dotfiles/install.sh
 *** Exports
 *** Functions
 * Applications
-** Terminal
-*Install terminal theme: Blurred Monokai*
-#+begin_src sh
-curl -o ./Blurred\ Monokai\ Theme.terminal -k https://raw.githubusercontent.com/willbchang/terminal-blurred-monokai-theme/master/Blurred%20Monokai%20Theme.terminal
-
-open Blurred\ Monokai\ Theme.terminal
-rm -rf Blurred\ Monokai\ Theme.terminal
-
-defaults write com.apple.Terminal "Default Window Settings" -string "Blurred Monokai Theme"
-defaults write com.apple.Terminal "Startup Window Settings" -string "Blurred Monokai Theme"
-#+end_src
 ** Finder
 *** UI
 *Use column view in all Finder windows by default*
