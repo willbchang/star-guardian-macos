@@ -32,8 +32,6 @@ sh macos-dotfiles/install.sh
 *** Exports
 *** Functions
 * Applications
-** Xcode
-
 ** Font Book
 *Install font: [[https://levien.com/type/myfonts/inconsolata.html][Inconsolata]]*
 #+begin_src sh
