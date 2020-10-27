@@ -10,7 +10,7 @@ https://book.willbc.cn/the-productive-macos/
 |--------------------+--------------+------------------------|
 | [[#oh-my-zsh][Oh My Zsh]]          | [[./applications/alfred.org][Alfred]]       | [[#general][General]]                |
 | [[./command-line-tools/brew.org][Brew]]               | [[./applications/emacs.org][Emacs]]        | [[#desktop--screen-saver][Desktop & Screen Saver]] |
-| [[#git][Git]]                | [[#chrome][Chrome]]       | [[#dock][Dock]]                   |
+| [[#git][Git]]                | [[./applications/chrome.org][Chrome]]       | [[#dock][Dock]]                   |
 | [[#node][Node]]               | [[#terminal][Terminal]]     | [[#accessbility][Accessbility]]           |
 | [[#ruby][Ruby]]               | [[#finder][Finder]]       | [[#security--privacy][Security & Privacy]]     |
 | [[#trash][Trash]]              | [[#rubymine][Rubymine]]     | [[#keyboard][Keyboard]]               |
@@ -32,14 +32,6 @@ sh macos-dotfiles/install.sh
 *** Exports
 *** Functions
 * Applications
-** Chrome
-*Install Google Chrome*
-#+begin_src sh
-brew cask install google-chrome
-#+end_src
-
-#TODO: Install chrome extensions
-#https://maclovin.org/blog-native/2015/5/22/osx-deploy-chrome-extensions
 ** Terminal
 *Install terminal theme: Blurred Monokai*
 #+begin_src sh
