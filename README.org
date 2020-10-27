@@ -15,7 +15,7 @@ https://book.willbc.cn/the-productive-macos/
 | [[#ruby][Ruby]]               | [[./applications/finder.org][Finder]]       | [[#security--privacy][Security & Privacy]]     |
 | [[#trash][Trash]]              | [[./applications/rubymine.org][Rubymine]]     | [[#keyboard][Keyboard]]               |
 |                    | [[#xcode][Xcode]]        | [[#trackpad][Trackpad]]               |
-|                    | [[#font-book][Font Book]]    | [[#displays][Displays]]               |
+|                    | [[./applications/font-book.org][Font Book]]    | [[#displays][Displays]]               |
 |                    |              | [[#battery][Battery]]                |
 
 All Rights Reserved
@@ -31,13 +31,6 @@ sh macos-dotfiles/install.sh
 *** Alias
 *** Exports
 *** Functions
-* Applications
-** Font Book
-*Install font: [[https://levien.com/type/myfonts/inconsolata.html][Inconsolata]]*
-#+begin_src sh
-brew tap homebrew/cask-fonts
-brew cask install font-inconsolata
-#+end_src
 * System Preferences
 ** General
 *Set appearance to auto*\\

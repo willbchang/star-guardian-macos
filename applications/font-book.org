@@ -1,0 +1,6 @@
+#+TITLE: Font Book
+*Install font: [[https://levien.com/type/myfonts/inconsolata.html][Inconsolata]]*
+#+begin_src sh
+brew tap homebrew/cask-fonts
+brew cask install font-inconsolata
+#+end_src
