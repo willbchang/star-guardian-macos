@@ -31,13 +31,6 @@ sh macos-dotfiles/install.sh
 *** Alias
 *** Exports
 *** Functions
-** Trash
-*Install a safe deletion tool: [[https://github.com/ali-rantakari/trash][trash]]*\\
-In contrast to [[https://en.wikipedia.org/wiki/Rm_(Unix)][rm]] which is dangerous and permanently delete files, this only moves them to the trash, which is much safer and reversible.
-#+begin_src sh
-brew install trash
-#+end_src
-
 * Applications
 ** Alfred
 *Install [[https://www.alfredapp.com/][Alfred]] from Brew*
