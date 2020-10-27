@@ -1,0 +1,210 @@
+#+TITLE: Finder
+* UI
+*Use column view in all Finder windows by default*
+| Features        | Values | Shortcuts   |
+|-----------------+--------+-------------|
+| Icon View       | icnv   | Command + 1 |
+| List View       | Nlsv   | Command + 2 |
+| Column View     | clmv   | Command + 3 |
+| Cover Flow View | Flwv   | Command + 4 |
+#+begin_src sh
+defaults write com.apple.finder FXPreferredViewStyle -string "clmv"
+#+end_src
+
+*Remove toolbar icon*
+#+begin_src sh
+/usr/libexec/PlistBuddy -c "Delete :NSToolbar\ Configuration\ Browser:TB\ Item\ Identifiers" ~/Library/Preferences/com.apple.finder.plist
+/usr/libexec/PlistBuddy -c "Add :NSToolbar\ Configuration\ Browser:TB\ Item\ Identifiers array" ~/Library/Preferences/com.apple.finder.plist
+#+end_src
+
+* Home Directory
+*Create symlinks from Documents*
+#+begin_src sh
+ln -s ~/Documents/Code ~/Code
+ln -s ~/Documents/Book ~/Book
+ln -s ~/Documents/Score ~/Score
+#+end_src
+
+*Hide unused home directory: Applications, Movies, Music, Public, Pictures*
+#+begin_src sh
+chflags hidden ~/Applications ~/Movies ~/Music ~/Public ~/Pictures
+#+end_src
+
+*Unhide ~/Library*
+#+begin_src sh
+xattr -d com.apple.FinderInfo  ~/Library 2> /dev/null
+chflags nohidden ~/Library
+#+end_src
+
+*Show frequent visited home files and directories: .config, .doom.d, Library, .zshrc*\\
+This doesn't work for now.
+#+begin_src sh
+# chflags nohidden ~/.config ~/.doom.d ~/Library ~/.zshrc
+#+end_src
+* General
+*Hide icons for Hard disks on the desktop*
+#+begin_src sh
+defaults write com.apple.finder ShowHardDrivesOnDesktop -bool false
+#+end_src
+
+*Show icons for External disks on the desktop*
+#+begin_src sh
+defaults write com.apple.finder ShowExternalHardDrivesOnDesktop -bool true
+#+end_src
+
+*Hide icons for CDs, DVDs on the desktop*
+#+begin_src sh
+defaults write com.apple.finder ShowRemovableMediaOnDesktop -bool false
+#+end_src
+
+*Hide icons for Connected servers on the desktop*
+#+begin_src sh
+defaults write com.apple.finder ShowMountedServersOnDesktop -bool false
+#+end_src
+
+*New Finder windows show Home directory*
+| Position            | NewWindowTarget | NewWindowTargetPath                                                                                    |
+|---------------------+-----------------+--------------------------------------------------------------------------------------------------------|
+| User's Macintosh    | PfCm            | -                                                                                                      |
+| Macintosh HD - Data | PfVo            | file:///                                                                                               |
+| Home                | PfHm            | file://${HOME}/                                                                                        |
+| Desktop             | PfDe            | file:///Users/$(whoami)/Desktop/                                                                       |
+| Documents           | PfDo            | file:///Users/$(whoami)/Documents/                                                                     |
+| iCloud Drive        | PfID            | file:///Users/$(whoami)/Library/Mobile%20Documents/com~apple~CloudDocs/                                |
+| Recents             | PfAF            | file:///System/Library/CoreServices/Finder.app/Contents/Resources/MyLibraries/myDocuments.cannedSearch |
+| Others              | PfLo            | file:///full/path/here/                                                                                |
+#+begin_src sh
+defaults write com.apple.finder NewWindowTarget -string "PfHm"
+defaults write com.apple.finder NewWindowTargetPath -string "file://${HOME}/"
+#+end_src
+
+*Open folders in tabs instead of new windows*
+#+begin_src sh
+defaults write com.apple.finder FinderSpawnTab -bool true
+#+end_src
+* Sidebar
+*Install tool to manage Finder sidebar: mysides*
+#+begin_src sh
+brew cask install mysides
+#+end_src
+
+*Remove Desktop from sidebar*
+#+begin_src sh
+mysides remove Desktop
+#+end_src
+
+*Remove Recents from sidebar*
+#+begin_src sh
+mysides remove Recents
+#+end_src
+
+*Add Home directory to sidebar*
+#+begin_src sh
+mysides add $(whoami) file:///Users/$(whoami)
+#+end_src
+
+*Add ~/Document/Code to sidebar*
+#+begin_src sh
+mysides add Code file:///Users/$(whoami)/Documents/Code
+#+end_src
+
+*Add ~/Document/Book to sidebar*
+#+begin_src sh
+mysides add Code file:///Users/$(whoami)/Documents/Book
+#+end_src
+
+*Add ~/Document/Score to sidebar*
+#+begin_src sh
+mysides add Code file:///Users/$(whoami)/Documents/Score
+#+end_src
+
+*Remove Recent Tags from sidebar*
+#+begin_src sh
+defaults write com.apple.finder ShowRecentTags -bool false
+#+end_src
+* Advanced
+*Show all file name extensions*
+#+begin_src sh
+defaults write -g AppleShowAllExtensions -bool true
+#+end_src
+
+*Disable warning before changing an extension*
+#+begin_src sh
+defaults write com.apple.finder FXEnableExtensionChangeWarning -bool false
+#+end_src
+
+*Disable warning before removing from iCloud Drive*
+#+begin_src sh
+defaults write com.apple.finder FXEnableRemoveFromICloudDriveWarning -bool false
+#+end_src
+
+*Disable warning before emptying the Trash*
+#+begin_src sh
+defaults write com.apple.finder WarnOnEmptyTrash -bool false
+#+end_src
+
+*Enable remove items from the Trash after 30 days*
+#+begin_src sh
+defaults write com.apple.finder FXRemoveOldTrashItems -bool true
+#+end_src
+
+*Keep folders on top in windows when sorting by name*
+#+begin_src sh
+defaults write com.apple.finder _FXSortFoldersFirst -bool true
+#+end_src
+
+*Keep folders on top on Desktop when sorting by name*
+#+begin_src sh
+defaults write com.apple.finder _FXSortFoldersFirstOnDesktop -bool true
+#+end_src
+
+*When performing a search, Search the Current Folder*
+#+begin_src sh
+defaults write com.apple.finder FXDefaultSearchScope -string "SCcf"
+#+end_src
+* Hidden Features
+*Disable Finder Sound*
+#+begin_src sh
+defaults write com.apple.finder FinderSounds -int 0
+#+end_src
+
+*Enable spring loading for directories*\\
+What is spring loading: https://www.youtube.com/watch?v=F9kdAxGe9SE
+#+begin_src sh
+defaults write -g com.apple.springing.enabled -bool true
+#+end_src
+
+*Remove the spring loading delay for directories*
+#+begin_src sh
+defaults write -g com.apple.springing.delay -float 0
+#+end_src
+
+*Disable disk image verification*
+#+begin_src sh
+defaults write com.apple.frameworks.diskimages skip-verify -bool true
+defaults write com.apple.frameworks.diskimages skip-verify-locked -bool true
+defaults write com.apple.frameworks.diskimages skip-verify-remote -bool true
+#+end_src
+
+*Enable sort by kind for icons on the desktop and in other icon views*
+#+begin_src sh
+/usr/libexec/PlistBuddy -c "Set :DesktopViewSettings:IconViewSettings:arrangeBy kind" ~/Library/Preferences/com.apple.finder.plist
+/usr/libexec/PlistBuddy -c "Set :FK_StandardViewSettings:IconViewSettings:arrangeBy kind" ~/Library/Preferences/com.apple.finder.plist
+/usr/libexec/PlistBuddy -c "Set :StandardViewSettings:IconViewSettings:arrangeBy kind" ~/Library/Preferences/com.apple.finder.plist
+#+end_src
+
+*Set Finder font size to 14*
+#+begin_src sh
+/usr/libexec/PlistBuddy -c "Set :StandardViewOptions:ColumnViewOptions:FontSize 14" ~/Library/Preferences/com.apple.finder.plist
+#+end_src
+
+*Expand File Info panes: General, Open with, and Sharing & Permissions*
+#+begin_src sh
+defaults write com.apple.finder FXInfoPanesExpanded -dict \
+Show Actions with ~fn~ key to action selected item
+	General -bool true \
+	OpenWith -bool true \
+	Privileges -bool true
+#+end_src
+
+./applications/.org
