@@ -31,31 +31,6 @@ sh macos-dotfiles/install.sh
 *** Alias
 *** Exports
 *** Functions
-** Ruby
-*Install [[https://github.com/rbenv/rbenv][Ruby environment]]*\\
-Use rbenv to pick a Ruby version for your application and guarantee that your development environment matches production. Put rbenv to work with Bundler for painless Ruby upgrades and bulletproof deployments.
-
-Well, you just cannot install ~rails~ correctly with ~brew install ruby~, that's why I use ~rbenv~.
-#+begin_src sh
-brew install rbenv
-#+end_src
-
-*Initialize rbenv*
-#+begin_src sh
-rbenv init
-echo 'eval "$(rbenv init -)"' >> ~/.zshrc
-source ~/.zshrc
-#+end_src
-
-*Install latest stable Ruby*
-# https://stackoverflow.com/a/30191850
-#+begin_src sh
-latest_ruby_version=$(rbenv install -l | grep -v - | tail -1)
-rbenv install $latest_ruby_version
-rbenv rehash
-rbenv global $latest_ruby_version
-#+end_src
-
 ** Trash
 *Install a safe deletion tool: [[https://github.com/ali-rantakari/trash][trash]]*\\
 In contrast to [[https://en.wikipedia.org/wiki/Rm_(Unix)][rm]] which is dangerous and permanently delete files, this only moves them to the trash, which is much safer and reversible.
