@@ -1,3 +1,5 @@
-echo "Setup System Preferences -> Battery"
-echo '  Show battery percentage in menu bar'
+#+TITLE: Battery
+*Show battery percentage in menu bar*
+#+begin_src sh
 defaults write com.apple.menuextra.battery ShowPercent YES
+#+end_src

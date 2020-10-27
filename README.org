@@ -26,10 +26,3 @@ Please read this documentation through before running the command below.
 git clone https://github.com/willbchang/macos-dotfiles.git
 sh macos-dotfiles/install.sh
 #+end_src
-* Command Line Tools
-* System Preferences
-** Battery
-*Show battery percentage in menu bar*
-#+begin_src sh
-defaults write com.apple.menuextra.battery ShowPercent YES
-#+end_src
