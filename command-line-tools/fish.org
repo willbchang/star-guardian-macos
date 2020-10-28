@@ -42,5 +42,9 @@ end
 
 
 * Prompt
+*Use Robbyrussell as default prompt*
+#+begin_src sh
+cp fish_prompt.fish ~/.config/fish/functions/fish_prompt.fish
+#+end_src
 
 * Theme
