@@ -23,6 +23,13 @@ chsh -s /usr/local/bin/fish
 * Alias
 
 * Exports
+*Set http(s) proxy for command line*\\
+You may want to disable it if you're not using a VPN, or you may need to change the port.
+#+begin_src sh
+set -x http_proxy http://127.0.0.1:1087
+set -x https_proxy http://127.0.0.1:1087
+#+end_src
+
 
 * Functions
 
