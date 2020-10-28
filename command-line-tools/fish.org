@@ -9,6 +9,12 @@
 brew install fish
 #+end_src
 
+Add fish to ~/etc/shells~ to permit fish to be the login shell
+#+begin_src sh
+echo /usr/local/bin/fish | sudo tee -a /etc/shells
+#+end_src
+
+
 
 * Alias
 
