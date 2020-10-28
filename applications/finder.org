@@ -207,4 +207,3 @@ Show Actions with ~fn~ key to action selected item
 	Privileges -bool true
 #+end_src
 
-./applications/.org
