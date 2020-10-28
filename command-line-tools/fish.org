@@ -5,6 +5,10 @@
 - It only needs to configure a little.
 
 * Install
+#+begin_src sh
+brew install fish
+#+end_src
+
 
 * Alias
 
