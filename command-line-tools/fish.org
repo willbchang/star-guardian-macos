@@ -32,6 +32,14 @@ set -x https_proxy http://127.0.0.1:1087
 
 
 * Functions
+*Git add commit*\\
+#+begin_src sh
+function gac
+  git add -A
+  git commit -m $argv
+end
+#+end_src
+
 
 * Prompt
 
