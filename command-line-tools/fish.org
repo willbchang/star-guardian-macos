@@ -1,4 +1,17 @@
 #+TITLE: Fish
+*fish*: the *f*riendly *i*nteractive *s*hell.
+- It has good syntax, performance, and [[https://fishshell.com/docs/current/index.html][documentation]].
+- It default with autosuggestion, autocompletion.
+- It only needs to configure a little.
+
+* Install
+
 * Alias
+
 * Exports
+
 * Functions
+
+* Prompt
+
+* Theme
