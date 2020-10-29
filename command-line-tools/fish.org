@@ -32,6 +32,13 @@ set -x https_proxy http://127.0.0.1:1087
 
 
 * Functions
+*Clean login message* [[https://github.com/fish-shell/fish-shell/issues/2454#issuecomment-468229385][source]]
+#+begin_src sh
+function fish_greeting
+    clear
+end
+#+end_src
+
 *Git add commit*\\
 #+begin_src sh
 function gac
