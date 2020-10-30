@@ -25,6 +25,10 @@ chsh -s /usr/local/bin/fish
 curl -L https://get.oh-my.fish | fish
 #+end_src
 
+*Install git alias*
+#+begin_src sh
+omf install git
+#+end_src
 
 * Alias
 
