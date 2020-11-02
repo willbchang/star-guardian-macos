@@ -11,6 +11,11 @@ brew install coreutils gpg
 asdf plugin-add nodejs
 #+end_src
 
+*Import the Node.js release team's OpenPGP keys to main keyring*
+#+begin_src fish
+bash -c '${ASDF_DATA_DIR:=$HOME/.asdf}/plugins/nodejs/bin/import-release-team-keyring'
+#+end_src
+
 *Install latest version of [[https://github.com/github/gitignore][NodeJS]]*\\
 #+begin_src fish
 asdf install nodejs latest
