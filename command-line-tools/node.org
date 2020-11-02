@@ -1,9 +1,18 @@
 #+TITLE: Node
 Node.js is a JavaScript runtime built on Chrome's V8 JavaScript engine.
 
-*Install latest version of [[https://github.com/github/gitignore][NodeJS]]*\\
+*Install Dependencies*
+#+begin_src fish
+brew install coreutils gpg
+#+end_src
+
+*Install NodeJS plugin for ASDF*
 #+begin_src fish
 asdf plugin-add nodejs
+#+end_src
+
+*Install latest version of [[https://github.com/github/gitignore][NodeJS]]*\\
+#+begin_src fish
 asdf install nodejs latest
 asdf global nodejs latest
 #+end_src
