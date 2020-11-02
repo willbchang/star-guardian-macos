@@ -7,7 +7,7 @@ brew install coreutils curl git
 
 *Install using the Homebrew package manager*
 #+begin_src fish
-brew install asdf
+brew install asdf --HEAD
 #+end_src
 
 *Add ~asdf.fish~ to ~/.config/fish/config.fish*\\
