@@ -21,12 +21,12 @@ chsh -s /usr/local/bin/fish
 
 * Oh My Fish
 *The Fish Shell Framework*
-#+begin_src sh
+#+begin_src fish
 curl -L https://get.oh-my.fish | fish
 #+end_src
 
 *Install git alias*
-#+begin_src sh
+#+begin_src fish
 omf install git
 #+end_src
 
@@ -35,7 +35,7 @@ omf install git
 * Exports
 *Set http(s) proxy for command line*\\
 You may want to disable it if you're not using a VPN, or you may need to change the port.
-#+begin_src sh
+#+begin_src fish
 set -x http_proxy http://127.0.0.1:1087
 set -x https_proxy http://127.0.0.1:1087
 #+end_src
@@ -43,14 +43,14 @@ set -x https_proxy http://127.0.0.1:1087
 
 * Functions
 *Clean login message* [[https://github.com/fish-shell/fish-shell/issues/2454#issuecomment-468229385][source]]
-#+begin_src sh
+#+begin_src fish
 function fish_greeting
     clear
 end
 #+end_src
 
 *Git add commit*\\
-#+begin_src sh
+#+begin_src fish
 function gac
   git add -A
   git commit -m $argv
@@ -60,7 +60,7 @@ end
 
 * Prompt
 *Use Robbyrussell as default prompt*
-#+begin_src sh
+#+begin_src fish
 cp fish_prompt.fish ~/.config/fish/functions/fish_prompt.fish
 #+end_src
 
