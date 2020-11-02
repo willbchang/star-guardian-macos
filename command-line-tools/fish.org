@@ -5,17 +5,17 @@
 - It only needs to configure a little.
 
 * Install
-#+begin_src sh
+#+begin_src bash
 brew install fish
 #+end_src
 
 Add fish to ~/etc/shells~ to permit fish to be the login shell.
-#+begin_src sh
+#+begin_src bash
 echo /usr/local/bin/fish | sudo tee -a /etc/shells
 #+end_src
 
 Set fish as the default shell.
-#+begin_src sh
+#+begin_src bash
 chsh -s /usr/local/bin/fish
 #+end_src
 
