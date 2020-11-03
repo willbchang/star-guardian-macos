@@ -5,36 +5,36 @@
 - It only needs to configure a little.
 
 * Install
-#+begin_src bash
+#+begin_src sh
 brew install fish
 #+end_src
 
 Add fish to ~/etc/shells~ to permit fish to be the login shell.
-#+begin_src bash
+#+begin_src sh
 echo /usr/local/bin/fish | sudo tee -a /etc/shells
 #+end_src
 
 Set fish as the default shell.
-#+begin_src bash
+#+begin_src sh
 chsh -s /usr/local/bin/fish
 #+end_src
 
 * Oh My Fish
 *The Fish Shell Framework*
-#+begin_src fish
+#+begin_src sh
 curl -L https://get.oh-my.fish | fish
 #+end_src
 
 * Alias
 *Install git alias*
-#+begin_src fish
+#+begin_src sh
 omf install git
 #+end_src
 
 
 * Theme
 Install a minimal featured fish theme [[https://github.com/willbchang/fish-theme-willbc][willbc]].
-#+begin_src fish
+#+begin_src sh
 omf install https://github.com/willbchang/fish-theme-willbc.git
 #+end_src
 

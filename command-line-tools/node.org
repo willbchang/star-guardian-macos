@@ -2,22 +2,22 @@
 Node.js is a JavaScript runtime built on Chrome's V8 JavaScript engine.
 
 *Install Dependencies*
-#+begin_src fish
+#+begin_src sh
 brew install coreutils gpg
 #+end_src
 
 *Install NodeJS plugin for ASDF*
-#+begin_src fish
+#+begin_src sh
 asdf plugin-add nodejs
 #+end_src
 
 *Import the Node.js release team's OpenPGP keys to main keyring*
-#+begin_src fish
+#+begin_src sh
 bash -c '${ASDF_DATA_DIR:=$HOME/.asdf}/plugins/nodejs/bin/import-release-team-keyring'
 #+end_src
 
 *Install latest version of [[https://github.com/github/gitignore][NodeJS]]*\\
-#+begin_src fish
+#+begin_src sh
 asdf install nodejs latest
 asdf global nodejs latest
 #+end_src
