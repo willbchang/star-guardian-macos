@@ -1,4 +1,6 @@
 #+TITLE: ASDF
+[[https://asdf-vm.com/][asdf]] is a CLI tool that can manage multiple language runtime versions on a per-project basis. It is like gvm, nvm, rbenv & pyenv (and more) all in one! Simply install your language's plugin!
+
 
 *Install Dependencies*
 #+begin_src fish
@@ -10,7 +12,7 @@ brew install coreutils curl git
 brew install asdf --HEAD
 #+end_src
 
-*Add ~asdf.fish~ to ~/.config/fish/config.fish*\\
+*Add asdf.fish to ~/.config/fish/config.fish*\\
 Completions are handled by Homebrew for the Fish shell. Friendly!
 #+begin_src sh
 echo -e "\nsource "$(brew --prefix asdf)"/asdf.fish" >> ~/.config/fish/config.fish
