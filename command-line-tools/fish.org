@@ -1,5 +1,5 @@
 #+TITLE: Fish
-*[[https://github.com/fish-shell/fish-shell][fish]]*: the *f*riendly *i*nteractive *sh*ell.
+*[[https://github.com/fish-shell/fish-shell][fish]]*: the *f* riendly *i* nteractive *sh* ell.
 - It has good syntax, performance, and [[https://fishshell.com/docs/current/index.html][documentation]].
 - It default with autosuggestion, autocompletion.
 - It only needs to configure a little.
@@ -32,6 +32,12 @@ omf install git
 
 * Alias
 
+* Theme
+Install a minimal featured fish theme [[https://github.com/willbchang/fish-theme-willbc][willbc]].
+#+begin_src fish
+omf install https://github.com/willbchang/fish-theme-willbc.git
+#+end_src
+
 * Exports
 *Set http(s) proxy for command line*\\
 You may want to disable it if you're not using a VPN, or you may need to change the port.
@@ -42,13 +48,6 @@ set -x https_proxy http://127.0.0.1:1087
 
 
 * Functions
-*Clean login message* [[https://github.com/fish-shell/fish-shell/issues/2454#issuecomment-468229385][source]]
-#+begin_src fish
-function fish_greeting
-    clear
-end
-#+end_src
-
 *Git add commit*\\
 #+begin_src fish
 function gac
@@ -57,11 +56,3 @@ function gac
 end
 #+end_src
 
-
-* Prompt
-*Use Robbyrussell as default prompt*
-#+begin_src fish
-cp fish_prompt.fish ~/.config/fish/functions/fish_prompt.fish
-#+end_src
-
-* Theme
