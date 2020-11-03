@@ -1,5 +1,7 @@
-awk '/\#\+begin_src\ sh/{flag=1; next} /\#\+end_src/{flag=0} flag' README.org >config.sh
-sh config.sh
+flag='/\#\+begin_src\ sh/{flag=1; next} /\#\+end_src/{flag=0} flag'
+for org in $(ls */*.org);do
+    awk "$flag" $org > "${org%.org}.sh"
+done
 
 # echo "Setup # System Preferences"
 # sh system-preferences/general.sh
