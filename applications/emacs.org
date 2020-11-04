@@ -51,17 +51,21 @@ echo "(org-babel-load-file \"~/.doom.d/README.org\")" >>~/.doom.d/config.el
 #+begin_src sh
 ~/.emacs.d/bin/doom sync && ~/.emacs.d/bin/doom build
 #+end_src
+
 * Configuration
 ** UI
+*** Font
 Set font family and font size.
 #+begin_src sh
 (setq doom-font (font-spec :family "Inconsolata" :size 20))
 #+end_src
+*** Color Theme
+*** Window Size
+*** Modeline
+*** Behavior
+
+** Keybinding
+
 ** Window Management
-** File
-** Text Editing
-** Remap Shortcuts
-** Sounds
-** Server & Proxy
-** Extensions
-** Window Size
+
+** Terminal
