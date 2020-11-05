@@ -1,6 +1,6 @@
-flag='/\#\+begin_src\ sh/{flag=1; next} /\#\+end_src/{flag=0} flag'
+sh_flag='/\#\+begin_src\ sh/{flag=1; next} /\#\+end_src/{flag=0} flag'
 for org in $(ls */*.org);do
-    awk "$flag" $org > "${org%.org}.sh"
+    awk "$sh_flag" $org > "${org%.org}.sh"
 done
 
 echo "Setup System Preferences"
