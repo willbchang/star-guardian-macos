@@ -1,4 +1,6 @@
 sh_flag='/\#\+begin_src\ sh/{flag=1; next} /\#\+end_src/{flag=0} flag'
+fish_flag='/\#\+begin_src\ fish/{flag=1; next} /\#\+end_src/{flag=0} flag'
+elisp_flag='/\#\+begin_src\ emacs-lisp/{flag=1; next} /\#\+end_src/{flag=0} flag'
 for org in $(ls */*.org);do
     awk "$sh_flag" $org > "${org%.org}.sh"
 done
