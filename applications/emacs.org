@@ -208,3 +208,7 @@ Set font family and font size.
 ** Window Management
 
 ** Terminal
+Set fish as default shell for vterm.
+#+begin_src emacs-lisp
+(setq vterm-shell "/usr/local/bin/fish")
+#+end_src
