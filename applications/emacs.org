@@ -143,10 +143,14 @@ Hide the buffer name in doom-modeline
   (doom-modeline-def-segment buffer-info-simple
     "simple buffer info segment."
     "")
-  (setq doom-modeline-buffer-encoding nil)
-  (setq doom-modeline-indent-info t)
-  (setq column-number-mode t)
+    (setq doom-modeline-indent-info t)
+    (remove-hook 'doom-modeline-mode-hook #'size-indication-mode)
 )
+#+end_src
+
+Disable buffer encoding info.
+#+begin_src emacs-lisp
+(after! doom-modeline (setq doom-modeline-buffer-encoding nil))
 #+end_src
 
 *** Window Size
