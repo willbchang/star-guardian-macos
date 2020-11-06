@@ -121,10 +121,14 @@ cp emacs/packages.el ~/.config/doom/packages.el
 ** UI
 *** Font
 Set font family and font size.
-#+begin_src sh
+#+begin_src emacs-lisp
 (setq doom-font (font-spec :family "Inconsolata" :size 20))
 #+end_src
 *** Color Theme
+Use doom vibrant as default theme.
+#+begin_src emacs-lisp
+(setq doom-theme 'doom-vibrant)
+#+end_src
 *** Window Size
 *** Modeline
 *** Behavior
