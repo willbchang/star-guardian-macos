@@ -136,7 +136,16 @@ Set window size to 80 x 36.
 (add-to-list 'default-frame-alist '(height . 36))
 #+end_src
 *** Modeline
-*** Behavior
+*** Line Number
+| Display Style                | Value     | Status   |
+|------------------------------+-----------+----------|
+| Absolute line numbers        | t         | Default  |
+| Relative line numbers        | 'relative | Prefered |
+| Relative visual line numbers | 'visual   |          |
+| No line numbers              | nil       |          |
+#+begin_src emacs-lisp
+(setq display-line-numbers-type 'relative)
+#+end_src
 
 ** Keybinding
 
