@@ -161,6 +161,11 @@ Hide size indicator.
 (after! doom-modeline (remove-hook 'doom-modeline-mode-hook #'size-indication-mode))
 #+end_src
 
+Count column number from 1 instead of 0.
+#+begin_src emacs-lisp
+(setq column-number-indicator-zero-based nil)
+#+end_src
+
 *** Window Size
 Set window size to 80 x 36.
 #+begin_src emacs-lisp
