@@ -128,23 +128,12 @@ Show full path in title bar.
            (abbreviate-file-name buffer-file-name)
            "%b")))
 #+end_src
-*** Font
-Set font family and font size.
-#+begin_src emacs-lisp
-(setq doom-font (font-spec :family "Inconsolata" :size 20))
-#+end_src
-*** Color Theme
-Use doom vibrant as default theme.
-#+begin_src emacs-lisp
-(setq doom-theme 'doom-vibrant)
-#+end_src
-*** Window Size
-Set window size to 80 x 36.
-#+begin_src emacs-lisp
-(add-to-list 'default-frame-alist '(width . 80))
-(add-to-list 'default-frame-alist '(height . 36))
-#+end_src
-*** Modeline
+
+*** Side Bar
+TODO
+*** Tab Bar
+TODO
+*** Status Bar
 Hide the buffer name in doom-modeline
 #+begin_src emacs-lisp
 (after! doom-modeline
@@ -159,6 +148,26 @@ Hide the buffer name in doom-modeline
   (setq column-number-mode t)
 )
 #+end_src
+
+*** Window Size
+Set window size to 80 x 36.
+#+begin_src emacs-lisp
+(add-to-list 'default-frame-alist '(width . 80))
+(add-to-list 'default-frame-alist '(height . 36))
+#+end_src
+
+*** Color Theme
+Use doom vibrant as default theme.
+#+begin_src emacs-lisp
+(setq doom-theme 'doom-vibrant)
+#+end_src
+
+*** Font
+Set font family and font size.
+#+begin_src emacs-lisp
+(setq doom-font (font-spec :family "Inconsolata" :size 20))
+#+end_src
+
 *** Line Number
 | Display Style                | Value     | Status   |
 |------------------------------+-----------+----------|
