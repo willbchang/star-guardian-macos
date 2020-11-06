@@ -46,6 +46,11 @@ curl -Sso ~/.doom.d/README.org https://raw.githubusercontent.com/willbchang/maco
 echo "(org-babel-load-file \"~/.doom.d/README.org\")" >>~/.doom.d/config.el
 #+end_src
 
+*Copy init.el and packages.el to doom folder.*
+#+begin_src sh
+cp emacs/init.el ~/.config/doom/init.el
+cp emacs/packages.el ~/.config/doom/packages.el
+#+end_src
 
 *Rebuild doom emacs packages*
 #+begin_src sh
