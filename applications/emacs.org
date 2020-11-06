@@ -136,6 +136,20 @@ Set window size to 80 x 36.
 (add-to-list 'default-frame-alist '(height . 36))
 #+end_src
 *** Modeline
+Hide the buffer name in doom-modeline
+#+begin_src emacs-lisp
+(after! doom-modeline
+  (doom-modeline-def-segment buffer-info
+    "buffer info segment."
+    "")
+  (doom-modeline-def-segment buffer-info-simple
+    "simple buffer info segment."
+    "")
+  (setq doom-modeline-buffer-encoding nil)
+  (setq doom-modeline-indent-info t)
+  (setq column-number-mode t)
+)
+#+end_src
 *** Line Number
 | Display Style                | Value     | Status   |
 |------------------------------+-----------+----------|
