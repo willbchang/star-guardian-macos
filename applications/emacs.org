@@ -156,6 +156,10 @@ Show indent info.
 (after! doom-modeline (setq doom-modeline-indent-info t))
 #+end_src
 
+Hide size indicator.
+#+begin_src emacs-lisp
+(after! doom-modeline (remove-hook 'doom-modeline-mode-hook #'size-indication-mode))
+#+end_src
 
 *** Window Size
 Set window size to 80 x 36.
