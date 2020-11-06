@@ -179,6 +179,13 @@ Use doom vibrant as default theme.
 (setq doom-theme 'doom-vibrant)
 #+end_src
 
+Set cursor color to pink and show different cusor style based on current mode.
+#+begin_src emacs-lisp
+(setq evil-normal-state-cursor '(box "#e2416c")
+      evil-insert-state-cursor '(bar "#e2416c")
+      evil-visual-state-cursor '(hollow "#e2416c"))
+#+end_src
+
 *** Font
 Set font family and font size.
 #+begin_src emacs-lisp
