@@ -119,6 +119,15 @@ cp emacs/packages.el ~/.config/doom/packages.el
 
 * Config.el
 ** UI
+*** Title Bar
+Show full path in title bar.
+#+begin_src emacs-lisp
+(setq frame-title-format
+    '(:eval
+       (if buffer-file-name
+           (abbreviate-file-name buffer-file-name)
+           "%b")))
+#+end_src
 *** Font
 Set font family and font size.
 #+begin_src emacs-lisp
