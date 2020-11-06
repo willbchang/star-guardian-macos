@@ -130,6 +130,11 @@ Use doom vibrant as default theme.
 (setq doom-theme 'doom-vibrant)
 #+end_src
 *** Window Size
+Set window size to 80 x 36.
+#+begin_src emacs-lisp
+(add-to-list 'default-frame-alist '(width . 80))
+(add-to-list 'default-frame-alist '(height . 36))
+#+end_src
 *** Modeline
 *** Behavior
 
