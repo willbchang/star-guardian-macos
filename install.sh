@@ -1,6 +1,7 @@
 sh_flag='/\#\+begin_src\ sh/{flag=1; next} /\#\+end_src/{flag=0} flag'
 fish_flag='/\#\+begin_src\ fish/{flag=1; next} /\#\+end_src/{flag=0} flag'
 elisp_flag='/\#\+begin_src\ emacs-lisp/{flag=1; next} /\#\+end_src/{flag=0} flag'
+
 for org in $(ls */*.org);do
     awk "$sh_flag" $org > "${org%.org}.sh"
 done
@@ -19,6 +20,7 @@ sh system-preferences/battery.sh
 echo "Install and setup Command Line Tools"
 sh command-line-tools/brew.sh
 sh command-line-tools/fish.sh
+awk "$fish_flag" command-line-tools/fish.org > "$HOME/.config/fish/config.fish"
 sh command-line-tools/git.sh
 sh command-line-tools/asdf.sh
 sh command-line-tools/node.sh
