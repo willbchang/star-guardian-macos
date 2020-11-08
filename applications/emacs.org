@@ -203,9 +203,11 @@ Set font family and font size.
 (setq display-line-numbers-type 'relative)
 #+end_src
 
-** Keybinding
+** Keybindings
+*** Text Editing
 
-** Window Management
+*** Buffer & Frame
+
 
 ** Terminal
 Set fish as default shell for vterm.
