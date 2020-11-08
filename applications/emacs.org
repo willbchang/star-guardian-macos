@@ -10,8 +10,8 @@ brew cask install emacs-mac
 ** Installation
 *Install doom emacs*
 #+begin_src sh
-git clone --depth 1 https://github.com/hlissner/doom-emacs ~/.emacs.d
-~/.emacs.d/bin/doom install
+git clone --depth 1 https://github.com/hlissner/doom-emacs ~/.config/emacs
+~/.config/emacs/bin/doom install
 #+end_src
 
 ** Dependencies
