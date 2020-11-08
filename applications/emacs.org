@@ -205,6 +205,23 @@ Set font family and font size.
 
 ** Keybindings
 *** Text Editing
+| Shortcuts                  | Features             | Status             |
+|----------------------------+----------------------+--------------------|
+| ~Command + C~              | Copy                 | macOS Preferred    |
+| ~Command + V~              | Paste                | macOS Preferred    |
+| ~Command + X~              | Cut                  | macOS Preferred    |
+| ~Command + Z~              | Undo                 | macOS Preferred    |
+| ~Command + Shift + Z~      | Redo                 | macOS Preferred    |
+| ~Command + Delete~         | Delete to Line Start | macOS Preferred    |
+| ~Command + Shift + Delete~ | Delete Entire Line   | Personal Preferred |
+| ~Option + Delete~          | Delete a word        | macOS Preferred    |
+| ~Command + +~              | Zoom in Text         | macOS Preferred    |
+| ~Command + =~              | Zoom in Text         | macOS Preferred    |
+| ~Command + -~              | Zoom out Text        | macOS Preferred    |
+| ~Command + 0~              | Reset Text Zoom      | macOS Preferred    |
+| ~Command + A~              | Select All Text      | macOS Preferred    |
+| ~Command + F~              | Search Text          | macOS Preferred    |
+| ~Command + L~              | Go to Line           | macOS Preferred    |
 
 *** Buffer & Frame
 
