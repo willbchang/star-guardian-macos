@@ -17,9 +17,7 @@ git clone --depth 1 https://github.com/hlissner/doom-emacs ~/.config/emacs
 ** Dependencies
 *Install doom emacs dependencies: ripgrep, coreutils, fd*
 #+begin_src sh
-brew install ripgrep
-brew install coreutils
-brew install fd
+brew install ripgrep coreutils fd
 #+end_src
 
 *Install markdown preview depenencies: pandoc*
@@ -29,14 +27,12 @@ brew install pandoc
 
 *Install vterm dependencies: cmake, libvterm*
 #+begin_src sh
-brew install cmake
-brew install libvterm
+brew install cmake libvterm
 #+end_src
 
 *Install shell mode dependencies: shfmt, shellcheck*
 #+begin_src sh
-brew install shfmt
-brew install shellcheck
+brew install shfmt shellcheck
 #+end_src
 
 ** Setup
