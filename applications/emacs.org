@@ -234,6 +234,11 @@ Set font family and font size.
 (define-key global-map [?\s-v] 'yank)
 #+end_src
 
+~Command + X~: *Cut* text to clipboard.
+#+begin_src emacs-lisp
+(define-key global-map [?\s-x] 'kill-region)
+#+end_src
+
 *** Buffer & Frame
 | Shortcuts             | Features             | Status          |
 |-----------------------+----------------------+-----------------|
