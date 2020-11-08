@@ -224,9 +224,14 @@ Set font family and font size.
 | ~Command + L~              | Go to Line           | macOS Preferred    |
 
 
-~Command + C~ *Copy* text to clipboard.
+~Command + C~: *Copy* text to clipboard.
 #+begin_src emacs-lisp
 (define-key global-map [?\s-c] 'kill-ring-save)
+#+end_src
+
+~Command + V~: *Paste* text from clipboard.
+#+begin_src emacs-lisp
+(define-key global-map [?\s-v] 'yank)
 #+end_src
 
 *** Buffer & Frame
