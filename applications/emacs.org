@@ -224,6 +224,19 @@ Set font family and font size.
 | ~Command + L~              | Go to Line           | macOS Preferred    |
 
 *** Buffer & Frame
+| Shortcuts             | Features             | Status          |
+|-----------------------+----------------------+-----------------|
+| ~Command + W~         | Close Current Buffer | macOS Preferred |
+| ~Command + Shift + W~ | Close Current Frame  | macOS Preferred |
+| ~Command + T~         | Create New Buffer    | macOS Preferred |
+| ~Command + N~         | Create New Frame     | macOS Preferred |
+| ~Command + S~         | Save Buffer          | macOS Preferred |
+| ~Command + R~         | Revert Buffer        | macOS Preferred |
+| ~Command + Q~         | Quit Emacs           | macOS Preferred |
+| ~Command + `~         | Move to next Frame   | macOS Preferred |
+| ~Command + '~         | Move to next Buffer  | Emacs Preferred |
+| ~Command + ,~         | Open Preferences     | macOS Preferred |
+
 
 
 ** Terminal
