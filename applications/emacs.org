@@ -235,6 +235,10 @@ Set font family and font size.
 (define-key global-map [?\s-x] 'kill-region)
 #+end_src
 
+~Command + Z~: *Undo* text change.
+#+begin_src emacs-lisp
+(define-key global-map [?\s-z] 'undo)
+#+end_src
 *** Buffer & Frame
 | Shortcuts             | Features             | Status          |
 |-----------------------+----------------------+-----------------|
