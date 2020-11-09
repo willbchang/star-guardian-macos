@@ -211,10 +211,6 @@ Set font family and font size.
 | ~Command + Delete~         | Delete to Line Start | macOS Preferred    |
 | ~Command + Shift + Delete~ | Delete Entire Line   | Personal Preferred |
 | ~Option + Delete~          | Delete a word        | macOS Preferred    |
-| ~Command + +~              | Zoom in Text         | macOS Preferred    |
-| ~Command + =~              | Zoom in Text         | macOS Preferred    |
-| ~Command + -~              | Zoom out Text        | macOS Preferred    |
-| ~Command + 0~              | Reset Text Zoom      | macOS Preferred    |
 | ~Command + A~              | Select All Text      | macOS Preferred    |
 | ~Command + F~              | Search Text          | macOS Preferred    |
 | ~Command + L~              | Go to Line           | macOS Preferred    |
@@ -239,19 +235,26 @@ Set font family and font size.
 #+begin_src emacs-lisp
 (define-key global-map [?\s-z] 'undo)
 #+end_src
+
 *** Buffer & Frame
-| Shortcuts             | Features             | Status          |
-|-----------------------+----------------------+-----------------|
-| ~Command + W~         | Close Current Buffer | macOS Preferred |
-| ~Command + Shift + W~ | Close Current Frame  | macOS Preferred |
-| ~Command + T~         | Create New Buffer    | macOS Preferred |
-| ~Command + N~         | Create New Frame     | macOS Preferred |
-| ~Command + S~         | Save Buffer          | macOS Preferred |
-| ~Command + R~         | Revert Buffer        | macOS Preferred |
-| ~Command + Q~         | Quit Emacs           | macOS Preferred |
-| ~Command + `~         | Move to next Frame   | macOS Preferred |
-| ~Command + '~         | Move to next Buffer  | Emacs Preferred |
-| ~Command + ,~         | Open Preferences     | macOS Preferred |
+| Shortcuts             | Features             | Status             |
+|-----------------------+----------------------+--------------------|
+| ~Command + W~         | Close Current Buffer | macOS Preferred    |
+| ~Command + Shift + W~ | Close Current Window | macOS Preferred    |
+| ~Command + =~         | Zoom in Buffer       | macOS Preferred    |
+| ~Command + -~         | Zoom out Buffer      | macOS Preferred    |
+| ~Command + 0~         | Reset Zoom Buffer    | macOS Preferred    |
+| ~Command + Shift + =~ | Zoom in Window       | Personal Preferred |
+| ~Command + Shit + -~  | Zoom out Window      | Personal Preferred |
+| ~Command + Shit + 0~  | Reset Zoom Window    | Personal Preferred |
+| ~Command + T~         | Create New Buffer    | macOS Preferred    |
+| ~Command + N~         | Create New Window    | macOS Preferred    |
+| ~Command + S~         | Save Buffer          | macOS Preferred    |
+| ~Command + R~         | Revert Buffer        | macOS Preferred    |
+| ~Command + Q~         | Quit Emacs           | macOS Preferred    |
+| ~Command + `~         | Move to next Window  | macOS Preferred    |
+| ~Command + '~         | Move to next Buffer  | Emacs Preferred    |
+| ~Command + ,~         | Open Preferences     | macOS Preferred    |
 
 
 
