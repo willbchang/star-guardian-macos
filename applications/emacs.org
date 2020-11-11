@@ -236,27 +236,29 @@ Set font family and font size.
 (define-key global-map [?\s-z] 'undo)
 #+end_src
 
-*** Buffer & Frame
+*** Buffer
 | Keybindings           | Features             | Convention | Built in Status |
 |-----------------------+----------------------+------------+-----------------|
 | ~Command + W~         | Close Current Buffer | macOS      | Customize       |
-| ~Command + Shift + W~ | Close Current Window | macOS      | Customize       |
 | ~Command + =~         | Zoom in Buffer       | macOS      | Customize       |
 | ~Command + -~         | Zoom out Buffer      | macOS      | Customize       |
 | ~Command + 0~         | Reset Zoom Buffer    | macOS      | Customize       |
-| ~Command + Shift + =~ | Zoom in Window       | Personal   | Customize       |
-| ~Command + Shit + -~  | Zoom out Window      | Personal   | Customize       |
-| ~Command + Shit + 0~  | Reset Zoom Window    | Personal   | Customize       |
 | ~Command + T~         | Create New Buffer    | macOS      | Customize       |
-| ~Command + N~         | Create New Window    | macOS      | Customize       |
 | ~Command + S~         | Save Buffer          | macOS      | Customize       |
 | ~Command + R~         | Revert Buffer        | macOS      | Customize       |
-| ~Command + Q~         | Quit Emacs           | macOS      | Customize       |
-| ~Command + `~         | Move to next Window  | macOS      | Customize       |
 | ~Command + '~         | Move to next Buffer  | Emacs      | Customize       |
 | ~Command + ,~         | Open Preferences     | macOS      | Customize       |
 
-
+*** Window
+| Keybindings           | Features             | Convention | Built in Status |
+|-----------------------+----------------------+------------+-----------------|
+| ~Command + Shift + W~ | Close Current Window | macOS      | Customize       |
+| ~Command + Shift + =~ | Zoom in Window       | Personal   | Customize       |
+| ~Command + Shit + -~  | Zoom out Window      | Personal   | Customize       |
+| ~Command + Shit + 0~  | Reset Zoom Window    | Personal   | Customize       |
+| ~Command + N~         | Create New Window    | macOS      | Customize       |
+| ~Command + `~         | Move to next Window  | macOS      | Customize       |
+| ~Command + Q~         | Quit Emacs           | macOS      | Customize       |
 
 ** Terminal
 Set fish as default shell for vterm.
