@@ -203,17 +203,17 @@ Set font family and font size.
 *** Text Editing
 | Keybindings                | Features             | Convention | Built in Status |
 |----------------------------+----------------------+------------+-----------------|
-| ~Command + C~              | Copy                 | macOS      | Customize       |
-| ~Command + V~              | Paste                | macOS      | Customize       |
+| ~Command + C~              | Copy                 | macOS      | Doom Emacs      |
+| ~Command + V~              | Paste                | macOS      | Doom Emacs      |
 | ~Command + X~              | Cut                  | macOS      | Customize       |
-| ~Command + Z~              | Undo                 | macOS      | Customize       |
-| ~Command + Shift + Z~      | Redo                 | macOS      | Customize       |
+| ~Command + Z~              | Undo                 | macOS      | Doom Emacs      |
+| ~Command + Shift + Z~      | Redo                 | macOS      | Doom Emacs      |
+| ~Command + A~              | Select All Text      | macOS      | Doom Emacs      |
+| ~Command + F~              | Search Text          | macOS      | Doom Emacs      |
+| ~Command + L~              | Go to Line           | macOS      | Doom Emacs      |
+| ~Option + Delete~          | Delete a word        | macOS      | Doom Emacs      |
 | ~Command + Delete~         | Delete to Line Start | macOS      | Doom Emacs      |
 | ~Command + Shift + Delete~ | Delete Entire Line   | Personal   | Customize       |
-| ~Option + Delete~          | Delete a word        | macOS      | Doom Emacs      |
-| ~Command + A~              | Select All Text      | macOS      | Customize       |
-| ~Command + F~              | Search Text          | macOS      | Customize       |
-| ~Command + L~              | Go to Line           | macOS      | Customize       |
 
 
 ~Command + C~: *Copy* text to clipboard.
