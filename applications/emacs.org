@@ -219,6 +219,7 @@ Set font family and font size.
 #+begin_src emacs-lisp
 (map!
  :g "s-x" 'kill-region
+    "s-S-<backspace>" 'kill-whole-line
 )
 #+end_src
 
