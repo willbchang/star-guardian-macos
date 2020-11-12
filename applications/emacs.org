@@ -216,24 +216,10 @@ Set font family and font size.
 | ~Command + Shift + Delete~ | Delete Entire Line   | Personal   | Customize       |
 
 
-~Command + C~: *Copy* text to clipboard.
 #+begin_src emacs-lisp
-(define-key global-map [?\s-c] 'kill-ring-save)
-#+end_src
-
-~Command + V~: *Paste* text from clipboard.
-#+begin_src emacs-lisp
-(define-key global-map [?\s-v] 'yank)
-#+end_src
-
-~Command + X~: *Cut* text to clipboard.
-#+begin_src emacs-lisp
-(define-key global-map [?\s-x] 'kill-region)
-#+end_src
-
-~Command + Z~: *Undo* text change.
-#+begin_src emacs-lisp
-(define-key global-map [?\s-z] 'undo)
+(map!
+ :g "s-x" 'kill-region
+)
 #+end_src
 
 *** Buffer
