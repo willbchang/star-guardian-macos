@@ -236,6 +236,23 @@ Set font family and font size.
 | ~Command + '~         | Move to next Buffer  | Emacs      | Customize       |
 | ~Command + ,~         | Open Preferences     | macOS      | Customize       |
 
+#+begin_src emacs-lisp
+(map!
+ :g "s-w" 'kill-current-buffer
+ :g "s-=" 'text-scale-increase
+ :g "s--" 'text-scale-decrease
+ :g "s-0" 'text-scale-reset
+ :g "s-t" '+default/new-buffer
+ :g "s-r" 'revert-buffer
+ :g "s-'" 'next-window-any-frame
+ :g "s-," 'customize
+)
+
+(defun text-scale-reset ()
+  (interactive)
+  (text-scale-set 0))
+#+end_src
+
 *** Window
 | Keybindings           | Features             | Convention | Built in Status |
 |-----------------------+----------------------+------------+-----------------|
