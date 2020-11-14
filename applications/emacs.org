@@ -224,17 +224,17 @@ Set font family and font size.
 #+end_src
 
 *** Buffer
-| Keybindings           | Features             | Convention | Built in Status |
-|-----------------------+----------------------+------------+-----------------|
-| ~Command + W~         | Close Current Buffer | macOS      | Customize       |
-| ~Command + =~         | Zoom in Buffer       | macOS      | Customize       |
-| ~Command + -~         | Zoom out Buffer      | macOS      | Customize       |
-| ~Command + 0~         | Reset Zoom Buffer    | macOS      | Customize       |
-| ~Command + T~         | Create New Buffer    | macOS      | Customize       |
-| ~Command + S~         | Save Buffer          | macOS      | Customize       |
-| ~Command + R~         | Revert Buffer        | macOS      | Customize       |
-| ~Command + '~         | Move to next Buffer  | Emacs      | Customize       |
-| ~Command + ,~         | Open Preferences     | macOS      | Customize       |
+| Keybindings   | Features             | Convention | Built in Status |
+|---------------+----------------------+------------+-----------------|
+| ~Command + W~ | Close Current Buffer | macOS      | Customize       |
+| ~Command + =~ | Zoom in Buffer       | macOS      | Customize       |
+| ~Command + -~ | Zoom out Buffer      | macOS      | Customize       |
+| ~Command + 0~ | Reset Zoom Buffer    | macOS      | Customize       |
+| ~Command + T~ | Create New Buffer    | macOS      | Customize       |
+| ~Command + S~ | Save Buffer          | macOS      | Customize       |
+| ~Command + R~ | Revert Buffer        | macOS      | Customize       |
+| ~Command + '~ | Move to next Buffer  | Emacs      | Customize       |
+| ~Command + ,~ | Open Preferences     | macOS      | Customize       |
 
 #+begin_src emacs-lisp
 (map!
