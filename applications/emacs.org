@@ -264,6 +264,18 @@ Set font family and font size.
 | ~Command + `~         | Move to next Window  | macOS      | Customize       |
 | ~Command + Q~         | Quit Emacs           | macOS      | Customize       |
 
+#+begin_src emacs-lisp
+(map!
+ :g "s-W" 'delete-frame
+ :g "s-+" 'doom/increase-font-size
+ :g "s-_" 'doom/decrease-font-size
+ :g "s-)" 'doom/reset-font-size
+ :g "s-n" 'make-frame
+ :g "s-`" 'other-frame
+ :g "s-q" 'save-buffers-kill-emacs
+)
+#+end_src
+
 ** Terminal
 Set fish as default shell for vterm.
 #+begin_src emacs-lisp
