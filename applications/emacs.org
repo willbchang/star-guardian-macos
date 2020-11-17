@@ -281,3 +281,8 @@ Set fish as default shell for vterm.
 #+begin_src emacs-lisp
 (setq vterm-shell "/usr/local/bin/fish")
 #+end_src
+
+Do not ask to confirm when quitting vterm.
+#+begin_src emacs-lisp
+(setq kill-buffer-query-functions nil)
+#+end_src
