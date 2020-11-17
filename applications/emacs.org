@@ -157,9 +157,16 @@ Hide size indicator.
 (after! doom-modeline (remove-hook 'doom-modeline-mode-hook #'size-indication-mode))
 #+end_src
 
-Hide evil-mode state color modeline.
+Hide evil-mode state color in modeline.
 #+begin_src emacs-lisp
 (after! doom-modeline (setq doom-modeline-modal-icon nil))
+#+end_src
+
+Hide evil-mode state color in modeline.
+#+begin_src emacs-lisp
+(setq evil-normal-state-tag ""
+      evil-insert-state-tag ""
+      evil-visual-state-tag "")
 #+end_src
 
 Count column number from 1 instead of 0.
