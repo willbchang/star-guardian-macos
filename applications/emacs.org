@@ -197,7 +197,9 @@ Set cursor color to pink and show different cusor style based on current mode.
 #+begin_src emacs-lisp
 (setq evil-normal-state-cursor '(box "#e2416c")
       evil-insert-state-cursor '(bar "#e2416c")
-      evil-visual-state-cursor '(hollow "#e2416c"))
+      evil-visual-state-cursor '(hollow "#e2416c")
+      evil-operator-state-cursor '(evil-half-cursor "#e2416c")
+      evil-replace-state-cursor '(hbar "#e2416c"))
 #+end_src
 
 *** Font
