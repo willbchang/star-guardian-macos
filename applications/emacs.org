@@ -162,11 +162,17 @@ Count column number from 1 instead of 0.
 (setq column-number-indicator-zero-based nil)
 #+end_src
 
-*** Window Size
+*** Window
 Set window size to 80 x 36.
 #+begin_src emacs-lisp
 (add-to-list 'default-frame-alist '(width . 80))
 (add-to-list 'default-frame-alist '(height . 36))
+#+end_src
+
+Set trasnparent window.
+#+begin_src emacs-lisp
+(set-frame-parameter (selected-frame) 'alpha '(98 . 95))
+(add-to-list 'default-frame-alist '(alpha . (98 . 95)))
 #+end_src
 
 *** Color Theme
