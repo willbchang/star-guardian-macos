@@ -221,25 +221,31 @@ Set font family and font size.
 
 ** Keybindings
 *** Text Editing
-| Keybindings                | Features             | Convention | Built in Status |
-|----------------------------+----------------------+------------+-----------------|
-| ~Command + C~              | Copy                 | macOS      | Doom Emacs      |
-| ~Command + V~              | Paste                | macOS      | Doom Emacs      |
-| ~Command + X~              | Cut                  | macOS      | Customize       |
-| ~Command + Z~              | Undo                 | macOS      | Doom Emacs      |
-| ~Command + Shift + Z~      | Redo                 | macOS      | Doom Emacs      |
-| ~Command + A~              | Select All Text      | macOS      | Doom Emacs      |
-| ~Command + F~              | Search Text          | macOS      | Doom Emacs      |
-| ~Command + L~              | Go to Line           | macOS      | Doom Emacs      |
-| ~Option + Delete~          | Delete a word        | macOS      | Doom Emacs      |
-| ~Command + Delete~         | Delete to Line Start | macOS      | Doom Emacs      |
-| ~Command + Shift + Delete~ | Delete Entire Line   | Personal   | Customize       |
+| Keybindings                | Features                          | Convention | Built in Status |
+|----------------------------+-----------------------------------+------------+-----------------|
+| ~Command + C~              | Copy                              | macOS      | Doom Emacs      |
+| ~Command + V~              | Paste                             | macOS      | Doom Emacs      |
+| ~Command + X~              | Cut                               | macOS      | Customize       |
+| ~Command + Z~              | Undo                              | macOS      | Doom Emacs      |
+| ~Command + Shift + Z~      | Redo                              | macOS      | Doom Emacs      |
+| ~Command + A~              | Select All Text                   | macOS      | Doom Emacs      |
+| ~Command + F~              | Search Text                       | macOS      | Doom Emacs      |
+| ~Command + ↑~              | Move to the top of the file.      | macOS      | Customize       |
+| ~Command + ↓~              | Move to the bottom of the file    | macOS      | Customize       |
+| ~Command + ←~              | Move to the beginning of the line | macOS      | Doom Emacs      |
+| ~Command + →~              | Move to the end of the line       | macOS      | Doom Emacs      |
+| ~Command + L~              | Go to Line                        | macOS      | Doom Emacs      |
+| ~Option + Delete~          | Delete a word                     | macOS      | Doom Emacs      |
+| ~Command + Delete~         | Delete to Line Start              | macOS      | Doom Emacs      |
+| ~Command + Shift + Delete~ | Delete Entire Line                | Personal   | Customize       |
 
 
 #+begin_src emacs-lisp
 (map!
  :g "s-x" 'kill-region
     "s-S-<backspace>" 'kill-whole-line
+    "s-<up>" 'beginning-of-buffer
+    "s-<down>" 'end-of-buffer
 )
 #+end_src
 
