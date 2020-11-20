@@ -1,4 +1,9 @@
 #+TITLE: Ruby
+Use brew installed openssl for ruby-build.
+#+begin_src emacs-lisp
+set -x RUBY_CONFIGURE_OPTS "--with-openssl-dir="(brew --prefix openssl@1.1)
+#+end_src
+
 *Install latest stable Ruby*
 #+begin_src sh
 asdf plugin-add ruby
