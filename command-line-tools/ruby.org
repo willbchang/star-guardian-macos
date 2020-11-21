@@ -15,3 +15,8 @@ asdf global ruby latest
 #+begin_src sh
 gem install rails
 #+end_src
+
+Install [[https://jekyllrb.com/][Jekyll]] as a static website generator
+#+begin_src sh
+gem install bundler jekyll
+#+end_src
