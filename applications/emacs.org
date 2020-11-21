@@ -302,6 +302,12 @@ Set font family and font size.
 )
 #+end_src
 
+** Behaviors
+Iterate through CamelCase words in programming mode.
+#+begin_src emacs-lisp
+(add-hook 'prog-mode-hook 'subword-mode)
+#+end_src
+
 ** Terminal
 Set fish as default shell for vterm.
 #+begin_src emacs-lisp
