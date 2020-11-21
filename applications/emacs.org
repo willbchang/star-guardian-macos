@@ -308,6 +308,11 @@ Iterate through CamelCase words in programming mode.
 (add-hook 'prog-mode-hook 'subword-mode)
 #+end_src
 
+Quit Emacs without confirm.
+#+begin_src emacs-lisp
+(setq confirm-kill-emacs nil)
+#+end_src
+
 ** Terminal
 Set fish as default shell for vterm.
 #+begin_src emacs-lisp
