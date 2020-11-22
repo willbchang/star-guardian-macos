@@ -325,3 +325,9 @@ Do not ask to confirm when quitting vterm.
 #+begin_src emacs-lisp
 (setq kill-buffer-query-functions nil)
 #+end_src
+
+** Org Superstar
+Change org superstart headline styles.
+#+begin_src emacs-lisp
+(setq org-superstar-headline-bullets-list '("◉" "○" "◈" "◇" "▣" "□"))
+#+end_src
