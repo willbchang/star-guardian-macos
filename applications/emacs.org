@@ -322,6 +322,7 @@ Highlight links and emails globally.
 
 (global-goto-address-mode 1)
 #+end_src
+
 ** Terminal
 Set fish as default shell for vterm.
 #+begin_src emacs-lisp
@@ -334,6 +335,11 @@ Do not ask to confirm when quitting vterm.
 #+end_src
 
 ** Org
+Set default major mode of new buffer to org-mode.
+#+begin_src emacs-lisp
+(setq-default major-mode 'org-mode)
+#+end_src
+
 Enable org superstar mode.
 #+begin_src emacs-lisp
 (add-hook 'org-mode-hook (lambda () (org-superstar-mode 1)))
