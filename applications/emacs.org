@@ -315,6 +315,13 @@ Quit Emacs without confirm.
 (setq confirm-kill-emacs nil)
 #+end_src
 
+Highlight links and emails globally.
+#+begin_src emacs-lisp
+(define-globalized-minor-mode global-goto-address-mode goto-address-mode
+  (lambda () (goto-address-mode 1)))
+
+(global-goto-address-mode 1)
+#+end_src
 ** Terminal
 Set fish as default shell for vterm.
 #+begin_src emacs-lisp
