@@ -343,3 +343,11 @@ Change org headline styles.
 #+begin_src emacs-lisp
 (setq org-superstar-headline-bullets-list '("◉" "○" "◈" "◇" "▣" "□"))
 #+end_src
+
+Change org unordered list styles.
+#+begin_src emacs-lisp
+(setq org-superstar-prettify-item-bullets t)
+(setq org-superstar-item-bullet-alist '((?* . ?•)
+                                        (?+ . ?•)
+                                        (?- . ?•)))
+#+end_src
