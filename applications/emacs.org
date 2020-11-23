@@ -220,6 +220,17 @@ Set font family and font size.
 #+end_src
 
 ** Keybindings
+Disable conflict or unused keybindings.
+#+begin_src emacs-lisp
+(map!
+ "M-0" nil
+ :n "s-0" nil
+ :n "C--" nil
+ :n "C-=" nil
+ :n "C-+" nil
+)
+#+end_src
+
 *** Text Editing
 | Keybindings                | Features                          | Convention | Built in Status |
 |----------------------------+-----------------------------------+------------+-----------------|
