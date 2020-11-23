@@ -340,6 +340,11 @@ Set default major mode of new buffer to org-mode.
 (setq-default major-mode 'org-mode)
 #+end_src
 
+Set default major mode of scratch buffer to org-mode.
+#+begin_src emacs-lisp
+(setq-default initial-major-mode 'org-mode)
+#+end_src
+
 Enable org superstar mode.
 #+begin_src emacs-lisp
 (add-hook 'org-mode-hook (lambda () (org-superstar-mode 1)))
