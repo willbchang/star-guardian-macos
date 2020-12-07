@@ -4,7 +4,7 @@
 This provides a native GUI support for Mac OS X 10.6 - macOS 10.15.
 #+begin_src sh
 brew tap railwaycat/emacsmacport
-brew cask install emacs-mac
+brew install emacs-mac --with-natural-title-bar
 #+end_src
 * Doom Emacs
 ** Installation
