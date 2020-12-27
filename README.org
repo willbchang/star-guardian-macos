@@ -15,7 +15,7 @@ sh macos-dotfiles/install.sh
 | Command Line Tools | Applications | System Preferences     |
 |--------------------+--------------+------------------------|
 | [[./command-line-tools/brew.org][Brew]]               | [[./applications/alfred.org][Alfred]]       | [[./system-preferences/general.org][General]]                |
-| [[./command-line-tools/oh-my-zsh.org][Zsh]]                | [[./applications/emacs.org][Emacs]]        | [[./system-preferences/desktop+screen-saver.org][Desktop & Screen Saver]] |
+| [[./command-line-tools/zsh.org][Zsh]]                | [[./applications/emacs.org][Emacs]]        | [[./system-preferences/desktop+screen-saver.org][Desktop & Screen Saver]] |
 | [[./command-line-tools/git.org][Git]]                | [[./applications/chrome.org][Chrome]]       | [[./system-preferences/dock.org][Dock]]                   |
 | [[./command-line-tools/asdf.org][ASDF]]               | [[./applications/terminal.org][Terminal]]     | [[./system-preferences/accessibility.org][Accessibility]]          |
 | [[./command-line-tools/node.org][Node]]               | [[./applications/finder.org][Finder]]       | [[./system-preferences/security+privacy.org][Security & Privacy]]     |
