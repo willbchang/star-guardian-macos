@@ -286,6 +286,7 @@ Disable conflict or unused keybindings.
  :g "s-'" 'next-window-any-frame
  :g "s-," 'customize
  :g "s-[" 'previous-buffer
+ :g "s-]" 'next-buffer
  :i "s-/" 'evilnc-comment-or-uncomment-lines
 )
 
