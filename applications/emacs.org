@@ -264,6 +264,7 @@ Disable conflict or unused keybindings.
 | Keybindings   | Features                     | Convention | Built in Status |
 |---------------+------------------------------+------------+-----------------|
 | ~Command + W~ | Close Current Buffer         | macOS      | Customize       |
+| ~Command + [~ | Go to previous Buffer        | macOS      | Customize       |
 | ~Command + =~ | Zoom in Buffer               | macOS      | Customize       |
 | ~Command + -~ | Zoom out Buffer              | macOS      | Customize       |
 | ~Command + 0~ | Reset Zoom Buffer            | macOS      | Customize       |
@@ -284,6 +285,7 @@ Disable conflict or unused keybindings.
  :g "s-r" 'revert-buffer
  :g "s-'" 'next-window-any-frame
  :g "s-," 'customize
+ :g "s-[" 'previous-buffer
  :i "s-/" 'evilnc-comment-or-uncomment-lines
 )
 
