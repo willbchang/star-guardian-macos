@@ -1,8 +1,0 @@
-#+TITLE: Chrome
-*Install Google Chrome*
-#+begin_src sh
-brew cask install google-chrome
-#+end_src
-
-# TODO: Install chrome extensions
-# https://maclovin.org/blog-native/2015/5/22/osx-deploy-chrome-extensions
