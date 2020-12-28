@@ -1,6 +1,6 @@
 #+TITLE: Trash
-*Install a safe deletion tool: [[https://github.com/ali-rantakari/trash][trash]]*\\
+*Install a safe deletion tool: [[https://github.com/sindresorhus/macos-trash][macos-trash]]*\\
 In contrast to [[https://en.wikipedia.org/wiki/Rm_(Unix)][rm]] which is dangerous and permanently delete files, this only moves them to the trash, which is much safer and reversible.
 #+begin_src sh
-brew install trash
+brew install macos-trash
 #+end_src
