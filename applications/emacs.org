@@ -259,6 +259,7 @@ Disable conflict or unused keybindings.
 |---------------+-----------------------+------------+-----------------|
 | ~Command + W~ | Close Current Buffer  | macOS      | Customize       |
 | ~Command + [~ | Go to previous Buffer | macOS      | Customize       |
+| ~Command + ]~ | Go to next Buffer     | macOS      | Customize       |
 | ~Command + =~ | Zoom in Buffer        | macOS      | Customize       |
 | ~Command + -~ | Zoom out Buffer       | macOS      | Customize       |
 | ~Command + 0~ | Reset Zoom Buffer     | macOS      | Customize       |
