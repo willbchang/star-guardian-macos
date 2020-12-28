@@ -242,6 +242,7 @@ Disable conflict or unused keybindings.
 | ~Option + Delete~          | Delete a word                     | macOS      | Doom Emacs      |
 | ~Command + Delete~         | Delete to Line Start              | macOS      | Doom Emacs      |
 | ~Command + Shift + Delete~ | Delete Entire Line                | Personal   | Customize       |
+| ~Command + /~              | Comment or Uncomment line(s)      | macOS      | Doom Emacs      |
 
 
 #+begin_src emacs-lisp
@@ -266,7 +267,6 @@ Disable conflict or unused keybindings.
 | ~Command + R~ | Revert Buffer                | macOS      | Customize       |
 | ~Command + '~ | Move to next Buffer          | Emacs      | Customize       |
 | ~Command + ,~ | Open Preferences             | macOS      | Customize       |
-| ~Command + /~ | Comment or Uncomment line(s) | macOS      | Customize       |
 
 #+begin_src emacs-lisp
 (map!
@@ -280,7 +280,6 @@ Disable conflict or unused keybindings.
  :g "s-," 'customize
  :g "s-[" 'previous-buffer
  :g "s-]" 'next-buffer
- :i "s-/" 'evilnc-comment-or-uncomment-lines
 )
 
 (defun text-scale-reset ()
