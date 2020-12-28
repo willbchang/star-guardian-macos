@@ -8,7 +8,7 @@ ZSH_THEME='robbyrussell'
 DISABLE_AUTO_TITLE='true'
 DISABLE_UPDATE_PROMPT="true"
 plugins=(
-  git ruby rails yarn
+  git
   zsh-autosuggestions zsh-syntax-highlighting
 )
 
