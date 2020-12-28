@@ -12,8 +12,7 @@ brew install coreutils curl git
 brew install asdf --HEAD
 #+end_src
 
-*Add asdf.fish to ~/.config/fish/config.fish*\\
-Completions are handled by Homebrew for the Fish shell. Friendly!
+Add asdf.sh to ~/.zshrc
 #+begin_src sh
-echo -e "\nsource "$(brew --prefix asdf)"/asdf.fish" >> ~/.config/fish/config.fish
+echo -e "\n. $(brew --prefix asdf)/asdf.sh" >> ~/.zshrc
 #+end_src
