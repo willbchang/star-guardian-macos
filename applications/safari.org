@@ -1,1 +1,8 @@
 #+TITLE: Safari
+* Extensions
+- AdBlock
+- Vimari
+- Refined GitHub
+- Octotree
+- PrettyJson
+- Accelerate
