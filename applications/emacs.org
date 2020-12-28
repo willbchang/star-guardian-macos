@@ -101,7 +101,7 @@ cp emacs/packages.el ~/.config/doom/packages.el
 ** lang
 - *emacs-lisp*: drown in parentheses
 - *markdown*: writing docs for people to ignore
-- *org*: organize your plain life in plain text
+- *(org +pretty)*: organize your plain life in plain text
 
 ** config
 - (default +bindings +smartparens))
