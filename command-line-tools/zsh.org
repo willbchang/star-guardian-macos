@@ -33,7 +33,7 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:
 #+begin_src bash
 plugins=(
   git
-  zsh-autosuggestions zsh-syntax-highlighting
+  zsh-autosuggestions zsh-completions zsh-syntax-highlighting
 )
 #+end_src
 
