@@ -9,7 +9,7 @@ DISABLE_AUTO_TITLE='true'
 DISABLE_UPDATE_PROMPT="true"
 plugins=(
   git
-  zsh-autosuggestions zsh-syntax-highlighting
+  zsh-autosuggestions zsh-completions zsh-syntax-highlighting
 )
 
 source $ZSH/oh-my-zsh.sh
