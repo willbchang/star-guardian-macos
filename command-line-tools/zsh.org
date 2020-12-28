@@ -32,7 +32,7 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:
 *Enable zsh plugins*
 #+begin_src bash
 plugins=(
-  git ruby rails yarn
+  git
   zsh-autosuggestions zsh-syntax-highlighting
 )
 #+end_src
