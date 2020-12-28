@@ -25,6 +25,6 @@ asdf global nodejs latest
 *Install a better package manager: [[https://pnpm.js.org/][pnpm]]*\\
 Fast, disk space efficient package manager.
 #+begin_src sh
-npm install --global pnpm
-asdf reshim
+asdf install pnpm latest
+asdf global pnpm latest
 #+end_src
