@@ -242,7 +242,7 @@ Disable conflict or unused keybindings.
 | ~Option + Delete~          | Delete a word                     | macOS      | Doom Emacs      |
 | ~Command + Delete~         | Delete to Line Start              | macOS      | Doom Emacs      |
 | ~Command + Shift + Delete~ | Delete Entire Line                | Personal   | Customize       |
-| ~Command + /~              | Comment or Uncomment line(s)      | macOS      | Doom Emacs      |
+| ~Command + /~              | Comment or Uncomment line(s)      | macOS      | Customize       |
 
 
 #+begin_src emacs-lisp
@@ -251,6 +251,7 @@ Disable conflict or unused keybindings.
     "s-S-<backspace>" 'kill-whole-line
     "s-<up>" 'beginning-of-buffer
     "s-<down>" 'end-of-buffer
+ :i "s-/" 'evilnc-comment-or-uncomment-lines
 )
 #+end_src
 
