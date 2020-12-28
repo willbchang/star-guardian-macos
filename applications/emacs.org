@@ -272,6 +272,8 @@ Disable conflict or unused keybindings.
 #+begin_src emacs-lisp
 (map!
  :g "s-w" 'kill-current-buffer
+ :g "s-[" 'previous-buffer
+ :g "s-]" 'next-buffer
  :g "s-=" 'text-scale-increase
  :g "s--" 'text-scale-decrease
  :g "s-0" 'text-scale-reset
@@ -279,8 +281,6 @@ Disable conflict or unused keybindings.
  :g "s-r" 'revert-buffer
  :g "s-'" 'next-window-any-frame
  :g "s-," 'customize
- :g "s-[" 'previous-buffer
- :g "s-]" 'next-buffer
 )
 
 (defun text-scale-reset ()
