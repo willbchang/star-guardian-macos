@@ -216,7 +216,7 @@ Set font family and font size.
 Disable conflict or unused keybindings.
 #+begin_src emacs-lisp
 (map!
- "M-0" nil
+    "M-0" nil
  :n "s-0" nil
  :n "C--" nil
  :n "C-=" nil
@@ -247,11 +247,11 @@ Disable conflict or unused keybindings.
 
 #+begin_src emacs-lisp
 (map!
- :g "s-x" 'kill-region
-    "s-S-<backspace>" 'kill-whole-line
-    "s-<up>" 'beginning-of-buffer
-    "s-<down>" 'end-of-buffer
- :i "s-/" 'evilnc-comment-or-uncomment-lines
+ :g "s-x"               'kill-region
+    "s-S-<backspace>"   'kill-whole-line
+    "s-<up>"            'beginning-of-buffer
+    "s-<down>"          'end-of-buffer
+ :i "s-/"               'evilnc-comment-or-uncomment-lines
 )
 #+end_src
 
