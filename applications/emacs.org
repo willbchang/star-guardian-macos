@@ -198,7 +198,7 @@ Set cursor color to pink and show different cusor style based on current mode.
 *** Font
 Set font family and font size.
 #+begin_src emacs-lisp
-(setq doom-font (font-spec :family "Inconsolata" :size 20))
+(setq doom-font (font-spec :family "SF Mono" :size 20))
 #+end_src
 
 *** Line Number
