@@ -106,13 +106,6 @@ cp emacs/packages.el ~/.config/doom/packages.el
 ** config
 (default +bindings +smartparens))
 
-* Packages.el
-** Org Superstar
-[[https://github.com/integral-dw/org-superstar-mode][Org Superstar]] prettifies headings and plain lists in Org mode.
-#+begin_src emacs-lisp
-(package! org-superstar)
-#+end_src
-
 * Config.el
 ** UI
 *** Title Bar
