@@ -77,69 +77,11 @@ defaults write -g AppleShowScrollBars -string "Automatic"
 defaults write -g AppleScrollerPagingBehavior -bool true
 #+end_src
 
-*Set default browser to Chrome*
-# You can set default app for different filetypes
-# Check ./default_apps.rb
+*Set default browser to Safari*
 #+begin_src sh
-html='
-<dict>
-    <key>LSHandlerContentType</key>
-    <string>public.html</string>
-    <key>LSHandlerPreferredVersions</key>
-    <dict>
-        <key>LSHandlerRoleAll</key>
-        <string>-</string>
-    </dict>
-    <key>LSHandlerRoleAll</key>
-    <string>com.google.chrome</string>
-</dict>
-'
-
-xhtml='
-<dict>
-    <key>LSHandlerContentType</key>
-    <string>public.xhtml</string>
-    <key>LSHandlerPreferredVersions</key>
-    <dict>
-        <key>LSHandlerRoleAll</key>
-        <string>-</string>
-        <key>LSHandlerRoleViewer</key>
-        <string>-</string>
-    </dict>
-    <key>LSHandlerRoleAll</key>
-    <string>com.google.chrome</string>
-</dict>
-'
-
-http='
-<dict>
-    <key>LSHandlerPreferredVersions</key>
-    <dict>
-        <key>LSHandlerRoleAll</key>
-        <string>-</string>
-    </dict>
-    <key>LSHandlerRoleAll</key>
-    <string>com.google.chrome</string>
-    <key>LSHandlerURLScheme</key>
-    <string>http</string>
-</dict>
-'
-
-https='
-<dict>
-    <key>LSHandlerPreferredVersions</key>
-    <dict>
-        <key>LSHandlerRoleAll</key>
-        <string>-</string>
-    </dict>
-    <key>LSHandlerRoleAll</key>
-    <string>com.google.chrome</string>
-    <key>LSHandlerURLScheme</key>
-    <string>https</string>
-</dict>
-'
-
-defaults write ~/Library/Preferences/com.apple.LaunchServices/com.apple.launchservices.secure.plist LSHandlers -array-add "$html""$xhtml" "$http" "$https"
+brew install dnlggr/tap/default-browser
+default-browser set safari
+osascript confirm-system-dialog.scpt
 #+end_src
 
 
