@@ -1,8 +1,31 @@
 #+TITLE: Safari
 * Extensions
-- AdBlock
-- Vimari
-- Refined GitHub
-- Octotree
-- PrettyJson
-- Accelerate
+[[https://apps.apple.com/us/app/accelerate-for-safari/id1459809092][Accelerate]]: Controll HTML5 video playback and speed in Safari.
+#+begin_src sh
+mac install 1459809092
+#+end_src
+
+[[https://apps.apple.com/us/app/adblock-pro-for-safari/id1018301773][AdBlock Pro]]: block ads, trackers, unnecessary resources and bypass anti-adblock detectors.
+#+begin_src sh
+mac install 1018301773
+#+end_src
+
+[[https://apps.apple.com/us/app/prettyjson-for-safari/id1445328303][PrettyJSON for Safari]]: Pretty format JSON data in Safari.
+#+begin_src sh
+mac install 1445328303
+#+end_src
+
+[[https://apps.apple.com/us/app/octotree-pro/id1457450145][Octotree]]: Sidebar file tree for GitHub.
+#+begin_src sh
+mac install 1457450145
+#+end_src
+
+[[https://apps.apple.com/us/app/vimari/id1480933944][Vimari]]: Keyboard navigation like using Vim.
+#+begin_src sh
+mac install 1480933944
+#+end_src
+
+[[https://github.com/lautis/refined-github-safari][Refined GitHub]]: Simplifies the GitHub interface and adds useful features.
+#+begin_src sh
+brew cask install refined-github-safari
+#+end_src
