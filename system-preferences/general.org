@@ -52,6 +52,11 @@ defaults write -g AppleHighlightColor -string "1.000000 0.749020 0.823529 Pink"
 defaults write -g NSTableViewDefaultSizeMode -int 2
 #+end_src
 
+*Allow wallpaper tinting in windows*
+#+begin_src sh
+defaults write -g AppleReduceDesktopTinting -int 0
+#+end_src
+
 *Hide the menu bar Automatically*
 #+begin_src sh
 defaults write -g _HIHideMenuBar -bool true
