@@ -24,22 +24,22 @@ defaults write -g AppleAccentColor -int 6
 #+end_src
 
 *Set highlight color to Pink*
-| Highlight Color | Values                        | Status  |
-|-----------------+------------------------------+---------|
-| Red             | "1.000000 0.733333 0.721569" |         |
-| Orange          | "1.000000 0.874510 0.701961" |         |
-| Yellow          | "1.000000 0.937255 0.690196" |         |
-| Green           | "0.752941 0.964706 0.678431" |         |
-| Blue            | "0.847059 0.847059 0.862745" | default |
-| Purple          | "0.968627 0.831373 1.000000" |         |
-| Pink            | "1.000000 0.749020 0.823529" |         |
-| Brown           | "0.929412 0.870588 0.792157" |         |
-| Graphite        | "0.847059 0.847059 0.862745" |         |
-| Silver          | "0.776500 0.776500 0.776500" | custom  |
+| Highlight Color | Values                                | Status  |
+|-----------------+---------------------------------------+---------|
+| Red             | "1.000000 0.733333 0.721569 Red"      |         |
+| Orange          | "1.000000 0.874510 0.701961 Orange"   |         |
+| Yellow          | "1.000000 0.937255 0.690196 Yellow"   |         |
+| Green           | "0.752941 0.964706 0.678431 Green"    |         |
+| Blue            | "0.847059 0.847059 0.862745 Blue"     | default |
+| Purple          | "0.968627 0.831373 1.000000 Purple"   |         |
+| Pink            | "1.000000 0.749020 0.823529 Pink"     |         |
+| Brown           | "0.929412 0.870588 0.792157 Brown"    |         |
+| Graphite        | "0.847059 0.847059 0.862745 Graphite" |         |
+| Silver          | "0.776500 0.776500 0.776500 Silver"   | custom  |
 # Above data is from :https://github.com/buo/dotfiles/blob/master/osx/_01general.sh
 Calculate on your own: https://apple.stackexchange.com/a/164905/306411
 #+begin_src sh
-defaults write -g AppleHighlightColor -string "1.000000 0.749020 0.823529" Pink
+defaults write -g AppleHighlightColor -string "1.000000 0.749020 0.823529 Pink"
 #+end_src
 
 *Set sidebar icon size to medium*
@@ -61,9 +61,9 @@ defaults write -g _HIHideMenuBar -bool true
 *Show scroll bars automatically*
 | Scroll Bar Behaviors                     | Values          |
 |------------------------------------------+-----------------|
-| Automatically based on mouse or trackpad | "Automatic"     |
-| When scrolling                           | "WhenScrolling" |
-| Always                                   | "Always"        |
+| Automatically based on mouse or trackpad | "Automatic"    |
+| When scrolling                           | "WhenScrolling"|
+| Always                                   | "Always"       |
 #+begin_src sh
 defaults write -g AppleShowScrollBars -string "Automatic"
 #+end_src
@@ -139,7 +139,7 @@ https='
 </dict>
 '
 
-defaults write ~/Library/Preferences/com.apple.LaunchServices/com.apple.launchservices.secure.plist LSHandlers -array-add "$html" "$xhtml" "$http" "$https"
+defaults write ~/Library/Preferences/com.apple.LaunchServices/com.apple.launchservices.secure.plist LSHandlers -array-add "$html""$xhtml" "$http" "$https"
 #+end_src
 
 
@@ -167,7 +167,7 @@ defaults -currentHost write com.apple.coreservices.useractivityd ActivityReceivi
 # https://github.com/buo/dotfiles/blob/d2145bb247700a0cf1018cf351c32a796151befa/osx/_01general.sh#L48-L50
 #+begin_src sh
 for category in 'applications' 'documents' 'servers'; do
-  /usr/bin/osascript -e "tell application \"System Events\" to tell appearance preferences to set recent $category limit to 0"
+  /usr/bin/osascript -e "tell application \"System Events\"to tell appearance preferences to set recent $category limit to 0"
 done
 #+end_src
 
