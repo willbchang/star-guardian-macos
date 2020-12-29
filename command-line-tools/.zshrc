@@ -1,4 +1,6 @@
 alias tree="find . -print | sed -e 's;[^/]*/;|____;g;s;____|; |;g'"
+alias diff="git diff --no-index"
+
 
 export http_proxy=http://127.0.0.1:1087
 export https_proxy=http://127.0.0.1:1087

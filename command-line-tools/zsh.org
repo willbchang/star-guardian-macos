@@ -54,6 +54,11 @@ The tree view looks like:
 alias tree="find . -print | sed -e 's;[^/]*/;|____;g;s;____|; |;g'"
 #+end_src
 
+Alias git diff as diff for rich color and styles.
+#+begin_src bash
+alias diff="git diff --no-index"
+#+end_src
+
 * Exports
 *Set http(s) proxy for command line*\\
 You may want to disable it if you're not using a VPN, or change the port.
