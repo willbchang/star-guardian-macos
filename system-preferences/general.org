@@ -57,11 +57,6 @@ defaults write -g NSTableViewDefaultSizeMode -int 2
 defaults write -g AppleReduceDesktopTinting -int 0
 #+end_src
 
-*Hide the menu bar Automatically*
-#+begin_src sh
-defaults write -g _HIHideMenuBar -bool true
-#+end_src
-
 
 *Show scroll bars automatically*
 | Scroll Bar Behaviors                     | Values          |
