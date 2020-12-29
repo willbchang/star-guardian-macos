@@ -44,10 +44,10 @@ defaults write -g AppleHighlightColor -string "1.000000 0.749020 0.823529 Pink"
 
 *Set sidebar icon size to medium*
 | Icon Size | Values | Status  |
-|-----------+-------+---------|
-| Small     |     1 |         |
-| Medium    |     2 | default |
-| Large     |     3 |         |
+|-----------+--------+---------|
+| Small     |      1 |         |
+| Medium    |      2 | default |
+| Large     |      3 |         |
 #+begin_src sh
 defaults write -g NSTableViewDefaultSizeMode -int 2
 #+end_src
@@ -61,9 +61,9 @@ defaults write -g _HIHideMenuBar -bool true
 *Show scroll bars automatically*
 | Scroll Bar Behaviors                     | Values          |
 |------------------------------------------+-----------------|
-| Automatically based on mouse or trackpad | "Automatic"    |
-| When scrolling                           | "WhenScrolling"|
-| Always                                   | "Always"       |
+| Automatically based on mouse or trackpad | "Automatic"     |
+| When scrolling                           | "WhenScrolling" |
+| Always                                   | "Always"        |
 #+begin_src sh
 defaults write -g AppleShowScrollBars -string "Automatic"
 #+end_src
