@@ -21,7 +21,7 @@ sh macos-dotfiles/install.sh
 | [[./command-line-tools/node.org][Node]]               | [[./applications/finder.org][Finder]]       | [[./system-preferences/security+privacy.org][Security & Privacy]]     |
 | [[./command-line-tools/ruby.org][Ruby]]               | [[./applications/rubymine.org][Rubymine]]     | [[./system-preferences/keyboard.org][Keyboard]]               |
 | [[./command-line-tools/trash.org][Trash]]              | [[./applications/xcode.org][Xcode]]        | [[./system-preferences/trackpad.org][Trackpad]]               |
-|                    | [[./applications/font-book.org][Font Book]]    | [[./system-preferences/displays.org][Displays]]               |
+| [[./command-line-tools/mas.org][Mas]]                | [[./applications/font-book.org][Font Book]]    | [[./system-preferences/displays.org][Displays]]               |
 |                    |              | [[./system-preferences/battery.org][Battery]]                |
 
 All Rights Reserved.
