@@ -85,6 +85,15 @@ default-browser set safari
 osascript confirm-system-dialog.scpt
 #+end_src
 
+Pefer tabs: never when opening documents
+| Options        | Values     |
+|----------------+------------|
+| never          | manual     |
+| in full screen | fullscreen |
+| always         | always     |
+#+begin_src sh
+defaults write -g AppleWindowTabbingMode -string "manual"
+#+end_src
 
 *Disable ask to keep changes when closing documents*
 #+begin_src sh
