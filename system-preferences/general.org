@@ -24,37 +24,37 @@ defaults write -g AppleAccentColor -int 6
 #+end_src
 
 *Set highlight color to Pink*
-| Highlight Color | Values                        | Status  |
-|-----------------+------------------------------+---------|
-| Red             | "1.000000 0.733333 0.721569" |         |
-| Orange          | "1.000000 0.874510 0.701961" |         |
-| Yellow          | "1.000000 0.937255 0.690196" |         |
-| Green           | "0.752941 0.964706 0.678431" |         |
-| Blue            | "0.847059 0.847059 0.862745" | default |
-| Purple          | "0.968627 0.831373 1.000000" |         |
-| Pink            | "1.000000 0.749020 0.823529" |         |
-| Brown           | "0.929412 0.870588 0.792157" |         |
-| Graphite        | "0.847059 0.847059 0.862745" |         |
-| Silver          | "0.776500 0.776500 0.776500" | custom  |
+| Highlight Color | Values                                | Status  |
+|-----------------+---------------------------------------+---------|
+| Red             | "1.000000 0.733333 0.721569 Red"      |         |
+| Orange          | "1.000000 0.874510 0.701961 Orange"   |         |
+| Yellow          | "1.000000 0.937255 0.690196 Yellow"   |         |
+| Green           | "0.752941 0.964706 0.678431 Green"    |         |
+| Blue            | "0.847059 0.847059 0.862745 Blue"     | default |
+| Purple          | "0.968627 0.831373 1.000000 Purple"   |         |
+| Pink            | "1.000000 0.749020 0.823529 Pink"     |         |
+| Brown           | "0.929412 0.870588 0.792157 Brown"    |         |
+| Graphite        | "0.847059 0.847059 0.862745 Graphite" |         |
+| Silver          | "0.776500 0.776500 0.776500 Silver"   | custom  |
 # Above data is from :https://github.com/buo/dotfiles/blob/master/osx/_01general.sh
 Calculate on your own: https://apple.stackexchange.com/a/164905/306411
 #+begin_src sh
-defaults write -g AppleHighlightColor -string "1.000000 0.749020 0.823529" Pink
+defaults write -g AppleHighlightColor -string "1.000000 0.749020 0.823529 Pink"
 #+end_src
 
 *Set sidebar icon size to medium*
 | Icon Size | Values | Status  |
-|-----------+-------+---------|
-| Small     |     1 |         |
-| Medium    |     2 | default |
-| Large     |     3 |         |
+|-----------+--------+---------|
+| Small     |      1 |         |
+| Medium    |      2 | default |
+| Large     |      3 |         |
 #+begin_src sh
 defaults write -g NSTableViewDefaultSizeMode -int 2
 #+end_src
 
-*Hide the menu bar Automatically*
+*Allow wallpaper tinting in windows*
 #+begin_src sh
-defaults write -g _HIHideMenuBar -bool true
+defaults write -g AppleReduceDesktopTinting -int 0
 #+end_src
 
 
@@ -77,71 +77,23 @@ defaults write -g AppleShowScrollBars -string "Automatic"
 defaults write -g AppleScrollerPagingBehavior -bool true
 #+end_src
 
-*Set default browser to Chrome*
-# You can set default app for different filetypes
-# Check ./default_apps.rb
+*Set default browser to Safari*
+# https://github.com/kerma/defaultbrowser/issues/3#issuecomment-319434425
 #+begin_src sh
-html='
-<dict>
-    <key>LSHandlerContentType</key>
-    <string>public.html</string>
-    <key>LSHandlerPreferredVersions</key>
-    <dict>
-        <key>LSHandlerRoleAll</key>
-        <string>-</string>
-    </dict>
-    <key>LSHandlerRoleAll</key>
-    <string>com.google.chrome</string>
-</dict>
-'
-
-xhtml='
-<dict>
-    <key>LSHandlerContentType</key>
-    <string>public.xhtml</string>
-    <key>LSHandlerPreferredVersions</key>
-    <dict>
-        <key>LSHandlerRoleAll</key>
-        <string>-</string>
-        <key>LSHandlerRoleViewer</key>
-        <string>-</string>
-    </dict>
-    <key>LSHandlerRoleAll</key>
-    <string>com.google.chrome</string>
-</dict>
-'
-
-http='
-<dict>
-    <key>LSHandlerPreferredVersions</key>
-    <dict>
-        <key>LSHandlerRoleAll</key>
-        <string>-</string>
-    </dict>
-    <key>LSHandlerRoleAll</key>
-    <string>com.google.chrome</string>
-    <key>LSHandlerURLScheme</key>
-    <string>http</string>
-</dict>
-'
-
-https='
-<dict>
-    <key>LSHandlerPreferredVersions</key>
-    <dict>
-        <key>LSHandlerRoleAll</key>
-        <string>-</string>
-    </dict>
-    <key>LSHandlerRoleAll</key>
-    <string>com.google.chrome</string>
-    <key>LSHandlerURLScheme</key>
-    <string>https</string>
-</dict>
-'
-
-defaults write ~/Library/Preferences/com.apple.LaunchServices/com.apple.launchservices.secure.plist LSHandlers -array-add "$html" "$xhtml" "$http" "$https"
+brew install dnlggr/tap/default-browser
+default-browser set safari
+osascript confirm-system-dialog.scpt
 #+end_src
 
+Pefer tabs: never when opening documents
+| Options        | Values     |
+|----------------+------------|
+| never          | manual     |
+| in full screen | fullscreen |
+| always         | always     |
+#+begin_src sh
+defaults write -g AppleWindowTabbingMode -string "manual"
+#+end_src
 
 *Disable ask to keep changes when closing documents*
 #+begin_src sh
@@ -152,13 +104,6 @@ defaults write -g NSCloseAlwaysConfirmsChanges -bool false
 When it's true, open documents and windows will not be restored when you re-open an app.
 #+begin_src sh
 defaults write -g NSQuitAlwaysKeepsWindows -bool true
-#+end_src
-
-*Set Allow Handoff between this Mac and your iCloud devices*
-# Inspired by https://www.jamf.com/jamf-nation/discussions/12545/a-script-to-disable-handoff
-#+begin_src sh
-defaults -currentHost write com.apple.coreservices.useractivityd ActivityAdvertisingAllowed -bool yes
-defaults -currentHost write com.apple.coreservices.useractivityd ActivityReceivingAllowed -bool yes
 #+end_src
 
 *Set recent items to 0*
@@ -172,7 +117,9 @@ done
 #+end_src
 
 
-*Use font smoonthing when available*
+*Allow Handoff between this Mac and your iCloud devices*
+# Inspired by https://www.jamf.com/jamf-nation/discussions/12545/a-script-to-disable-handoff
 #+begin_src sh
-# defaults -currentHost delete -g AppleFontSmoothing
+defaults -currentHost write com.apple.coreservices.useractivityd ActivityAdvertisingAllowed -bool yes
+defaults -currentHost write com.apple.coreservices.useractivityd ActivityReceivingAllowed -bool yes
 #+end_src
