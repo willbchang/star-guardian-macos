@@ -106,13 +106,6 @@ When it's true, open documents and windows will not be restored when you re-open
 defaults write -g NSQuitAlwaysKeepsWindows -bool true
 #+end_src
 
-*Set Allow Handoff between this Mac and your iCloud devices*
-# Inspired by https://www.jamf.com/jamf-nation/discussions/12545/a-script-to-disable-handoff
-#+begin_src sh
-defaults -currentHost write com.apple.coreservices.useractivityd ActivityAdvertisingAllowed -bool yes
-defaults -currentHost write com.apple.coreservices.useractivityd ActivityReceivingAllowed -bool yes
-#+end_src
-
 *Set recent items to 0*
 # The relative file is in ~/Library/Application\ Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.RecentDocuments.sfl2
 # sfltool nolonger work for sfl2 after 10.13, but you may change the .sfl2 to .plist and manipulate with `defaults write` then change the extension back. It may work but I never try it because there is a simpler way to use apple script.
@@ -123,8 +116,10 @@ for category in 'applications' 'documents' 'servers'; do
 done
 #+end_src
 
-Allow Handoff between this Mac and your iCloud devices.
+
+*Allow Handoff between this Mac and your iCloud devices*
+# Inspired by https://www.jamf.com/jamf-nation/discussions/12545/a-script-to-disable-handoff
 #+begin_src sh
-sudo -u $(whoami) defaults write "$HOME/Library/Preferences/ByHost/com.apple.coreservices.useractivityd.plist" ActivityAdvertisingAllowed -bool yes
-sudo -u $(whoami) defaults write "$HOME/Library/Preferences/ByHost/com.apple.coreservices.useractivityd.plist" ActivityReceivingAllowed -bool yes
+defaults -currentHost write com.apple.coreservices.useractivityd ActivityAdvertisingAllowed -bool yes
+defaults -currentHost write com.apple.coreservices.useractivityd ActivityReceivingAllowed -bool yes
 #+end_src
