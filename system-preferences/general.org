@@ -128,8 +128,3 @@ Allow Handoff between this Mac and your iCloud devices.
 sudo -u $(whoami) defaults write "$HOME/Library/Preferences/ByHost/com.apple.coreservices.useractivityd.plist" ActivityAdvertisingAllowed -bool yes
 sudo -u $(whoami) defaults write "$HOME/Library/Preferences/ByHost/com.apple.coreservices.useractivityd.plist" ActivityReceivingAllowed -bool yes
 #+end_src
-
-*Use font smoonthing when available*
-#+begin_src sh
-# defaults -currentHost delete -g AppleFontSmoothing
-#+end_src
