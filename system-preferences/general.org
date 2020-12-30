@@ -123,6 +123,11 @@ for category in 'applications' 'documents' 'servers'; do
 done
 #+end_src
 
+Allow Handoff between this Mac and your iCloud devices.
+#+begin_src sh
+sudo -u $(whoami) defaults write "$HOME/Library/Preferences/ByHost/com.apple.coreservices.useractivityd.plist" ActivityAdvertisingAllowed -bool yes
+sudo -u $(whoami) defaults write "$HOME/Library/Preferences/ByHost/com.apple.coreservices.useractivityd.plist" ActivityReceivingAllowed -bool yes
+#+end_src
 
 *Use font smoonthing when available*
 #+begin_src sh
