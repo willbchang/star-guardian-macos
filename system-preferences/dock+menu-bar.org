@@ -28,6 +28,15 @@ defaults write com.apple.dock orientation -string "left"
 defaults write com.apple.dock mineffect -string "scale"
 #+end_src
 
+Double-click a window's title bar to zoom.
+| Options  | Values   |
+|----------+----------|
+| minimize | Minimize |
+| zoom     | Maximize |
+#+begin_src sh
+defaults write -g AppleActionOnDoubleClick -string "Maximize"
+#+end_src
+
 *Minimize windows into their application’s icon*
 #+begin_src sh
 defaults write com.apple.dock minimize-to-application -bool true
