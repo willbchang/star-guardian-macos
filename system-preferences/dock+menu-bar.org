@@ -1,4 +1,6 @@
 #+TITLE: Dock
+
+* Dock
 *Set the icon size of Dock items to 72 pixels*
 #+begin_src sh
 defaults write com.apple.dock tilesize -int 72
@@ -62,6 +64,7 @@ Don’t show recent applications in Dock.
 defaults write com.apple.dock show-recents -bool false
 #+end_src
 
+* Menu Bar
 Automatically hide and show the menu bar.
 #+begin_src sh
 defaults write -g _HIHideMenuBar -bool true
