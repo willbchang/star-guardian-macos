@@ -62,6 +62,11 @@ Don’t show recent applications in Dock.
 defaults write com.apple.dock show-recents -bool false
 #+end_src
 
+Automatically hide and show the menu bar.
+#+begin_src sh
+defaults write -g _HIHideMenuBar -bool true
+#+end_src
+
 *Remove the auto-hiding Dock delay*
 #+begin_src sh
 defaults write com.apple.dock autohide-delay -float 0
