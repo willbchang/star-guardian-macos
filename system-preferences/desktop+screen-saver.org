@@ -1,4 +1,14 @@
 #+TITLE: Desktop & Screen Saver
+Set wallpaper
+# https://github.com/rgcr/m-cli/blob/930f1898267e7012cd8c0567f9e4bb730166d067/plugins/wallpaper#L13-L15
+#+begin_src sh
+set_wallpaper(){
+    osascript -e "tell application \"Finder\" to set desktop picture to \"${1}\" as POSIX file"
+}
+
+set_wallpaper "$(pwd)/wallpaper.jpeg"
+#+end_src
+
 *Never start screen saver*
 #+begin_src sh
 defaults -currentHost write com.apple.screensaver idleTime -int 0
