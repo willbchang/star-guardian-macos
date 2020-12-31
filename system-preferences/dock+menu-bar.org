@@ -20,6 +20,10 @@ defaults write com.apple.dock orientation -string "left"
 #+end_src
 
 *Change minimize/maximize window effect*
+| Options      | Values |
+|--------------+--------|
+| Scale effect | scale  |
+| Genie effect | genie  |
 #+begin_src sh
 defaults write com.apple.dock mineffect -string "scale"
 #+end_src
