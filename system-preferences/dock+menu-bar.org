@@ -101,16 +101,6 @@ defaults write com.apple.dock enable-spring-load-actions-on-all-items -bool true
 defaults write com.apple.dock mouse-over-hilite-stack -bool true
 #+end_src
 
-*Add a spacer to the left side of the Dock (where the applications are)*
-#+begin_src sh
-defaults write com.apple.dock persistent-apps -array-add '{tile-data={}; tile-type="spacer-tile";}'
-#+end_src
-
-*Add a spacer to the right side of the Dock (where the Trash is)*
-#+begin_src sh
-defaults write com.apple.dock persistent-others -array-add '{tile-data={}; tile-type="spacer-tile";}'
-#+end_src
-
 * Menu Bar
 Automatically hide and show the menu bar.
 #+begin_src sh
