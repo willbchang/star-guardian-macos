@@ -57,6 +57,11 @@ Don't show indicators for open applications.
 defaults write com.apple.dock show-process-indicators -bool false
 #+end_src
 
+Don’t show recent applications in Dock.
+#+begin_src sh
+defaults write com.apple.dock show-recents -bool false
+#+end_src
+
 *Remove the auto-hiding Dock delay*
 #+begin_src sh
 defaults write com.apple.dock autohide-delay -float 0
@@ -65,11 +70,6 @@ defaults write com.apple.dock autohide-delay -float 0
 *Remove the animation when hiding/showing the Dock*
 #+begin_src sh
 defaults write com.apple.dock autohide-time-modifier -float 0
-#+end_src
-
-*Don’t show recent applications in Dock*
-#+begin_src sh
-defaults write com.apple.dock show-recents -bool false
 #+end_src
 
 *Show only open applications in the Dock*
