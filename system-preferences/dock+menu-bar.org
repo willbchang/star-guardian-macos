@@ -1,4 +1,4 @@
-#+TITLE: Dock
+#+TITLE: Dock & Menu Bar
 
 * Dock
 *Set the icon size of Dock items to 72 pixels*
