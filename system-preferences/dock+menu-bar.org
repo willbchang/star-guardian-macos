@@ -106,3 +106,6 @@ Automatically hide and show the menu bar.
 #+begin_src sh
 defaults write -g _HIHideMenuBar -bool true
 #+end_src
+* Control Center
+* Other Modules
+* Menu Bar Only
