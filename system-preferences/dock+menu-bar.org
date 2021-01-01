@@ -125,16 +125,16 @@ defaults write com.apple.controlcenter "NSStatusItem Visible AirDrop" -bool fals
 
 
 Don't show Do Not Disturb in menu bar.
-| Status    | Options     | Values | Note                    |
-|-----------+-------------+--------+-------------------------|
-| Unchecked | always      |     24 | always not work for now |
-| Checked   | always      |     18 | could be 16             |
-| Unchecked | when active |      8 |                         |
-| Checked   | when active |      2 |                         |
+
+| Status    | Options     | Values |
+|-----------+-------------+--------+
+| Unchecked | always      |     24 |
+| Checked   | always      |     18 |
+| Unchecked | when active |      8 |
+| Checked   | when active |      2 |
+You can refer this table for others.
 #+begin_src sh
 defaults -currentHost write com.apple.controlcenter DoNotDisturb -int 8
-# Unneed the code below for macOS 11.1
-# defaults write com.apple.controlcenter "NSStatusItem Visible DoNotDisturb" -bool false
 #+end_src
 
 Don't show Keyboard Brightness in menu bar.
