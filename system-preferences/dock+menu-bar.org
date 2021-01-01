@@ -153,5 +153,10 @@ Show Display in Menu bar when active.
 defaults -currentHost write com.apple.controlcenter Display -int 2
 #+end_src
 
+Don't show Sound in Menu Bar.
+#+begin_src sh
+defaults -currentHost write com.apple.controlcenter Sound -int 8
+#+end_src
+
 ** Other Modules
 ** Menu Bar Only
