@@ -113,5 +113,10 @@ Show Wi-Fi in Menu Bar.
 defaults write com.apple.controlcenter "NSStatusItem Visible WiFi" -bool true
 #+end_src
 
+Don't show Bluetooth in menu bar.
+#+begin_src sh
+defaults write com.apple.controlcenter "NSStatusItem Visible Bluetooth" -bool false
+#+end_src
+
 ** Other Modules
 ** Menu Bar Only
