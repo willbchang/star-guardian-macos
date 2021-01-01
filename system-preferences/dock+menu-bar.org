@@ -128,5 +128,11 @@ Don't show Do Not Disturb in menu bar.
 defaults write com.apple.controlcenter "NSStatusItem Visible DoNotDisturb" -bool false
 #+end_src
 
+Don't show Keyboard Brightness in menu bar.
+#+begin_src sh
+defaults write com.apple.controlcenter "NSStatusItem Visible KeyboardBrightness" -bool false
+#+end_src
+
+
 ** Other Modules
 ** Menu Bar Only
