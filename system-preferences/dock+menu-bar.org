@@ -106,6 +106,12 @@ Automatically hide and show the menu bar.
 #+begin_src sh
 defaults write -g _HIHideMenuBar -bool true
 #+end_src
+
 * Control Center
+Show Wi-Fi in Menu Bar.
+#+begin_src sh
+defaults write com.apple.controlcenter "NSStatusItem Visible WiFi" -bool true
+#+end_src
+
 * Other Modules
 * Menu Bar Only
