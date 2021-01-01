@@ -158,5 +158,10 @@ Don't show Sound in Menu Bar.
 defaults -currentHost write com.apple.controlcenter Sound -int 8
 #+end_src
 
+Don't show Now Playing in Menu Bar.
+#+begin_src sh
+defaults -currentHost write com.apple.controlcenter NowPlaying -int 8
+#+end_src
+
 ** Other Modules
 ** Menu Bar Only
