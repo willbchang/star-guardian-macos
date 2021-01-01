@@ -142,6 +142,11 @@ Don't show Keyboard Brightness in menu bar.
 defaults write com.apple.controlcenter "NSStatusItem Visible KeyboardBrightness" -bool false
 #+end_src
 
+Show Screen Mirroring in Menu Bar when active.
+#+begin_src sh
+defaults -currentHost write com.apple.controlcenter ScreenMirroring -int 2
+defaults write com.apple.airplay showInMenuBarIfPresent -bool true
+#+end_src
 
 ** Other Modules
 ** Menu Bar Only
