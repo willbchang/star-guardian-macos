@@ -148,5 +148,10 @@ defaults -currentHost write com.apple.controlcenter ScreenMirroring -int 2
 defaults write com.apple.airplay showInMenuBarIfPresent -bool true
 #+end_src
 
+Show Display in Menu bar when active.
+#+begin_src sh
+defaults -currentHost write com.apple.controlcenter Display -int 2
+#+end_src
+
 ** Other Modules
 ** Menu Bar Only
