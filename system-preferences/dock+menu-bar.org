@@ -30,7 +30,7 @@ defaults write com.apple.dock orientation -string "left"
 defaults write com.apple.dock mineffect -string "scale"
 #+end_src
 
-Double-click a window's title bar to zoom.
+*Double-click a window's title bar to zoom.*
 | Options  | Values   |
 |----------+----------|
 | minimize | Minimize |
@@ -54,12 +54,12 @@ defaults write com.apple.dock launchanim -bool false
 defaults write com.apple.dock autohide -bool true
 #+end_src
 
-Don't show indicators for open applications.
+*Don't show indicators for open applications.*
 #+begin_src sh
 defaults write com.apple.dock show-process-indicators -bool false
 #+end_src
 
-Don’t show recent applications in Dock.
+*Don’t show recent applications in Dock.*
 #+begin_src sh
 defaults write com.apple.dock show-recents -bool false
 #+end_src
@@ -102,29 +102,29 @@ defaults write com.apple.dock mouse-over-hilite-stack -bool true
 #+end_src
 
 * Menu Bar
-Automatically hide and show the menu bar.
+*Automatically hide and show the menu bar.*
 #+begin_src sh
 defaults write -g _HIHideMenuBar -bool true
 #+end_src
 
 ** Control Center
-Show Wi-Fi in Menu Bar.
+*Show Wi-Fi in Menu Bar.*
 #+begin_src sh
 defaults write com.apple.controlcenter "NSStatusItem Visible WiFi" -bool true
 #+end_src
 
-Don't show Bluetooth in menu bar.
+*Don't show Bluetooth in menu bar.*
 #+begin_src sh
 defaults write com.apple.controlcenter "NSStatusItem Visible Bluetooth" -bool false
 #+end_src
 
-Don't show AirDrop in menu bar.
+*Don't show AirDrop in menu bar.*
 #+begin_src sh
 defaults write com.apple.controlcenter "NSStatusItem Visible AirDrop" -bool false
 #+end_src
 
 
-Don't show Do Not Disturb in menu bar.
+*Don't show Do Not Disturb in menu bar.*
 
 | Status    | Options     | Values |
 |-----------+-------------+--------+
@@ -137,39 +137,39 @@ You can refer this table for others.
 defaults -currentHost write com.apple.controlcenter DoNotDisturb -int 8
 #+end_src
 
-Don't show Keyboard Brightness in menu bar.
+*Don't show Keyboard Brightness in menu bar.*
 #+begin_src sh
 defaults write com.apple.controlcenter "NSStatusItem Visible KeyboardBrightness" -bool false
 #+end_src
 
-Show Screen Mirroring in Menu Bar when active.
+*Show Screen Mirroring in Menu Bar when active.*
 #+begin_src sh
 defaults -currentHost write com.apple.controlcenter ScreenMirroring -int 2
 defaults write com.apple.airplay showInMenuBarIfPresent -bool true
 #+end_src
 
-Show Display in Menu bar when active.
+*Show Display in Menu bar when active.*
 #+begin_src sh
 defaults -currentHost write com.apple.controlcenter Display -int 2
 #+end_src
 
-Don't show Sound in Menu Bar.
+*Don't show Sound in Menu Bar.*
 #+begin_src sh
 defaults -currentHost write com.apple.controlcenter Sound -int 8
 #+end_src
 
-Don't show Now Playing in Menu Bar.
+*Don't show Now Playing in Menu Bar.*
 #+begin_src sh
 defaults -currentHost write com.apple.controlcenter NowPlaying -int 8
 #+end_src
 
 ** Other Modules
-Don't show Accessibility Shortcuts in Menu Bar.
+*Don't show Accessibility Shortcuts in Menu Bar.*
 #+begin_src sh
 defaults write com.apple.controlcenter "NSStatusItem Visible AccessibilityShortcuts" -bool false
 #+end_src
 
-Don't show Accessibility Shortcuts in Control Center.
+*Don't show Accessibility Shortcuts in Control Center.*
 | Status    | Values |
 |-----------+--------|
 | Checked   |      3 |
