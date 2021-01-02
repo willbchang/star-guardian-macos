@@ -204,3 +204,9 @@ defaults -currentHost write com.apple.Spotlight MenuItemHidden -bool true
 #+begin_src sh
 defaults write com.apple.Siri StatusMenuVisible -bool false
 #+end_src
+
+*Time Machine*: Don't show in Menu Bar
+#+begin_src sh
+defaults delete com.apple.systemuiserver "NSStatusItem Visible com.apple.menuextra.TimeMachine"
+defaults write com.apple.systemuiserver menuExtras -array
+#+end_src
