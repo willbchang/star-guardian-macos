@@ -195,6 +195,19 @@ defaults -currentHost write com.apple.controlcenter UserSwitcher -int 12
 #+end_src
 
 ** Menu Bar Only
+*Clock*
+- Date Options
+  - Show the day of the week
+    | Options   | Values             |
+    |-----------+--------------------|
+    | Checked   | EEE MMM d  H:mm:ss |
+    | Unchecked | MMM d  H:mm:ss     |
+
+    #+begin_src sh
+    defaults write com.apple.menuextra.clock DateFormat "EEE MMM d  H:mm:ss"
+    defaults write com.apple.menuextra.clock ShowDayOfWeek -bool true
+    #+end_src
+
 *Spotlight*: Don't show in Menu Bar
 #+begin_src sh
 defaults -currentHost write com.apple.Spotlight MenuItemHidden -bool true
