@@ -164,4 +164,9 @@ defaults -currentHost write com.apple.controlcenter NowPlaying -int 8
 #+end_src
 
 ** Other Modules
+Don't show Accessibility Shortcuts in Menu Bar.
+#+begin_src sh
+defaults write com.apple.controlcenter "NSStatusItem Visible AccessibilityShortcuts" -bool false
+#+end_src
+
 ** Menu Bar Only
