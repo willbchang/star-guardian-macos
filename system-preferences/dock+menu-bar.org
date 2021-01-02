@@ -108,23 +108,23 @@ defaults write -g _HIHideMenuBar -bool true
 #+end_src
 
 ** Control Center
-*Show Wi-Fi in Menu Bar.*
+*Wi-Fi*: Show Wi-Fi in Menu Bar
 #+begin_src sh
 defaults write com.apple.controlcenter "NSStatusItem Visible WiFi" -bool true
 #+end_src
 
-*Don't show Bluetooth in menu bar.*
+*Bluetooth*: Don't show in Menu Bar
 #+begin_src sh
 defaults write com.apple.controlcenter "NSStatusItem Visible Bluetooth" -bool false
 #+end_src
 
-*Don't show AirDrop in menu bar.*
+*AirDrop*: Don't show in Menu Bar
 #+begin_src sh
 defaults write com.apple.controlcenter "NSStatusItem Visible AirDrop" -bool false
 #+end_src
 
 
-*Don't show Do Not Disturb in menu bar.*
+*Do Not Disturb*: Don't show in Menu Bar
 
 | Status    | Options     | Values |
 |-----------+-------------+--------+
@@ -132,44 +132,44 @@ defaults write com.apple.controlcenter "NSStatusItem Visible AirDrop" -bool fals
 | Checked   | always      |     18 |
 | Unchecked | when active |      8 |
 | Checked   | when active |      2 |
-You can refer this table for others.
+/You can refer this table for others./
 #+begin_src sh
 defaults -currentHost write com.apple.controlcenter DoNotDisturb -int 8
 #+end_src
 
-*Don't show Keyboard Brightness in menu bar.*
+*Keyboard Brightness*: Don't show in Menu Bar
 #+begin_src sh
 defaults write com.apple.controlcenter "NSStatusItem Visible KeyboardBrightness" -bool false
 #+end_src
 
-*Show Screen Mirroring in Menu Bar when active.*
+*Screen Mirroring*: Show in Menu Bar when active
 #+begin_src sh
 defaults -currentHost write com.apple.controlcenter ScreenMirroring -int 2
 defaults write com.apple.airplay showInMenuBarIfPresent -bool true
 #+end_src
 
-*Show Display in Menu bar when active.*
+*Display*: Show in Menu bar when active
 #+begin_src sh
 defaults -currentHost write com.apple.controlcenter Display -int 2
 #+end_src
 
-*Don't show Sound in Menu Bar.*
+*Sound*: Don't show in Menu Bar
 #+begin_src sh
 defaults -currentHost write com.apple.controlcenter Sound -int 8
 #+end_src
 
-*Don't show Now Playing in Menu Bar.*
+*Now Playing*: Don't show in Menu Bar
 #+begin_src sh
 defaults -currentHost write com.apple.controlcenter NowPlaying -int 8
 #+end_src
 
 ** Other Modules
-*Don't show Accessibility Shortcuts in Menu Bar.*
+*Accessibility Shortcuts*: Don't show in Menu Bar
 #+begin_src sh
 defaults write com.apple.controlcenter "NSStatusItem Visible AccessibilityShortcuts" -bool false
 #+end_src
 
-*Don't show Accessibility Shortcuts in Control Center.*
+*Accessibility Shortcuts*: Don't show in Control Center
 | Status    | Values |
 |-----------+--------|
 | Checked   |      3 |
