@@ -178,4 +178,13 @@ defaults write com.apple.controlcenter "NSStatusItem Visible AccessibilityShortc
 defaults -currentHost write com.apple.controlcenter AccessibilityShortcuts -int 6
 #+end_src
 
+*Battery*: Show in Menu Bar
+| Status    | Values |
+|-----------+--------|
+| Unchecked |     24 |
+| Checked   |     18 |
+#+begin_src sh
+defaults -currentHost write com.apple.controlcenter Battery -int 18
+#+end_src
+
 ** Menu Bar Only
