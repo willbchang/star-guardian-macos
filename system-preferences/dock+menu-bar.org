@@ -164,21 +164,17 @@ defaults -currentHost write com.apple.controlcenter NowPlaying -int 8
 #+end_src
 
 ** Other Modules
-:PROPERTIES:
-:ID:       d4aaff1f-0f1a-4391-8aad-a9b4dcf468d3
-:END:
-*Accessibility Shortcuts*: Don't show in Menu Bar
+*Accessibility Shortcuts*:
+- Don't show in Menu Bar
+- Don't show in Control Center
+| Show in Menu Bar | Show in Control Center | Values |
+|------------------+------------------------+--------|
+| Unchecked        | Unchecked              |     12 |
+| Unchecked        | Checked                |      9 |
+| Checked          | Unchecked              |      6 |
+| Checked          | Checked                |      3 |
 #+begin_src sh
-defaults write com.apple.controlcenter "NSStatusItem Visible AccessibilityShortcuts" -bool false
-#+end_src
-
-*Accessibility Shortcuts*: Don't show in Control Center
-| Status    | Values |
-|-----------+--------|
-| Checked   |      3 |
-| Unchecked |      6 |
-#+begin_src sh
-defaults -currentHost write com.apple.controlcenter AccessibilityShortcuts -int 6
+defaults -currentHost write com.apple.controlcenter AccessibilityShortcuts -int 12
 #+end_src
 
 *Battery*
