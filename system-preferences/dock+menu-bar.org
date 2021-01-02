@@ -169,4 +169,13 @@ Don't show Accessibility Shortcuts in Menu Bar.
 defaults write com.apple.controlcenter "NSStatusItem Visible AccessibilityShortcuts" -bool false
 #+end_src
 
+Don't show Accessibility Shortcuts in Control Center.
+| Status    | Values |
+|-----------+--------|
+| Checked   |      3 |
+| Unchecked |      6 |
+#+begin_src sh
+defaults -currentHost write com.apple.controlcenter AccessibilityShortcuts -int 6
+#+end_src
+
 ** Menu Bar Only
