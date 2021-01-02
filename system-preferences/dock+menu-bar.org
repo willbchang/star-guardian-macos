@@ -194,5 +194,8 @@ defaults -currentHost write com.apple.controlcenter BatteryShowPercentage -bool 
 defaults -currentHost write com.apple.controlcenter UserSwitcher -int 12
 #+end_src
 
-
 ** Menu Bar Only
+*Spotlight*: Don't show in Menu Bar
+#+begin_src sh
+defaults -currentHost write com.apple.Spotlight MenuItemHidden -bool true
+#+end_src
