@@ -187,4 +187,12 @@ defaults -currentHost write com.apple.controlcenter Battery -int 6
 defaults -currentHost write com.apple.controlcenter BatteryShowPercentage -bool true
 #+end_src
 
+*Fast User Switching*
+- Don't show in Menu Bar
+- Don't show in Control Center
+#+begin_src sh
+defaults -currentHost write com.apple.controlcenter UserSwitcher -int 12
+#+end_src
+
+
 ** Menu Bar Only
