@@ -193,6 +193,7 @@ defaults -currentHost write com.apple.controlcenter AccessibilityShortcuts -int 
 | Checked          | Checked                |     19 |
 #+begin_src sh
 defaults -currentHost write com.apple.controlcenter Battery -int 22
+defaults -currentHost write com.apple.controlcenter BatteryShowPercentage -bool true
 #+end_src
 
 ** Menu Bar Only
