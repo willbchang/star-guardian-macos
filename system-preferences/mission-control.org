@@ -13,3 +13,8 @@ Group windows by application
 #+begin_src sh
 defaults write com.apple.dock expose-group-apps -bool true
 #+end_src
+
+Displays have separate Spaces
+#+begin_src sh
+defaults write com.apple.spaces spans-displays -bool true
+#+end_src
