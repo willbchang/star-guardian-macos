@@ -228,6 +228,28 @@ defaults -currentHost write com.apple.controlcenter UserSwitcher -int 12
   plutil -replace TimeAnnouncementPrefs.TimeAnnouncementsEnabled -bool false com.apple.speech.synthesis.general.prefs.plist
   #+end_src
 
+  I left this for a reference if you want to customize it, ~plutil~ will be helpful to you.
+  | Options             | TimeAnnouncementsIntervalIdentifier |
+  |---------------------+-------------------------------------|
+  | On the hour         | EveryHourInterval                   |
+  | On the half hour    | EveryHalfHourInterval               |
+  | On the quarter hour | EveryQuarterHourInterval            |
+
+  #+begin_src bash
+  defaults read com.apple.speech.synthesis.general.prefs TimeAnnouncementPrefs
+
+  {
+      TimeAnnouncementsEnabled = 1;
+      TimeAnnouncementsIntervalIdentifier = EveryHourInterval;
+      TimeAnnouncementsPhraseIdentifier = ShortTime;
+      TimeAnnouncementsVoiceSettings =     {
+          CustomRelativeRate = 1;
+          CustomVolume = "0.5";
+          VoiceIdentifier = "com.apple.speech.synthesis.voice.rishi";
+      };
+  }
+  #+end_src
+
 *Spotlight*: Don't show in Menu Bar
 #+begin_src sh
 defaults -currentHost write com.apple.Spotlight MenuItemHidden -bool true
