@@ -1,0 +1,267 @@
+#+TITLE: Dock & Menu Bar
+
+* Dock
+*Set the icon size of Dock items to 72 pixels*
+#+begin_src sh
+defaults write com.apple.dock tilesize -int 72
+#+end_src
+
+*Enable magnification*
+#+begin_src sh
+defaults write com.apple.dock magnification -bool true
+#+end_src
+
+*Set magnification size to 100*
+#+begin_src sh
+defaults write com.apple.dock largesize -int 100
+#+end_src
+
+*Change dock position to left*
+#+begin_src sh
+defaults write com.apple.dock orientation -string "left"
+#+end_src
+
+*Change minimize/maximize window effect*
+| Options      | Values |
+|--------------+--------|
+| Scale effect | scale  |
+| Genie effect | genie  |
+#+begin_src sh
+defaults write com.apple.dock mineffect -string "scale"
+#+end_src
+
+*Double-click a window's title bar to zoom.*
+| Options  | Values   |
+|----------+----------|
+| minimize | Minimize |
+| zoom     | Maximize |
+#+begin_src sh
+defaults write -g AppleActionOnDoubleClick -string "Maximize"
+#+end_src
+
+*Minimize windows into their application’s icon*
+#+begin_src sh
+defaults write com.apple.dock minimize-to-application -bool true
+#+end_src
+
+*Don’t animate opening applications from the Dock*
+#+begin_src sh
+defaults write com.apple.dock launchanim -bool false
+#+end_src
+
+*Automatically hide and show the Dock*
+#+begin_src sh
+defaults write com.apple.dock autohide -bool true
+#+end_src
+
+*Don't show indicators for open applications.*
+#+begin_src sh
+defaults write com.apple.dock show-process-indicators -bool false
+#+end_src
+
+*Don’t show recent applications in Dock.*
+#+begin_src sh
+defaults write com.apple.dock show-recents -bool false
+#+end_src
+
+** Hidden Features
+*Remove the auto-hiding Dock delay*
+#+begin_src sh
+defaults write com.apple.dock autohide-delay -float 0
+#+end_src
+
+*Remove the animation when hiding/showing the Dock*
+#+begin_src sh
+defaults write com.apple.dock autohide-time-modifier -float 0
+#+end_src
+
+*Show only open applications in the Dock*
+#+begin_src sh
+defaults write com.apple.dock static-only -bool true
+#+end_src
+
+*Make Dock icons of hidden applications translucent*
+#+begin_src sh
+defaults write com.apple.dock showhidden -bool true
+#+end_src
+
+*Remove all (default) app icons from the Dock*\\
+This is only really useful when setting up a new Mac, or if you don’t use the Dock to launch apps.
+#+begin_src sh
+defaults write com.apple.dock persistent-apps -array
+#+end_src
+
+*Enable spring loading for all Dock items*
+#+begin_src sh
+defaults write com.apple.dock enable-spring-load-actions-on-all-items -bool true
+#+end_src
+
+*Enable highlight hover effect for the grid view of a stack (Dock)*
+#+begin_src sh
+defaults write com.apple.dock mouse-over-hilite-stack -bool true
+#+end_src
+
+* Menu Bar
+*Automatically hide and show the menu bar.*
+#+begin_src sh
+defaults write -g _HIHideMenuBar -bool true
+#+end_src
+
+** Control Center
+*Wi-Fi*: Show Wi-Fi in Menu Bar
+#+begin_src sh
+defaults write com.apple.controlcenter "NSStatusItem Visible WiFi" -bool true
+#+end_src
+
+*Bluetooth*: Don't show in Menu Bar
+#+begin_src sh
+defaults write com.apple.controlcenter "NSStatusItem Visible Bluetooth" -bool false
+#+end_src
+
+*AirDrop*: Don't show in Menu Bar
+#+begin_src sh
+defaults write com.apple.controlcenter "NSStatusItem Visible AirDrop" -bool false
+#+end_src
+
+
+*Do Not Disturb*: Don't show in Menu Bar
+
+| Status    | Options     | Values |
+|-----------+-------------+--------+
+| Unchecked | always      |     24 |
+| Checked   | always      |     18 |
+| Unchecked | when active |      8 |
+| Checked   | when active |      2 |
+/You can refer this table for others./
+#+begin_src sh
+defaults -currentHost write com.apple.controlcenter DoNotDisturb -int 8
+#+end_src
+
+*Keyboard Brightness*: Don't show in Menu Bar
+#+begin_src sh
+defaults write com.apple.controlcenter "NSStatusItem Visible KeyboardBrightness" -bool false
+#+end_src
+
+*Screen Mirroring*: Show in Menu Bar when active
+#+begin_src sh
+defaults -currentHost write com.apple.controlcenter ScreenMirroring -int 2
+defaults write com.apple.airplay showInMenuBarIfPresent -bool true
+#+end_src
+
+*Display*: Show in Menu bar when active
+#+begin_src sh
+defaults -currentHost write com.apple.controlcenter Display -int 2
+#+end_src
+
+*Sound*: Don't show in Menu Bar
+#+begin_src sh
+defaults -currentHost write com.apple.controlcenter Sound -int 8
+#+end_src
+
+*Now Playing*: Don't show in Menu Bar
+#+begin_src sh
+defaults -currentHost write com.apple.controlcenter NowPlaying -int 8
+#+end_src
+
+** Other Modules
+*Accessibility Shortcuts*
+- Don't show in Menu Bar
+- Don't show in Control Center
+| Show in Menu Bar | Show in Control Center | Values |
+|------------------+------------------------+--------|
+| Unchecked        | Unchecked              |     12 |
+| Unchecked        | Checked                |      9 |
+| Checked          | Unchecked              |      6 |
+| Checked          | Checked                |      3 |
+/You can refer this table for other modules./
+#+begin_src sh
+defaults -currentHost write com.apple.controlcenter AccessibilityShortcuts -int 12
+#+end_src
+
+*Battery*
+- Show in Menu Bar
+- Don't show in Control Center
+- Show Percentage
+#+begin_src sh
+defaults -currentHost write com.apple.controlcenter Battery -int 6
+defaults -currentHost write com.apple.controlcenter BatteryShowPercentage -bool true
+#+end_src
+
+*Fast User Switching*
+- Don't show in Menu Bar
+- Don't show in Control Center
+#+begin_src sh
+defaults -currentHost write com.apple.controlcenter UserSwitcher -int 12
+#+end_src
+
+** Menu Bar Only
+*Clock*
+- Date Options
+    | Show the day of the week | Show date | DateFormat           | ShowDayOfMonth | ShowDayOfWeek |
+    |--------------------------+-----------+----------------------+----------------+---------------|
+    | Unchecked                | Unchecked | "H:mm:ss"            | false          | false         |
+    | Checked                  | Unchecked | "EEE H:mm:ss"        | false          | true          |
+    | Unchecked                | Checked   | "MMM d  H:mm:ss"     | true           | false         |
+    | Checked                  | Checked   | "EEE MMM d  H:mm:ss" | true           | true          |
+  - Show the day of the week
+  - Show date
+    #+begin_src sh
+    defaults write com.apple.menuextra.clock DateFormat "EEE MMM d  H:mm:ss"
+    defaults write com.apple.menuextra.clock ShowDayOfWeek -bool true
+    defaults write com.apple.menuextra.clock ShowDayOfMonth -bool true
+    #+end_src
+- Time options
+  + Use Digital
+  + Use a 24-hour clock
+  + Don't show AM/PM
+  + Don't flash the time separators
+  + Display the time with seconds
+  #+begin_src sh
+  defaults write com.apple.menuextra.clock IsAnalog -bool false
+  defaults write com.apple.menuextra.clock Show24Hour -bool true
+  defaults write com.apple.menuextra.clock ShowAMPM -bool false
+  defaults write com.apple.menuextra.clock FlashDateSeparators -bool false
+  defaults write com.apple.menuextra.clock ShowSeconds -bool true
+  #+end_src
+- Don't Announce the time
+  #+begin_src sh
+  plutil -replace TimeAnnouncementPrefs.TimeAnnouncementsEnabled -bool false com.apple.speech.synthesis.general.prefs.plist
+  #+end_src
+
+  I left this for a reference if you want to customize it, ~plutil~ will be helpful to you.
+  | Options             | TimeAnnouncementsIntervalIdentifier |
+  |---------------------+-------------------------------------|
+  | On the hour         | EveryHourInterval                   |
+  | On the half hour    | EveryHalfHourInterval               |
+  | On the quarter hour | EveryQuarterHourInterval            |
+
+  #+begin_src bash
+  defaults read com.apple.speech.synthesis.general.prefs TimeAnnouncementPrefs
+
+  {
+      TimeAnnouncementsEnabled = 1;
+      TimeAnnouncementsIntervalIdentifier = EveryHourInterval;
+      TimeAnnouncementsPhraseIdentifier = ShortTime;
+      TimeAnnouncementsVoiceSettings =     {
+          CustomRelativeRate = 1;
+          CustomVolume = "0.5";
+          VoiceIdentifier = "com.apple.speech.synthesis.voice.rishi";
+      };
+  }
+  #+end_src
+
+*Spotlight*: Don't show in Menu Bar
+#+begin_src sh
+defaults -currentHost write com.apple.Spotlight MenuItemHidden -bool true
+#+end_src
+
+*Siri*: Don't show in Menu Bar
+#+begin_src sh
+defaults write com.apple.Siri StatusMenuVisible -bool false
+#+end_src
+
+*Time Machine*: Don't show in Menu Bar
+#+begin_src sh
+defaults delete com.apple.systemuiserver "NSStatusItem Visible com.apple.menuextra.TimeMachine"
+defaults write com.apple.systemuiserver menuExtras -array
+#+end_src
