@@ -1,1 +1,5 @@
 #+TITLE: Mission Control
+Automatically rearrange Spaces based on most recent use
+#+begin_src sh
+defaults write com.apple.dock mru-spaces -bool true
+#+end_src
