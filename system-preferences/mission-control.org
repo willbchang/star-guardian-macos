@@ -8,3 +8,8 @@ When switching to an application, switch to a Space with open windows for the ap
 #+begin_src sh
 defaults write -g AppleSpacesSwitchOnActivate -bool true
 #+end_src
+
+Group windows by application
+#+begin_src sh
+defaults write com.apple.dock expose-group-apps -bool true
+#+end_src
