@@ -223,6 +223,10 @@ defaults -currentHost write com.apple.controlcenter UserSwitcher -int 12
   defaults write com.apple.menuextra.clock FlashDateSeparators -bool false
   defaults write com.apple.menuextra.clock ShowSeconds -bool true
   #+end_src
+- Don't Announce the time
+  #+begin_src sh
+  plutil -replace TimeAnnouncementPrefs.TimeAnnouncementsEnabled -bool false com.apple.speech.synthesis.general.prefs.plist
+  #+end_src
 
 *Spotlight*: Don't show in Menu Bar
 #+begin_src sh
