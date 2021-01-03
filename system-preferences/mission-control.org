@@ -3,3 +3,8 @@ Automatically rearrange Spaces based on most recent use
 #+begin_src sh
 defaults write com.apple.dock mru-spaces -bool true
 #+end_src
+
+When switching to an application, switch to a Space with open windows for the application
+#+begin_src sh
+defaults write -g AppleSpacesSwitchOnActivate -bool true
+#+end_src
