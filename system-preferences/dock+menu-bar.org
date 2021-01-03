@@ -214,10 +214,12 @@ defaults -currentHost write com.apple.controlcenter UserSwitcher -int 12
   + Use Digital
   + Use a 24-hour clock
   + Don't show AM/PM
+  + Don't flash the time separators
   #+begin_src sh
   defaults write com.apple.menuextra.clock IsAnalog -bool false
   defaults write com.apple.menuextra.clock Show24Hour -bool true
   defaults write com.apple.menuextra.clock ShowAMPM -bool false
+  defaults write com.apple.menuextra.clock FlashDateSeparators -bool false
   #+end_src
 
 *Spotlight*: Don't show in Menu Bar
