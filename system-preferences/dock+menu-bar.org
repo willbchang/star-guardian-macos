@@ -197,12 +197,14 @@ defaults -currentHost write com.apple.controlcenter UserSwitcher -int 12
 ** Menu Bar Only
 *Clock*
 - Date Options
+    | Show the day of the week | Show date | DateFormat           | ShowDayOfMonth | ShowDayOfWeek |
+    |--------------------------+-----------+----------------------+----------------+---------------|
+    | Unchecked                | Unchecked | "H:mm:ss"            | false          | false         |
+    | Checked                  | Unchecked | "EEE H:mm:ss"        | false          | true          |
+    | Unchecked                | Checked   | "MMM d  H:mm:ss"     | true           | false         |
+    | Checked                  | Checked   | "EEE MMM d  H:mm:ss" | true           | true          |
   - Show the day of the week
-    | Options   | Values             |
-    |-----------+--------------------|
-    | Checked   | EEE MMM d  H:mm:ss |
-    | Unchecked | MMM d  H:mm:ss     |
-
+  - Show date
     #+begin_src sh
     defaults write com.apple.menuextra.clock DateFormat "EEE MMM d  H:mm:ss"
     defaults write com.apple.menuextra.clock ShowDayOfWeek -bool true
