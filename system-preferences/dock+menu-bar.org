@@ -210,6 +210,12 @@ defaults -currentHost write com.apple.controlcenter UserSwitcher -int 12
     defaults write com.apple.menuextra.clock ShowDayOfMonth -bool true
     defaults write com.apple.menuextra.clock ShowDayOfWeek -bool true
     #+end_src
+- Time options
+  + Use Digital
+    #+begin_src sh
+    defaults write com.apple.menuextra.clock IsAnalog -bool false
+    #+end_src
+
 
 *Spotlight*: Don't show in Menu Bar
 #+begin_src sh
