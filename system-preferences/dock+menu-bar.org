@@ -207,8 +207,8 @@ defaults -currentHost write com.apple.controlcenter UserSwitcher -int 12
   - Show date
     #+begin_src sh
     defaults write com.apple.menuextra.clock DateFormat "EEE MMM d  H:mm:ss"
-    defaults write com.apple.menuextra.clock ShowDayOfMonth -bool true
     defaults write com.apple.menuextra.clock ShowDayOfWeek -bool true
+    defaults write com.apple.menuextra.clock ShowDayOfMonth -bool true
     #+end_src
 - Time options
   + Use Digital
