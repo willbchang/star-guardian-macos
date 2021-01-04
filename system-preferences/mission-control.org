@@ -19,7 +19,7 @@ Displays have separate Spaces
 defaults write com.apple.spaces spans-displays -bool true
 #+end_src
 
-** Keyboard and Mouse Shortcuts
+** Keyboard Shortcuts
 Disable Mission Control keyboard shortcuts
 #+begin_src sh
 /usr/libexec/PlistBuddy -c "set :AppleSymbolicHotKeys:32:enabled false" ~/Library/Preferences/com.apple.symbolichotkeys.plist
@@ -36,3 +36,25 @@ Disable Show Desktop keyboard shortcuts
 /usr/libexec/PlistBuddy -c "set :AppleSymbolicHotKeys:36:enabled false" ~/Library/Preferences/com.apple.symbolichotkeys.plist
 /usr/libexec/PlistBuddy -c "set :AppleSymbolicHotKeys:37:enabled false" ~/Library/Preferences/com.apple.symbolichotkeys.plist
 #+end_src
+
+** Hot Corners
+| Corner Positions | Corner Keys     | Modifier Keys     |
+|------------------+-----------------+-------------------|
+| Top Left         | wvous-tl-corner | wvous-tl-modifier |
+| Top Right        | wvous-tr-corner | wvous-tr-modifier |
+| Bottom Left      | wvous-bl-corner | wvous-bl-modifier |
+| Bottom Right     | wvous-br-corner | wvous-br-modifier |
+
+| Options              | Corner Values | Modifier Values |
+|----------------------+---------------+-----------------|
+| Mission Control      |             2 |               0 |
+| Application Windows  |             3 |               0 |
+| Desktop              |             4 |               0 |
+| Notification Center  |            12 |               0 |
+| Launchpad            |            11 |               0 |
+| Start Screen Saver   |             5 |               0 |
+| Disable Screen Saver |             6 |               0 |
+| Put Display to Sleep |            10 |               0 |
+| Lock Screen          |            13 |               0 |
+| -                    |             1 |         1048576 |
+
