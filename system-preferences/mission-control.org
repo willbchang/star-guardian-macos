@@ -18,3 +18,9 @@ Displays have separate Spaces
 #+begin_src sh
 defaults write com.apple.spaces spans-displays -bool true
 #+end_src
+
+** Keyboard and Mouse Shortcuts
+Disable Mission Control keyboard shortcuts
+#+begin_src sh
+/usr/libexec/PlistBuddy -c "set :AppleSymbolicHotKeys:32:enabled false" ~/Library/Preferences/com.apple.symbolichotkeys.plist
+#+end_src
