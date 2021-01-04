@@ -58,3 +58,18 @@ Disable Show Desktop keyboard shortcuts
 | Lock Screen          |            13 |               0 |
 | -                    |             1 |         1048576 |
 
+
+Disable all hot corners
+#+begin_src sh
+defaults write com.apple.dock wvous-tl-corner -int 1
+defaults write com.apple.dock wvous-tl-modifier -int 1048576
+
+defaults write com.apple.dock wvous-tr-corner -int 1
+defaults write com.apple.dock wvous-tr-modifier -int 1048576
+
+defaults write com.apple.dock wvous-bl-corner -int 1
+defaults write com.apple.dock wvous-bl-modifier -int 1048576
+
+defaults write com.apple.dock wvous-br-corner -int 1
+defaults write com.apple.dock wvous-br-modifier -int 1048576
+#+end_src
