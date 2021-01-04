@@ -30,3 +30,9 @@ Disable Application windows keyboard shortcuts
 /usr/libexec/PlistBuddy -c "set :AppleSymbolicHotKeys:33:enabled false" ~/Library/Preferences/com.apple.symbolichotkeys.plist
 /usr/libexec/PlistBuddy -c "set :AppleSymbolicHotKeys:35:enabled false" ~/Library/Preferences/com.apple.symbolichotkeys.plist
 #+end_src
+
+Disable Show Desktop keyboard shortcuts
+#+begin_src sh
+/usr/libexec/PlistBuddy -c "set :AppleSymbolicHotKeys:36:enabled false" ~/Library/Preferences/com.apple.symbolichotkeys.plist
+/usr/libexec/PlistBuddy -c "set :AppleSymbolicHotKeys:37:enabled false" ~/Library/Preferences/com.apple.symbolichotkeys.plist
+#+end_src
