@@ -1,0 +1,75 @@
+#+TITLE: Mission Control
+Automatically rearrange Spaces based on most recent use
+#+begin_src sh
+defaults write com.apple.dock mru-spaces -bool true
+#+end_src
+
+When switching to an application, switch to a Space with open windows for the application
+#+begin_src sh
+defaults write -g AppleSpacesSwitchOnActivate -bool true
+#+end_src
+
+Group windows by application
+#+begin_src sh
+defaults write com.apple.dock expose-group-apps -bool true
+#+end_src
+
+Displays have separate Spaces
+#+begin_src sh
+defaults write com.apple.spaces spans-displays -bool true
+#+end_src
+
+** Keyboard Shortcuts
+Disable Mission Control keyboard shortcuts
+#+begin_src sh
+/usr/libexec/PlistBuddy -c "set :AppleSymbolicHotKeys:32:enabled false" ~/Library/Preferences/com.apple.symbolichotkeys.plist
+#+end_src
+
+Disable Application windows keyboard shortcuts
+#+begin_src sh
+/usr/libexec/PlistBuddy -c "set :AppleSymbolicHotKeys:33:enabled false" ~/Library/Preferences/com.apple.symbolichotkeys.plist
+/usr/libexec/PlistBuddy -c "set :AppleSymbolicHotKeys:35:enabled false" ~/Library/Preferences/com.apple.symbolichotkeys.plist
+#+end_src
+
+Disable Show Desktop keyboard shortcuts
+#+begin_src sh
+/usr/libexec/PlistBuddy -c "set :AppleSymbolicHotKeys:36:enabled false" ~/Library/Preferences/com.apple.symbolichotkeys.plist
+/usr/libexec/PlistBuddy -c "set :AppleSymbolicHotKeys:37:enabled false" ~/Library/Preferences/com.apple.symbolichotkeys.plist
+#+end_src
+
+** Hot Corners
+| Corner Positions | Corner Keys     | Modifier Keys     |
+|------------------+-----------------+-------------------|
+| Top Left         | wvous-tl-corner | wvous-tl-modifier |
+| Top Right        | wvous-tr-corner | wvous-tr-modifier |
+| Bottom Left      | wvous-bl-corner | wvous-bl-modifier |
+| Bottom Right     | wvous-br-corner | wvous-br-modifier |
+
+| Options              | Corner Values | Modifier Values |
+|----------------------+---------------+-----------------|
+| Mission Control      |             2 |               0 |
+| Application Windows  |             3 |               0 |
+| Desktop              |             4 |               0 |
+| Notification Center  |            12 |               0 |
+| Launchpad            |            11 |               0 |
+| Start Screen Saver   |             5 |               0 |
+| Disable Screen Saver |             6 |               0 |
+| Put Display to Sleep |            10 |               0 |
+| Lock Screen          |            13 |               0 |
+| -                    |             1 |         1048576 |
+
+
+Disable all hot corners
+#+begin_src sh
+defaults write com.apple.dock wvous-tl-corner -int 1
+defaults write com.apple.dock wvous-tl-modifier -int 1048576
+
+defaults write com.apple.dock wvous-tr-corner -int 1
+defaults write com.apple.dock wvous-tr-modifier -int 1048576
+
+defaults write com.apple.dock wvous-bl-corner -int 1
+defaults write com.apple.dock wvous-bl-modifier -int 1048576
+
+defaults write com.apple.dock wvous-br-corner -int 1
+defaults write com.apple.dock wvous-br-modifier -int 1048576
+#+end_src
