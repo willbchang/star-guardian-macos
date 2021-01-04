@@ -24,3 +24,9 @@ Disable Mission Control keyboard shortcuts
 #+begin_src sh
 /usr/libexec/PlistBuddy -c "set :AppleSymbolicHotKeys:32:enabled false" ~/Library/Preferences/com.apple.symbolichotkeys.plist
 #+end_src
+
+Disable Application windows keyboard shortcuts
+#+begin_src sh
+/usr/libexec/PlistBuddy -c "set :AppleSymbolicHotKeys:33:enabled false" ~/Library/Preferences/com.apple.symbolichotkeys.plist
+/usr/libexec/PlistBuddy -c "set :AppleSymbolicHotKeys:35:enabled false" ~/Library/Preferences/com.apple.symbolichotkeys.plist
+#+end_src
