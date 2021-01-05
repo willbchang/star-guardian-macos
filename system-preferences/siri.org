@@ -15,6 +15,11 @@ defaults write com.apple.Siri HotkeyTag -int 0
 /usr/libexec/PlistBuddy -c "set :AppleSymbolicHotKeys:176:enabled false" ~/Library/Preferences/com.apple.symbolichotkeys.plist
 #+end_src
 
+Voice Feedback: On
+#+begin_src sh
+defaults write com.apple.Siri LockscreenEnabled -bool false
+#+end_src
+
 Don't show Siri in menu bar
 #+begin_src sh
 defaults write com.apple.Siri StatusMenuVisible -bool false
