@@ -1,6 +1,3 @@
-:PROPERTIES:
-:ID:       e102d22a-9081-49e6-a659-7fafbd44fb58
-:END:
 #+TITLE: Siri
 
 Keyboard Shortcut: Off
