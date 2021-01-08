@@ -18,10 +18,11 @@ sh macos-dotfiles/install.sh
 | [[./command-line-tools/zsh.org][Zsh]]                | [[./applications/emacs.org][Emacs]]        | [[./system-preferences/desktop+screen-saver.org][Desktop & Screen Saver]] |
 | [[./command-line-tools/git.org][Git]]                | [[./applications/safari.org][Safari]]       | [[./system-preferences/dock+menu-bar.org][Dock & Menu Bar]]        |
 | [[./command-line-tools/asdf.org][ASDF]]               | [[./applications/terminal.org][Terminal]]     | [[./system-preferences/mission-control.org][Mission Control]]        |
-| [[./command-line-tools/node.org][Node]]               | [[./applications/finder.org][Finder]]       | [[./system-preferences/accessibility.org][Accessibility]]          |
-| [[./command-line-tools/ruby.org][Ruby]]               | [[./applications/rubymine.org][Rubymine]]     | [[./system-preferences/security+privacy.org][Security & Privacy]]     |
-| [[./command-line-tools/trash.org][Trash]]              | [[./applications/xcode.org][Xcode]]        | [[./system-preferences/keyboard.org][Keyboard]]               |
-| [[./command-line-tools/mas.org][Mas]]                | [[./applications/font-book.org][Font Book]]    | [[./system-preferences/trackpad.org][Trackpad]]               |
+| [[./command-line-tools/node.org][Node]]               | [[./applications/finder.org][Finder]]       | [[./system-preferences/siri.org][Siri]]                   |
+| [[./command-line-tools/ruby.org][Ruby]]               | [[./applications/rubymine.org][Rubymine]]     | [[./system-preferences/accessibility.org][Accessibility]]          |
+| [[./command-line-tools/trash.org][Trash]]              | [[./applications/xcode.org][Xcode]]        | [[./system-preferences/security+privacy.org][Security & Privacy]]     |
+| [[./command-line-tools/mas.org][Mas]]                | [[./applications/font-book.org][Font Book]]    | [[./system-preferences/keyboard.org][Keyboard]]               |
+|                    |              | [[./system-preferences/trackpad.org][Trackpad]]               |
 |                    |              | [[./system-preferences/displays.org][Displays]]               |
 |                    |              | [[./system-preferences/battery.org][Battery]]                |
 
