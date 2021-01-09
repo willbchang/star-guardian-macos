@@ -4,6 +4,12 @@
 brew install git
 #+end_src
 
+Add [[https://www.toptal.com/developers/gitignore][gi]] as gitignore generator
+#+begin_src sh
+echo "function gi() { curl -sLw "\n" https://www.toptal.com/developers/gitignore/api/\$@ ;}" >> \
+~/.zshrc && source ~/.zshrc
+#+end_src
+
 *Setup global [[https://docs.github.com/en/free-pro-team@latest/github/using-git/ignoring-files][git ignore]]*\\
 Configuring ignored files for all repositories on your computer.
 [[https://github.com/github/gitignore][github/gitignore]]
