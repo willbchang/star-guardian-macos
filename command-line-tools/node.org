@@ -1,30 +1,12 @@
 #+TITLE: Node
-Node.js is a JavaScript runtime built on Chrome's V8 JavaScript engine.
 
-*Install Dependencies*
+[[https://nodejs.org/en/][Node.js]] is a JavaScript runtime built on Chrome's V8 JavaScript engine.
 #+begin_src sh
-brew install coreutils gpg
-#+end_src
-
-*Install NodeJS plugin for ASDF*
-#+begin_src sh
-asdf plugin-add nodejs
-#+end_src
-
-*Import the Node.js release team's OpenPGP keys to main keyring*
-#+begin_src sh
-bash -c '${ASDF_DATA_DIR:=$HOME/.asdf}/plugins/nodejs/bin/import-release-team-keyring'
-#+end_src
-
-*Install latest version of [[https://github.com/github/gitignore][NodeJS]]*\\
-#+begin_src sh
-asdf install nodejs latest
-asdf global nodejs latest
+brew install nodejs
 #+end_src
 
 *Install a better package manager: [[https://pnpm.js.org/][pnpm]]*\\
 Fast, disk space efficient package manager.
 #+begin_src sh
-asdf install pnpm latest
-asdf global pnpm latest
+npm i -g pnpm
 #+end_src
