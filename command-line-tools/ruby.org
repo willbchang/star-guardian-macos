@@ -8,6 +8,11 @@ Add brew ruby path to zshrc
 echo 'export PATH="/usr/local/opt/ruby/bin:$PATH"' >> ~/.zshrc
 #+end_src
 
+Add ruby gem path to zshrc
+#+begin_src sh
+ruby_version=$(/usr/local/opt/ruby/bin/ruby -v | grep -o '[0-9]\.[0-9]\.[0-9]')
+echo "'export PATH=\"\$HOME/.gem/ruby/$ruby_version/bin:\$PATH\"" >> ~/.zshrc
+#+end_src
 
 *Install Ruby on Rails*
 #+begin_src sh
