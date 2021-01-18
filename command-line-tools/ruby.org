@@ -16,10 +16,10 @@ echo "'export PATH=\"\$HOME/.gem/ruby/$ruby_version/bin:\$PATH\"" >> ~/.zshrc
 
 *Install Ruby on Rails*
 #+begin_src sh
-gem install rails
+gem install --user-install rails
 #+end_src
 
 Install [[https://jekyllrb.com/][Jekyll]] as a static website generator
 #+begin_src sh
-gem install bundler jekyll
+gem install --user-install bundler jekyll
 #+end_src
