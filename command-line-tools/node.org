@@ -1,7 +1,6 @@
 #+TITLE: Node
-Node.js is a JavaScript runtime built on Chrome's V8 JavaScript engine.
 
-*Install Dependencies*
+[[https://nodejs.org/en/][Node.js]] is a JavaScript runtime built on Chrome's V8 JavaScript engine.
 #+begin_src sh
 brew install nodejs
 #+end_src
