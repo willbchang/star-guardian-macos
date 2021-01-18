@@ -3,6 +3,12 @@
 brew install ruby
 #+end_src
 
+Add brew ruby path to zshrc
+#+begin_src sh
+echo 'export PATH="/usr/local/opt/ruby/bin:$PATH"' >> ~/.zshrc
+#+end_src
+
+
 *Install Ruby on Rails*
 #+begin_src sh
 gem install rails
