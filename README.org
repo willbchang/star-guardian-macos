@@ -16,10 +16,10 @@ sh macos-dotfiles/install.sh
 |--------------------+--------------+------------------------|
 | [[./command-line-tools/brew.org][Brew]]               | [[./applications/alfred.org][Alfred]]       | [[./system-preferences/general.org][General]]                |
 | [[./command-line-tools/zsh.org][Zsh]]                | [[./applications/emacs.org][Emacs]]        | [[./system-preferences/desktop+screen-saver.org][Desktop & Screen Saver]] |
-| [[./command-line-tools/git.org][Git]]                | [[./applications/safari.org][Safari]]       | [[./system-preferences/dock+menu-bar.org][Dock & Menu Bar]]        |
-| [[./command-line-tools/ruby.org][Ruby]]               | [[./applications/terminal.org][Terminal]]     | [[./system-preferences/mission-control.org][Mission Control]]        |
+| [[./command-line-tools/git.org][Git]]                | [[./applications/rubymine.org][Rubymine]]     | [[./system-preferences/dock+menu-bar.org][Dock & Menu Bar]]        |
+| [[./command-line-tools/ruby.org][Ruby]]               | [[./applications/safari.org][Safari]]       | [[./system-preferences/mission-control.org][Mission Control]]        |
 | [[./command-line-tools/node.org][Node]]               | [[./applications/finder.org][Finder]]       | [[./system-preferences/siri.org][Siri]]                   |
-| [[./command-line-tools/trash.org][Trash]]              | [[./applications/rubymine.org][Rubymine]]     | [[./system-preferences/accessibility.org][Accessibility]]          |
+| [[./command-line-tools/trash.org][Trash]]              | [[./applications/terminal.org][Terminal]]     | [[./system-preferences/accessibility.org][Accessibility]]          |
 | [[./command-line-tools/gh.org][GitHub CLI]]         | [[./applications/font-book.org][Font Book]]    | [[./system-preferences/security+privacy.org][Security & Privacy]]     |
 |                    |              | [[./system-preferences/keyboard.org][Keyboard]]               |
 |                    |              | [[./system-preferences/trackpad.org][Trackpad]]               |
