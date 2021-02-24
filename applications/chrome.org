@@ -1,0 +1,6 @@
+#+TITLE: Chrome
+
+[[https://www.google.com/chrome/][Chrome]] has lots of useful extensions in the [[https://chrome.google.com/webstore/category/extensions][chrome web store]].
+#+begin_src sh
+brew install google-chrome
+#+end_src
