@@ -1,10 +1,10 @@
  #+TITLE: Emacs
 * Emacs Mac Port
-*Install [[https://github.com/railwaycat/homebrew-emacsmacport][emacs-mac]]*\\
-This provides a native GUI support for Mac OS X 10.6 - macOS 10.15.
+*Install [[https://github.com/d12frosted/homebrew-emacs-plus][Emacs Plus]]*\\
+It offers a wide rage of extra functionality over regular Emacs package. Emacs Plus intent is to give the most of ‘plus’ stuff by default, leaving only controversial options as opt-in.
 #+begin_src sh
-brew tap railwaycat/emacsmacport
-brew install emacs-mac --with-natural-title-bar
+brew tap d12frosted/emacs-plus
+brew install emacs-plus
 #+end_src
 * Doom Emacs
 ** Installation
