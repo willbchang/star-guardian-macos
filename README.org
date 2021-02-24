@@ -20,8 +20,8 @@ sh macos-dotfiles/install.sh
 | [[./command-line-tools/ruby.org][Ruby]]               | [[./applications/terminal.org][Terminal]]     | [[./system-preferences/mission-control.org][Mission Control]]        |
 | [[./command-line-tools/node.org][Node]]               | [[./applications/finder.org][Finder]]       | [[./system-preferences/siri.org][Siri]]                   |
 | [[./command-line-tools/trash.org][Trash]]              | [[./applications/rubymine.org][Rubymine]]     | [[./system-preferences/accessibility.org][Accessibility]]          |
-| [[./command-line-tools/gh.org][GitHub CLI]]         | [[./applications/xcode.org][Xcode]]        | [[./system-preferences/security+privacy.org][Security & Privacy]]     |
-|                    | [[./applications/font-book.org][Font Book]]    | [[./system-preferences/keyboard.org][Keyboard]]               |
+| [[./command-line-tools/gh.org][GitHub CLI]]         | [[./applications/font-book.org][Font Book]]    | [[./system-preferences/security+privacy.org][Security & Privacy]]     |
+|                    |              | [[./system-preferences/keyboard.org][Keyboard]]               |
 |                    |              | [[./system-preferences/trackpad.org][Trackpad]]               |
 |                    |              | [[./system-preferences/displays.org][Displays]]               |
 |                    |              | [[./system-preferences/battery.org][Battery]]                |
