@@ -67,6 +67,12 @@ export http_proxy=http://127.0.0.1:1087
 export https_proxy=http://127.0.0.1:1087
 #+end_src
 
+Make non-ASCII characters display right.
+#+begin_src sh
+export LANG=en_US.UTF-8
+export LC_ALL=en_US.UTF-8
+#+end_src
+
 * Functions
 *Git add commit*\\
 The lines inside function use aliases from oh-my-zsh git plugin.
