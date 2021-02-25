@@ -20,3 +20,8 @@ Configuring ignored files for all repositories on your computer.
 cat command-line-tools/.gitignore_global >> ~/.gitignore_global
 git config --global core.excludesfile ~/.gitignore_global
 #+end_src
+
+By default, git will print non-ASCII file names in quoted octal notation, i.e. "\nnn\nnn...". This can be disabled with:
+#+begin_src sh
+git config --global core.quotepath off
+#+end_src
