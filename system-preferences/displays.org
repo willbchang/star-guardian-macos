@@ -2,5 +2,5 @@
 *Enable Night Shift*\\
 [[./displays-night-shift.scpt][displays-night-shift.scpt]]
 #+begin_src sh
-osascript system-preferences/displays-night-shift.scpt
+osascript system-preferences/displays-night-shift.applescript
 #+end_src
