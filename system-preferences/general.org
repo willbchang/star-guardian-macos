@@ -77,11 +77,11 @@ defaults write -g AppleShowScrollBars -string "Automatic"
 defaults write -g AppleScrollerPagingBehavior -bool true
 #+end_src
 
-*Set default browser to Safari*
+*Set default browser to Chrome*
 # https://github.com/kerma/defaultbrowser/issues/3#issuecomment-319434425
 #+begin_src sh
 brew install dnlggr/tap/default-browser
-default-browser set safari
+default-browser set chrome
 osascript confirm-system-dialog.applescript
 #+end_src
 
