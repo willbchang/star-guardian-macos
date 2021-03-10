@@ -1,11 +1,14 @@
  #+TITLE: Emacs
-* Emacs Mac Port
+* Emacs Plus Native Comp
 *Install [[https://github.com/d12frosted/homebrew-emacs-plus][Emacs Plus]]*\\
 It offers a wide rage of extra functionality over regular Emacs package. Emacs Plus intent is to give the most of ‘plus’ stuff by default, leaving only controversial options as opt-in.
+
+gccemacs(native comp) is a modified Emacs capable of compiling and running Emacs Lisp as native code in form of re-loadable elf files. As the name suggests this is achieved blending together Emacs and the gcc infrastructure.
 #+begin_src sh
 brew tap d12frosted/emacs-plus
-brew install emacs-plus
+brew install emacs-plus@28 --with-native-comp
 #+end_src
+
 * Doom Emacs
 ** Installation
 *Install doom emacs*
