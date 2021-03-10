@@ -2,28 +2,24 @@
 /NOTICE: This project is on building, use it as your own risk./
 
 A minimal and productive macOS configration with a good documentation that you can live with for a long time.
-This is a source code with documentation repo especially for programmers, if you need explaination with pictures, please visit
-https://book.willbc.cn/the-productive-macos/
 
 Please read this documentation through before running the command below.
 #+begin_src bash
-git clone https://github.com/willbchang/macos-dotfiles.git
+git clone --depth=1 https://github.com/willbchang/macos-dotfiles.git
 sh macos-dotfiles/install.sh
 #+end_src
 
 *Table of Contents*
-| Command Line Tools | Applications | System Preferences     |
-|--------------------+--------------+------------------------|
-| [[./command-line-tools/brew.org][Brew]]               | [[./applications/alfred.org][Alfred]]       | [[./system-preferences/general.org][General]]                |
-| [[./command-line-tools/zsh.org][Zsh]]                | [[./applications/emacs.org][Emacs]]        | [[./system-preferences/desktop+screen-saver.org][Desktop & Screen Saver]] |
-| [[./command-line-tools/git.org][Git]]                | [[./applications/rubymine.org][Rubymine]]     | [[./system-preferences/dock+menu-bar.org][Dock & Menu Bar]]        |
-| [[./command-line-tools/ruby.org][Ruby]]               | [[./applications/chrome.org][Chrome]]       | [[./system-preferences/mission-control.org][Mission Control]]        |
-| [[./command-line-tools/node.org][Node]]               | [[./applications/finder.org][Finder]]       | [[./system-preferences/siri.org][Siri]]                   |
-| [[./command-line-tools/trash.org][Trash]]              | [[./applications/terminal.org][Terminal]]     | [[./system-preferences/accessibility.org][Accessibility]]          |
-|                    | [[./applications/font-book.org][Font Book]]    | [[./system-preferences/security+privacy.org][Security & Privacy]]     |
-|                    |              | [[./system-preferences/keyboard.org][Keyboard]]               |
-|                    |              | [[./system-preferences/trackpad.org][Trackpad]]               |
-|                    |              | [[./system-preferences/displays.org][Displays]]               |
-|                    |              | [[./system-preferences/battery.org][Battery]]                |
-
-All Rights Reserved.
+| System Preferences     | Applications | Command Line Tools |
+|------------------------+--------------+--------------------|
+| [[./system-preferences/general.org][General]]                | [[./applications/alfred.org][Alfred]]       | [[./command-line-tools/brew.org][Brew]]               |
+| [[./system-preferences/desktop+screen-saver.org][Desktop & Screen Saver]] | [[./applications/emacs.org][Emacs]]        | [[./command-line-tools/zsh.org][Zsh]]                |
+| [[./system-preferences/dock+menu-bar.org][Dock & Menu Bar]]        | [[./applications/rubymine.org][Rubymine]]     | [[./command-line-tools/git.org][Git]]                |
+| [[./system-preferences/mission-control.org][Mission Control]]        | [[./applications/chrome.org][Chrome]]       | [[./command-line-tools/ruby.org][Ruby]]               |
+| [[./system-preferences/siri.org][Siri]]                   | [[./applications/finder.org][Finder]]       | [[./command-line-tools/node.org][Node]]               |
+| [[./system-preferences/accessibility.org][Accessibility]]          | [[./applications/terminal.org][Terminal]]     | [[./command-line-tools/trash.org][Trash]]              |
+| [[./system-preferences/security+privacy.org][Security & Privacy]]     | [[./applications/font-book.org][Font Book]]    |                    |
+| [[./system-preferences/keyboard.org][Keyboard]]               |              |                    |
+| [[./system-preferences/trackpad.org][Trackpad]]               |              |                    |
+| [[./system-preferences/displays.org][Displays]]               |              |                    |
+| [[./system-preferences/battery.org][Battery]]                |              |                    |
