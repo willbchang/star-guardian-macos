@@ -4,4 +4,32 @@
 #+begin_src sh
 brew install google-chrome
 #+end_src
-`
+
+* Extensions
+** Programming
+- [[https://chrome.google.com/webstore/detail/hlepfoohegkhhmjieoechaddaejaokhf][Refined GitHub]]
+- [[https://chrome.google.com/webstore/detail/ficfmibkjjnpogdcfhfokmihanoldbfe][File Icons for GitHub and GitLab]]
+- [[https://chrome.google.com/webstore/detail/mmoahbbnojgkclgceahhakhnccimnplk][GitHub Hovercard]]
+- [[https://chrome.google.com/webstore/detail/mjoedlfflcchnleknnceiplgaeoegien][GitHub Isometric Contributions]]
+- [[https://chrome.google.com/webstore/detail/fkbfebkcoelajmhanocgppanfoojcdmg][CodeCopy]]
+- [[https://chrome.google.com/webstore/detail/gbmdgpbipfallnflgajpaliibnhdgobh][JSON Viewer]]
+- [[https://chrome.google.com/webstore/detail/hmhgeddbohgjknpmjagkdomcpobmllji][JetBrains IDE Support]]
+
+** Productivity
+- [[https://chrome.google.com/webstore/detail/hfjbmagddngcpeloejdejnfgbamkjaeg][Vimium C - All by Keyboard]]
+- [[https://chrome.google.com/webstore/detail/nacjakoppgmdcpemlfnfegmlhipddanj][PDF Viewer for Vimium C]]
+- [[https://chrome.google.com/webstore/detail/dkoadhojigekhckndaehenfbhcgfeepl][Keyboard Shortcuts to Close Other/Right Tabs]]
+
+** Tools
+- [[https://chrome.google.com/webstore/detail/fbmfcfkokefgbmfcjahdmomlifclekib][Read Later]]
+- [[https://chrome.google.com/webstore/detail/gkmndgjgpolmikgnipipfekglbbgjcel][AutoHideDownloadsBar]]
+- [[https://chrome.google.com/webstore/detail/oeopbcgkkoapgobdbedcemjljbihmemj][Checker Plus for Gmail™]]
+- [[https://chrome.google.com/webstore/detail/dhdgffkkebhmkfjojejmpbldmpobfkfo][Tampermonkey]]
+- [[https://chrome.google.com/webstore/detail/lifgeihcfpkmmlfjbailfpfhbahhibba][Smart TOC]]
+
+** Video
+- [[https://chrome.google.com/webstore/detail/nffaoalbilbmmfgbnbgppjihopabppdk][Video Speed Controller]]
+
+** Conten Blocker
+- [[https://chrome.google.com/webstore/detail/pncfbmialoiaghdehhbnbhkkgmjanfhe][uBlacklist]]
+- [[https://chrome.google.com/webstore/detail/cjpalhdlnbpafiamejdnhcphjbkeiagm][uBlock Origin]]
