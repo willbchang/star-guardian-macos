@@ -1,5 +1,10 @@
 
 <div align="center">
+
+# Star Guardian MacOS
+</div>
+
+<div align="center">
     <img width="200" alt="Star Guardian Logo" src="https://user-images.githubusercontent.com/14329786/110730526-8f22f600-825b-11eb-8eda-aa061caaa510.png">
 </div>
 
@@ -7,11 +12,12 @@
     <img width="200" alt="Star Guardian Text" src="https://user-images.githubusercontent.com/14329786/110730595-aa8e0100-825b-11eb-8fcf-8c2071f402ef.png">
 </div>
 
-# Star Guardian MacOS
+<div align="center">
+<sub>A minimal and productive macOS configuration with a good documentation that you can live with for a long time.</sub>   
+</div>
+
 
 *NOTICE: This project is on building, use it as your own risk.*
-
-A minimal and productive macOS configuration with a good documentation that you can live with for a long time.
 
 Please read this documentation through before running the command below.
 ``` bash
