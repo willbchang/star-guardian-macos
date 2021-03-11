@@ -11,7 +11,7 @@
 
 *NOTICE: This project is on building, use it as your own risk.*
 
-A minimal and productive macOS configration with a good documentation that you can live with for a long time.
+A minimal and productive macOS configuration with a good documentation that you can live with for a long time.
 
 Please read this documentation through before running the command below.
 ``` bash
@@ -33,3 +33,6 @@ sh star-guardian-macos/install.sh
 | [Trackpad](./system-preferences/trackpad.org)                           |                                           |                                         |
 | [Displays](./system-preferences/displays.org)                           |                                           |                                         |
 | [Battery](./system-preferences/battery.org)                             |                                           |                                         |
+
+## LICENSE
+[GPL-3.0](LICENSE)
