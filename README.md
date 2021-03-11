@@ -16,7 +16,7 @@
 <sub>A minimal and productive macOS configuration with a good documentation that you can live with for a long time.</sub>   
 </div>
 
-
+## Installation
 *NOTICE: This project is on building, use it as your own risk.*
 
 Please read this documentation through before running the command below.
