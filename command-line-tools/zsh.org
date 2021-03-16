@@ -63,8 +63,8 @@ alias diff="git diff --no-index"
 *Set http(s) proxy for command line*\\
 You may want to disable it if you're not using a VPN, or change the port.
 #+begin_src bash
-export http_proxy=http://127.0.0.1:1087
-export https_proxy=http://127.0.0.1:1087
+export http_proxy=http://127.0.0.1:7890
+export https_proxy=http://127.0.0.1:7890
 #+end_src
 
 Make non-ASCII characters display right.
