@@ -106,6 +106,12 @@ zstyle :bracketed-paste-magic paste-init pasteinit
 zstyle :bracketed-paste-magic paste-finish pastefinish
 #+end_src
 
+Clear suggestion after pasting.
+# https://github.com/zsh-users/zsh-autosuggestions/issues/351
+#+begin_src bash
+ZSH_AUTOSUGGEST_CLEAR_WIDGETS+=(bracketed-paste)
+#+end_src
+
 * Configurations
 For more configurations, please visit [[https://github.com/ohmyzsh/ohmyzsh/blob/master/templates/zshrc.zsh-template][zshrc-template]]\\
 For more themes, please visit: [[https://github.com/ohmyzsh/ohmyzsh/wiki/Themes][oh-my-zsh-themes]]
