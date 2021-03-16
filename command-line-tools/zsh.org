@@ -62,14 +62,14 @@ export https_proxy=http://127.0.0.1:7890
 #+end_src
 
 Make non-ASCII characters display right.
-#+begin_src sh
+#+begin_src bash
 export LANG=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
 #+end_src
 
 * Functions
 Git add commit. The lines inside function use aliases from oh-my-zsh git plugin.
-#+begin_src sh
+#+begin_src bash
 function gac () {
   gaa
   gcmsg "$1"
@@ -77,14 +77,14 @@ function gac () {
 #+end_src
 
 Generate git ignore.
-#+begin_src sh
+#+begin_src bash
 function gi() {
   curl -sLw n https://www.toptal.com/developers/gitignore/api/$@
 }
 #+end_src
 
 Checkout to master/main branch and git pull.
-#+begin_src sh
+#+begin_src bash
 functon gcml() {
   gcm
   gl
@@ -93,7 +93,7 @@ functon gcml() {
 
 Speeds up pasting with autosuggest.
 # https://github.com/zsh-users/zsh-autosuggestions/issues/238
-#+begin_src sh
+#+begin_src bash
 pasteinit() {
   OLD_SELF_INSERT=${${(s.:.)widgets[self-insert]}[2,3]}
   zle -N self-insert url-quote-magic # I wonder if you'd need `.url-quote-magic`?
