@@ -9,10 +9,10 @@ brew tap d12frosted/emacs-plus
 brew install emacs-plus@28 --with-native-comp
 #+end_src
 
-* Teem Emacs
+* Ward Emacs
 Text Editing within Emacs for MacOS.
 ** Installation
-Install [[https://github.com/willbchang/teem-emacs][Teem Emacs]] to XDG_CONFIG_HOME (default to ~~/.config~).
+Install [[https://github.com/willbchang/ward-emacs][Ward Emacs]] to ~XDG_CONFIG_HOME~ (default to ~~/.config~).
 #+begin_src sh
 git clone --depth=1 https://github.com/willbchang/teem-emacs.git ~/.config/emacs
 #+end_src
@@ -23,7 +23,8 @@ Install vterm dependencies: cmake, libvterm
 brew install cmake libvterm
 #+end_src
 
-Install evil switch input method dependencies: [[https://github.com/daipeihust/im-select][im-select]]
+Install evil switch input method dependencies: [[https://github.com/laishulu/macism][macism]]
 #+begin_src sh
-curl -Ls https://raw.githubusercontent.com/daipeihust/im-select/master/install_mac.sh | sh
+brew tap laishulu/macism
+brew install macism
 #+end_src
