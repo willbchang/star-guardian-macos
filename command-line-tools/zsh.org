@@ -1,4 +1,4 @@
-#+TITLE: Oh My Zsh
+#+TITLE: Zsh
 
 Install [[https://github.com/ohmyzsh/ohmyzsh][Oh-My-Zsh]] a delightful community-driven framework for managing your zsh configuration.
 #+begin_src sh
