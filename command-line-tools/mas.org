@@ -1,4 +1,0 @@
-Install [[https://github.com/mas-cli/mas][mas]]: Mac App Store command line interface.
-#+begin_src sh
-brew install mas
-#+end_src

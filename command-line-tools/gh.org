@@ -1,6 +1,0 @@
-#+TITLE: Gh
-
-[[https://cli.github.com][GitHub CLI]] brings GitHub to your terminal.
-#+begin_src sh
-brew install gh
-#+end_src
