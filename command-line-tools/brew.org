@@ -11,3 +11,10 @@ It can remove a formula and its unused dependencies. Once you've tapped it, you 
 #+begin_src sh
 brew tap beeftornado/rmtree
 #+end_src
+
+Configuring Completions in zsh: https://docs.brew.sh/Shell-Completion
+#+begin_src sh
+touch .zprofile
+echo "FPATH=\$(brew --prefix)/share/zsh/site-functions:\$FPATH" >> .zprofile
+rm -f ~/.zcompdump; compinit
+#+end_src
