@@ -1,9 +1,27 @@
 #+TITLE: Git
+
+* Installation
 [[https://git-scm.com/][Git]] is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency.
 #+begin_src sh
 brew install git
 #+end_src
 
+* Configuration
+By default, git will print non-ASCII file names in quoted octal notation, i.e. "\nnn\nnn...". This can be disabled with:
+#+begin_src sh
+git config --global core.quotepath off
+#+end_src
+
+* Ignore
+*Setup global [[https://docs.github.com/en/free-pro-team@latest/github/using-git/ignoring-files][git ignore]]*\\
+Configuring ignored files for all repositories on your computer.
+[[https://github.com/github/gitignore][github/gitignore]]
+#+begin_src sh
+cat command-line-tools/.gitignore_global >> ~/.gitignore_global
+git config --global core.excludesfile ~/.gitignore_global
+#+end_src
+
+* Functions
 Add [[https://www.toptal.com/developers/gitignore][gi]] as gitignore generator
 #+begin_src sh
 echo "
@@ -13,15 +31,3 @@ function gi() {
 " >> ~/.zshrc && source ~/.zshrc
 #+end_src
 
-*Setup global [[https://docs.github.com/en/free-pro-team@latest/github/using-git/ignoring-files][git ignore]]*\\
-Configuring ignored files for all repositories on your computer.
-[[https://github.com/github/gitignore][github/gitignore]]
-#+begin_src sh
-cat command-line-tools/.gitignore_global >> ~/.gitignore_global
-git config --global core.excludesfile ~/.gitignore_global
-#+end_src
-
-By default, git will print non-ASCII file names in quoted octal notation, i.e. "\nnn\nnn...". This can be disabled with:
-#+begin_src sh
-git config --global core.quotepath off
-#+end_src
