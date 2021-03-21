@@ -1,36 +1,30 @@
 #+TITLE: Zsh
-
+* Oh My Zsh
 Install [[https://github.com/ohmyzsh/ohmyzsh][Oh-My-Zsh]] a delightful community-driven framework for managing your zsh configuration.
 #+begin_src sh
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 #+end_src
 
-* Plugins
-Oh My Zsh plugins allow you to add functionality of many sorts to your shell just by enabling them. [[https://github.com/ohmyzsh/ohmyzsh/wiki/Plugins][Plugins]]
-
-[[https://github.com/zsh-users/zsh-autosuggestions][Zsh Autosuggestions]]: It suggests commands as you type based on history and completions.
-#+begin_src sh
-git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
-#+end_src
-
-[[https://github.com/zsh-users/zsh-completions][Zsh Completions]]: Additional completion definitions for Zsh.
-#+begin_src sh
-git clone https://github.com/zsh-users/zsh-completions ${ZSH_CUSTOM:=~/.oh-my-zsh/custom}/plugins/zsh-completions
-autoload -U compinit && compinit
-#+end_src
-
-[[https://github.com/zsh-users/zsh-syntax-highlighting][Zsh Syntax Highlighting]]: This package provides syntax highlighting for the shell zsh. It enables highlighting of commands whilst they are typed at a zsh prompt into an interactive terminal. This helps in reviewing commands before running them, particularly in catching syntax errors.
-
-#+begin_src sh
-git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
-#+end_src
-
-*Enable zsh plugins*
+For more configurations, please visit [[https://github.com/ohmyzsh/ohmyzsh/blob/master/templates/zshrc.zsh-template][zshrc-template]]\\
+For more themes, please visit: [[https://github.com/ohmyzsh/ohmyzsh/wiki/Themes][oh-my-zsh-themes]]
 #+begin_src bash
-plugins=(
-  git
-  zsh-autosuggestions zsh-completions zsh-syntax-highlighting
-)
+ZSH_THEME='robbyrussell'
+#+end_src
+
+Disable auto-setting terminal title.
+#+begin_src bash
+DISABLE_AUTO_TITLE='true'
+#+end_src
+
+Automatically update without prompting. Sometimes the update prompt is annoying because it breaks the command you run when launching the Terminal.
+#+begin_src bash
+DISABLE_UPDATE_PROMPT="true"
+#+end_src
+
+Add and reload Oh-My-Zsh configurations.
+#+begin_src sh
+cat command-line-tools/.zshrc >> ~/.zshrc
+source ~/.zshrc
 #+end_src
 
 * Alias
@@ -91,6 +85,23 @@ functon gcml() {
 }
 #+end_src
 
+* Plugins
+Oh My Zsh plugins allow you to add functionality of many sorts to your shell just by enabling them. [[https://github.com/ohmyzsh/ohmyzsh/wiki/Plugins][Plugins]]
+
+Enable zsh plugins:
+#+begin_src bash
+plugins=(
+  git
+  zsh-autosuggestions zsh-completions zsh-syntax-highlighting
+)
+#+end_src
+
+** Zsh Autosuggestions 
+[[https://github.com/zsh-users/zsh-autosuggestions][Zsh Autosuggestions]]: It suggests commands as you type based on history and completions.
+#+begin_src sh
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+#+end_src
+
 Speeds up pasting with autosuggest.
 # https://github.com/zsh-users/zsh-autosuggestions/issues/238
 #+begin_src bash
@@ -112,25 +123,17 @@ Clear suggestion after pasting.
 ZSH_AUTOSUGGEST_CLEAR_WIDGETS+=(bracketed-paste)
 #+end_src
 
-* Configurations
-For more configurations, please visit [[https://github.com/ohmyzsh/ohmyzsh/blob/master/templates/zshrc.zsh-template][zshrc-template]]\\
-For more themes, please visit: [[https://github.com/ohmyzsh/ohmyzsh/wiki/Themes][oh-my-zsh-themes]]
-#+begin_src bash
-ZSH_THEME='robbyrussell'
-#+end_src
-
-Disable auto-setting terminal title
-#+begin_src bash
-DISABLE_AUTO_TITLE='true'
-#+end_src
-
-Automatically update without prompting. Sometimes the update prompt is annoying because it breaks the command you run when launching the Terminal.
-#+begin_src bash
-DISABLE_UPDATE_PROMPT="true"
-#+end_src
-
-Add and reload Oh-My-Zsh configurations.
+** Zsh Completions 
+[[https://github.com/zsh-users/zsh-completions][Zsh Completions]]: Additional completion definitions for Zsh.
 #+begin_src sh
-cat command-line-tools/.zshrc >> ~/.zshrc
-source ~/.zshrc
+git clone https://github.com/zsh-users/zsh-completions ${ZSH_CUSTOM:=~/.oh-my-zsh/custom}/plugins/zsh-completions
+autoload -U compinit && compinit
 #+end_src
+
+** Zsh Syntax Highlighting
+[[https://github.com/zsh-users/zsh-syntax-highlighting][Zsh Syntax Highlighting]]: This package provides syntax highlighting for the shell zsh. It enables highlighting of commands whilst they are typed at a zsh prompt into an interactive terminal. This helps in reviewing commands before running them, particularly in catching syntax errors.
+
+#+begin_src sh
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+#+end_src
+
