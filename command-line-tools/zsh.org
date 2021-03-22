@@ -21,28 +21,7 @@ Automatically update without prompting. Sometimes the update prompt is annoying 
 DISABLE_UPDATE_PROMPT="true"
 #+end_src
 
-Add and reload Oh-My-Zsh configurations.
-#+begin_src sh
-cat command-line-tools/.zshrc >> ~/.zshrc
-source ~/.zshrc
-#+end_src
-
 * Alias
-Show folder structure with tree view. The tree view looks like:
-#+begin_src
-➜  Desktop tree
-.
-|____.DS_Store
-|____test
-| |____ror20h.rb
-|____.localized
-|____20min.rb
-#+end_src
-
-#+begin_src bash
-alias tree="find . -print | sed -e 's;[^/]*/;|____;g;s;____|; |;g'"
-#+end_src
-
 Alias git diff as diff for rich color and styles.
 #+begin_src bash
 alias diff="git diff --no-index"
@@ -79,7 +58,7 @@ function gi() {
 
 Checkout to master/main branch and git pull.
 #+begin_src bash
-functon gcml() {
+function gcml() {
   gcm
   gl
 }
