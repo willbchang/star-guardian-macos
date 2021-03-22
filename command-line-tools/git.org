@@ -31,3 +31,18 @@ function gi() {
 " >> ~/.zshrc && source ~/.zshrc
 #+end_src
 
+Git add commit. The lines inside function use aliases from oh-my-zsh git plugin.
+#+begin_src bash
+function gac () {
+  gaa
+  gcmsg "$1"
+}
+#+end_src
+
+Checkout to master/main branch and git pull.
+#+begin_src bash
+function gcml() {
+  gcm
+  gl
+}
+#+end_src
