@@ -30,6 +30,7 @@ brew install google-chrome
 ** Video
 - [[https://chrome.google.com/webstore/detail/nffaoalbilbmmfgbnbgppjihopabppdk][Video Speed Controller]]
 
-** Conten Blocker
+** Content Blocker
 - [[https://chrome.google.com/webstore/detail/pncfbmialoiaghdehhbnbhkkgmjanfhe][uBlacklist]]
 - [[https://chrome.google.com/webstore/detail/cjpalhdlnbpafiamejdnhcphjbkeiagm][uBlock Origin]]
+- [[https://chrome.google.com/webstore/detail/clearurls/lckanjgmijmafbedllaakclkaicjfmnk][ClearURLs]]
