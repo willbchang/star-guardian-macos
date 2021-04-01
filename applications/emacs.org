@@ -11,7 +11,7 @@ ln -s /usr/local/opt/emacs-plus@28/Emacs.app /Applications
 #+end_src
 
 * Ward Emacs
-Text Editing within Emacs for MacOS.
+Make Emacs as a great Word Processor in MacOS.
 ** Installation
 Install [[https://github.com/willbchang/ward-emacs][Ward Emacs]] to ~XDG_CONFIG_HOME~ (default to ~~/.config~).
 #+begin_src sh
