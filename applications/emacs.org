@@ -7,6 +7,7 @@ gccemacs(native comp) is a modified Emacs capable of compiling and running Emacs
 #+begin_src sh
 brew tap d12frosted/emacs-plus
 brew install emacs-plus@28 --with-native-comp
+ln -s /usr/local/opt/emacs-plus@28/Emacs.app /Applications
 #+end_src
 
 * Ward Emacs
