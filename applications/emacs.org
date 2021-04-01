@@ -15,7 +15,7 @@ Text Editing within Emacs for MacOS.
 ** Installation
 Install [[https://github.com/willbchang/ward-emacs][Ward Emacs]] to ~XDG_CONFIG_HOME~ (default to ~~/.config~).
 #+begin_src sh
-git clone --depth=1 https://github.com/willbchang/teem-emacs.git ~/.config/emacs
+git clone --depth=1 https://github.com/willbchang/ward-emacs.git ~/.config/emacs
 #+end_src
 
 ** Dependencies
