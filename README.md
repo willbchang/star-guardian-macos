@@ -37,4 +37,4 @@ sh star-guardian-macos/install.sh
 | [Battery](./system-preferences/battery.org)                             |                                           |                                         |
 
 ## LICENSE
-[GPL-3.0](LICENSE)
+[AGPL-3.0](LICENSE)
