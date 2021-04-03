@@ -31,9 +31,3 @@ Install vterm dependencies: cmake, libvterm
 #+begin_src sh
 brew install cmake libvterm
 #+end_src
-
-Install evil switch input method dependencies: [[https://github.com/laishulu/macism][macism]]
-#+begin_src sh
-brew tap laishulu/macism
-brew install macism
-#+end_src
