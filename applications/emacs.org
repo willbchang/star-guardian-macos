@@ -1,19 +1,18 @@
  #+TITLE: Emacs
-* Emacs Plus Native Comp
-*Install [[https://github.com/d12frosted/homebrew-emacs-plus][Emacs Plus]]*\\
-It offers a wide rage of extra functionality over regular Emacs package. Emacs Plus intent is to give the most of ‘plus’ stuff by default, leaving only controversial options as opt-in.
-
-gccemacs(native comp) is a modified Emacs capable of compiling and running Emacs Lisp as native code in form of re-loadable elf files. As the name suggests this is achieved blending together Emacs and the gcc infrastructure.
+* Emacs Mac
+[[https://github.com/railwaycat/homebrew-emacsmacport][Emacs Mac]] provides a native GUI support for MacOS.
+1. Better support for input method.
+2. Better support for org inline image.
 #+begin_src sh
-brew tap d12frosted/emacs-plus
-brew install emacs-plus@28 --with-native-comp
-ln -s /usr/local/opt/emacs-plus@28/Emacs.app /Applications
+brew tap railwaycat/emacsmacport
+brew install emacs-mac --with-modules --with-mac-metal --with-rsvg
+ln -s /usr/local/opt/emacs-mac/Emacs.app /Applications
 #+end_src
 
 * Ward Emacs
 Make Emacs as a great Word Processor in MacOS.
 ** Installation
-Install [[https://github.com/willbchang/ward-emacs][Ward Emacs]] to ~XDG_CONFIG_HOME~ (default to ~~/.config~).
+Install [[https://github.com/willbchang/ward-emacs][Ward Emacs]] to ~XDG_CONFIG_HOME~ (default to =~/.config/emacs=).
 #+begin_src sh
 git clone --depth=1 https://github.com/willbchang/ward-emacs.git ~/.config/emacs
 #+end_src
