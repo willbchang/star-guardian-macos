@@ -9,11 +9,9 @@ brew install google-chrome
 ** Programming
 - [[https://chrome.google.com/webstore/detail/hlepfoohegkhhmjieoechaddaejaokhf][Refined GitHub]]
 - [[https://chrome.google.com/webstore/detail/ficfmibkjjnpogdcfhfokmihanoldbfe][File Icons for GitHub and GitLab]]
-- [[https://chrome.google.com/webstore/detail/mmoahbbnojgkclgceahhakhnccimnplk][GitHub Hovercard]]
 - [[https://chrome.google.com/webstore/detail/mjoedlfflcchnleknnceiplgaeoegien][GitHub Isometric Contributions]]
 - [[https://chrome.google.com/webstore/detail/fkbfebkcoelajmhanocgppanfoojcdmg][CodeCopy]]
 - [[https://chrome.google.com/webstore/detail/gbmdgpbipfallnflgajpaliibnhdgobh][JSON Viewer]]
-- [[https://chrome.google.com/webstore/detail/hmhgeddbohgjknpmjagkdomcpobmllji][JetBrains IDE Support]]
 
 ** Productivity
 - [[https://chrome.google.com/webstore/detail/hfjbmagddngcpeloejdejnfgbamkjaeg][Vimium C - All by Keyboard]]
@@ -29,6 +27,7 @@ brew install google-chrome
 
 ** Video
 - [[https://chrome.google.com/webstore/detail/nffaoalbilbmmfgbnbgppjihopabppdk][Video Speed Controller]]
+- [[https://chrome.google.com/webstore/detail/picture-in-picture-extens/hkgfoiooedgoejojocmhlaklaeopbecg][Picture-in-Picture Extension]]
 
 ** Content Blocker
 - [[https://chrome.google.com/webstore/detail/pncfbmialoiaghdehhbnbhkkgmjanfhe][uBlacklist]]
