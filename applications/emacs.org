@@ -31,3 +31,8 @@ Install vterm dependencies: cmake, libvterm
 #+begin_src sh
 brew install cmake libvterm
 #+end_src
+
+Install flyspell dependency: ispell.
+#+begin_src sh
+brew install ispell
+#+end_src
