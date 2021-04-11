@@ -15,7 +15,12 @@
 ## Installation
 *NOTICE: This project is on building, use it as your own risk.*
 
-Please read this documentation through before running the command below.
+Please read the following notes through before running the install script.
+1. The install script is likely not working for now.
+2. Currently there is not backup script, it may break or mess up your computer.
+3. Some of the configurations are not stable/done yet.
+4. It defaults with proxy and you may not want to use.
+
 ``` bash
 git clone --depth=1 https://github.com/willbchang/star-guardian-macos.git
 sh star-guardian-macos/install.sh
