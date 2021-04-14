@@ -16,10 +16,11 @@ ln -s /usr/local/opt/emacs-mac/Emacs.app /Applications
 Make Emacs as the default text editor when opening file(s).
 #+begin_src sh
 brew install duti
-duti -s org.gnu.Emacs net.daringfireball.markdown all
 duti -s org.gnu.Emacs public.plain-text all
 duti -s org.gnu.Emacs public.unix-executable all
 duti -s org.gnu.Emacs public.data all
+# duti -s org.gnu.Emacs net.daringfireball.markdown all
+duti -s org.gnu.Emacs dyn.ah62d4rv4ge8043a all # .md (markdown)
 #+end_src
 
 * Ward Emacs
