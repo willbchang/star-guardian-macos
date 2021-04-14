@@ -32,7 +32,8 @@ Install vterm dependencies: cmake, libvterm
 brew install cmake libvterm
 #+end_src
 
-Install flyspell dependency: ispell.
+Install flyspell dependency: enchant.
 #+begin_src sh
-brew install ispell
+brew install enchant
+echo "*:AppleSpell,aspell" >> ~/.config/enchant/enchant.ordering
 #+end_src
