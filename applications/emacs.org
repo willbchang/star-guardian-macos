@@ -1,8 +1,12 @@
  #+TITLE: Emacs
 * Emacs Mac
 [[https://github.com/railwaycat/homebrew-emacsmacport][Emacs Mac]] provides a native GUI support for MacOS.
-1. Better support for input method.
-2. Better support for org inline image.
+It has native/better support for 
+1. Chinese Input Method with visible cursor movement.
+2. Raw quality for org inline image.
+3. Native emoji support 😄
+4. [[https://developer.apple.com/metal/][Metal]] support.
+
 #+begin_src sh
 brew tap railwaycat/emacsmacport
 brew install emacs-mac --with-modules --with-mac-metal --with-rsvg
