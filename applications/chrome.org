@@ -9,7 +9,6 @@ brew install google-chrome
 ** Programming
 - [[https://chrome.google.com/webstore/detail/hlepfoohegkhhmjieoechaddaejaokhf][Refined GitHub]]
 - [[https://chrome.google.com/webstore/detail/ficfmibkjjnpogdcfhfokmihanoldbfe][File Icons for GitHub and GitLab]]
-- [[https://chrome.google.com/webstore/detail/mjoedlfflcchnleknnceiplgaeoegien][GitHub Isometric Contributions]]
 - [[https://chrome.google.com/webstore/detail/fkbfebkcoelajmhanocgppanfoojcdmg][CodeCopy]]
 - [[https://chrome.google.com/webstore/detail/gbmdgpbipfallnflgajpaliibnhdgobh][JSON Viewer]]
 
@@ -20,16 +19,11 @@ brew install google-chrome
 
 ** Tools
 - [[https://chrome.google.com/webstore/detail/fbmfcfkokefgbmfcjahdmomlifclekib][Read Later]]
-- [[https://chrome.google.com/webstore/detail/gkmndgjgpolmikgnipipfekglbbgjcel][AutoHideDownloadsBar]]
-- [[https://chrome.google.com/webstore/detail/oeopbcgkkoapgobdbedcemjljbihmemj][Checker Plus for Gmail™]]
 - [[https://chrome.google.com/webstore/detail/dhdgffkkebhmkfjojejmpbldmpobfkfo][Tampermonkey]]
-- [[https://chrome.google.com/webstore/detail/lifgeihcfpkmmlfjbailfpfhbahhibba][Smart TOC]]
 
 ** Video
 - [[https://chrome.google.com/webstore/detail/nffaoalbilbmmfgbnbgppjihopabppdk][Video Speed Controller]]
-- [[https://chrome.google.com/webstore/detail/picture-in-picture-extens/hkgfoiooedgoejojocmhlaklaeopbecg][Picture-in-Picture Extension]]
 
 ** Content Blocker
 - [[https://chrome.google.com/webstore/detail/pncfbmialoiaghdehhbnbhkkgmjanfhe][uBlacklist]]
 - [[https://chrome.google.com/webstore/detail/cjpalhdlnbpafiamejdnhcphjbkeiagm][uBlock Origin]]
-- [[https://chrome.google.com/webstore/detail/clearurls/lckanjgmijmafbedllaakclkaicjfmnk][ClearURLs]]
