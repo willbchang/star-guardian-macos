@@ -1,0 +1,64 @@
+{
+  "alfredtheme" : {
+    "result" : {
+      "textSpacing" : 5,
+      "subtext" : {
+        "size" : 12,
+        "colorSelected" : "#FFFFFFCC",
+        "font" : "SF Mono",
+        "color" : "#212121FF"
+      },
+      "shortcut" : {
+        "size" : 16,
+        "colorSelected" : "#FFFFFFFF",
+        "font" : "System",
+        "color" : "#5E5E5EFF"
+      },
+      "backgroundSelected" : "#EC509CE0",
+      "text" : {
+        "size" : 18,
+        "colorSelected" : "#FFFFFFFF",
+        "font" : "System Light",
+        "color" : "#000000FF"
+      },
+      "iconPaddingHorizontal" : 4,
+      "roundness" : 10,
+      "paddingVertical" : 3,
+      "iconSize" : 40
+    },
+    "search" : {
+      "backgroundSelected" : "#EC509DE0",
+      "paddingHorizontal" : 8,
+      "spacing" : 4,
+      "text" : {
+        "size" : 34,
+        "colorSelected" : "#FEFFFFFF",
+        "font" : "System Light",
+        "color" : "#000000FF"
+      },
+      "background" : "#FFFFFF00",
+      "roundness" : 10,
+      "paddingVertical" : 5
+    },
+    "window" : {
+      "color" : "#FFFFFF6D",
+      "paddingHorizontal" : 0,
+      "width" : 560,
+      "borderPadding" : 0,
+      "borderColor" : "#0000007F",
+      "blur" : 25,
+      "roundness" : 10,
+      "paddingVertical" : 4
+    },
+    "credit" : "Will B Chang",
+    "separator" : {
+      "color" : "#CBCBCBF3",
+      "thickness" : 0
+    },
+    "scrollbar" : {
+      "color" : "#6D6D6DFF",
+      "thickness" : 2
+    },
+    "name" : "Blurred Light"
+  }
+}
