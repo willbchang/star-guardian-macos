@@ -1,0 +1,9 @@
+#+TITLE: Duti
+
+[[https://github.com/moretension/duti][duti]] is a command-line tool to select default applications for document types and URL schemes on Mac OS X.
+
+#+beign_src sh
+brew install duti
+#+end_src
+
+
