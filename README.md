@@ -27,19 +27,19 @@ sh star-guardian-macos/install.sh
 ```
 
 **Table of Contents**
-| System Preferences                                                      | Applications                              | Command Line Tools                      |
-|-------------------------------------------------------------------------|-------------------------------------------|-----------------------------------------|
-| [General](./system-preferences/general.org)                             | [Alfred](./applications/alfred.org)       | [Brew](./command-line-tools/brew.org)   |
-| [Desktop & Screen Saver](./system-preferences/desktop+screen-saver.org) | [Emacs](./applications/emacs.org)         | [Zsh](./command-line-tools/zsh.org)     |
-| [Dock & Menu Bar](./system-preferences/dock+menu-bar.org)               | [Rubymine](./applications/rubymine.org)   | [Git](./command-line-tools/git.org)     |
-| [Mission Control](./system-preferences/mission-control.org)             | [Chrome](./applications/chrome.org)       | [Ruby](./command-line-tools/ruby.org)   |
-| [Siri](./system-preferences/siri.org)                                   | [MuseScore](./applications/musescore.org) | [Node](./command-line-tools/node.org)   |
-| [Accessibility](./system-preferences/accessibility.org)                 | [Finder](./applications/finder.org)       | [Trash](./command-line-tools/trash.org) |
-| [Security & Privacy](./system-preferences/security+privacy.org)         | [Terminal](./applications/terminal.org)   |                                         |
-| [Keyboard](./system-preferences/keyboard.org)                           | [Font Book](./applications/font-book.org) |                                         |
-| [Trackpad](./system-preferences/trackpad.org)                           |                                           |                                         |
-| [Displays](./system-preferences/displays.org)                           |                                           |                                         |
-| [Battery](./system-preferences/battery.org)                             |                                           |                                         |
+| System Preferences                                                      | Command Line Tools                      | Applications                              |
+|-------------------------------------------------------------------------|-----------------------------------------|-------------------------------------------|
+| [General](./system-preferences/general.org)                             | [Brew](./command-line-tools/brew.org)   | [Alfred](./applications/alfred.org)       |
+| [Desktop & Screen Saver](./system-preferences/desktop+screen-saver.org) | [Zsh](./command-line-tools/zsh.org)     | [Emacs](./applications/emacs.org)         |
+| [Dock & Menu Bar](./system-preferences/dock+menu-bar.org)               | [Git](./command-line-tools/git.org)     | [Rubymine](./applications/rubymine.org)   |
+| [Mission Control](./system-preferences/mission-control.org)             | [Ruby](./command-line-tools/ruby.org)   | [Chrome](./applications/chrome.org)       |
+| [Siri](./system-preferences/siri.org)                                   | [Node](./command-line-tools/node.org)   | [MuseScore](./applications/musescore.org) |
+| [Accessibility](./system-preferences/accessibility.org)                 | [Trash](./command-line-tools/trash.org) | [Finder](./applications/finder.org)       |
+| [Security & Privacy](./system-preferences/security+privacy.org)         | [Duti](./command-line-tools/duti.org)   | [Terminal](./applications/terminal.org)   |
+| [Keyboard](./system-preferences/keyboard.org)                           |                                         | [Font Book](./applications/font-book.org) |
+| [Trackpad](./system-preferences/trackpad.org)                           |                                         |                                           |
+| [Displays](./system-preferences/displays.org)                           |                                         |                                           |
+| [Battery](./system-preferences/battery.org)                             |                                         |                                           |
 
 ## LICENSE
 [AGPL-3.0](LICENSE)
