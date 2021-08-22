@@ -22,6 +22,11 @@ duti -s org.gnu.Emacs public.data all
 duti -s org.gnu.Emacs md all
 #+end_src
 
+Make title bar color inferred by theme.
+#+begin_src sh
+defaults write org.gnu.Emacs TransparentTitleBar LIGHT
+#+end_src
+
 * Ward Emacs
 Make Emacs as a great Word Processor in MacOS.
 ** Installation
@@ -36,8 +41,3 @@ Install vterm dependencies: cmake, libvterm
 brew install cmake libvterm
 #+end_src
 
-Install flyspell dependency: enchant.
-#+begin_src sh
-brew install enchant
-echo "*:AppleSpell,aspell" >> ~/.config/enchant/enchant.ordering
-#+end_src
