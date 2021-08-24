@@ -26,6 +26,11 @@ Make title bar color inferred by theme.
 defaults write org.gnu.Emacs TransparentTitleBar LIGHT
 #+end_src
 
+Hide title bar icon.
+#+begin_src sh
+defaults write org.gnu.Emacs HideDocumentIcon YES
+#+end_src
+
 * Ward Emacs
 Make Emacs as a great Word Processor in MacOS.
 ** Installation
