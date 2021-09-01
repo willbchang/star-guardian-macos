@@ -30,7 +30,7 @@ Set accent color to Pink.
 defaults write -g AppleAccentColor -int 6
 #+end_src
 
-*Set highlight color to Pink*
+Set highlight color to Pink.
 | Highlight Color | Values                                | Status  |
 |-----------------+---------------------------------------+---------|
 | Red             | "1.000000 0.733333 0.721569 Red"      |         |
@@ -49,7 +49,7 @@ Calculate on your own: https://apple.stackexchange.com/a/164905/306411
 defaults write -g AppleHighlightColor -string "1.000000 0.749020 0.823529 Pink"
 #+end_src
 
-*Set sidebar icon size to medium*
+Set sidebar icon size to medium.
 | Icon Size | Values | Status  |
 |-----------+--------+---------|
 | Small     |      1 |         |
@@ -59,13 +59,13 @@ defaults write -g AppleHighlightColor -string "1.000000 0.749020 0.823529 Pink"
 defaults write -g NSTableViewDefaultSizeMode -int 2
 #+end_src
 
-*Allow wallpaper tinting in windows*
+Allow wallpaper tinting in windows.
 #+begin_src sh
 defaults write -g AppleReduceDesktopTinting -int 0
 #+end_src
 
 
-*Show scroll bars automatically*
+Show scroll bars automatically.
 | Scroll Bar Behaviors                     | Values          |
 |------------------------------------------+-----------------|
 | Automatically based on mouse or trackpad | "Automatic"     |
@@ -75,7 +75,7 @@ defaults write -g AppleReduceDesktopTinting -int 0
 defaults write -g AppleShowScrollBars -string "Automatic"
 #+end_src
 
-*Click in the scroll bar to jump to the sport that's clicked*
+Click in the scroll bar to jump to the sport that's clicked.
 | Click Scroll Bar Behaviors      | Values |
 |---------------------------------+--------|
 | Jump to the spot that's clicked | true   |
@@ -84,7 +84,7 @@ defaults write -g AppleShowScrollBars -string "Automatic"
 defaults write -g AppleScrollerPagingBehavior -bool true
 #+end_src
 
-*Set default browser to Chrome*
+Set default browser to Chrome.
 # https://github.com/kerma/defaultbrowser/issues/3#issuecomment-319434425
 #+begin_src sh
 brew install dnlggr/tap/default-browser
@@ -102,18 +102,18 @@ Pefer tabs: never when opening documents
 defaults write -g AppleWindowTabbingMode -string "manual"
 #+end_src
 
-*Disable ask to keep changes when closing documents*
+Disable ask to keep changes when closing documents.
 #+begin_src sh
 defaults write -g NSCloseAlwaysConfirmsChanges -bool false
 #+end_src
 
-*Close windows when quitting an app*\\
+Close windows when quitting an app.\\
 When it's true, open documents and windows will not be restored when you re-open an app.
 #+begin_src sh
 defaults write -g NSQuitAlwaysKeepsWindows -bool true
 #+end_src
 
-*Set recent items to 0*
+Set recent items to 0.
 # The relative file is in ~/Library/Application\ Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.RecentDocuments.sfl2
 # sfltool nolonger work for sfl2 after 10.13, but you may change the .sfl2 to .plist and manipulate with `defaults write` then change the extension back. It may work but I never try it because there is a simpler way to use apple script.
 # https://github.com/buo/dotfiles/blob/d2145bb247700a0cf1018cf351c32a796151befa/osx/_01general.sh#L48-L50
@@ -124,7 +124,7 @@ done
 #+end_src
 
 
-*Allow Handoff between this Mac and your iCloud devices*
+Allow Handoff between this Mac and your iCloud devices.
 # Inspired by https://www.jamf.com/jamf-nation/discussions/12545/a-script-to-disable-handoff
 #+begin_src sh
 defaults -currentHost write com.apple.coreservices.useractivityd ActivityAdvertisingAllowed -bool yes
