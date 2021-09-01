@@ -9,8 +9,7 @@ It has native/better support for
 
 #+begin_src sh
 brew tap railwaycat/emacsmacport
-brew install emacs-mac --with-modules --with-mac-metal --with-rsvg
-ln -s /usr/local/opt/emacs-mac/Emacs.app /Applications
+brew install --cask emacs-mac
 #+end_src
 
 Make Emacs as the default text editor when opening file(s).
