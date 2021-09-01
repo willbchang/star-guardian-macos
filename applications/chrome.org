@@ -11,6 +11,10 @@ Set chrome as the default app for pdf files.
 duti -s com.google.Chrome pdf all
 #+end_src
 
+* Flags
+chrome://flags/#extensions-on-chrome-urls
+
+
 * Extensions
 ** Programming
 - [[https://chrome.google.com/webstore/detail/hlepfoohegkhhmjieoechaddaejaokhf][Refined GitHub]]
