@@ -1,11 +1,18 @@
 #+TITLE: General
-*Set appearance to auto*\\
-How I found it: https://apple.stackexchange.com/a/391814/306411
+Set appearance to light.\\
+Dark mode hurts my eyes.
+| Appearance | Keys                                     | Values | Status  |
+|------------+------------------------------------------+--------+---------|
+| Light      |                                          |        | Default |
+| Dark       | AppleInterfaceStyle                      | Dark   |         |
+| Auto       | AppleInterfaceStyleSwitchesAutomatically | true   |         |
+
 #+begin_src sh
-defaults write -g AppleInterfaceStyleSwitchesAutomatically -bool true
+defaults delete AppleInterfaceStyle
+defaults delete AppleInterfaceStyleSwitchesAutomatically
 #+end_src
 
-*Set accent color to Pink*
+Set accent color to Pink.
 | Accent Color | Values | Status  |
 |--------------+-------+---------|
 | Red          |     0 |         |
