@@ -5,12 +5,12 @@ Alfred is an award-winning app for macOS which boosts your efficiency with hotke
 brew install alfred
 #+end_src
 
-Make sure you have the premission and License
-#+begin_src sh
-open -a Alfred\ 4
-echo "Please make sure Alfred has permissions"
-echo "Please make sure Alfred has Powerpack License"
-read -p "  Press enter to continue "
-#+end_src
-
 TODO: Load [[./Alfred.alfredpreferences][Alfred.alfredpreferences]]
+
+* Workflows
+- [[https://github.com/willbchang/alfred-enhanced-dictionary][Correct & Define Word]]
+- [[https://github.com/pawelgrzybek/div][Div]]
+- [[https://github.com/gharlan/alfred-github-workflow][GitHub]]
+- [[https://github.com/willbchang/alfred-open-in-editor][Open in Editor]]
+- [[https://github.com/willbchang/alfred-run-in-terminal][Run in Terminal]]
+- [[https://github.com/willbchang/alfred-search-selection][Search Selecton]]
