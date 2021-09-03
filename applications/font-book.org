@@ -1,6 +1,10 @@
 #+TITLE: Font Book
 
-Install font: SF Mono
+Install font: SF Mono, Roboto Mono, Fira Code.
 #+begin_src sh
 cp -R /Applications/Utilities/Terminal.app/Contents/Resources/Fonts/. /Library/Fonts/
+
+brew tap homebrew/cask-fonts
+brew install --cask font-roboto-mono
+brew install --cask font-fira-code
 #+end_src
