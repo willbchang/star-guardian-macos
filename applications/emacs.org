@@ -39,3 +39,4 @@ Install vterm dependencies: cmake, libvterm
 brew install cmake libvterm
 #+end_src
 
+Roboto Mono and Fira Code are also required. Referer to [[../applications/font-book.org][Font Book]] .
