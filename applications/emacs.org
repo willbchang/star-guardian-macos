@@ -12,12 +12,15 @@ brew tap railwaycat/emacsmacport
 brew install --cask emacs-mac
 #+end_src
 
-Make Emacs as the default text editor when opening file(s).
+Make Emacs as the default text editor when opening file(s).\
+Requires [[../command-line-tools/duti.org][duti]].
 #+begin_src sh
 duti -s org.gnu.Emacs public.plain-text all
 duti -s org.gnu.Emacs public.unix-executable all
 duti -s org.gnu.Emacs public.data all
 duti -s org.gnu.Emacs md all
+duti -s org.gnu.Emacs json all
+duti -s org.gnu.Emacs yaml all
 #+end_src
 
 Make title bar color inferred by theme.
