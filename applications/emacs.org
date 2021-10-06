@@ -45,4 +45,5 @@ Install dependencies
 brew install rg fd cmake libvterm
 #+end_src
 
-Roboto Mono and Fira Code are also required. Referer to [[../applications/font-book.org][Font Book]] .
+Roboto Mono and Fira Code are also required.\\
+Referer to [[../applications/font-book.org][Font Book]].
