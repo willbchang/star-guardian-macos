@@ -12,7 +12,7 @@ brew tap railwaycat/emacsmacport
 brew install --cask emacs-mac
 #+end_src
 
-Make Emacs as the default text editor when opening file(s).\
+Make Emacs as the default text editor when opening most file(s).\\
 Requires [[../command-line-tools/duti.org][duti]].
 #+begin_src sh
 duti -s org.gnu.Emacs public.plain-text all

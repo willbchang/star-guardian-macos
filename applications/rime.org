@@ -1,0 +1,12 @@
+#+TITLE:RIME
+
+[[https://rime.im/][Rime]] Input Method Engine, rimes with your keystrokes.\\
+*聪明的输入法，懂我心意。*
+
+鼠须管 Squirrel is Rime for macOS.
+#+begin_src emacs-lisp
+brew install --cask squirrel
+#+end_src
+
+TODO: Customization.
+Currently, you need to use https://github.com/wongdean/rime-settings
