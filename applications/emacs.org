@@ -37,9 +37,12 @@ git clone --depth=1 https://github.com/willbchang/ward-emacs.git ~/.config/emacs
 #+end_src
 
 ** Dependencies
-Install ivy & vterm dependencies: rg cmake, libvterm
+Install dependencies
+  - ivy: rg
+  - find file in project: fd
+  - vterm: cmake, livbterm
 #+begin_src sh
-brew install rg cmake libvterm
+brew install rg fd cmake libvterm
 #+end_src
 
 Roboto Mono and Fira Code are also required. Referer to [[../applications/font-book.org][Font Book]] .
