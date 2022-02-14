@@ -1,6 +1,6 @@
  #+TITLE: Emacs
-* Emacs Mac
-[[https://github.com/railwaycat/homebrew-emacsmacport][Emacs Mac]] provides a native GUI support for MacOS.
+* Emacs Mac Port
+[[https://github.com/railwaycat/homebrew-emacsmacport][Emacs Mac Port]] provides a native GUI support for MacOS.
 It has native/better support for 
 1. Chinese Input Method with visible cursor movement.
 2. Raw quality for org inline image.
@@ -9,7 +9,8 @@ It has native/better support for
 
 #+begin_src sh
 brew tap railwaycat/emacsmacport
-brew install --cask emacs-mac
+# brew install --cask emacs-mac
+brew install emacs-mac --with-mac-metal --with-natural-title-bar --with-rsvg --with-starter
 #+end_src
 
 Make Emacs as the default text editor when opening most file(s).\\
