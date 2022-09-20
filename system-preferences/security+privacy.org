@@ -1,5 +1,5 @@
 #+TITLE: Security & Privacy
 *Allow apps downloaded from anywhere*
 #+begin_src sh
-sudo spctl --master-disable
+sudo spctl --global-disable
 #+end_src
