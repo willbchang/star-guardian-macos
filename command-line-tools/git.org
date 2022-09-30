@@ -1,48 +1,16 @@
-#+TITLE: Git
+ #+TITLE: Git
 
-* Installation
-[[https://git-scm.com/][Git]] is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency.
-#+begin_src sh
-brew install git
-#+end_src
+[[https://git-scm.com/][Git]] is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency.//
+Git comes with CommandLineTools.
 
-* Configuration
 By default, git will print non-ASCII file names in quoted octal notation, i.e. "\nnn\nnn...". This can be disabled with:
 #+begin_src sh
 git config --global core.quotepath off
 #+end_src
 
-* Ignore
 *Setup global [[https://docs.github.com/en/free-pro-team@latest/github/using-git/ignoring-files][git ignore]]*\\
-Configuring ignored files for all repositories on your computer.
-[[https://github.com/github/gitignore][github/gitignore]]
+Configuring ignored files for all repositories on your computer. [[https://github.com/github/gitignore][github/gitignore]]
 #+begin_src sh
 cat command-line-tools/.gitignore_global >> ~/.gitignore_global
 git config --global core.excludesfile ~/.gitignore_global
-#+end_src
-
-* Functions
-Add [[https://www.toptal.com/developers/gitignore][gi]] as gitignore generator
-#+begin_src sh
-echo "
-function gi() {
-  curl -sLw "\n" https://www.toptal.com/developers/gitignore/api/\$@
-}
-" >> ~/.zshrc && source ~/.zshrc
-#+end_src
-
-Git add commit. The lines inside function use aliases from oh-my-zsh git plugin.
-#+begin_src bash
-function gac () {
-  gaa
-  gcmsg "$1"
-}
-#+end_src
-
-Checkout to master/main branch and git pull.
-#+begin_src bash
-function gcml() {
-  gcm
-  gl
-}
 #+end_src
