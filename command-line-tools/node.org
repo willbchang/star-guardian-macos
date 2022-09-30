@@ -10,3 +10,15 @@ Fast, disk space efficient package manager.
 #+begin_src sh
 corepack enable
 #+end_src
+
+Add node@16 to PATH:
+#+begin_src emacs-lisp
+fish_add_path /opt/homebrew/opt/node@16/bin
+#+end_src
+
+For compilers to find node@16:
+#+begin_src emacs-lisp
+set -gx LDFLAGS "-L/opt/homebrew/opt/node@16/lib"
+set -gx CPPFLAGS "-I/opt/homebrew/opt/node@16/include"
+#+end_src
+
