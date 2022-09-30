@@ -30,7 +30,7 @@ sh star-guardian-macos/install.sh
 | System Preferences                                                      | Command Line Tools                      | Applications                              |
 |-------------------------------------------------------------------------|-----------------------------------------|-------------------------------------------|
 | [General](./system-preferences/general.org)                             | [Brew](./command-line-tools/brew.org)   | [Alfred](./applications/alfred.org)       |
-| [Desktop & Screen Saver](./system-preferences/desktop+screen-saver.org) | [Zsh](./command-line-tools/zsh.org)     | [Emacs](./applications/emacs.org)         |
+| [Desktop & Screen Saver](./system-preferences/desktop+screen-saver.org) | [Fish](./command-line-tools/fish.org)     | [Emacs](./applications/emacs.org)         |
 | [Dock & Menu Bar](./system-preferences/dock+menu-bar.org)               | [Git](./command-line-tools/git.org)     | [Rime](./applications/rime.org)           |
 | [Mission Control](./system-preferences/mission-control.org)             | [Ruby](./command-line-tools/ruby.org)   | [Rubymine](./applications/rubymine.org)   |
 | [Siri](./system-preferences/siri.org)                                   | [Node](./command-line-tools/node.org)   | [Chrome](./applications/chrome.org)       |

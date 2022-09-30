@@ -1,0 +1,25 @@
+#+TITLE: Fish
+
+[[https://fishshell.com/][Fish]] is a smart and user-friendly command line shell for Linux, macOS, and the rest of the family.
+
+Install fish via brew.
+#+begin_src sh
+brew install fish
+#+end_src
+
+
+Switch to fish shell.
+#+begin_src sh
+echo /opt/homebrew/bin/fish | sudo tee -a /etc/shells
+chsh -s /opt/homebrew/bin/fish
+set -U fish_user_paths /opt/homebrew/bin $fish_user_paths
+#+end_src
+
+Copy fish config to `~/.config/fish`
+1. Clear last login and fish welcome message on opening Terminal.
+2. Use ➜  ~  as prompt.
+3. Set ayu Mirage theme.
+#+begin_src sh
+cp -R fish ~/.config/fish
+#+end_src
+
