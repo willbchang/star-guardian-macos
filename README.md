@@ -32,10 +32,10 @@ sh star-guardian-macos/install.sh
 | [General](./system-preferences/general.org)                             | [Brew](./command-line-tools/brew.org)   | [Alfred](./applications/alfred.org)       |
 | [Desktop & Screen Saver](./system-preferences/desktop+screen-saver.org) | [Fish](./command-line-tools/fish.org)   | [Emacs](./applications/emacs.org)         |
 | [Dock & Menu Bar](./system-preferences/dock+menu-bar.org)               | [Git](./command-line-tools/git.org)     | [Rime](./applications/rime.org)           |
-| [Mission Control](./system-preferences/mission-control.org)             | [Ruby](./command-line-tools/ruby.org)   | [Rubymine](./applications/rubymine.org)   |
-| [Siri](./system-preferences/siri.org)                                   | [Node](./command-line-tools/node.org)   | [Chrome](./applications/chrome.org)       |
-| [Accessibility](./system-preferences/accessibility.org)                 | [Trash](./command-line-tools/trash.org) | [MuseScore](./applications/musescore.org) |
-| [Security & Privacy](./system-preferences/security+privacy.org)         | [Duti](./command-line-tools/duti.org)   | [Finder](./applications/finder.org)       |
+| [Mission Control](./system-preferences/mission-control.org)             | [Node](./command-line-tools/node.org)   | [Rubymine](./applications/rubymine.org)   |
+| [Siri](./system-preferences/siri.org)                                   | [Trash](./command-line-tools/trash.org) | [Chrome](./applications/chrome.org)       |
+| [Accessibility](./system-preferences/accessibility.org)                 | [Duti](./command-line-tools/duti.org)   | [MuseScore](./applications/musescore.org) |
+| [Security & Privacy](./system-preferences/security+privacy.org)         |                                         | [Finder](./applications/finder.org)       |
 | [Keyboard](./system-preferences/keyboard.org)                           |                                         | [Terminal](./applications/terminal.org)   |
 | [Trackpad](./system-preferences/trackpad.org)                           |                                         | [Font Book](./applications/font-book.org) |
 | [Displays](./system-preferences/displays.org)                           |                                         |                                           |

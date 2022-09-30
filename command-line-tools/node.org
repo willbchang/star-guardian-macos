@@ -2,11 +2,11 @@
 
 [[https://nodejs.org/en/][Node.js]] is a JavaScript runtime built on Chrome's V8 JavaScript engine.
 #+begin_src sh
-brew install nodejs
+brew install node@16
 #+end_src
 
-*Install a better package manager: [[https://pnpm.js.org/][pnpm]]*\\
+*Install a better package manager: [[https://pnpm.js.org/][pnpm]] and [[https://yarnpkg.com/][yarn]]*\\
 Fast, disk space efficient package manager.
 #+begin_src sh
-npm i -g pnpm
+corepack enable
 #+end_src
