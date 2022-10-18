@@ -14,13 +14,12 @@ duti -s com.google.Chrome pdf all
 * Flags
 chrome://flags/#extensions-on-chrome-urls
 
-
 * Extensions
 ** Programming
 - [[https://chrome.google.com/webstore/detail/hlepfoohegkhhmjieoechaddaejaokhf][Refined GitHub]]
 - [[https://chrome.google.com/webstore/detail/ficfmibkjjnpogdcfhfokmihanoldbfe][File Icons for GitHub and GitLab]]
-- [[https://chrome.google.com/webstore/detail/fkbfebkcoelajmhanocgppanfoojcdmg][CodeCopy]]
-- [[https://chrome.google.com/webstore/detail/gbmdgpbipfallnflgajpaliibnhdgobh][JSON Viewer]]
+- [[https://chrome.google.com/webstore/detail/fkbfebkcoelajmhanocgppanfoojcdmg][Code Copier]]
+- [[https://chrome.google.com/webstore/detail/code-copier/polidkhcaghmmijeemenkiloblpdfphp/][JSON Viewer]]
 
 ** Productivity
 - [[https://chrome.google.com/webstore/detail/hfjbmagddngcpeloejdejnfgbamkjaeg][Vimium C - All by Keyboard]]
