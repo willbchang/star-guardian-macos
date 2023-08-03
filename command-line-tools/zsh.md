@@ -2,7 +2,7 @@
 
 ## Oh My Zsh
 [Oh My Zsh](https://github.com/ohmyzsh/ohmyzsh) is a delightful community-driven framework for managing your zsh configuration.
-```
+``` sh
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ```
 
@@ -29,13 +29,6 @@ alias diff="git diff --no-index"
 ```
 
 ## Exports
-
-Set http(s) proxy for command line. You may want to disable it if you're not using a VPN, or change the port.
-``` bash
-export http_proxy=http://127.0.0.1:7890
-export https_proxy=http://127.0.0.1:7890
-```
-
 Make non-ASCII characters display right.
 ``` bash
 export LANG=en_US.UTF-8
