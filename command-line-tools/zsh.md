@@ -10,11 +10,6 @@ sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.
 ZSH_THEME='robbyrussell'
 ```
 
-Disable auto-setting terminal title.
-``` bash
-DISABLE_AUTO_TITLE='true'
-```
-
 Automatically update without prompting. Sometimes the update prompt is annoying because it breaks the command you run when launching the Terminal.
 ``` bash
 DISABLE_UPDATE_PROMPT="true"
