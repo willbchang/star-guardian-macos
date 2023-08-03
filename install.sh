@@ -1,7 +1,7 @@
-sh_flag='/\#\+begin_src\ sh/{flag=1; next} /\#\+end_src/{flag=0} flag'
+sh_flag='/```bash/{flag=1; next} /```/{flag=0} flag'
 
-for org in $(ls */*.org);do
-    awk "$sh_flag" $org > "${org%.org}.sh"
+for file in $(ls */*.md);do
+    awk "$sh_flag" $file > "${file%.md}.sh"
 done
 
 echo "Setup System Preferences"
