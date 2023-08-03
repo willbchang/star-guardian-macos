@@ -6,7 +6,6 @@
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ```
 
-
 ``` bash
 ZSH_THEME='robbyrussell'
 ```
@@ -22,7 +21,6 @@ DISABLE_UPDATE_PROMPT="true"
 ```
 
 ## Alias
-
 Alias git diff as diff for rich color and styles.
 ``` bash
 alias diff="git diff --no-index"
@@ -35,10 +33,9 @@ export LANG=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
 ```
 
-# Functions
+## Functions
 
 ## Plugins
-
 Oh My Zsh plugins allow you to add functionality of many sorts to your shell just by enabling them [Plugins]. (https://github.com/ohmyzsh/ohmyzsh/wiki/Plugins)
 
 Enable zsh plugins:
@@ -50,16 +47,12 @@ plugins=(
 ```
 
 ## Zsh Autosuggestions
-
  [Zsh Autosuggestions](https://github.com/zsh-users/zsh-autosuggestions): It suggests commands as you type based on history and completions.
 ``` sh
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 ```
 
-Speeds up pasting with autosuggest.
-
-https://github.com/zsh-users/zsh-autosuggestions/issues/238
-
+Speeds up pasting with autosuggestions. [Issue 238]( https://github.com/zsh-users/zsh-autosuggestions/issues/238)
 ``` bash
 pasteinit() {
   OLD_SELF_INSERT=${${(s.:.)widgets[self-insert]}[2,3]}
@@ -73,10 +66,7 @@ zstyle :bracketed-paste-magic paste-init pasteinit
 zstyle :bracketed-paste-magic paste-finish pastefinish
 ```
 
-Clear suggestion after pasting.
-
-https://github.com/zsh-users/zsh-autosuggestions/issues/351
-
+Clear suggestion after pasting. [Issue 351]( https://github.com/zsh-users/zsh-autosuggestions/issues/351)
 ``` bash
 ZSH_AUTOSUGGEST_CLEAR_WIDGETS+=(bracketed-paste)
 ```
