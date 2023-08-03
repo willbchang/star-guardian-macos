@@ -6,6 +6,7 @@
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ```
 
+Use the default theme. Don't speeding time on choosing a theme.
 ``` bash
 ZSH_THEME='robbyrussell'
 ```
@@ -37,7 +38,8 @@ Enable zsh plugins:
 ``` bash
 plugins=(
   git
-  zsh-autosuggestions zsh-syntax-highlighting
+  zsh-autosuggestions
+  zsh-syntax-highlighting
 )
 ```
 
