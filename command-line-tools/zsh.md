@@ -42,7 +42,7 @@ Enable zsh plugins:
 ``` bash
 plugins=(
   git
-  zsh-autosuggestions zsh-completions zsh-syntax-highlighting
+  zsh-autosuggestions zsh-syntax-highlighting
 )
 ```
 
@@ -69,13 +69,6 @@ zstyle :bracketed-paste-magic paste-finish pastefinish
 Clear suggestion after pasting. [Issue 351]( https://github.com/zsh-users/zsh-autosuggestions/issues/351)
 ``` bash
 ZSH_AUTOSUGGEST_CLEAR_WIDGETS+=(bracketed-paste)
-```
-
-## Zsh Completions 
- [Zsh Completions](https://github.com/zsh-users/zsh-completions): Additional completion definitions for Zsh.
-``` sh
-git clone https://github.com/zsh-users/zsh-completions ${ZSH_CUSTOM:=~/.oh-my-zsh/custom}/plugins/zsh-completions
-autoload -U compinit && compinit
 ```
 
 ## Zsh Syntax Highlighting
