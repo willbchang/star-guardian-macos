@@ -10,9 +10,9 @@ sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.
 ZSH_THEME='robbyrussell'
 ```
 
-Automatically update without prompting. Sometimes the update prompt is annoying because it breaks the command you run when launching the Terminal.
+Disable auto update. Sometimes the update prompt is annoying because it breaks the command you run when launching the Terminal.
 ``` bash
-DISABLE_UPDATE_PROMPT="true"
+DISABLE_AUTO_UPDATE="true"
 ```
 
 ## Alias
