@@ -1,7 +1,0 @@
-#+TITLE: Brew
-The Missing Package Manager for macOS.
-
-*Install package manager: [[https://brew.sh][Homebrew]]*
-#+begin_src sh
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
-#+end_src
