@@ -34,7 +34,7 @@ sh star-guardian-macos/install.sh
 | [Dock & Menu Bar](./system-preferences/dock+menu-bar.org)    | [Git](./command-line-tools/git.org)     |                                           |
 | [Mission Control](./system-preferences/mission-control.org)  | [Node](./command-line-tools/node.org)   | [Rubymine](./applications/rubymine.org)   |
 | [Siri](./system-preferences/siri.org)                        | [Trash](./command-line-tools/trash.org) | [Chrome](./applications/chrome.org)       |
-| [Accessibility](./system-preferences/accessibility.org)      | [Duti](./command-line-tools/duti.org)   | [MuseScore](./applications/musescore.org) |
+| [Accessibility](./system-preferences/accessibility.org)      | [Duti](./command-line-tools/duti.org)   |                                           |
 | [Security & Privacy](./system-preferences/security+privacy.org) |                                         | [Finder](./applications/finder.org)       |
 | [Keyboard](./system-preferences/keyboard.org)                |                                         | [Terminal](./applications/terminal.org)   |
 | [Trackpad](./system-preferences/trackpad.org)                |                                         | [Font Book](./applications/font-book.org) |

@@ -1,6 +1,0 @@
-#+title: MuseScore
-
-[[https://musescore.org/][MuseScore]] is a free music composition and notation software.
-#+begin_src sh
-brew install musescore
-#+end_src
