@@ -29,7 +29,7 @@ Make non-ASCII characters display right.
 ## Functions
 
 ## Plugins
-Oh My Zsh plugins allow you to add functionality of many sorts to your shell just by enabling them [Plugins]. (https://github.com/ohmyzsh/ohmyzsh/wiki/Plugins)
+Oh My Zsh plugins allow you to add functionality of many sorts to your shell just by enabling them. [Plugins](https://github.com/ohmyzsh/ohmyzsh/wiki/Plugins)
 
 Enable zsh plugins:
 

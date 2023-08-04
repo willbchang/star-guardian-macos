@@ -11,35 +11,37 @@
     <sub>A minimal and productive macOS configuration with a good documentation that you can live with for a long time.</sub>   
 </div>
 
-
 ## Installation
+
 *NOTICE: This project is on building, use it as your own risk.*
 
 Please read the following notes through before running the install script.
+
 1. The install script is likely not working for now.
 2. Currently there is not backup script, it may break or mess up your computer.
 3. Some of the configurations are not stable/done yet.
-4. It defaults with proxy and you may not want to use.
 
-``` bash
+```bash
 git clone --depth=1 https://github.com/willbchang/star-guardian-macos.git
 sh star-guardian-macos/install.sh
 ```
 
 **Table of Contents**
-| System Preferences                                           | Command Line Tools                     | Applications                              |
-| ------------------------------------------------------------ | -------------------------------------- | ----------------------------------------- |
-| [General](./system-preferences/general.org)                  | [Brew](./command-line-tools/brew.md)   | [Alfred](./applications/alfred.org)       |
-| [Desktop & Screen Saver](./system-preferences/desktop+screen-saver.org) | [Zsh](./command-line-tools/zsh.md)     | [Emacs](./applications/emacs.org)         |
-| [Dock & Menu Bar](./system-preferences/dock+menu-bar.org)    | [Git](./command-line-tools/git.md)     | [IntelliJ IDEA](./applications/idea.md)   |
-| [Mission Control](./system-preferences/mission-control.org)  | [Node](./command-line-tools/node.md)   |                                           |
-| [Siri](./system-preferences/siri.org)                        | [Trash](./command-line-tools/trash.md) | [Chrome](./applications/chrome.org)       |
-| [Accessibility](./system-preferences/accessibility.org)      | [Duti](./command-line-tools/duti.md)   |                                           |
-| [Security & Privacy](./system-preferences/security+privacy.org) |                                        | [Finder](./applications/finder.org)       |
-| [Keyboard](./system-preferences/keyboard.org)                |                                        | [Terminal](./applications/terminal.org)   |
-| [Trackpad](./system-preferences/trackpad.org)                |                                        | [Font Book](./applications/font-book.org) |
-| [Displays](./system-preferences/displays.org)                |                                        |                                           |
-| [Battery](./system-preferences/battery.org)                  |                                        |                                           |
+
+| System Preferences                         | Command Line Tools                                    | Applications                                    |
+| ------------------------------------------ | ----------------------------------------------------- | :---------------------------------------------- |
+| Sound                                      | [Brew](./command-line-tools/brew.md) (Package Manager)   | [Alfred](./applications/alfred.org) (Productivity) |
+| [General](./system-preferences/general.org)   | [Oh My Zsh](./command-line-tools/zsh.md) (Zsh framework) | [Chrome](./applications/chrome.org) (Browser)      |
+| Appearance                                 | [Git](./command-line-tools/git.md) (Version Control)     | [IntelliJ IDEA](./applications/idea.md) (IDE)      |
+| Control Center                             | [Node](./command-line-tools/node.md) (JS Runtime)        | Visual Studio Code(Text Editor)                 |
+| [Siri](./system-preferences/siri.org)         | [Trash](./command-line-tools/trash.md) (Safe remove)     | Fig (Terminal Autocomplete)                     |
+| Privacy & Security                         | [Duti](./command-line-tools/duti.md) (Set default app)   | Glance (Preview Plain Files)                    |
+| Desktop & Dock                             | Vim (Text Editor)                                     | Karabiner-Elements (Custom Keybinding)          |
+| Lock Screen                                | jq (JSON processor)                                   | Shottr (Screenshot)                             |
+| [Keyboard](./system-preferences/keyboard.org) | fd (find alternative)                                 | Anki (Memory Cards)                             |
+|                                            | ripgrep (grep alternative)                            | [Terminal](./applications/terminal.org)            |
+|                                            | pandoc (markup converter)                             | [Finder](./applications/finder.org)                |
+|                                            |                                                       |                                                 |
 
 ## LICENSE
 
