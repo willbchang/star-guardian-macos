@@ -51,3 +51,8 @@ open -na "IntelliJ IDEA.app" --args installPlugins com.github.copilot izhangzhih
     open -na "IntelliJ IDEA.app" --args installPlugins IdeaVimExtension
 
 ## Keybindings
+
+## Command Line Tool
+To use `idea` from the command line, add the following to your `.zshrc`:
+
+    export PATH="/Applications/IntelliJ IDEA.app/Contents/MacOS:$PATH"
