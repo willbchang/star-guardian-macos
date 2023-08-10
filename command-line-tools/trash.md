@@ -4,4 +4,3 @@
 ```bash
 brew install macos-trash
 ```
-

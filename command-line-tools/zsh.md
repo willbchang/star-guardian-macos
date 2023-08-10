@@ -3,7 +3,7 @@
 ## Oh My Zsh
 [Oh My Zsh](https://github.com/ohmyzsh/ohmyzsh) is a delightful community-driven framework for managing your zsh configuration.
 
-``` bash
+```bash
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ```
 
@@ -41,7 +41,7 @@ Enable zsh plugins:
 
 ## Zsh Autosuggestions
  [Zsh Autosuggestions](https://github.com/zsh-users/zsh-autosuggestions): It suggests commands as you type based on history and completions.
-``` bash
+```bash
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 ```
 
@@ -65,7 +65,7 @@ Clear suggestion after pasting. [Issue 351](https://github.com/zsh-users/zsh-aut
 ## Zsh Syntax Highlighting
  [Zsh Syntax Highlighting](https://github.com/zsh-users/zsh-syntax-highlighting): This package provides syntax highlighting for the shell zsh. It enables highlighting of commands whilst they are typed at a zsh prompt into an interactive terminal. This helps in reviewing commands before running them, particularly in catching syntax errors.
 
-``` bash
+```bash
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 ```
 
