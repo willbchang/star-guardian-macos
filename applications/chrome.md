@@ -38,6 +38,7 @@ TODO: [Alternative Chrome extension installation methods](https://developer.chro
 -   [Tampermonkey](https://chrome.google.com/webstore/detail/dhdgffkkebhmkfjojejmpbldmpobfkfo)
 -   [Checker Plus for Gmail™](https://chromewebstore.google.com/detail/checker-plus-for-gmail/oeopbcgkkoapgobdbedcemjljbihmemj)
 -   [CopyTabTitleUrl](https://chromewebstore.google.com/detail/copytabtitleurl/lmgbdjfoaihhgdphombpgjpaohjfeapp)
+-   [iCloud Passwords](https://chromewebstore.google.com/detail/icloud-passwords/pejdijmoenmkgeppbflobdenhhabjlaj)
 
 ## Video/Audio
 
