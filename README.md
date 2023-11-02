@@ -31,7 +31,7 @@ sh star-guardian-macos/install.sh
 | System Preferences                            | Command Line Tools                                       | Applications                                       |
 |-----------------------------------------------|----------------------------------------------------------|:---------------------------------------------------|
 | Sound                                         | [Brew](./command-line-tools/brew.md) (Package Manager)   | [Alfred](./applications/alfred.org) (Productivity) |
-| [General](./system-preferences/general.org)   | [Oh My Zsh](./command-line-tools/zsh.md) (Zsh framework) | [Chrome](./applications/chrome.org) (Browser)      |
+| [General](./system-preferences/general.org)   | [Oh My Zsh](./command-line-tools/zsh.md) (Zsh framework) | [Chrome](./applications/chrome.md) (Browser)       |
 | Appearance                                    | [Git](./command-line-tools/git.md) (Version Control)     | [IntelliJ IDEA](./applications/idea.md) (IDE)      |
 | Control Center                                | [Node](./command-line-tools/node.md) (JS Runtime)        | Visual Studio Code(Text Editor)                    |
 | [Siri](./system-preferences/siri.org)         | [Trash](./command-line-tools/trash.md) (Safe remove)     | Fig (Terminal Autocomplete)                        |
