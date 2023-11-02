@@ -18,6 +18,8 @@ duti -s com.google.Chrome pdf all
 
 # Extensions
 
+TODO: [Alternative Chrome extension installation methods](https://developer.chrome.com/docs/extensions/mv3/external_extensions/#preference-mac)
+
 ## Programming
 
 -   [Refined GitHub](https://chrome.google.com/webstore/detail/hlepfoohegkhhmjieoechaddaejaokhf)
