@@ -1,4 +1,5 @@
-[Chrome](https://www.google.com/chrome/) has lots of useful extensions in the [chrome web store](https://chrome.google.com/webstore/category/extensions).
+[Chrome](https://www.google.com/chrome/) has lots of useful extensions in
+the [chrome web store](https://chrome.google.com/webstore/category/extensions).
 
 ```bash
 brew install google-chrome
@@ -22,29 +23,29 @@ TODO: [Alternative Chrome extension installation methods](https://developer.chro
 
 ## Programming
 
--   [Refined GitHub](https://chrome.google.com/webstore/detail/hlepfoohegkhhmjieoechaddaejaokhf)
--   [File Icons for GitHub and GitLab](https://chrome.google.com/webstore/detail/ficfmibkjjnpogdcfhfokmihanoldbfe)
--   TODO: Copy Code
+- [Refined GitHub](https://chrome.google.com/webstore/detail/hlepfoohegkhhmjieoechaddaejaokhf)
+- [File Icons for GitHub and GitLab](https://chrome.google.com/webstore/detail/ficfmibkjjnpogdcfhfokmihanoldbfe)
+- TODO: Copy Code
 
 ## Productivity
 
--   [Vimium C - All by Keyboard](https://chrome.google.com/webstore/detail/hfjbmagddngcpeloejdejnfgbamkjaeg)
--   [PDF Viewer for Vimium C](https://chrome.google.com/webstore/detail/nacjakoppgmdcpemlfnfegmlhipddanj)
--   [Keyboard Shortcuts to Close Other/Right Tabs](https://chrome.google.com/webstore/detail/dkoadhojigekhckndaehenfbhcgfeepl)
+- [Vimium C - All by Keyboard](https://chrome.google.com/webstore/detail/hfjbmagddngcpeloejdejnfgbamkjaeg)
+- [PDF Viewer for Vimium C](https://chrome.google.com/webstore/detail/nacjakoppgmdcpemlfnfegmlhipddanj)
+- [Keyboard Shortcuts to Close Other/Right Tabs](https://chrome.google.com/webstore/detail/dkoadhojigekhckndaehenfbhcgfeepl)
 
 ## Tools
 
--   [Read Later](https://chrome.google.com/webstore/detail/fbmfcfkokefgbmfcjahdmomlifclekib)
--   [Tampermonkey](https://chrome.google.com/webstore/detail/dhdgffkkebhmkfjojejmpbldmpobfkfo)
--   [Checker Plus for Gmail™](https://chromewebstore.google.com/detail/checker-plus-for-gmail/oeopbcgkkoapgobdbedcemjljbihmemj)
--   [CopyTabTitleUrl](https://chromewebstore.google.com/detail/copytabtitleurl/lmgbdjfoaihhgdphombpgjpaohjfeapp)
--   [iCloud Passwords](https://chromewebstore.google.com/detail/icloud-passwords/pejdijmoenmkgeppbflobdenhhabjlaj)
+- [Read Later](https://chrome.google.com/webstore/detail/fbmfcfkokefgbmfcjahdmomlifclekib)
+- [Tampermonkey](https://chrome.google.com/webstore/detail/dhdgffkkebhmkfjojejmpbldmpobfkfo)
+- [Checker Plus for Gmail™](https://chromewebstore.google.com/detail/checker-plus-for-gmail/oeopbcgkkoapgobdbedcemjljbihmemj)
+- [CopyTabTitleUrl](https://chromewebstore.google.com/detail/copytabtitleurl/lmgbdjfoaihhgdphombpgjpaohjfeapp)
+- [iCloud Passwords](https://chromewebstore.google.com/detail/icloud-passwords/pejdijmoenmkgeppbflobdenhhabjlaj)
 
 ## Video/Audio
 
--   [Video Speed Controller](https://chrome.google.com/webstore/detail/nffaoalbilbmmfgbnbgppjihopabppdk)
+- [Video Speed Controller](https://chrome.google.com/webstore/detail/nffaoalbilbmmfgbnbgppjihopabppdk)
 
 ## Content Blocker
 
--   [uBlacklist](https://chrome.google.com/webstore/detail/pncfbmialoiaghdehhbnbhkkgmjanfhe)
--   [AdGuard AdBlocker](https://chromewebstore.google.com/detail/adguard-adblocker/bgnkhhnnamicmpeenaelnjfhikgbkllg)
+- [uBlacklist](https://chrome.google.com/webstore/detail/pncfbmialoiaghdehhbnbhkkgmjanfhe)
+- [AdGuard AdBlocker](https://chromewebstore.google.com/detail/adguard-adblocker/bgnkhhnnamicmpeenaelnjfhikgbkllg)
