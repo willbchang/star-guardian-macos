@@ -36,8 +36,9 @@ TODO: [Alternative Chrome extension installation methods](https://developer.chro
 
 -   [Read Later](https://chrome.google.com/webstore/detail/fbmfcfkokefgbmfcjahdmomlifclekib)
 -   [Tampermonkey](https://chrome.google.com/webstore/detail/dhdgffkkebhmkfjojejmpbldmpobfkfo)
-- 
-## Video
+-   [Checker Plus for Gmail™](https://chromewebstore.google.com/detail/checker-plus-for-gmail/oeopbcgkkoapgobdbedcemjljbihmemj)
+
+## Video/Audio
 
 -   [Video Speed Controller](https://chrome.google.com/webstore/detail/nffaoalbilbmmfgbnbgppjihopabppdk)
 
