@@ -22,7 +22,7 @@ duti -s com.google.Chrome pdf all
 
 -   [Refined GitHub](https://chrome.google.com/webstore/detail/hlepfoohegkhhmjieoechaddaejaokhf)
 -   [File Icons for GitHub and GitLab](https://chrome.google.com/webstore/detail/ficfmibkjjnpogdcfhfokmihanoldbfe)
--   [Code Copier](https://chrome.google.com/webstore/detail/fkbfebkcoelajmhanocgppanfoojcdmg)
+-   TODO: Copy Code
 -   [JSON Viewer](https://chrome.google.com/webstore/detail/code-copier/polidkhcaghmmijeemenkiloblpdfphp)
 
 ## Productivity
