@@ -28,20 +28,20 @@ sh star-guardian-macos/install.sh
 
 **Table of Contents**
 
-| System Preferences                         | Command Line Tools                                    | Applications                                    |
-| ------------------------------------------ | ----------------------------------------------------- | :---------------------------------------------- |
-| Sound                                      | [Brew](./command-line-tools/brew.md) (Package Manager)   | [Alfred](./applications/alfred.org) (Productivity) |
+| System Preferences                            | Command Line Tools                                       | Applications                                       |
+|-----------------------------------------------|----------------------------------------------------------|:---------------------------------------------------|
+| Sound                                         | [Brew](./command-line-tools/brew.md) (Package Manager)   | [Alfred](./applications/alfred.org) (Productivity) |
 | [General](./system-preferences/general.org)   | [Oh My Zsh](./command-line-tools/zsh.md) (Zsh framework) | [Chrome](./applications/chrome.org) (Browser)      |
-| Appearance                                 | [Git](./command-line-tools/git.md) (Version Control)     | [IntelliJ IDEA](./applications/idea.md) (IDE)      |
-| Control Center                             | [Node](./command-line-tools/node.md) (JS Runtime)        | Visual Studio Code(Text Editor)                 |
-| [Siri](./system-preferences/siri.org)         | [Trash](./command-line-tools/trash.md) (Safe remove)     | Fig (Terminal Autocomplete)                     |
-| Privacy & Security                         | [Duti](./command-line-tools/duti.md) (Set default app)   | Glance (Preview Plain Files)                    |
-| Desktop & Dock                             | Vim (Text Editor)                                     | Karabiner-Elements (Custom Keybinding)          |
-| Lock Screen                                | jq (JSON processor)                                   | Shottr (Screenshot)                             |
-| [Keyboard](./system-preferences/keyboard.org) | fd (find alternative)                                 | Anki (Memory Cards)                             |
-|                                            | ripgrep (grep alternative)                            | [Terminal](./applications/terminal.org)            |
-|                                            | pandoc (markup converter)                             | [Finder](./applications/finder.org)                |
-|                                            |                                                       |                                                 |
+| Appearance                                    | [Git](./command-line-tools/git.md) (Version Control)     | [IntelliJ IDEA](./applications/idea.md) (IDE)      |
+| Control Center                                | [Node](./command-line-tools/node.md) (JS Runtime)        | Visual Studio Code(Text Editor)                    |
+| [Siri](./system-preferences/siri.org)         | [Trash](./command-line-tools/trash.md) (Safe remove)     | Fig (Terminal Autocomplete)                        |
+| Privacy & Security                            | [Duti](./command-line-tools/duti.md) (Set default app)   | Glance (Preview Plain Files)                       |
+| Desktop & Dock                                | Vim (Text Editor)                                        | Karabiner-Elements (Custom Keybinding)             |
+| Lock Screen                                   | jq (JSON processor)                                      | Shottr (Screenshot)                                |
+| [Keyboard](./system-preferences/keyboard.org) | fd (find alternative)                                    | Anki (Memory Cards)                                |
+|                                               | ripgrep (grep alternative)                               | [Terminal](./applications/terminal.org)            |
+|                                               | pandoc (markup converter)                                | [Finder](./applications/finder.org)                |
+|                                               |                                                          |                                                    |
 
 ## LICENSE
 
